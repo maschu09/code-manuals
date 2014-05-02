@@ -1,9 +1,15 @@
 from collections import namedtuple
 from collections import OrderedDict
 import re
+from StringIO import StringIO
+import urllib2
+from zipfile import ZipFile
 
 
-infile = 'GRIB2_12_0_0/GRIB2_12_0_0_CodeFlag_en.txt'
+
+wmo_url = 'http://www.wmo.int/pages/prog/www/WMOCodes/WMO306_vI2/LatestVERSION/GRIB2_12_0_0.zip'
+cffile = 'GRIB2_12_0_0/GRIB2_12_0_0_CodeFlag_en.txt'
+
 
 aline = ('6.00,'
          '"Code table 0.0 - Discipline of processed data in the GRIB message, number of GRIB Master table",'
@@ -52,12 +58,23 @@ def parsegribtxt(line):
 lines = 0
 codeflags = []
 
-with open(infile, 'r') as grib:
-    for line in grib.readlines():
-        lines += 1
-        parsed = parsegribtxt(line)
-        if parsed:
-            codeflags.append(parsed)
+response = urllib2.urlopen(wmo_url)
+
+zipfile = ZipFile(StringIO(response.read()))
+#import pdb; pdb.set_trace()
+for line in zipfile.open(cffile).readlines():
+    lines += 1
+    parsed = parsegribtxt(line)
+    if parsed:
+        codeflags.append(parsed)
+
+
+# with open(infile, 'r') as grib:
+#     for line in grib.readlines():
+#         lines += 1
+#         parsed = parsegribtxt(line)
+#         if parsed:
+#             codeflags.append(parsed)
 
 if len(codeflags) != lines-1:
     raise ValueError('missing lines\n'
@@ -163,7 +180,7 @@ ttlhead = '''@prefix dc: <http://purl.org/dc/terms/> .
 
 '''
 
-with open('grib2disc.ttl', 'w') as disc:
+with open('ttl/grib2disc.ttl', 'w') as disc:
     disc.write(ttlhead)
     disc.write('<http://codes.wmo.int/grib2/codeflag/0.0> a skos:Collection ;\n')
     disc.write('\tdc:description  "Discipline of processed data in the GRIB message, number of GRIB master table"@en ;\n')
@@ -178,7 +195,7 @@ with open('grib2disc.ttl', 'w') as disc:
     disc.write(mems)
     disc.write(elems)
 
-with open('grib2category.ttl', 'w') as disc:
+with open('ttl/grib2category.ttl', 'w') as disc:
     disc.write(ttlhead)
     disc.write('<http://codes.wmo.int/grib2/codeflag/4.1> a skos:Collection ;\n')
     disc.write('\tdc:description  "Parameter category by product discipline"@en ;\n')
@@ -193,7 +210,7 @@ with open('grib2category.ttl', 'w') as disc:
     disc.write(mems)
     disc.write(elems)
 
-with open('grib2parameter.ttl', 'w') as disc:
+with open('ttl/grib2parameter.ttl', 'w') as disc:
     disc.write(ttlhead)
     disc.write('<http://codes.wmo.int/grib2/codeflag/4.2> a skos:Collection ;\n')
     disc.write('\tdc:description  "Parameter number by product discipline and parameter category"@en ;\n')
