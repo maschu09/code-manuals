@@ -1,5 +1,7 @@
 from collections import namedtuple
 from collections import OrderedDict
+import glob
+import os
 import re
 from StringIO import StringIO
 import urllib2
@@ -173,56 +175,120 @@ for cf in codeflags:
         else:
             raise ValueError('repeat key: {}'.format(entity))
 
-ttlhead = '''@prefix dc: <http://purl.org/dc/terms/> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+## output files
+
+for f in glob.glob('ttl/*.ttl'):
+    os.remove(f)
+
+ttlhead = '''@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix qudt: <http://qudt.org/schema/qudt#> .
 
 '''
 
-with open('ttl/grib2disc.ttl', 'w') as disc:
-    disc.write(ttlhead)
-    disc.write('<http://codes.wmo.int/grib2/codeflag/0.0> a skos:Collection ;\n')
-    disc.write('\tdc:description  "Discipline of processed data in the GRIB message, number of GRIB master table"@en ;\n')
-    disc.write('\trdfs:label "Discipline"@en ;\n')
-    disc.write('\tskos:prefLabel "Discipline"@en ;\n')
+with open('ttl/grib2disc.ttl', 'w') as fhandle:
+    fhandle.write(ttlhead)
+    fhandle.write('<http://codes.wmo.int/grib2/codeflag/0.0> a skos:Collection ;\n')
+    fhandle.write('\tdc:description  "Discipline of processed data in the GRIB message, number of GRIB master table"@en ;\n')
+    fhandle.write('\trdfs:label "Discipline"@en ;\n')
+    fhandle.write('\tskos:prefLabel "Discipline"@en ;\n')
     mems = '\tskos:member '
     elems = '\n'
     for k,v in cf00.iteritems():
         mems += '{}, '.format(k)
         elems += v
     mems += ' .\n\n'
-    disc.write(mems)
-    disc.write(elems)
+    fhandle.write(mems)
+    fhandle.write(elems)
 
-with open('ttl/grib2category.ttl', 'w') as disc:
-    disc.write(ttlhead)
-    disc.write('<http://codes.wmo.int/grib2/codeflag/4.1> a skos:Collection ;\n')
-    disc.write('\tdc:description  "Parameter category by product discipline"@en ;\n')
-    disc.write('\trdfs:label "Parameter category"@en ;\n')
-    disc.write('\tskos:prefLabel "Parameter category"@en ;\n')
+with open('ttl/grib2category.ttl', 'w') as fhandle:
+    fhandle.write(ttlhead)
+    fhandle.write('<http://codes.wmo.int/grib2/codeflag/4.1> a skos:Collection ;\n')
+    fhandle.write('\tdc:description  "Parameter category by product discipline"@en ;\n')
+    fhandle.write('\trdfs:label "Parameter category"@en ;\n')
+    fhandle.write('\tskos:prefLabel "Parameter category"@en ;\n')
     mems = '\tskos:member '
     elems = '\n'
     for k,v in cf41.iteritems():
         mems += '{}, '.format(k)
         elems += v
     mems += ' .\n\n'
-    disc.write(mems)
-    disc.write(elems)
+    fhandle.write(mems)
+    fhandle.write(elems)
 
-with open('ttl/grib2parameter.ttl', 'w') as disc:
-    disc.write(ttlhead)
-    disc.write('<http://codes.wmo.int/grib2/codeflag/4.2> a skos:Collection ;\n')
-    disc.write('\tdc:description  "Parameter number by product discipline and parameter category"@en ;\n')
-    disc.write('\trdfs:label "Parameter number"@en ;\n')
-    disc.write('\tskos:prefLabel "Parameter number"@en ;\n')
+with open('ttl/grib2parameter.ttl', 'w') as fhandle:
+    fhandle.write(ttlhead)
+    fhandle.write('<http://codes.wmo.int/grib2/codeflag/4.2> a skos:Collection ;\n')
+    fhandle.write('\tdc:description  "Parameter number by product discipline and parameter category"@en ;\n')
+    fhandle.write('\trdfs:label "Parameter number"@en ;\n')
+    fhandle.write('\tskos:prefLabel "Parameter number"@en ;\n')
     mems = '\tskos:member '
     elems = '\n'
     for k,v in cf42.iteritems():
         mems += '{}, '.format(k)
         elems += v
     mems += ' .\n\n'
-    disc.write(mems)
-    disc.write(elems)
+    fhandle.write(mems)
+    fhandle.write(elems)
+
+
+with open('ttl/grib2schemaparameter.ttl', 'w') as fhandle:
+    fhandle.write(ttlhead)
+    fhandle.write('@prefix grib2-parameter: <http://codes.wmo.int/grib2/schema/parameter/> .\n\n')
+    fhandle.write('''<parameter> 
+    a reg:Register, owl:Ontology ;
+    reg:inverseMembershipPredicate rdfs:isDefinedBy ;
+    rdfs:label "WMO physical parameter description ontology (WMO No. 306 Vol I.2 FM 92 GRIB - edition 2)"@en ;
+    rdfs:comment "Ontology for describing properties that are used to describe physical parameters within WMO No. 306 Vol I.2 FM 92 GRIB (edition 2)."@en ;
+    dc:creator "Jeremy Tandy" ;
+    dc:date "2013-04-24"^^xsd:date ;
+    dc:description "Ontology for describing properties that are used to describe physical parameters within WMO No. 306 Vol I.2 FM 92 GRIB (edition 2)."@en ;
+    .''')
+    fhandle.write('''
+<Discipline>
+    a owl:Class ;
+    rdfs:label "Product discipline (Class)"@en ;
+    dct:description "Product discipline within which a physical property may be categorised as defined in WMO No. 306 Vol I.2 FM 92 GRIB (edition 2) code-table 0.0 'Discipline of processed data'."@en ;
+    rdfs:subClassOf skos:Concept ;
+    skos:notation "discipline" ;
+    .
+
+<Category>
+    a owl:Class ;
+    rdfs:label "Parameter category (Class)"@en ;
+    dct:description "Parameter category within which a physical property may be categorised as defined in WMO No. 306 Vol I.2 FM 92 GRIB (edition 2) code-table 4.1 'Parameter category'."@en ;
+    rdfs:subClassOf skos:Concept ;
+    skos:notation "parameterCategory" ;
+    .
+
+<Parameter>
+    a owl:Class ;
+    rdfs:label "Parameter(Class)"@en ;
+    dct:description "Physical property as defined in WMO No. 306 Vol I.2 FM 92 GRIB (edition 2) code-table 4.2 'Parameter number'."@en ;
+    rdfs:subClassOf skos:Concept ;
+    skos:notation "parameterNumber" ;
+    .
+
+<discipline> 
+    a owl:ObjectProperty ;
+    rdfs:label "discipline (property)"@en ;
+    rdfs:comment "Object property describing the relationship between a physical property (e.g. QUDT QuantityKind) and the product discipline to which the physical property relates as defined in WMO No. 306 Vol I.2 FM 92 GRIB (edition 2) code-table 0.0 'Discipline of processed data'."@en ;
+    rdfs:range grib2-parameter:Discipline ;
+    rdfs:domain grib2-parameter:Category, grib2-parameter:Parameter ;
+    .
+
+<category> 
+    a owl:ObjectProperty ;
+    rdfs:label "category (property)"@en ;
+    rdfs:comment "Object property describing the relationship between a physical property (e.g. QUDT QuantityKind) and the  parameter category to which the physical property relates as defined in WMO No. 306 Vol I.2 FM 92 GRIB (edition 2) code-table 4.1 'Parameter category'."@en ;
+    rdfs:range grib2-parameter:Category ;
+    rdfs:domain grib2-parameter:Parameter ;
+    .''')
 
 
