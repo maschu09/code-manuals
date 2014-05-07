@@ -87,9 +87,21 @@ pcatptrn = re.compile('^("Product discipline )([0-9]+?)( - Meteorological produc
 
 pnumptrn = re.compile('^("Product discipline )([0-9]+?)( - [a-zA-Z ]*, parameter category )([0-9]+?)(: [a-zA-Z ]*")')
 
+## not yet hit issue with '""' in '"??"' strings
+## use '``' instead 
+
+## namespaces
+## http://codes.wmo.int/def
+##     /grib
+##        /core
+##        /edition1
+##        /edition2
+##  e.g.  http://codes.wmo.int/def/grib/edition2/Category
+##        http://codes.wmo.int/def/grib/edition2/category
+
 def makerdf(code):
     res = (None, None, None)
-    if code.Title_en.startswith('"Code table 0.0'):
+    if code.Title_en.startswith('"Code table 0.0 '):
         c = None
         codeflag = None
         try:
@@ -98,14 +110,15 @@ def makerdf(code):
             pass
         if codeflag is not None:
             entity = '<http://codes.wmo.int/grib2/codeflag/0.0/{}>'.format(codeflag)
-            rdff = ('{e} a skos:Concept ;\n'
+            rdff = ('{e} a skos:Concept, grib2s:Discipline ;\n'
+                    '\tgribs:edition <http://codes.wmo.int/grib/edition/2>;\n'
                     '\tskos:notation {c} ;\n'
                     '\trdfs:label {l}@en ;\n'
                     '\tskos:prefLabel {l}@en ;\n'
                     '\tdc:description {l}@en ;\n'
                     '\t.\n\n'.format(e=entity, c=codeflag, l=code.MeaningParameterDescription_en))
             res = ('0.0', entity, rdff)
-    elif code.Title_en.startswith('"Code table 4.1'):
+    elif code.Title_en.startswith('"Code table 4.1 '):
         matcher = pcatptrn.match(code.SubTitle_en)
         disc = None
         cat = None
@@ -117,20 +130,21 @@ def makerdf(code):
             pass
         if disc is not None and cat is not None:
             entity = '<http://codes.wmo.int/grib2/codeflag/4.1/{d}-{c}>'.format(d=disc, c=cat)
-            rdff = ('{e} a skos:Concept, <http://codes.wmo.int/grib2/schema/parameter/Category> ;\n'
-                    '\t<http://codes.wmo.int/grib2/schema/parameter/discipline> <http://test.wmocodes.info/grib2/codeflag/0.0/{d}> ;\n'
+            rdff = ('{e} a skos:Concept, grib2s:Category ;\n'
+                    '\tgrib2s:discipline <http://codes.wmo.int/grib2/codeflag/0.0/{d}> ;\n'
+                    '\tgribs:edition <http://codes.wmo.int/grib/edition/2>;\n'
                     '\tskos:notation {c} ;\n'
                     '\trdfs:label {l}@en ;\n'
                     '\tskos:prefLabel {l}@en ;\n'
                     '\tdc:description {l}@en ;\n'
                     '\t.\n\n'.format(e=entity, d=disc, c=cat, l=code.MeaningParameterDescription_en))
             res = ('4.1', entity, rdff)
-    elif code.Title_en.startswith('"Code table 4.2'):
-        #import pdb; pdb.set_trace()
+    elif code.Title_en.startswith('"Code table 4.2 '):
         matcher = pnumptrn.match(code.SubTitle_en)
         disc = None
         cat = None
         paramno = None
+        unit = code.UnitComments_en
         if matcher:
             disc = int(matcher.group(2))
             cat = int(matcher.group(4))
@@ -140,21 +154,60 @@ def makerdf(code):
             pass
         if disc is not None and cat is not None and paramno is not None:
             entity = '<http://codes.wmo.int/grib2/codeflag/4.2/{d}-{c}-{pn}>'.format(d=disc, c=cat, pn=paramno)
-            rdff = ('{e} a skos:Concept ;\n'
-                    '\t<http://codes.wmo.int/grib2/schema/parameter/discipline> <http://test.wmocodes.info/grib2/codeflag/0.0/{d}> ;\n'
-                    '\t<http://codes.wmo.int/grib2/schema/parameter/category> <http://test.wmocodes.info/grib2/codeflag/4.1/{c}> ;\n'
+            rdff = ('{e} a skos:Concept, grib2s:Parameter ;\n'
+                    '\tgrib2s:discipline <http://codes.wmo.int/grib2/codeflag/0.0/{d}> ;\n'
+                    '\tgrib2s:category <http://codes.wmo.int/grib2/codeflag/4.1/{d}-{c}> ;\n'
+                    '\tgribs:edition <http://codes.wmo.int/grib/edition/2>;\n'
                     '\tskos:notation {pn} ;\n'
                     '\trdfs:label {l}@en ;\n'
                     '\tskos:prefLabel {l}@en ;\n'
                     '\tdc:description {l}@en ;\n'
-                    '\t.\n\n'.format(e=entity, d=disc, c=cat, pn=paramno, l=code.MeaningParameterDescription_en))
+                    '\tgribs:unit <http://codes.wmo.int/common/units/{u}> ;\n'
+                    '\t.\n\n'.format(e=entity, d=disc, c=cat, pn=paramno, l=code.MeaningParameterDescription_en, u=unit))
             res = ('4.2', entity, rdff)
+    elif code.Title_en.startswith('"Code table 4.5 '):
+        #import pdb; pdb.set_trace()
+        label = code.MeaningParameterDescription_en
+        unit = code.UnitComments_en
+        paramno = None
+        try:
+            paramno = int(code.CodeFlag.replace('"', ''))
+        except ValueError:
+            pass
+        if paramno is not None:
+            entity = '<http://codes.wmo.int/grib2/codeflag/4.5/{s}>'.format(s=paramno)
+            rdff = ('{e} a skos:Concept ;\n'
+                    '\tgribs:edition <http://codes.wmo.int/grib/edition/2>;\n'
+                    '\tskos:notation {s} ;\n'
+                    '\tskos:prefLabel {l}@en ;\n'
+                    '\tdc:description {l}@en ;\n'
+                    '\tgribs:unit <http://codes.wmo.int/common/units/{u}> ;\n'
+                    '\t.\n\n'.format(e=entity, s=paramno, l=label, u=unit))
+            res = ('4.5', entity, rdff)
+    elif code.Title_en.startswith('"Code table 4.10 '):
+        label = code.MeaningParameterDescription_en
+        paramno = None
+        try:
+            paramno = int(code.CodeFlag.replace('"', ''))
+        except ValueError:
+            pass
+        if paramno is not None:
+            entity = '<http://codes.wmo.int/grib2/codeflag/4.10/{s}>'.format(s=paramno)
+            rdff = ('{e} a skos:Concept ;\n'
+                    '\tgribs:edition <http://codes.wmo.int/grib/edition/2>;\n'
+                    '\tskos:notation {s} ;\n'
+                    '\tskos:prefLabel {l}@en ;\n'
+                    '\tdc:description {l}@en ;\n'
+                    '\t.\n\n'.format(e=entity, s=paramno, l=label))
+            res = ('4.10', entity, rdff)
     return res
 
 
 cf00 = OrderedDict()
 cf41 = OrderedDict()
 cf42 = OrderedDict()
+cf45 = OrderedDict()
+cf410 = OrderedDict()
 
 for cf in codeflags:
     register, entity, rdf = makerdf(cf)
@@ -164,16 +217,27 @@ for cf in codeflags:
             cf00[entity] = rdf
         else:
             raise ValueError('repeat key: {}'.format(entity))
-    if register == '4.1':
+    elif register == '4.1':
         if not cf41.has_key(entity):
             cf41[entity] = rdf
         else:
             raise ValueError('repeat key: {}'.format(entity))
-    if register == '4.2':
+    elif register == '4.2':
         if not cf42.has_key(entity):
             cf42[entity] = rdf
         else:
             raise ValueError('repeat key: {}'.format(entity))
+    elif register == '4.5':
+        if not cf45.has_key(entity):
+            cf45[entity] = rdf
+        else:
+            raise ValueError('repeat key {}'.format(entity))
+    elif register == '4.10':
+        if not cf410.has_key(entity):
+            cf410[entity] = rdf
+        else:
+            raise ValueError('repeat key {}'.format(entity))
+
 
 ## output files
 
@@ -189,8 +253,134 @@ ttlhead = '''@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix reg: <http://purl.org/linked-data/registry#> .
 @prefix qudt: <http://qudt.org/schema/qudt#> .
+@prefix gribs: <http://codes.wmo.int/def/grib/core/> .
+@prefix grib2s: <http://codes.wmo.int/def/grib/edition2/> .
 
 '''
+
+
+with open('ttl/def.ttl', 'w') as fhandle:
+    fhandle.write(ttlhead)
+    fhandle.write('<http://codes.wmo./int/def> a reg:Register ;\n')
+    fhandle.write('\trdfs:label "WMO No. 306 Vol I.2 schemata" ;\n')
+    fhandle.write('\tdc:description "Schemata required to support WMO No. 306 Vol I.2 - Manual on Codes; including definitions of structure and domain-specific metadata required to describe terms from WMO No. 306 Vol I.2."@en ;\n')
+    fhandle.write('\t.\n')
+
+with open('ttl/defgrib.ttl', 'w') as fhandle:
+    fhandle.write(ttlhead)
+    fhandle.write('<http://codes.wmo./int/grib> a reg:Register ;\n')
+    fhandle.write('\trdfs:label "WMO No. 306 Vol I.2 FM 92 GRIB schemata" ;\n')
+    fhandle.write('\tdc:description "Schemata required to support WMO No. 306 Vol I.2 FM 92 GRIB - Manual on Codes; including definitions of structure and domain-specific metadata required to describe terms from WMO No. 306 Vol I.2 FM 92 GRIB."@en ;\n')
+    fhandle.write('\t.\n')
+
+with open('ttl/defgribc.ttl', 'w') as fhandle:
+    fhandle.write(ttlhead)
+    fhandle.write('<http://codes.wmo.int/def/grib/core> a reg:Register, owl:Ontology ;\n')
+    fhandle.write('\trdfs:label "WMO No. 306 Vol I.2 FM 92 GRIB (edition independent) schemata" ;\n')
+    fhandle.write('\tdc:description "Schemata required to support WMO No. 306 Vol I.2 FM 92 GRIB (edition independent)  - Manual on Codes; including definitions of structure and domain-specific metadata required to describe terms from WMO No. 306 Vol I.2 FM 92 GRIB (edition independent)."@en ;\n')
+    fhandle.write('\treg:inverseMembershipPredicate rdfs:isDefinedBy ;\n')
+    fhandle.write('\t.\n')
+    fhandle.write('''
+<Edition>
+    a owl:Class ;
+    rdfs:label "GRIB Edition Number"@en ;
+    rdfs:subClassOf skos:Concept ;
+    skos:notation "editionNumber" ;
+    rdfs:isDefinedBy <http://codes.wmo.int/def/grib/core> ;
+    .
+
+<edition>
+    a owl:ObjectProperty ;
+    rdfs:label "edition number"@en ;
+    rdfs:comment "Object property describing the GRIB edition number valid for an entity'."@en ;
+    rdfs:range gribs:Edition ;
+    rdfs:isDefinedBy <http://codes.wmo.int/def/grib/core> ;
+    .
+    
+''')
+
+with open('ttl/defgribe2.ttl', 'w') as fhandle:
+    fhandle.write(ttlhead)
+    fhandle.write('<http://codes.wmo.int/def/grib/edition2> a reg:Register, owl:Ontology ;\n')
+    fhandle.write('rdfs:label "WMO No. 306 Vol I.2 FM 92 GRIB (edition2) schemata"')
+    fhandle.write('\tdc:description "Schemata required to support WMO No. 306 Vol I.2 FM 92 GRIB (edition2)  - Manual on Codes; including definitions of structure and domain-specific metadata required to describe terms from WMO No. 306 Vol I.2 FM 92 GRIB (edition2)."@en ;\n')
+    fhandle.write('\treg:inverseMembershipPredicate rdfs:isDefinedBy ;\n')
+    fhandle.write('\t.\n')
+    fhandle.write('''
+<Discipline>
+    a owl:Class ;
+    rdfs:label "Product discipline (Class)"@en ;
+    dct:description "Product discipline within which a physical property may be categorised as defined in WMO No. 306 Vol I.2 FM 92 GRIB (edition 2) code-table 0.0 'Discipline of processed data'."@en ;
+    rdfs:subClassOf skos:Concept ;
+    skos:notation "discipline" ;
+    rdfs:isDefinedBy <http://codes.wmo.int/def/grib/edition2> ;
+    .
+
+<Category>
+    a owl:Class ;
+    rdfs:label "Parameter category (Class)"@en ;
+    dct:description "Parameter category within which a physical property may be categorised as defined in WMO No. 306 Vol I.2 FM 92 GRIB (edition 2) code-table 4.1 'Parameter category'."@en ;
+    rdfs:subClassOf skos:Concept ;
+    skos:notation "parameterCategory" ;
+    rdfs:isDefinedBy <http://codes.wmo.int/def/grib/edition2> ;
+    .
+
+<Parameter>
+    a owl:Class ;
+    rdfs:label "Parameter(Class)"@en ;
+    dct:description "Physical property as defined in WMO No. 306 Vol I.2 FM 92 GRIB (edition 2) code-table 4.2 'Parameter number'."@en ;
+    rdfs:subClassOf skos:Concept ;
+    skos:notation "parameterNumber" ;
+    rdfs:isDefinedBy <http://codes.wmo.int/def/grib/edition2> ;
+    .
+
+<discipline> 
+    a owl:ObjectProperty ;
+    rdfs:label "discipline (property)"@en ;
+    rdfs:comment "Object property describing the relationship between a physical property (e.g. QUDT QuantityKind) and the product discipline to which the physical property relates as defined in WMO No. 306 Vol I.2 FM 92 GRIB (edition 2) code-table 0.0 'Discipline of processed data'."@en ;
+    rdfs:range grib2s:Discipline ;
+    rdfs:domain grib2s:Category, grib2s:Parameter ;
+    rdfs:isDefinedBy <http://codes.wmo.int/def/grib/edition2> ;
+    .
+
+<category> 
+    a owl:ObjectProperty ;
+    rdfs:label "category (property)"@en ;
+    rdfs:comment "Object property describing the relationship between a physical property (e.g. QUDT QuantityKind) and the  parameter category to which the physical property relates as defined in WMO No. 306 Vol I.2 FM 92 GRIB (edition 2) code-table 4.1 'Parameter category'."@en ;
+    rdfs:range grib2s:Category ;
+    rdfs:domain grib2s:Parameter ;
+    rdfs:isDefinedBy <http://codes.wmo.int/def/grib/edition2> ;
+    .
+
+<''')
+
+
+with open('ttl/grib.ttl', 'w') as fhandle:
+    fhandle.write(ttlhead)
+    fhandle.write('<http://codes.wmo.int/grib> a reg:Register ;\n')
+    fhandle.write('\tdc:description "WMO No. 306 Vol I.2 FM 92 GRIB"@en ;\n')
+    fhandle.write('\trdfs:label "GRIB"@en.\n')
+
+with open('ttl/grib2.ttl', 'w') as fhandle:
+    fhandle.write(ttlhead)
+    fhandle.write('<http://codes.wmo.int/grib2> a reg:Register ;\n')
+    fhandle.write('\tdc:description "WMO No. 306 Vol I.2 FM 92 GRIB (edition 2)"@en ;\n')
+    fhandle.write('\trdfs:label "GRIB2"@en.\n')
+
+with open('ttl/gribedition.ttl', 'w') as fhandle:
+    fhandle.write(ttlhead)
+    fhandle.write('<http://codes.wmo.int/grib/edition> a skos:Collection ;\n')
+    fhandle.write('\tdc:description  "WMO published editions of the GRIB specification"@en ;\n')
+    fhandle.write('\trdfs:label "GRIB editions"@en ;\n')
+    fhandle.write('\tskos:prefLabel "GRIB editions"@en ;\n')
+    fhandle.write('\tskos:member <http://codes.wmo.int/grib/edition/1> ;\n')
+    fhandle.write('\tskos:member <http://codes.wmo.int/grib/edition/2> ;\n\t.\n\n')
+    fhandle.write('<http://codes.wmo.int/grib/edition/1> a skos:Concept ;\n')
+    fhandle.write('\trdfs:label "edition 1"@en;\n')
+    fhandle.write('\tskos:notation 1 .\n\n')
+    fhandle.write('<http://codes.wmo.int/grib/edition/2> a skos:Concept ;\n')
+    fhandle.write('\trdfs:label "edition 2"@en;\n')
+    fhandle.write('\tskos:notation 2 .\n')
 
 with open('ttl/grib2disc.ttl', 'w') as fhandle:
     fhandle.write(ttlhead)
@@ -237,58 +427,33 @@ with open('ttl/grib2parameter.ttl', 'w') as fhandle:
     fhandle.write(mems)
     fhandle.write(elems)
 
-
-with open('ttl/grib2schemaparameter.ttl', 'w') as fhandle:
+with open('ttl/grib2surftype.ttl', 'w') as fhandle: 
     fhandle.write(ttlhead)
-    fhandle.write('@prefix grib2-parameter: <http://codes.wmo.int/grib2/schema/parameter/> .\n\n')
-    fhandle.write('''<parameter> 
-    a reg:Register, owl:Ontology ;
-    reg:inverseMembershipPredicate rdfs:isDefinedBy ;
-    rdfs:label "WMO physical parameter description ontology (WMO No. 306 Vol I.2 FM 92 GRIB - edition 2)"@en ;
-    rdfs:comment "Ontology for describing properties that are used to describe physical parameters within WMO No. 306 Vol I.2 FM 92 GRIB (edition 2)."@en ;
-    dc:creator "Jeremy Tandy" ;
-    dc:date "2013-04-24"^^xsd:date ;
-    dc:description "Ontology for describing properties that are used to describe physical parameters within WMO No. 306 Vol I.2 FM 92 GRIB (edition 2)."@en ;
-    .''')
-    fhandle.write('''
-<Discipline>
-    a owl:Class ;
-    rdfs:label "Product discipline (Class)"@en ;
-    dct:description "Product discipline within which a physical property may be categorised as defined in WMO No. 306 Vol I.2 FM 92 GRIB (edition 2) code-table 0.0 'Discipline of processed data'."@en ;
-    rdfs:subClassOf skos:Concept ;
-    skos:notation "discipline" ;
-    .
-
-<Category>
-    a owl:Class ;
-    rdfs:label "Parameter category (Class)"@en ;
-    dct:description "Parameter category within which a physical property may be categorised as defined in WMO No. 306 Vol I.2 FM 92 GRIB (edition 2) code-table 4.1 'Parameter category'."@en ;
-    rdfs:subClassOf skos:Concept ;
-    skos:notation "parameterCategory" ;
-    .
-
-<Parameter>
-    a owl:Class ;
-    rdfs:label "Parameter(Class)"@en ;
-    dct:description "Physical property as defined in WMO No. 306 Vol I.2 FM 92 GRIB (edition 2) code-table 4.2 'Parameter number'."@en ;
-    rdfs:subClassOf skos:Concept ;
-    skos:notation "parameterNumber" ;
-    .
-
-<discipline> 
-    a owl:ObjectProperty ;
-    rdfs:label "discipline (property)"@en ;
-    rdfs:comment "Object property describing the relationship between a physical property (e.g. QUDT QuantityKind) and the product discipline to which the physical property relates as defined in WMO No. 306 Vol I.2 FM 92 GRIB (edition 2) code-table 0.0 'Discipline of processed data'."@en ;
-    rdfs:range grib2-parameter:Discipline ;
-    rdfs:domain grib2-parameter:Category, grib2-parameter:Parameter ;
-    .
-
-<category> 
-    a owl:ObjectProperty ;
-    rdfs:label "category (property)"@en ;
-    rdfs:comment "Object property describing the relationship between a physical property (e.g. QUDT QuantityKind) and the  parameter category to which the physical property relates as defined in WMO No. 306 Vol I.2 FM 92 GRIB (edition 2) code-table 4.1 'Parameter category'."@en ;
-    rdfs:range grib2-parameter:Category ;
-    rdfs:domain grib2-parameter:Parameter ;
-    .''')
+    fhandle.write('<http://codes.wmo.int/grib2/codeflag/4.5> a skos:Collection ;\n')
+    fhandle.write('\tdc:description "Code-table 4.5 - Fixed surface types and units."@en ;\n')
+    fhandle.write('\trdfs:label "Fixed surface types and units "@en ;\n')
+    fhandle.write('\tskos:prefLabel "Fixed surface types and units "@en ;\n')
+    mems = '\tskos:member '
+    elems = '\n'
+    for k,v in cf45.iteritems():
+        mems += '{}, '.format(k)
+        elems += v
+    mems += ' .\n\n'
+    fhandle.write(mems)
+    fhandle.write(elems)
 
 
+with open('ttl/grib2statprocess.ttl', 'w') as fhandle: 
+    fhandle.write(ttlhead)
+    fhandle.write('<http://codes.wmo.int/grib2/codeflag/4.10> a skos:Collection ;\n')
+    fhandle.write('\tdc:description "Code-table 4.10 - Type of statistical processing. "@en ;\n')
+    fhandle.write('\trdfs:label "Type of statistical processing"@en ;\n')
+    fhandle.write('\tskos:prefLabel "Type of statistical processing"@en ;\n')
+    mems = '\tskos:member '
+    elems = '\n'
+    for k,v in cf410.iteritems():
+        mems += '{}, '.format(k)
+        elems += v
+    mems += ' .\n\n'
+    fhandle.write(mems)
+    fhandle.write(elems)
