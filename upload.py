@@ -1,3 +1,4 @@
+import argparse
 import copy
 import glob
 import numpy as np
@@ -5,8 +6,11 @@ import os
 import subprocess
 import time
 
+parser = argparse.ArgumentParser()
+parser.add_argument("passcode")
+args = parser.parse_args()
 
-pss = 'e6232f95aafb744b5270f5a856a43751'
+pss = args.passcode
 #base = '54.229.172.81'
 #base = '54.229.147.46'
 base = 'test.wmocodes.info'
