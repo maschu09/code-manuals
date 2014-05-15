@@ -83,9 +83,14 @@ if len(codeflags) != lines-1:
                      '{} lines, {} codeflags'.format(lines, len(codeflags)))
 
 
-pcatptrn = re.compile('^("Product discipline )([0-9]+?)( - Meteorological products")') 
+#pcatptrn = re.compile('^("Product discipline )([0-9]+?)( - Meteorological products")')
+pcatptrn = re.compile('^("Product discipline )([0-9]+?)( - .*?")') 
 
-pnumptrn = re.compile('^("Product discipline )([0-9]+?)( - [a-zA-Z ]*, parameter category )([0-9]+?)(: [a-zA-Z ]*")')
+#pnumptrn = re.compile('^("Product discipline )([0-9]+?)( - [a-zA-Z ]*, parameter category )([0-9]+?)(: [a-zA-Z ]*")')
+pnumptrn = re.compile('^("Product [D|d]iscipline )([0-9]+?)( - .*?, parameter category )([0-9]+?)(: .*?")')
+
+slashunit = re.compile('^([a-zA-Z]*)/([a-zA-Z]*)')
+codeptrn = re.compile('^(\(Code_table_)(4\.[0-9]+?)\)')
 
 ## not yet hit issue with '""' in '"??"' strings
 ## use '``' instead 
@@ -98,6 +103,21 @@ pnumptrn = re.compile('^("Product discipline )([0-9]+?)( - [a-zA-Z ]*, parameter
 ##        /edition2
 ##  e.g.  http://codes.wmo.int/def/grib/edition2/Category
 ##        http://codes.wmo.int/def/grib/edition2/category
+
+def unit_of_measure(code):
+    unit = code.UnitComments_en.replace('"','')
+    if unit == '-' or unit == 'sigma value' or unit == 'Numeric':
+        unit = ''
+    if unit == '%':
+        unit = '%25'
+    unitmatch = slashunit.match(unit)
+
+    if unitmatch:
+        if len(unitmatch.groups()) != 2:
+            raise ValueError('unit slash parsing failed with unit: {}'.format(unit))
+        unit = '{} {}-1'.format(unitmatch.group(1), unitmatch.group(2))
+    unit = unit.replace(' ', '_')
+    return unit
 
 def makerdf(code):
     res = (None, None, None)
@@ -120,6 +140,9 @@ def makerdf(code):
             res = ('0.0', entity, rdff)
     elif code.Title_en.startswith('"Code table 4.1 '):
         matcher = pcatptrn.match(code.SubTitle_en)
+        if not matcher:
+            raise ValueError('failed to parse code table 4.1 entry\n'
+                             '{}'.format(code))
         disc = None
         cat = None
         if matcher:
@@ -141,10 +164,14 @@ def makerdf(code):
             res = ('4.1', entity, rdff)
     elif code.Title_en.startswith('"Code table 4.2 '):
         matcher = pnumptrn.match(code.SubTitle_en)
+        if not matcher:
+            raise ValueError('failed to parse code table 4.2 entry\n'
+                             '{}'.format(code))
         disc = None
         cat = None
         paramno = None
-        unit = code.UnitComments_en
+        datacode = None
+        unit = unit_of_measure(code)
         if matcher:
             disc = int(matcher.group(2))
             cat = int(matcher.group(4))
@@ -153,6 +180,15 @@ def makerdf(code):
         except ValueError:
             pass
         if disc is not None and cat is not None and paramno is not None:
+            unitstr = ''
+            if unit:
+                unitstr = '\tgribs:unit <http://codes.wmo.int/common/c-6/{u}> ;\n'.format(u=unit)
+            datacodestr = ''
+            if codeptrn.match(unit):
+                datacode = codeptrn.match(unit).group(2)
+                unit = ''
+            if datacode:
+                datacodestr = '\tgrib2s:datacode <http://codes.wmo.int/grib/grib2/codeflag/{}> ;\n'.format(datacode)
             entity = '<http://codes.wmo.int/grib/grib2/codeflag/4.2/{d}-{c}-{pn}>'.format(d=disc, c=cat, pn=paramno)
             rdff = ('{e} a skos:Concept, grib2s:Parameter ;\n'
                     '\tgrib2s:discipline <http://codes.wmo.int/grib/grib2/codeflag/0.0/{d}> ;\n'
@@ -162,19 +198,25 @@ def makerdf(code):
                     '\trdfs:label {l}@en ;\n'
                     '\tskos:prefLabel {l}@en ;\n'
                     '\tdc:description {l}@en ;\n'
-                    '\tgribs:unit <http://codes.wmo.int/common/units/{u}> ;\n'
-                    '\t.\n\n'.format(e=entity, d=disc, c=cat, pn=paramno, l=code.MeaningParameterDescription_en, u=unit))
+                    '{u}{dc}'
+                    '\t.\n\n'.format(e=entity, d=disc, c=cat, pn=paramno,
+                                     l=code.MeaningParameterDescription_en,
+                                     u=unitstr, dc = datacodestr))
             res = ('4.2', entity, rdff)
     elif code.Title_en.startswith('"Code table 4.5 '):
         #import pdb; pdb.set_trace()
+        unit = unit_of_measure(code)
         label = code.MeaningParameterDescription_en
-        unit = code.UnitComments_en
+        unit = unit_of_measure(code)#.UnitComments_en
         paramno = None
         try:
             paramno = int(code.CodeFlag.replace('"', ''))
         except ValueError:
             pass
         if paramno is not None:
+            unitstr = ''
+            if unit:
+                unitstr = '\tgribs:unit <http://codes.wmo.int/common/c-6/{u}> ;\n'.format(u=unit)
             entity = '<http://codes.wmo.int/grib/grib2/codeflag/4.5/{s}>'.format(s=paramno)
             rdff = ('{e} a skos:Concept ;\n'
                     '\tgribs:edition <http://codes.wmo.int/grib/core/edition/2>;\n'
@@ -182,8 +224,8 @@ def makerdf(code):
                     '\trdfs:label {l}@en ;\n'
                     '\tskos:prefLabel {l}@en ;\n'
                     '\tdc:description {l}@en ;\n'
-                    '\tgribs:unit <http://codes.wmo.int/common/units/{u}> ;\n'
-                    '\t.\n\n'.format(e=entity, s=paramno, l=label, u=unit))
+                    '{u}'
+                    '\t.\n\n'.format(e=entity, s=paramno, l=label, u=unitstr))
             res = ('4.5', entity, rdff)
     elif code.Title_en.startswith('"Code table 4.10 '):
         label = code.MeaningParameterDescription_en
@@ -317,7 +359,8 @@ with open('ttl/defgribe2.ttl', 'w') as fhandle:
                   '<http://codes.wmo.int/def/grib/edition2/Category>, '
                   '<http://codes.wmo.int/def/grib/edition2/Parameter>, '
                   '<http://codes.wmo.int/def/grib/edition2/discipline>, '
-                  '<http://codes.wmo.int/def/grib/edition2/category> ;\n')
+                  '<http://codes.wmo.int/def/grib/edition2/category>, '
+                  '<http://codes.wmo.int/def/grib/edition2/datacode> ;\n')
     fhandle.write('\t.\n')
     fhandle.write('''
 <http://codes.wmo.int/def/grib/edition2/Discipline>
@@ -359,6 +402,16 @@ with open('ttl/defgribe2.ttl', 'w') as fhandle:
     rdfs:range grib2s:Category ;
     rdfs:domain grib2s:Parameter ;
     .
+
+<http://codes.wmo.int/def/grib/edition2/datacode> 
+    a owl:ObjectProperty ;
+    rdfs:label "parameter data code table"@en ;
+    rdfs:comment "Object property describing the relationship between the encoded data values of a message and the code table which these data values reference."@en ;
+    rdfs:range skos:Collection ;
+    rdfs:domain grib2s:Parameter ;
+    .
+
+
 
 ''')
 
