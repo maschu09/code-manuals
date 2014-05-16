@@ -420,20 +420,20 @@ with open('ttl/gribc.ttl', 'w') as fhandle:
     fhandle.write(ttlhead)
     fhandle.write('<http://codes.wmo.int/gribcore> a reg:Register ;\n')
     fhandle.write('\tdc:description "WMO No. 306 Vol I.2 FM 92 GRIB (edition 2)"@en ;\n')
-    fhandle.write('\trdfs:label "GRIB2"@en.\n')
+    fhandle.write('\trdfs:label "GRIB all editions"@en.\n')
 
 with open('ttl/grib1.ttl', 'w') as fhandle:
     fhandle.write(ttlhead)
     fhandle.write('<http://codes.wmo.int/grib1> a reg:Register ;\n')
     fhandle.write('\tdc:description "WMO No. 306 Vol I.2 FM 92 GRIB"@en ;\n')
-    fhandle.write('\trdfs:label "GRIB"@en.\n')
+    fhandle.write('\trdfs:label "GRIB edition1"@en.\n')
 
 
 with open('ttl/grib2.ttl', 'w') as fhandle:
     fhandle.write(ttlhead)
     fhandle.write('<http://codes.wmo.int/grib2> a reg:Register ;\n')
     fhandle.write('\tdc:description "WMO No. 306 Vol I.2 FM 92 GRIB (edition 2)"@en ;\n')
-    fhandle.write('\trdfs:label "GRIB2"@en.\n')
+    fhandle.write('\trdfs:label "GRIB edition2"@en.\n')
 
 with open('ttl/grib2cflag.ttl', 'w') as fhandle:
     fhandle.write(ttlhead)
@@ -447,14 +447,14 @@ with open('ttl/gribedition.ttl', 'w') as fhandle:
     fhandle.write('<http://codes.wmo.int/gribcore/edition> a skos:Collection ;\n')
     fhandle.write('\tdc:description  "WMO published editions of the GRIB specification"@en ;\n')
     fhandle.write('\trdfs:label "GRIB editions"@en ;\n')
-    fhandle.write('\tskos:prefLabel "GRIB editions"@en ;\n')
+    fhandle.write('\tskos:prefLabel "FM 92 GRIB editions"@en ;\n')
     fhandle.write('\tskos:member <http://codes.wmo.int/gribcore/edition/1> ;\n')
     fhandle.write('\tskos:member <http://codes.wmo.int/gribcore/edition/2> ;\n\t.\n\n')
     fhandle.write('<http://codes.wmo.int/gribcore/edition/1> a skos:Concept ;\n')
-    fhandle.write('\trdfs:label "edition 1"@en;\n')
+    fhandle.write('\trdfs:label "FM 92 GRIB edition 1"@en;\n')
     fhandle.write('\tskos:notation 1 .\n\n')
     fhandle.write('<http://codes.wmo.int/gribcore/edition/2> a skos:Concept ;\n')
-    fhandle.write('\trdfs:label "edition 2"@en;\n')
+    fhandle.write('\trdfs:label "FM 92 GRIB edition 2"@en;\n')
     fhandle.write('\tskos:notation 2 .\n')
 
 with open('ttl/grib2disc.ttl', 'w') as fhandle:
