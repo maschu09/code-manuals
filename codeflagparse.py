@@ -3,6 +3,7 @@ from collections import OrderedDict
 import glob
 import os
 import re
+import shutil
 from StringIO import StringIO
 import urllib2
 from zipfile import ZipFile
@@ -287,6 +288,9 @@ for cf in codeflags:
 
 for f in glob.glob('ttl/*.ttl'):
     os.remove(f)
+for d in os.listdir('ttl/'):
+    if not d.startswith('.'):
+        shutil.rmtree(os.path.join('ttl', d))
 
 ttlhead = '''@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -303,13 +307,14 @@ ttlhead = '''@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 
 '''
 
-with open('ttl/container.ttl', 'w') as fhandle:
-    fhandle.write(ttlhead)
-    fhandle.write('ldp:Container a owl:Class ;\n'
-                  '\trdfs:label "LDP Container"@en ;\n'
-                  '\treg:notation "ldp-container" ;\n'
-                  '\tldp:membershipPredicate rdfs:member .\n')
+# with open('ttl/container.ttl', 'w') as fhandle:
+#     fhandle.write(ttlhead)
+#     fhandle.write('ldp:Container a owl:Class ;\n'
+#                   '\trdfs:label "LDP Container"@en ;\n'
+#                   '\treg:notation "ldp-container" ;\n'
+#                   '\tldp:membershipPredicate rdfs:member .\n')
 
+os.mkdir('ttl/def')
 with open('ttl/def.ttl', 'w') as fhandle:
     fhandle.write(ttlhead)
     fhandle.write('<http://codes.wmo.int/def> a reg:Register ;\n')
@@ -324,7 +329,8 @@ with open('ttl/def.ttl', 'w') as fhandle:
 #     fhandle.write('\tdc:description "Schemata required to support WMO No. 306 Vol I.2 FM 92 GRIB - Manual on Codes; including definitions of structure and domain-specific metadata required to describe terms from WMO No. 306 Vol I.2 FM 92 GRIB."@en ;\n')
 #     fhandle.write('\t.\n')
 
-with open('ttl/defgribc.ttl', 'w') as fhandle:
+os.mkdir('ttl/def/grib')
+with open('ttl/def/bulk_gribc.ttl', 'w') as fhandle:
     fhandle.write(ttlhead)
     fhandle.write('<http://codes.wmo.int/def/gribcore> a reg:Register, owl:Ontology, ldp:Container ;\n')
     fhandle.write('\trdfs:label "WMO No. 306 Vol I.2 FM 92 GRIB (edition independent) schemata" ;\n')
@@ -349,7 +355,7 @@ with open('ttl/defgribc.ttl', 'w') as fhandle:
     
 ''')
 
-with open('ttl/defgribe2.ttl', 'w') as fhandle:
+with open('ttl/def/grib/bulk_gribe2.ttl', 'w') as fhandle:
     fhandle.write(ttlhead)
     fhandle.write('<http://codes.wmo.int/def/grib2> a reg:Register, owl:Ontology, ldp:Container ;\n')
     fhandle.write('rdfs:label "WMO No. 306 Vol I.2 FM 92 GRIB (edition2) schemata" ;\n')
@@ -415,13 +421,14 @@ with open('ttl/defgribe2.ttl', 'w') as fhandle:
 
 ''')
 
-
+os.mkdir('ttl/gribcore')
 with open('ttl/gribc.ttl', 'w') as fhandle:
     fhandle.write(ttlhead)
     fhandle.write('<http://codes.wmo.int/gribcore> a reg:Register ;\n')
     fhandle.write('\tdc:description "WMO No. 306 Vol I.2 FM 92 GRIB (edition 2)"@en ;\n')
     fhandle.write('\trdfs:label "GRIB all editions"@en.\n')
 
+os.mkdir('ttl/grib1')
 with open('ttl/grib1.ttl', 'w') as fhandle:
     fhandle.write(ttlhead)
     fhandle.write('<http://codes.wmo.int/grib1> a reg:Register ;\n')
@@ -429,20 +436,22 @@ with open('ttl/grib1.ttl', 'w') as fhandle:
     fhandle.write('\trdfs:label "GRIB edition1"@en.\n')
 
 
+os.mkdir('ttl/grib2')
 with open('ttl/grib2.ttl', 'w') as fhandle:
     fhandle.write(ttlhead)
     fhandle.write('<http://codes.wmo.int/grib2> a reg:Register ;\n')
     fhandle.write('\tdc:description "WMO No. 306 Vol I.2 FM 92 GRIB (edition 2)"@en ;\n')
     fhandle.write('\trdfs:label "GRIB edition2"@en.\n')
 
-with open('ttl/grib2cflag.ttl', 'w') as fhandle:
+os.mkdir('ttl/grib2/codeflag')
+with open('ttl/grib2/grib2cflag.ttl', 'w') as fhandle:
     fhandle.write(ttlhead)
     fhandle.write('<http://codes.wmo.int/grib2/codeflag> a reg:Register ;\n')
     fhandle.write('\tdc:description "WMO No. 306 Vol I.2 FM 92 GRIB (edition 2) Codes and Flags"@en ;\n')
     fhandle.write('\trdfs:label "GRIB2 codes and flags"@en.\n')
 
 
-with open('ttl/gribedition.ttl', 'w') as fhandle:
+with open('ttl/gribcore/bulk_edition.ttl', 'w') as fhandle:
     fhandle.write(ttlhead)
     fhandle.write('<http://codes.wmo.int/gribcore/edition> a skos:Collection ;\n')
     fhandle.write('\tdc:description  "WMO published editions of the GRIB specification"@en ;\n')
@@ -457,7 +466,7 @@ with open('ttl/gribedition.ttl', 'w') as fhandle:
     fhandle.write('\trdfs:label "FM 92 GRIB edition 2"@en;\n')
     fhandle.write('\tskos:notation 2 .\n')
 
-with open('ttl/grib2disc.ttl', 'w') as fhandle:
+with open('ttl/grib2/codeflag/bulk_disc.ttl', 'w') as fhandle:
     fhandle.write(ttlhead)
     fhandle.write('<http://codes.wmo.int/grib2/codeflag/0.0> a skos:Collection ;\n')
     fhandle.write('\tdc:description  "Discipline of processed data in the GRIB message, number of GRIB master table"@en ;\n')
@@ -473,7 +482,7 @@ with open('ttl/grib2disc.ttl', 'w') as fhandle:
     fhandle.write(mems)
     fhandle.write(elems)
 
-with open('ttl/grib2category.ttl', 'w') as fhandle:
+with open('ttl/grib2/codeflag/bulk_category.ttl', 'w') as fhandle:
     fhandle.write(ttlhead)
     fhandle.write('<http://codes.wmo.int/grib2/codeflag/4.1> a skos:Collection ;\n')
     fhandle.write('\tdc:description  "Parameter category by product discipline"@en ;\n')
@@ -489,7 +498,7 @@ with open('ttl/grib2category.ttl', 'w') as fhandle:
     fhandle.write(mems)
     fhandle.write(elems)
 
-with open('ttl/grib2parameter.ttl', 'w') as fhandle:
+with open('ttl/grib2/codeflag/bulk_parameter.ttl', 'w') as fhandle:
     fhandle.write(ttlhead)
     fhandle.write('<http://codes.wmo.int/grib2/codeflag/4.2> a skos:Collection ;\n')
     fhandle.write('\tdc:description  "Parameter number by product discipline and parameter category"@en ;\n')
@@ -505,7 +514,7 @@ with open('ttl/grib2parameter.ttl', 'w') as fhandle:
     fhandle.write(mems)
     fhandle.write(elems)
 
-with open('ttl/grib2surftype.ttl', 'w') as fhandle: 
+with open('ttl/grib2/codeflag/bulk_surftype.ttl', 'w') as fhandle: 
     fhandle.write(ttlhead)
     fhandle.write('<http://codes.wmo.int/grib2/codeflag/4.5> a skos:Collection ;\n')
     fhandle.write('\tdc:description "Code-table 4.5 - Fixed surface types and units."@en ;\n')
@@ -522,7 +531,7 @@ with open('ttl/grib2surftype.ttl', 'w') as fhandle:
     fhandle.write(elems)
 
 
-with open('ttl/grib2statprocess.ttl', 'w') as fhandle: 
+with open('ttl/grib2/codeflag/bulk_statprocess.ttl', 'w') as fhandle: 
     fhandle.write(ttlhead)
     fhandle.write('<http://codes.wmo.int/grib2/codeflag/4.10> a skos:Collection ;\n')
     fhandle.write('\tdc:description "Code-table 4.10 - Type of statistical processing. "@en ;\n')
