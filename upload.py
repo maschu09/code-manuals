@@ -19,7 +19,7 @@ pss = args.passcode
 
 #authcall = ['curl', '-i' ,'-b', 'cookie-jar', '-c', 'cookie-jar', '--data', 'userid=https://profiles.google.com/100578379482821123729&password={}'.format(pss), 'http://{}/system/security/apilogin']
 
-authcall = ['curl', '-i' ,'-b', 'cookie-jar', '-c', 'cookie-jar', '--data', 'userid={}&password={}'.format(uid, pss), 'http://{}/system/security/apilogin'.format(args.reg_uri)]
+authcall = ['curl', '-i' ,'-b', 'cookie-jar', '-c', 'cookie-jar', '--data', 'userid={}&password={}'.format(uid, pss), '{}system/security/apilogin'.format(args.reg_uri)]
 print ' '.join(authcall)
 subprocess.check_call(authcall)
 
@@ -33,8 +33,13 @@ def post_call(postfile, container, status, bulk=False):
     bulkstr = ''
     if bulk:
         bulkstr = 'batch-managed&'
-    call.append("http://{r}/{c}?{b}status={s}".format(r=args.reg_uri,
-                                                      c=args.root,
+    if container == '.':
+        container = ''
+    else:
+        container = '/' + container
+    call.append("{u}{r}{c}?{b}status={s}".format(u=args.reg_uri,
+                                                      r=args.root,
+                                                      c=container,
                                                       b=bulkstr,
                                                       s=status))
     print ' '.join(call)
