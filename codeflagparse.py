@@ -64,7 +64,6 @@ codeflags = []
 response = urllib2.urlopen(wmo_url)
 
 zipfile = ZipFile(StringIO(response.read()))
-#import pdb; pdb.set_trace()
 for line in zipfile.open(cffile).readlines():
     lines += 1
     parsed = parsegribtxt(line)
@@ -72,22 +71,13 @@ for line in zipfile.open(cffile).readlines():
         codeflags.append(parsed)
 
 
-# with open(infile, 'r') as grib:
-#     for line in grib.readlines():
-#         lines += 1
-#         parsed = parsegribtxt(line)
-#         if parsed:
-#             codeflags.append(parsed)
-
 if len(codeflags) != lines-1:
     raise ValueError('missing lines\n'
                      '{} lines, {} codeflags'.format(lines, len(codeflags)))
 
 
-#pcatptrn = re.compile('^("Product discipline )([0-9]+?)( - Meteorological products")')
 pcatptrn = re.compile('^("Product discipline )([0-9]+?)( - .*?")') 
 
-#pnumptrn = re.compile('^("Product discipline )([0-9]+?)( - [a-zA-Z ]*, parameter category )([0-9]+?)(: [a-zA-Z ]*")')
 pnumptrn = re.compile('^("Product [D|d]iscipline )([0-9]+?)( - .*?, parameter category )([0-9]+?)(: .*?")')
 
 slashunit = re.compile('^([a-zA-Z]*)/([a-zA-Z]*)')
@@ -205,10 +195,9 @@ def makerdf(code):
                                      u=unitstr, dc = datacodestr))
             res = ('4.2', entity, rdff)
     elif code.Title_en.startswith('"Code table 4.5 '):
-        #import pdb; pdb.set_trace()
         unit = unit_of_measure(code)
         label = code.MeaningParameterDescription_en
-        unit = unit_of_measure(code)#.UnitComments_en
+        unit = unit_of_measure(code)
         paramno = None
         try:
             paramno = int(code.CodeFlag.replace('"', ''))
@@ -256,7 +245,6 @@ cf410 = OrderedDict()
 
 for cf in codeflags:
     register, entity, rdf = makerdf(cf)
-    # import pdb; pdb.set_trace()
     if register == '0.0':
         if not cf00.has_key(entity):
             cf00[entity] = rdf
@@ -307,12 +295,6 @@ ttlhead = '''@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 
 '''
 
-# with open('ttl/container.ttl', 'w') as fhandle:
-#     fhandle.write(ttlhead)
-#     fhandle.write('ldp:Container a owl:Class ;\n'
-#                   '\trdfs:label "LDP Container"@en ;\n'
-#                   '\treg:notation "ldp-container" ;\n'
-#                   '\tldp:membershipPredicate rdfs:member .\n')
 
 os.mkdir('ttl/def')
 with open('ttl/def.ttl', 'w') as fhandle:
@@ -335,7 +317,6 @@ with open('ttl/def/bulk_gribc.ttl', 'w') as fhandle:
     fhandle.write('<gribcore> a reg:Register, owl:Ontology, ldp:Container ;\n')
     fhandle.write('\trdfs:label "WMO No. 306 Vol I.2 FM 92 GRIB (edition independent) schemata" ;\n')
     fhandle.write('\tdc:description "Schemata required to support WMO No. 306 Vol I.2 FM 92 GRIB (edition independent)  - Manual on Codes; including definitions of structure and domain-specific metadata required to describe terms from WMO No. 306 Vol I.2 FM 92 GRIB (edition independent)."@en ;\n')
-    #fhandle.write('\treg:inverseMembershipPredicate rdfs:isDefinedBy ;\n')
     fhandle.write('\trdfs:member <Edition>, <edition> ;\n')
     fhandle.write('\t.\n')
     fhandle.write('''
@@ -360,7 +341,6 @@ with open('ttl/def/bulk_gribe2.ttl', 'w') as fhandle:
     fhandle.write('<grib2> a reg:Register, owl:Ontology, ldp:Container ;\n')
     fhandle.write('rdfs:label "WMO No. 306 Vol I.2 FM 92 GRIB (edition2) schemata" ;\n')
     fhandle.write('\tdc:description "Schemata required to support WMO No. 306 Vol I.2 FM 92 GRIB (edition2)  - Manual on Codes; including definitions of structure and domain-specific metadata required to describe terms from WMO No. 306 Vol I.2 FM 92 GRIB (edition2)."@en ;\n')
-#    fhandle.write('\treg:inverseMembershipPredicate rdfs:isDefinedBy ;\n')
     fhandle.write('\trdfs:member <Discipline>, '
                   '<Category>, '
                   '<Parameter>, '

@@ -17,7 +17,6 @@ uid = args.user_id
 uid = 'https://profiles.google.com/100578379482821123729'
 pss = args.passcode
 
-#authcall = ['curl', '-i' ,'-b', 'cookie-jar', '-c', 'cookie-jar', '--data', 'userid=https://profiles.google.com/100578379482821123729&password={}'.format(pss), 'http://{}/system/security/apilogin']
 
 authcall = ['curl', '-i' ,'-b', 'cookie-jar', '-c', 'cookie-jar', '--data', 'userid={}&password={}'.format(uid, pss), '{}system/security/apilogin'.format(args.reg_uri)]
 print ' '.join(authcall)
@@ -28,7 +27,6 @@ fpath = os.path.join(os.getcwd(), 'ttl')
 def post_call(postfile, container, status, bulk=False):
     call = ['curl', '-i', '-b', 'cookie-jar', '-H', 'Content-type:text/turtle',
             "-X", "POST", "--data"]
-    # concall = copy.copy(call)
     call.append('@{}'.format(postfile))
     bulkstr = ''
     if bulk:
