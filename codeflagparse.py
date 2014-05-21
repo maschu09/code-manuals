@@ -120,7 +120,7 @@ def makerdf(code):
         except ValueError:
             pass
         if codeflag is not None:
-            entity = '<{}>'.format(codeflag)
+            entity = '<0.0/{}>'.format(codeflag)
             rdff = ('{e} a skos:Concept, grib2s:Discipline ;\n'
                     '\tgribs:edition <http://codes.wmo.int/gribcore/edition/2>;\n'
                     '\tskos:notation {c} ;\n'
@@ -143,7 +143,7 @@ def makerdf(code):
         except ValueError:
             pass
         if disc is not None and cat is not None:
-            entity = '<{d}-{c}>'.format(d=disc, c=cat)
+            entity = '<4.1/{d}-{c}>'.format(d=disc, c=cat)
             rdff = ('{e} a skos:Concept, grib2s:Category ;\n'
                     '\tgrib2s:discipline <http://codes.wmo.int/grib2/codeflag/0.0/{d}> ;\n'
                     '\tgribs:edition <http://codes.wmo.int/gribcore/edition/2>;\n'
@@ -180,7 +180,7 @@ def makerdf(code):
                 unit = ''
             if datacode:
                 datacodestr = '\tgrib2s:datacode <http://codes.wmo.int/grib2/codeflag/{}> ;\n'.format(datacode)
-            entity = '<{d}-{c}-{pn}>'.format(d=disc, c=cat, pn=paramno)
+            entity = '<4.2/{d}-{c}-{pn}>'.format(d=disc, c=cat, pn=paramno)
             rdff = ('{e} a skos:Concept, grib2s:Parameter ;\n'
                     '\tgrib2s:discipline <http://codes.wmo.int/grib2/codeflag/0.0/{d}> ;\n'
                     '\tgrib2s:category <http://codes.wmo.int/grib2/codeflag/4.1/{d}-{c}> ;\n'
@@ -207,7 +207,7 @@ def makerdf(code):
             unitstr = ''
             if unit:
                 unitstr = '\tgribs:unit <http://codes.wmo.int/common/c-6/{u}> ;\n'.format(u=unit)
-            entity = '<{s}>'.format(s=paramno)
+            entity = '<4.5/{s}>'.format(s=paramno)
             rdff = ('{e} a skos:Concept ;\n'
                     '\tgribs:edition <http://codes.wmo.int/gribcore/edition/2>;\n'
                     '\tskos:notation {s} ;\n'
@@ -225,7 +225,7 @@ def makerdf(code):
         except ValueError:
             pass
         if paramno is not None:
-            entity = '<{s}>'.format(s=paramno)
+            entity = '<4.10/{s}>'.format(s=paramno)
             rdff = ('{e} a skos:Concept ;\n'
                     '\tgribs:edition <http://codes.wmo.int/gribcore/edition/2>;\n'
                     '\tskos:notation {s} ;\n'
@@ -302,6 +302,9 @@ with open('ttl/def.ttl', 'w') as fhandle:
     fhandle.write('<def> a reg:Register ;\n')
     fhandle.write('\trdfs:label "WMO No. 306 Vol I.2 schemata" ;\n')
     fhandle.write('\tdc:description "Schemata required to support WMO No. 306 Vol I.2 - Manual on Codes; including definitions of structure and domain-specific metadata required to describe terms from WMO No. 306 Vol I.2."@en ;\n')
+    fhandle.write('\treg:owner <http://codes.wmo.int/system/organization/wmo> ;\n')
+    fhandle.write('\tdct:publisher <http://codes.wmo.int/system/organization/wmo> ;\n')
+    fhandle.write('\treg:manager <http://codes.wmo.int/system/organization/www-dm> ;\n')
     fhandle.write('\t.\n')
 
 # with open('ttl/defgrib.ttl', 'w') as fhandle:
@@ -317,17 +320,20 @@ with open('ttl/def/bulk_gribc.ttl', 'w') as fhandle:
     fhandle.write('<gribcore> a reg:Register, owl:Ontology, ldp:Container ;\n')
     fhandle.write('\trdfs:label "WMO No. 306 Vol I.2 FM 92 GRIB (edition independent) schemata" ;\n')
     fhandle.write('\tdc:description "Schemata required to support WMO No. 306 Vol I.2 FM 92 GRIB (edition independent)  - Manual on Codes; including definitions of structure and domain-specific metadata required to describe terms from WMO No. 306 Vol I.2 FM 92 GRIB (edition independent)."@en ;\n')
-    fhandle.write('\trdfs:member <Edition>, <edition> ;\n')
+    fhandle.write('\treg:owner <http://codes.wmo.int/system/organization/wmo> ;\n')
+    fhandle.write('\tdct:publisher <http://codes.wmo.int/system/organization/wmo> ;\n')
+    fhandle.write('\treg:manager <http://codes.wmo.int/system/organization/www-dm> ;\n')
+    fhandle.write('\trdfs:member <gribcore/Edition>, <gribcore/edition> ;\n')
     fhandle.write('\t.\n')
     fhandle.write('''
-<Edition>
+<gribcore/Edition>
     a owl:Class ;
     rdfs:label "GRIB Edition Number"@en ;
     rdfs:subClassOf skos:Concept ;
     skos:notation "editionNumber" ;
     .
 
-<edition>
+<gribcore/edition>
     a owl:ObjectProperty ;
     rdfs:label "edition number"@en ;
     rdfs:comment "Object property describing the GRIB edition number valid for an entity'."@en ;
@@ -341,15 +347,18 @@ with open('ttl/def/bulk_gribe2.ttl', 'w') as fhandle:
     fhandle.write('<grib2> a reg:Register, owl:Ontology, ldp:Container ;\n')
     fhandle.write('rdfs:label "WMO No. 306 Vol I.2 FM 92 GRIB (edition2) schemata" ;\n')
     fhandle.write('\tdc:description "Schemata required to support WMO No. 306 Vol I.2 FM 92 GRIB (edition2)  - Manual on Codes; including definitions of structure and domain-specific metadata required to describe terms from WMO No. 306 Vol I.2 FM 92 GRIB (edition2)."@en ;\n')
-    fhandle.write('\trdfs:member <Discipline>, '
-                  '<Category>, '
-                  '<Parameter>, '
-                  '<discipline>, '
-                  '<category>, '
-                  '<datacode> ;\n')
+    fhandle.write('\treg:owner <http://codes.wmo.int/system/organization/wmo> ;\n')
+    fhandle.write('\tdct:publisher <http://codes.wmo.int/system/organization/wmo> ;\n')
+    fhandle.write('\treg:manager <http://codes.wmo.int/system/organization/www-dm> ;\n')
+    fhandle.write('\trdfs:member <grib2/Discipline>, '
+                  '<grib2/Category>, '
+                  '<grib2/Parameter>, '
+                  '<grib2/discipline>, '
+                  '<grib2/category>, '
+                  '<grib2/datacode> ;\n')
     fhandle.write('\t.\n')
     fhandle.write('''
-<Discipline>
+<grib2/Discipline>
     a owl:Class ;
     rdfs:label "Product discipline (Class)"@en ;
     dct:description "Product discipline within which a physical property may be categorised as defined in WMO No. 306 Vol I.2 FM 92 GRIB (edition 2) code-table 0.0 'Discipline of processed data'."@en ;
@@ -357,7 +366,7 @@ with open('ttl/def/bulk_gribe2.ttl', 'w') as fhandle:
     skos:notation "discipline" ;
     .
 
-<Category>
+<grib2/Category>
     a owl:Class ;
     rdfs:label "Parameter category (Class)"@en ;
     dct:description "Parameter category within which a physical property may be categorised as defined in WMO No. 306 Vol I.2 FM 92 GRIB (edition 2) code-table 4.1 'Parameter category'."@en ;
@@ -365,7 +374,7 @@ with open('ttl/def/bulk_gribe2.ttl', 'w') as fhandle:
     skos:notation "parameterCategory" ;
     .
 
-<Parameter>
+<grib2/Parameter>
     a owl:Class ;
     rdfs:label "Parameter(Class)"@en ;
     dct:description "Physical property as defined in WMO No. 306 Vol I.2 FM 92 GRIB (edition 2) code-table 4.2 'Parameter number'."@en ;
@@ -373,7 +382,7 @@ with open('ttl/def/bulk_gribe2.ttl', 'w') as fhandle:
     skos:notation "parameterNumber" ;
     .
 
-<discipline> 
+<grib2/discipline> 
     a owl:ObjectProperty ;
     rdfs:label "discipline (property)"@en ;
     rdfs:comment "Object property describing the relationship between a physical property (e.g. QUDT QuantityKind) and the product discipline to which the physical property relates as defined in WMO No. 306 Vol I.2 FM 92 GRIB (edition 2) code-table 0.0 'Discipline of processed data'."@en ;
@@ -381,7 +390,7 @@ with open('ttl/def/bulk_gribe2.ttl', 'w') as fhandle:
     rdfs:domain grib2s:Category, grib2s:Parameter ;
     .
 
-<category> 
+<grib2/category> 
     a owl:ObjectProperty ;
     rdfs:label "category (property)"@en ;
     rdfs:comment "Object property describing the relationship between a physical property (e.g. QUDT QuantityKind) and the  parameter category to which the physical property relates as defined in WMO No. 306 Vol I.2 FM 92 GRIB (edition 2) code-table 4.1 'Parameter category'."@en ;
@@ -389,7 +398,7 @@ with open('ttl/def/bulk_gribe2.ttl', 'w') as fhandle:
     rdfs:domain grib2s:Parameter ;
     .
 
-<datacode> 
+<grib2/datacode> 
     a owl:ObjectProperty ;
     rdfs:label "parameter data code table"@en ;
     rdfs:comment "Object property describing the relationship between the encoded data values of a message and the code table which these data values reference."@en ;
@@ -406,6 +415,9 @@ with open('ttl/gribc.ttl', 'w') as fhandle:
     fhandle.write(ttlhead)
     fhandle.write('<gribcore> a reg:Register ;\n')
     fhandle.write('\tdc:description "WMO No. 306 Vol I.2 FM 92 GRIB (edition 2)"@en ;\n')
+    fhandle.write('\treg:owner <http://codes.wmo.int/system/organization/wmo> ;\n')
+    fhandle.write('\tdct:publisher <http://codes.wmo.int/system/organization/wmo> ;\n')
+    fhandle.write('\treg:manager <http://codes.wmo.int/system/organization/www-dm> ;\n')
     fhandle.write('\trdfs:label "GRIB all editions"@en.\n')
 
 os.mkdir('ttl/grib1')
@@ -413,6 +425,9 @@ with open('ttl/grib1.ttl', 'w') as fhandle:
     fhandle.write(ttlhead)
     fhandle.write('<grib1> a reg:Register ;\n')
     fhandle.write('\tdc:description "WMO No. 306 Vol I.2 FM 92 GRIB"@en ;\n')
+    fhandle.write('\treg:owner <http://codes.wmo.int/system/organization/wmo> ;\n')
+    fhandle.write('\tdct:publisher <http://codes.wmo.int/system/organization/wmo> ;\n')
+    fhandle.write('\treg:manager <http://codes.wmo.int/system/organization/www-dm> ;\n')
     fhandle.write('\trdfs:label "GRIB edition1"@en.\n')
 
 
@@ -421,6 +436,9 @@ with open('ttl/grib2.ttl', 'w') as fhandle:
     fhandle.write(ttlhead)
     fhandle.write('<grib2> a reg:Register ;\n')
     fhandle.write('\tdc:description "WMO No. 306 Vol I.2 FM 92 GRIB (edition 2)"@en ;\n')
+    fhandle.write('\treg:owner <http://codes.wmo.int/system/organization/wmo> ;\n')
+    fhandle.write('\tdct:publisher <http://codes.wmo.int/system/organization/wmo> ;\n')
+    fhandle.write('\treg:manager <http://codes.wmo.int/system/organization/www-dm> ;\n')
     fhandle.write('\trdfs:label "GRIB edition2"@en.\n')
 
 os.mkdir('ttl/grib2/codeflag')
@@ -428,6 +446,9 @@ with open('ttl/grib2/grib2cflag.ttl', 'w') as fhandle:
     fhandle.write(ttlhead)
     fhandle.write('<codeflag> a reg:Register ;\n')
     fhandle.write('\tdc:description "WMO No. 306 Vol I.2 FM 92 GRIB (edition 2) Codes and Flags"@en ;\n')
+    fhandle.write('\treg:owner <http://codes.wmo.int/system/organization/wmo> ;\n')
+    fhandle.write('\tdct:publisher <http://codes.wmo.int/system/organization/wmo> ;\n')
+    fhandle.write('\treg:manager <http://codes.wmo.int/system/organization/www-dm> ;\n')
     fhandle.write('\trdfs:label "GRIB2 codes and flags"@en.\n')
 
 
@@ -436,6 +457,9 @@ with open('ttl/gribcore/bulk_edition.ttl', 'w') as fhandle:
     fhandle.write('<edition> a skos:Collection ;\n')
     fhandle.write('\tdc:description  "WMO published editions of the GRIB specification"@en ;\n')
     fhandle.write('\trdfs:label "GRIB editions"@en ;\n')
+    fhandle.write('\treg:owner <http://codes.wmo.int/system/organization/wmo> ;\n')
+    fhandle.write('\tdct:publisher <http://codes.wmo.int/system/organization/wmo> ;\n')
+    fhandle.write('\treg:manager <http://codes.wmo.int/system/organization/www-dm> ;\n')
     fhandle.write('\tskos:prefLabel "FM 92 GRIB editions"@en ;\n')
     fhandle.write('\tskos:member <1> ;\n')
     fhandle.write('\tskos:member <2> ;\n\t.\n\n')
@@ -452,6 +476,9 @@ with open('ttl/grib2/codeflag/bulk_disc.ttl', 'w') as fhandle:
     fhandle.write('\tdc:description  "Discipline of processed data in the GRIB message, number of GRIB master table"@en ;\n')
     fhandle.write('\trdfs:label "Discipline"@en ;\n')
     fhandle.write('\tskos:prefLabel "Discipline"@en ;\n')
+    fhandle.write('\treg:owner <http://codes.wmo.int/system/organization/wmo> ;\n')
+    fhandle.write('\tdct:publisher <http://codes.wmo.int/system/organization/wmo> ;\n')
+    fhandle.write('\treg:manager <http://codes.wmo.int/system/organization/www-dm> ;\n')
     mems = '\tskos:member '
     elems = '\n'
     for k,v in cf00.iteritems():
@@ -468,6 +495,9 @@ with open('ttl/grib2/codeflag/bulk_category.ttl', 'w') as fhandle:
     fhandle.write('\tdc:description  "Parameter category by product discipline"@en ;\n')
     fhandle.write('\trdfs:label "Parameter category"@en ;\n')
     fhandle.write('\tskos:prefLabel "Parameter category"@en ;\n')
+    fhandle.write('\treg:owner <http://codes.wmo.int/system/organization/wmo> ;\n')
+    fhandle.write('\tdct:publisher <http://codes.wmo.int/system/organization/wmo> ;\n')
+    fhandle.write('\treg:manager <http://codes.wmo.int/system/organization/www-dm> ;\n')
     mems = '\tskos:member '
     elems = '\n'
     for k,v in cf41.iteritems():
@@ -484,6 +514,9 @@ with open('ttl/grib2/codeflag/bulk_parameter.ttl', 'w') as fhandle:
     fhandle.write('\tdc:description  "Parameter number by product discipline and parameter category"@en ;\n')
     fhandle.write('\trdfs:label "Parameter number"@en ;\n')
     fhandle.write('\tskos:prefLabel "Parameter number"@en ;\n')
+    fhandle.write('\treg:owner <http://codes.wmo.int/system/organization/wmo> ;\n')
+    fhandle.write('\tdct:publisher <http://codes.wmo.int/system/organization/wmo> ;\n')
+    fhandle.write('\treg:manager <http://codes.wmo.int/system/organization/www-dm> ;\n')
     mems = '\tskos:member '
     elems = '\n'
     for k,v in cf42.iteritems():
@@ -500,6 +533,9 @@ with open('ttl/grib2/codeflag/bulk_surftype.ttl', 'w') as fhandle:
     fhandle.write('\tdc:description "Code-table 4.5 - Fixed surface types and units."@en ;\n')
     fhandle.write('\trdfs:label "Fixed surface types and units "@en ;\n')
     fhandle.write('\tskos:prefLabel "Fixed surface types and units "@en ;\n')
+    fhandle.write('\treg:owner <http://codes.wmo.int/system/organization/wmo> ;\n')
+    fhandle.write('\tdct:publisher <http://codes.wmo.int/system/organization/wmo> ;\n')
+    fhandle.write('\treg:manager <http://codes.wmo.int/system/organization/www-dm> ;\n')
     mems = '\tskos:member '
     elems = '\n'
     for k,v in cf45.iteritems():
@@ -517,6 +553,9 @@ with open('ttl/grib2/codeflag/bulk_statprocess.ttl', 'w') as fhandle:
     fhandle.write('\tdc:description "Code-table 4.10 - Type of statistical processing. "@en ;\n')
     fhandle.write('\trdfs:label "Type of statistical processing"@en ;\n')
     fhandle.write('\tskos:prefLabel "Type of statistical processing"@en ;\n')
+    fhandle.write('\treg:owner <http://codes.wmo.int/system/organization/wmo> ;\n')
+    fhandle.write('\tdct:publisher <http://codes.wmo.int/system/organization/wmo> ;\n')
+    fhandle.write('\treg:manager <http://codes.wmo.int/system/organization/www-dm> ;\n')
     mems = '\tskos:member '
     elems = '\n'
     for k,v in cf410.iteritems():
