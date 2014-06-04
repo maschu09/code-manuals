@@ -8,7 +8,7 @@ from StringIO import StringIO
 import urllib2
 from zipfile import ZipFile
 
-
+import cleanttl
 
 wmo_url = 'http://www.wmo.int/pages/prog/www/WMOCodes/WMO306_vI2/LatestVERSION/GRIB2_12_0_0.zip'
 cffile = 'GRIB2_12_0_0/GRIB2_12_0_0_CodeFlag_en.txt'
@@ -273,12 +273,7 @@ for cf in codeflags:
 
 
 ## output files
-
-for f in glob.glob('ttl/*.ttl'):
-    os.remove(f)
-for d in os.listdir('ttl/'):
-    if not d.startswith('.'):
-        shutil.rmtree(os.path.join('ttl', d))
+cleanttl.clean()
 
 ttlhead = '''@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
