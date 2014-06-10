@@ -1,1 +1,1 @@
-GRIB semantics sourced from the WMO manuals on codes to populate the codes registry
+Semantics sourced from the WMO manuals on codes to populate the codes registry.
