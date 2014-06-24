@@ -58,7 +58,7 @@ INPUTS = [('001', 'metre', 'm', 'm', 'M', ' '),
           ('no', 'deci', 'd', 'd', 'D', ' '),
           ('no', 'centi', 'c', 'c', 'C', ' '),
           ('no', 'milli', 'm', 'm', 'M', ' '),
-          ('no', 'micro', '\00B5', 'u', 'U', ' '),
+          ('no', 'micro', '\u00B5', 'u', 'U', ' '),
           ('no', 'nano', 'n', 'n', 'N', ' '),
           ('no', 'pico', 'p', 'p', 'P', ' '),
           ('no', 'femto', 'f', 'f', 'F', ' '),
@@ -68,7 +68,7 @@ INPUTS = [('001', 'metre', 'm', 'm', 'M', ' '),
           ('110', 'degree (angle)', '\u02DA',  'deg', 'DEG', ' '),
           ('111', 'minute (angle)', '\'', '\'', 'MNT', ' '),
           ('112', 'second (angle)', '"', '"', 'SEC', ' '),
-          ('120', 'litre', 'l or L', 'l or L', 'L', ' '),
+          ('120', 'litre', 'l', 'l', 'L', ' '),
           ('130', 'minute (time)', 'min', 'min', 'MIN', ' '),
           ('131', 'hour', 'h', 'h', 'HR', ' '),
           ('132', 'day', 'd', 'd', 'D', ' '),
@@ -199,8 +199,14 @@ def main():
     cleanttl.clean()
     members = []
     member_elements = []
+    urilabel_list = []
     for unit in INPUTS:
         members.append(uri_pattern.format(unit[0]))
+        if unit[3] == '%':
+            urilabel = '%25'
+        else:
+            urilabel = unit[3]
+        m_elem_str = uri_pattern.format(urilabel)
         m_elem_str = uri_pattern.format(unit[0])
         m_elem_str += ' a skos:Concept ;\n'
         m_elem_str += '\trdfs:label "{}" ;\n'.format(unit[1])
@@ -214,6 +220,10 @@ def main():
             pass
         m_elem_str += '\t.\n'
         member_elements.append(m_elem_str)
+        if urilabel in urilabel_list:
+            raise ValueError('{} is already declared'.format(urilabel))
+        else:
+            urilabel_list.append(urilabel)
     file_write(members, member_elements)
     
 
