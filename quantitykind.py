@@ -1,5 +1,6 @@
 import os
 
+import common
 import cleanttl
 from ttlhead import ttlhead
 
@@ -36,7 +37,7 @@ d2 = {'Meteorological quantities':[
 'Aeronautical quantities':
 [
 ('Aerodrome maximum wind gust speed','aerodromeMaximumWindGustSpeed','Maximum wind speed in the 10 minute period of observation. It is reported only if exceeds the mean speed by 5 m s-1 (10 knots).','LT-1'),
-('Aerodrome mean wind direction	aerodromeMeanWindDirection',"The mean true direction in degrees from which the wind is blowing over the 10-minute period immediately preceding the observation. When the 10-minute period includes a marked discontinuity in the wind characteristics (1), only data after the discontinuity shall be used for mean wind direction and variations of the wind direction, hence the time interval in these circumstances shall be correspondingly reduced.","dimensionless", "(1) A marked discontinuity occurs when there is an abrupt and sustained change in wind direction of 30\u00B0  or  more,  with  a  wind  speed  of  5  m s-1 (10  KT)  or  more  before  or  after  the change, or a change in wind speed of 5 m s-1 (10 KT) or more, lasting at least two minutes."),
+('Aerodrome mean wind direction','aerodromeMeanWindDirection',"The mean true direction in degrees from which the wind is blowing over the 10-minute period immediately preceding the observation. When the 10-minute period includes a marked discontinuity in the wind characteristics (1), only data after the discontinuity shall be used for mean wind direction and variations of the wind direction, hence the time interval in these circumstances shall be correspondingly reduced.","dimensionless", "(1) A marked discontinuity occurs when there is an abrupt and sustained change in wind direction of 30\u00B0  or  more,  with  a  wind  speed  of  5  m s-1 (10  KT)  or  more  before  or  after  the change, or a change in wind speed of 5 m s-1 (10 KT) or more, lasting at least two minutes."),
 ("Aerodrome mean wind speed","aerodromeMeanWindSpeed","The mean speed of the wind over the 10-minute period immediately preceding the observation. When the 10-minute period includes a marked discontinuity in the wind characteristics (1), only data after the discontinuity shall be used for obtaining mean wind speed, hence the time interval in these circumstances shall be correspondingly reduced.","LT-1", "(1) A marked discontinuity occurs when there is an abrupt and sustained change in wind direction of 30\u00B0  or  more,  with  a  wind  speed  of  5  m s-1 (10  KT)  or  more  before  or  after  the change, or a change in wind speed of 5 m s-1 (10 KT) or more, lasting at least two minutes."),
 ('Aerodrome minimum horizontal visibility',"aerodromeMinimumHorizontalVisibility","The minimum horizontal visibility that is reported when the horizontal visibility is not the same in different directions and when the minimum visibility is different from the prevailing visibility, and less than 1500 metres or less than 50% of the prevailing visibility, and less than 5000 metres.","L"),
 ("Aerodrome minimum visibility direction","aerodromeMinimumVisibilityDirection","When the minimum horizontal visibility is reported, its general direction in relation to the aerodrome reference point has to be reported and indicated by reference to one of the eight points of the compass. If the minimum visibility is observed in more than one direction, the Dv shall represent the most operationally significant direction.","dimensionless"),
@@ -55,7 +56,7 @@ d2 = {'Meteorological quantities':[
 
 def file_write(members, member_elements):
     if not os.path.exists('ttl/common'):
-        os.mkdir('ttl/common')
+        common.main()
         with open('ttl/common/bulk_quantitykind.ttl', 'w') as fhandle:
             fhandle.write(ttlhead)
             fhandle.write('<quantity-kind> a skos:Collection ;\n')
@@ -85,6 +86,7 @@ def parseq(indict):
             m_elem_str += '\tdct:description "{}" ;\n'.format(elem[2])
             m_elem_str += '\trdfs:subClassOf skos:Concept ;\n'
             m_elem_str += '\twmocommon:dimensions "{}" ;\n'.format(elem[3])
+            m_elem_str += '\twmocommon:discipline "{}" ;\n'.format(key)
             if len(elem)== 5:
                 m_elem_str += '\tskos:note "{}" ;\n'.format(elem[4])
             member_elems.append(m_elem_str)

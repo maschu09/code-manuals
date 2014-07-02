@@ -1,5 +1,6 @@
 import os
 
+import common
 import cleanttl
 from ttlhead import ttlhead
 
@@ -166,7 +167,18 @@ INPUTS = [('000', 'Dimensionless', '1', '1', '1', ' '),
 
 def file_write(members, member_elements):
     if not os.path.exists('ttl/common'):
-        os.mkdir('ttl/common')
+        common.main()
+        # os.mkdir('ttl/common')
+        # with open('ttl/common.ttl', 'w') as fhandle:
+        #     fhandle.write(ttlhead)
+        #     fhandle.write('<common> a reg:Register ;\n')
+        #     fhandle.write('\trdfs:label "WMO No. 306 Vol I.2 common concepts" ;\n')
+        #     fhandle.write('\tdc:description "Register of concepts common across WMO No. 306 Vol I.2 formats"@en ;\n')
+        #     fhandle.write('\treg:owner <http://codes.wmo.int/system/organization/wmo> ;\n')
+        #     fhandle.write('\tdct:publisher <http://codes.wmo.int/system/organization/wmo> ;\n')
+        #     fhandle.write('\treg:manager <http://codes.wmo.int/system/organization/www-dm> ;\n')
+        #     fhandle.write('\t.\n')
+
     with open('ttl/common/bulk_c6.ttl', 'w') as fhandle:
         fhandle.write(ttlhead)
 
@@ -183,12 +195,10 @@ def file_write(members, member_elements):
 uri_pattern = '<c-6/{}>'
 
 def main():
-    #cleanttl.clean()
     members = []
     member_elements = []
     urilabel_list = []
     for unit in INPUTS:
-        members.append(uri_pattern.format(unit[0]))
         if unit[3] == '%':
             urilabel = '%25'
         elif unit[0] == 'no':
@@ -201,7 +211,9 @@ def main():
             urilabel = 'degC'
         else:
             urilabel = unit[3]
+        urilabel = urilabel.replace(' ', '_')
         m_elem_str = uri_pattern.format(urilabel)
+        members.append(uri_pattern.format(urilabel))
         m_elem_str += ' a skos:Concept, wmocommon:Unit ;\n'
         m_elem_str += '\trdfs:label "{}" ;\n'.format(unit[1])
         m_elem_str += '\tskos:prefLabel "{}" ;\n'.format(unit[1])
@@ -213,9 +225,9 @@ def main():
         m_elem_str += '\tskos:altLabel "{}" ;\n'.format(unit[2])
         m_elem_str += '\thttp://codes.wmo.int/def/common/code_figure "{}" ;\n'.format(unit[0])
         try:
-            if unit[4]:
+            if unit[4] and unit[4] != ' ':
                 m_elem_str += '\thttp://codes.wmo.int/def/common/wmoAbbreviationIA2 "{}" ;\n'.format(unit[4])
-            if unit[5]:
+            if unit[5] and unit[5] != ' ':
                 m_elem_str += '\thttp://codes.wmo.int/def/common/wmoAbbreviationIA5 "{}" ;\n'.format(unit[5])
         except IndexError:
             pass
@@ -229,4 +241,5 @@ def main():
     
 
 if __name__ == '__main__':
+    cleanttl.clean()
     main()

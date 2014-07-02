@@ -48,8 +48,11 @@ rootDir = os.path.join(os.getcwd(), 'ttl')
 
 for dirName, subdirList, fileList in os.walk(rootDir):
     for fname in fileList:
+        status = 'Experimental'
+        if fname.startswith('deprec_'):
+            status = 'Deprecated'
         if fname.endswith('.ttl'):
             post_call(os.path.join(dirName,fname),
                       os.path.relpath(dirName, rootDir),
-                      'Experimental',
+                      status,
                       fname.startswith('bulk_'))
