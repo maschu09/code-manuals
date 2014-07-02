@@ -175,6 +175,7 @@ def topfilewrite():
         """)
 
     if not os.path.exists('ttl/bufr4'):
+        os.mkdir('ttl/bufr4')
 
 def main():
     topfilewrite()
