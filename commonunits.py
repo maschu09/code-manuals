@@ -1,23 +1,10 @@
 import os
 
 import cleanttl
+from ttlhead import ttlhead
 
-ttlhead = '''@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix dct: <http://purl.org/dc/terms/> .
-@prefix dc: <http://purl.org/dc/elements/1.1/> .
-@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix reg: <http://purl.org/linked-data/registry#> .
-@prefix qudt: <http://qudt.org/schema/qudt#> .
-@prefix gribs: <http://codes.wmo.int/def/gribcore/> .
-@prefix grib2s: <http://codes.wmo.int/def/grib2/> .
-@prefix ldp: <http://www.w3.org/ns/ldp#> .
-
-'''
-
-INPUTS = [('001', 'metre', 'm', 'm', 'M', ' '),
+INPUTS = [('000', 'Dimensionless', '1', '1', '1', ' '),
+          ('001', 'metre', 'm', 'm', 'M', ' '),
           ('002', 'kilogram', 'kg', 'kg', 'KG', ' '),
           ('003', 'second', 's', 's', 'S', ' '),
           ('004', 'ampere', 'A', 'A', 'A', ' '),
@@ -178,14 +165,14 @@ INPUTS = [('001', 'metre', 'm', 'm', 'M', ' '),
 
 
 def file_write(members, member_elements):
-    os.mkdir('ttl/common')
-    with open('ttl/common/c6.ttl', 'w') as fhandle:
+    if not os.path.exists('ttl/common'):
+        os.mkdir('ttl/common')
+    with open('ttl/common/bulk_c6.ttl', 'w') as fhandle:
         fhandle.write(ttlhead)
 
         fhandle.write('<c-6> a skos:Collection ;\n')
         fhandle.write('\trdfs:label       "List of units for TDCFs"@en ;\n')
         fhandle.write('\tdct:description  "WMO No. 306 Vol I.2 Common Code-table C-6 List of units for TDCFs."@en ;\n')
-        fhandle.write('\tdct:modified     "2014-05-15T15:49:31.167Z"^^xsd:dateTime ;\n')
         fhandle.write('\treg:manager      <http://codes.wmo.int/system/organization/www-dm> ;\n')
         fhandle.write('\treg:owner        <http://codes.wmo.int/system/organization/wmo> ;\n')
         fhandle.write('\tskos:member ')
@@ -196,7 +183,7 @@ def file_write(members, member_elements):
 uri_pattern = '<c-6/{}>'
 
 def main():
-    cleanttl.clean()
+    #cleanttl.clean()
     members = []
     member_elements = []
     urilabel_list = []
@@ -204,18 +191,32 @@ def main():
         members.append(uri_pattern.format(unit[0]))
         if unit[3] == '%':
             urilabel = '%25'
+        elif unit[0] == 'no':
+            urilabel = '{}_pref'.format(unit[3])
+        elif unit[3] == ' ' and unit[1]:
+            urilabel = unit[1]
+        elif unit[3] == 'deg' and unit[1]:
+            urilabel = unit[1].replace(' ', '_')
+        elif unit[3] == 'C' and unit[0] == '350':
+            urilabel = 'degC'
         else:
             urilabel = unit[3]
         m_elem_str = uri_pattern.format(urilabel)
-        m_elem_str = uri_pattern.format(unit[0])
-        m_elem_str += ' a skos:Concept ;\n'
+        m_elem_str += ' a skos:Concept, wmocommon:Unit ;\n'
         m_elem_str += '\trdfs:label "{}" ;\n'.format(unit[1])
         m_elem_str += '\tskos:prefLabel "{}" ;\n'.format(unit[1])
-        m_elem_str += '\tskos:notation "{}" ;\n'.format(unit[3])
+        if unit[3] == 'C' and unit[0] == '350':
+            m_elem_str += '\tskos:notation "{}" ;\n'.format('degC')
+        else:
+            m_elem_str += '\tskos:notation "{}" ;\n'.format(unit[3])
+        m_elem_str += '\thttp://codes.wmo.int/def/common/wmoAbbreviation "{}" ;\n'.format(unit[3])
         m_elem_str += '\tskos:altLabel "{}" ;\n'.format(unit[2])
+        m_elem_str += '\thttp://codes.wmo.int/def/common/code_figure "{}" ;\n'.format(unit[0])
         try:
-            m_elem_str += '\tskos:altLabel "{}" ;\n'.format(unit[4])
-            m_elem_str += '\tskos:altLabel "{}" ;\n'.format(unit[5])
+            if unit[4]:
+                m_elem_str += '\thttp://codes.wmo.int/def/common/wmoAbbreviationIA2 "{}" ;\n'.format(unit[4])
+            if unit[5]:
+                m_elem_str += '\thttp://codes.wmo.int/def/common/wmoAbbreviationIA5 "{}" ;\n'.format(unit[5])
         except IndexError:
             pass
         m_elem_str += '\t.\n'
