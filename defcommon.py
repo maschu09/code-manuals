@@ -8,8 +8,8 @@ def main():
     with open('ttl/def.ttl', 'w') as fhandle:
         fhandle.write(ttlhead)
         fhandle.write('<def> a reg:Register ;\n')
-        fhandle.write('\trdfs:label "WMO No. 306 Vol I.2 schemata" ;\n')
-        fhandle.write('\tdc:description "Schemata required to support WMO No. 306 Vol I.2 - Manual on Codes; including definitions of structure and domain-specific metadata required to describe terms from WMO No. 306 Vol I.2."@en ;\n')
+        fhandle.write('\trdfs:label "WMO No. 306 Vol (common) schemata" ;\n')
+        fhandle.write('\tdc:description "Schemata required to support WMO No. 306 - Manual on Codes; including definitions of structure and domain-specific metadata required to describe terms from WMO No. 306."@en ;\n')
         fhandle.write('\treg:owner <http://codes.wmo.int/system/organization/wmo> ;\n')
         fhandle.write('\tdct:publisher <http://codes.wmo.int/system/organization/wmo> ;\n')
         fhandle.write('\treg:manager <http://codes.wmo.int/system/organization/www-dm> ;\n')
@@ -19,7 +19,7 @@ def main():
         fhandle.write(ttlhead)
         fhandle.write('<common> a reg:Register, owl:Ontology, ldp:Container ;\n')
         fhandle.write('\trdfs:label "WMO No. 306 Vol I.2 Code Forms" ;\n')
-        fhandle.write('\tdc:description "Schemata required to support WMO No. 306 Vol I.2 - Manual on Codes; including definitions of structure and domain-specific metadata required to describe terms from WMO No. 306 Vol I.2."@en ;\n')
+        fhandle.write('\tdc:description "Schemata required to support WMO No. 306 - Manual on Codes; including definitions of structure and domain-specific metadata required to describe terms from WMO No. 306."@en ;\n')
         fhandle.write('\treg:owner <http://codes.wmo.int/system/organization/wmo> ;\n')
         fhandle.write('\tdct:publisher <http://codes.wmo.int/system/organization/wmo> ;\n')
         fhandle.write('\treg:manager <http://codes.wmo.int/system/organization/www-dm> ;\n')
@@ -30,7 +30,7 @@ def main():
         fhandle.write('''
     <common/Edition>
         a owl:Class ;
-        rdfs:label "WMO No. 306 Vol I.2 Format Edition Number"@en ;
+        rdfs:label "WMO No. 306 Format Edition Number"@en ;
         rdfs:subClassOf skos:Concept ;
         .
 
