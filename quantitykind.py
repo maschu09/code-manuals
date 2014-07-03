@@ -4,7 +4,7 @@ import common
 import cleanttl
 from ttlhead import ttlhead
 
-d2 = {'Meteorological quantities':[
+d2 = {'Meteorological quantity kinds':[
 ('Air temperature', 'airTemperature',
  'The temperature indicated by a thermometer exposed to the air in a place sheltered from direct solar radiation.', '\u019F')
 ,
@@ -30,11 +30,11 @@ d2 = {'Meteorological quantities':[
 ]
 
 ,
-'Oceanographic quantities':
+'Oceanographic quantity kinds':
 [('Sea surface temperature','seaSurfaceTemperature','Temperature of the sea water at surface.','\u019F')]
 
 ,
-'Aeronautical quantities':
+'Aeronautical quantity kinds':
 [
 ('Aerodrome maximum wind gust speed','aerodromeMaximumWindGustSpeed','Maximum wind speed in the 10 minute period of observation. It is reported only if exceeds the mean speed by 5 m s-1 (10 knots).','LT-1'),
 ('Aerodrome mean wind direction','aerodromeMeanWindDirection',"The mean true direction in degrees from which the wind is blowing over the 10-minute period immediately preceding the observation. When the 10-minute period includes a marked discontinuity in the wind characteristics (1), only data after the discontinuity shall be used for mean wind direction and variations of the wind direction, hence the time interval in these circumstances shall be correspondingly reduced.","dimensionless", "(1) A marked discontinuity occurs when there is an abrupt and sustained change in wind direction of 30\u00B0  or  more,  with  a  wind  speed  of  5  m s-1 (10  KT)  or  more  before  or  after  the change, or a change in wind speed of 5 m s-1 (10 KT) or more, lasting at least two minutes."),
@@ -60,8 +60,8 @@ def file_write(members, member_elements):
         with open('ttl/common/bulk_quantitykind.ttl', 'w') as fhandle:
             fhandle.write(ttlhead)
             fhandle.write('<quantity-kind> a skos:Collection ;\n')
-            fhandle.write('\trdfs:label       "Physical quantities"@en ;\n')
-            fhandle.write('\tdct:description  "WMO No. 306 Vol I.2 Common Code-table D-2, Physical quantities."@en ;\n')
+            fhandle.write('\trdfs:label       "Physical quantity kinds"@en ;\n')
+            fhandle.write('\tdct:description  "WMO No. 306 Vol I.3 Common Code-table D-2, Physical quantity kinds."@en ;\n')
             fhandle.write('\treg:manager      <http://codes.wmo.int/system/organization/www-dm> ;\n')
             fhandle.write('\treg:owner        <http://codes.wmo.int/system/organization/wmo> ;\n')
             fhandle.write('\tskos:member ')
