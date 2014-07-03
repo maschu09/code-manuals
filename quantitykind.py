@@ -81,10 +81,9 @@ def parseq(indict):
             uri = '<quantity-kind/{}>'.format(urilabel)
             members.append(uri)
             m_elem_str = uri
-            m_elem_str += ' a owl:Class ;\n'
+            m_elem_str += ' a qudt:QuantityKind, skos:Concept ;\n'
             m_elem_str += '\trdfs:label "{}" ;\n'.format(elem[0])
             m_elem_str += '\tdct:description "{}" ;\n'.format(elem[2])
-            m_elem_str += '\trdfs:subClassOf skos:Concept ;\n'
             m_elem_str += '\twmocommon:dimensions "{}" ;\n'.format(elem[3])
             m_elem_str += '\twmocommon:discipline "{}" ;\n'.format(key)
             if len(elem)== 5:
