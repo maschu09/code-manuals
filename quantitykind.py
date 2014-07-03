@@ -1,3 +1,10 @@
+#
+# Note that the content used in this module has been compiled _manually_ by scraping Enrico Fucile's WMO No 306 Vol I.3 code table D-2 document,
+# adding in sub-types of qudt:QuantityKind (e.g. qudt:ThermodynamicsQuantityKind) for the Type defintion and, finally, adding in a few things
+# that weren't in Enrico's list (geometricHeight, maximumDiameterOfHailstones, pressureTendency, snowDepthWaterEquivalent, totalPrecipitation,
+# totalPrecipitationRate, totalSnowDepth, uvIndex, windDirection, windSpeed)
+#
+
 import os
 
 import common
@@ -28,6 +35,36 @@ d2 = {'Meteorological quantity kinds':[
 ,
 ('Vertical visibility','verticalVisibility', 'qudt:SpaceAndTimeQuantityKind',
 'Maximum distance at which an observer can see and identify an object on the same vertical as himself, above or below.','L')
+,
+('Geometric height','geometricHeight', 'qudt:SpaceAndTimeQuantityKind',
+'Vertical distance (Z) of a level, a point or an object considered as a point, measured from mean sea level. (Also known as geometric altitude).','L')
+,
+('Maximum diameter of hailstones','maximumDiameterOfHailstones', 'qudt:SpaceAndTimeQuantityKind',
+'Maximum diameter (size) of hailstone (observed).','L')
+,
+('Pressure tendency','pressureTendency', 'qudt:MechanicsQuantityKind',
+'Rate of change of atmospheric pressure with respect to time.','XXX')
+,
+('Snow depth water equivelant','snowDepthWaterEquivalent', 'qudt:SpaceAndTimeQuantityKind',
+'Depth of lying snow expressed as measure of equivalent depth of water.','L')
+,
+('Total precipitation','totalPrecipitation', 'qudt:MechanicsQuantityKind',
+'Total amount of precipitation measured over a defined period.','ML-2')
+,
+('Total precipitation rate','totalPrecipitationRate', 'qudt:MechanicsQuantityKind',
+'Rate of total precipitation (e.g. combination of convective and large-scale precipitation of all types).','ML-2T-1')
+,
+('Total snow depth','totalSnowDepth', 'qudt:SpaceAndTimeQuantityKind',
+'Depth of lying snow.','L')
+,
+('UV index','uvIndex', '',
+'Global Solar UVI is formulated using the International Commission on Illumination (CIE) reference action spectrum for UV-induced erythema on the human skin (ISO 17166:1999/CIE S 007/E-1998). It is a measure of the UV radiation that is relevant to and defined for a horizontal surface.','dimensionless')
+,
+('Wind direction','windDirection', 'qudt:SpaceAndTimeQuantityKind',
+'Direction from which wind is blowing.','dimensionless')
+,
+('Wind speed','windSpeed', 'qudt:SpaceAndTimeQuantityKind',
+'Ratio of the distance covered by the air to the time taken to cover it. The instantaneous speed corresponds to the case of an infinitely small time interval. The mean speed corresponds to the case of a finite time interval. It is one component of wind velocity, the other being wind direction).','LT-1')
 ]
 
 ,

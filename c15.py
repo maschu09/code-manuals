@@ -58,7 +58,7 @@ def make_regs():
 
     
 
-declared_qk = ['<aerodromeMaximumWindGustSpeed>', '<aerodromeMeanWindDirection>', '<aerodromeMeanWindSpeed>', '<aerodromeMinimumHorizontalVisibility>', '<aerodromeMinimumVisibilityDirection>', '<aeronauticalPrevailingHorizontalVisibility>', '<aeronauticalVisibility>', '<altimeterSettingQnh>', '<depthOfRunwayDeposit>', '<runwayContaminationCoverage>', '<runwayFrictionCoefficient>', '<runwayVisualRangeRvr>', '<seaSurfaceTemperature>', '<airTemperature>', '<atmosphericPressure>', '<dewPointTemperature>', '<heightOfBaseOfCloud>', '<horizontalVisibility>', '<maximumWindGustSpeed>', '<seaSurfaceTemperature>', '<verticalVisibility>']
+declared_qk = ['<aerodromeMaximumWindGustSpeed>', '<aerodromeMeanWindDirection>', '<aerodromeMeanWindSpeed>', '<aerodromeMinimumHorizontalVisibility>', '<aerodromeMinimumVisibilityDirection>', '<aeronauticalPrevailingHorizontalVisibility>', '<aeronauticalVisibility>', '<altimeterSettingQnh>', '<depthOfRunwayDeposit>', '<runwayContaminationCoverage>', '<runwayFrictionCoefficient>', '<runwayVisualRangeRvr>', '<seaSurfaceTemperature>', '<airTemperature>', '<atmosphericPressure>', '<dewPointTemperature>', '<heightOfBaseOfCloud>', '<horizontalVisibility>', '<maximumWindGustSpeed>', '<seaSurfaceTemperature>', '<verticalVisibility>', '<geometricHeight>', '<maximumDiameterOfHailstones>', '<pressureTendency>', '<snowDepthWaterEquivalent>', '<totalPrecipitation>', '<totalPrecipitationRate>', '<totalSnowDepth>', '<uvIndex>', '<windDirection>', '<windSpeed>']
 
 
 def make_forward(fname, original, target):
@@ -71,42 +71,44 @@ def make_forward(fname, original, target):
         fhandle.write('\treg:forwardingCode "301" ;')
         fhandle.write('\t.\n')
 
-
-redirects = {'ae':[('<cloudDistributionForAviation>',''),
-                   ('<significantWeather>',''),
-                   ('<significantRecentWeatherPhenomenon>',''),
+# note: the resources in the list below that are commented out relate to nominal value types that shouldn't be in 
+# <common/quantity-kind> hence there is no redirect.
+redirects = {'ae':[
+#                   ('<cloudDistributionForAviation>',''),
+#                   ('<significantWeather>',''),
+#                   ('<significantRecentWeatherPhenomenon>',''),
                    ('<prevailingHorizontalVisibility>','<aeronauticalPrevailingHorizontalVisibility>'),
-                   ('<runwayVisualRangeRvr>',''),
+                   ('<runwayVisualRangeRvr>','<runwayVisualRangeRvr>'),
                    ('<verticalVisibility>','<verticalVisibility>'),
                    ('<minimumHorizontalVisibility>','<aeronauticalVisibility>'),
                    ('<depthOfRunwayDeposit>','<depthOfRunwayDeposit>'),
                    ('<runwayFrictionCoefficient>','<runwayFrictionCoefficient>'),
                    ('<runwayContamination>','<runwayContaminationCoverage>'),
-                   ('<runwayDeposits>','')
+#                   ('<runwayDeposits>','')
                    ],
-             'me':[('<dewPointTemperature>',''),
-                   ('<airTemperature>',''),
-                   ('<uvIndex>',''),
+             'me':[('<dewPointTemperature>','<dewPointTemperature>'),
+                   ('<airTemperature>','<airTemperature>'),
+                   ('<uvIndex>','<uvIndex>'),
                    ('<horizontalVisibility>','<horizontalVisibility>'),
-                   ('<maximumDiameterOfHailstones>',''),
-                   ('<windSpeed>',''),
-                   ('<windDirection>',''),
-                   ('<maximumWindGustSpeed>',''),
-                   ('<totalPrecipitationRate>',''),
-                   ('<totalPrecipitation>',''),
-                   ('<snowDepthWaterEquivalent>',''),
-                   ('<totalSnowDepth>',''),
-                   ('<pressureTendency>',''),
-                   ('<pressureReducedToMeanSeaLevel>',''),
-                   ('<geometricHeight>',''),
+                   ('<maximumDiameterOfHailstones>','<maximumDiameterOfHailstones>'),
+                   ('<windSpeed>','<windSpeed>'),
+                   ('<windDirection>','<windDirection>'),
+                   ('<maximumWindGustSpeed>','<maximumWindGustSpeed>'),
+                   ('<totalPrecipitationRate>','<totalPrecipitationRate>'),
+                   ('<totalPrecipitation>','<totalPrecipitation>'),
+                   ('<snowDepthWaterEquivalent>','<snowDepthWaterEquivalent>'),
+                   ('<totalSnowDepth>','<totalSnowDepth>'),
+                   ('<pressureTendency>','<pressureTendency>'),
+                   ('<pressureReducedToMeanSeaLevel>','<atmosphericPressure>'),
+                   ('<geometricHeight>','<geometricHeight>'),
                    ('<altimeterSettingQnh>','<altimeterSettingQnh>'),
-                   ('<heightOfBaseOfCloud>',''),
-                   ('<cloudType>',''),
-                   ('<meteorologicalFeature>',''),
-                   ('<characteristicOfPressureTendency>','')
+                   ('<heightOfBaseOfCloud>','<heightOfBaseOfCloud>'),
+#                   ('<cloudType>',''),
+#                   ('<meteorologicalFeature>',''),
+#                   ('<characteristicOfPressureTendency>','')
                    ],
-             'oc':[('<seaSurfaceTemperature>',''),
-                   ('<seaState>','')
+             'oc':[('<seaSurfaceTemperature>','<seaSurfaceTemperature>'),
+#                   ('<seaState>','')
                    ]}
 
 def main():
