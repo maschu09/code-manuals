@@ -134,6 +134,7 @@ def parseq(indict):
             if len(elem[2])>0:
                 m_elem_str += ', {}'.format(elem[2])
             m_elem_str += ' ;\n'
+            m_elem_str += '\tskos:notation "{}" ;\n'.format(urilabel)
             m_elem_str += '\trdfs:label "{}" ;\n'.format(elem[0])
             m_elem_str += '\tdct:description "{}" ;\n'.format(elem[3])
             m_elem_str += '\twmocommon:dimensions "{}" ;\n'.format(elem[4])
