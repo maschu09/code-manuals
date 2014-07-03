@@ -290,6 +290,8 @@ for cf in codeflags:
 #     fhandle.write('\tdc:description "Schemata required to support WMO No. 306 Vol I.2 FM 92 GRIB - Manual on Codes; including definitions of structure and domain-specific metadata required to describe terms from WMO No. 306 Vol I.2 FM 92 GRIB."@en ;\n')
 #     fhandle.write('\t.\n')
 
+if not os.path.exists('ttl/def'):
+    os.mkdir('ttl/def')
 # os.mkdir('ttl/def/grib')
 
 with open('ttl/def/bulk_gribe2.ttl', 'w') as fhandle:

@@ -110,7 +110,7 @@ def make_collection(cflags):
     astr = ',\n\t\t'.join(members)
     colstr += astr
     colstr += '\t.\n\n'
-    with open('ttl/bufr4/bulk_{}.ttl'.format(cflags[0][1].replace('"','')), 'w') as fhandle:
+    with open('ttl/bufr4/codeflag/bulk_{}.ttl'.format(cflags[0][1].replace('"','')), 'w') as fhandle:
         fhandle.write(ttlhead)
         fhandle.write(colstr)
         fhandle.write('\n'.join(elemstrs))
@@ -129,53 +129,12 @@ def makettl(cflags):
 
 
 def topfilewrite():
-    if not os.path.exists('ttl/def'):
-        os.mkdir('ttl/def')
-    if not os.path.exists('ttl/def/bufr4'):
-        os.mkdir('ttl/def/bufr4')
-
-    with open('ttl/def/bufr4/bulk_bufr4.ttl', 'w') as fhandle:
-        fhandle.write(ttlhead)
-        fhandle.write('<BUFR4> a reg:Register, owl:Ontology, ldp:Container ;\n')
-        fhandle.write('\trdfs:label "WMO No. 306 Vol I.2 FM 94 BUFR (edition 4)" ;\n')
-        fhandle.write('\tdc:description "Schemata required to support WMO No. 306 Vol I.2 FM 94 BUFR (edition 4)- Manual on Codes; including definitions of structure and domain-specific metadata required to describe terms from WMO No. 306 Vol I.2."@en ;\n')
-        fhandle.write('\treg:owner <http://codes.wmo.int/system/organization/wmo> ;\n')
-        fhandle.write('\tdct:publisher <http://codes.wmo.int/system/organization/wmo> ;\n')
-        fhandle.write('\treg:manager <http://codes.wmo.int/system/organization/www-dm> ;\n')
-        fhandle.write('\trdfs:member <BUFR4/FXY>,<BUFR4/dataWidth_Bits>, <BUFR4/referenceValue>, \n')
-        fhandle.write('\t\t<BUFR4/scale> ; \n')
-        fhandle.write("""
-<BUFR4/FXY>
-    a owl:ObjectProperty ; 
-    rdfs:label "FXY"@en ; 
-    rdfs:comment "6-digit BUFR descriptor for Element (from Table B) or Operator (from Table C)."@en ; 
-    rdfs:range xsd:string ;
-    .
-
-<BUFR4/DataWidth_Bits> 
-    a owl:ObjectProperty ; 
-    rdfs:label "Data width (bits)"@en ; 
-    rdfs:comment "Number of bits that are used when encoding the value of the BUFR Table B Element in WMO No. 306 Vol I.2 FM 94 BUFR."@en ; 
-    rdfs:range xsd:integer ; 
-    .
-
-<BUFR4/ReferenceValue> 
-    a owl:ObjectProperty ;
-    rdfs:label "Reference value"@en ; 
-    rdfs:comment "Reference value used when encoding the value of the BUFR Table B Element in WMO No. 306 Vol I.2 FM 94 BUFR."@en ; 
-    rdfs:range xsd:integer ; 
-    .
-
-<BUFR4/Scale> 
-    a owl:ObjectProperty ;
-    rdfs:label "Scale"@en ; 
-    rdfs:comment "Scale factor used when encoding the value of the BUFR Table B Element in WMO No. 306 Vol I.2 FM 94 BUFR."@en ; 
-    rdfs:range xsd:integer ; 
-    .
-        """)
-
     if not os.path.exists('ttl/bufr4'):
         os.mkdir('ttl/bufr4')
+        ##need a register declaration
+    if not os.path.exists('ttl/bufr4/codeflag'):
+        os.mkdir('ttl/bufr4/codeflag')
+        ##need a register declaration
 
 def main():
     topfilewrite()

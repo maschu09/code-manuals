@@ -1,4 +1,5 @@
 import os
+import re
 
 import common
 import cleanttl
@@ -194,12 +195,19 @@ def file_write(members, member_elements):
 
 uri_pattern = '<c-6/{}>'
 
+slashunit = re.compile('^([a-zA-Z]*)/([a-zA-Z]*)')
+
 def main():
     members = []
     member_elements = []
     urilabel_list = []
     for unit in INPUTS:
-        if unit[3] == '%':
+        unitmatch = slashunit.match(unit[3])
+        if unitmatch:
+            if len(unitmatch.groups()) != 2:
+                raise ValueError('unit slash parsing failed with unit: {}'.format(unit))
+            urilabel = '{} {}-1'.format(unitmatch.group(1), unitmatch.group(2))
+        elif unit[3] == '%':
             urilabel = '%25'
         elif unit[0] == 'no':
             urilabel = '{}_pref'.format(unit[3])
