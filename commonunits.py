@@ -217,6 +217,8 @@ def main():
             urilabel = unit[1].replace(' ', '_')
         elif unit[3] == 'C' and unit[0] == '350':
             urilabel = 'degC'
+        elif unit[3] == 'deg^2':
+            urilabel = 'deg2'
         else:
             urilabel = unit[3]
         urilabel = urilabel.replace(' ', '_')
@@ -229,14 +231,14 @@ def main():
             m_elem_str += '\tskos:notation "{}" ;\n'.format('degC')
         else:
             m_elem_str += '\tskos:notation "{}" ;\n'.format(unit[3])
-        m_elem_str += '\thttp://codes.wmo.int/def/common/wmoAbbreviation "{}" ;\n'.format(unit[3])
+        m_elem_str += '\t<http://codes.wmo.int/def/common/wmoAbbreviation> "{}" ;\n'.format(unit[3])
         m_elem_str += '\tskos:altLabel "{}" ;\n'.format(unit[2])
-        m_elem_str += '\thttp://codes.wmo.int/def/common/code_figure "{}" ;\n'.format(unit[0])
+        m_elem_str += '\t<http://codes.wmo.int/def/common/code_figure> "{}" ;\n'.format(unit[0])
         try:
             if unit[4] and unit[4] != ' ':
-                m_elem_str += '\thttp://codes.wmo.int/def/common/wmoAbbreviationIA2 "{}" ;\n'.format(unit[4])
+                m_elem_str += '\t<http://codes.wmo.int/def/common/wmoAbbreviationIA2> "{}" ;\n'.format(unit[4])
             if unit[5] and unit[5] != ' ':
-                m_elem_str += '\thttp://codes.wmo.int/def/common/wmoAbbreviationIA5 "{}" ;\n'.format(unit[5])
+                m_elem_str += '\t<http://codes.wmo.int/def/common/wmoAbbreviationIA5> "{}" ;\n'.format(unit[5])
         except IndexError:
             pass
         m_elem_str += '\t.\n'

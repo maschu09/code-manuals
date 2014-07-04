@@ -18,7 +18,7 @@ uid = 'https://profiles.google.com/100578379482821123729'
 pss = args.passcode
 
 
-authcall = ['curl', '-i' ,'-b', 'cookie-jar', '-c', 'cookie-jar', '--data', 'userid={}&password={}'.format(uid, pss), '{}system/security/apilogin'.format(args.reg_uri)]
+authcall = ['curl', '-i' ,'-b', 'cookie-jar', '-c', 'cookie-jar', '--data', 'userid={}&password={}'.format(uid, pss), '{}/system/security/apilogin'.format(args.reg_uri)]
 print ' '.join(authcall)
 subprocess.check_call(authcall)
 
@@ -33,8 +33,9 @@ def post_call(postfile, container, status, bulk=False):
         bulkstr = 'batch-managed&'
     if container == '.':
         container = ''
-    else:
-        container = '/' + container
+#    else:
+#        container = '/' + container
+    container = '/' + container
     call.append("{u}{r}{c}?{b}status={s}".format(u=args.reg_uri,
                                                       r=args.root,
                                                       c=container,
@@ -49,8 +50,11 @@ rootDir = os.path.join(os.getcwd(), 'ttl')
 for dirName, subdirList, fileList in os.walk(rootDir):
     for fname in fileList:
         status = 'Experimental'
+        status = 'Stable'
         if fname.startswith('deprec_'):
             status = 'Deprecated'
+        elif fname.startswith('rsvd_'):
+            status = 'Reserved'
         if fname.endswith('.ttl'):
             post_call(os.path.join(dirName,fname),
                       os.path.relpath(dirName, rootDir),

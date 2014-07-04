@@ -32,13 +32,14 @@ def main():
         a owl:Class ;
         rdfs:label "WMO No. 306 Format Edition Number"@en ;
         rdfs:subClassOf skos:Concept ;
+        skos:notation "editionNumber" ;
         .
 
     <common/edition>
         a owl:ObjectProperty ;
         rdfs:label "edition number"@en ;
         rdfs:comment "Object property describing the edition number for an entity'."@en ;
-        rdfs:range codeform:Edition ;
+        rdfs:range wmocommon:Edition ;
         .
 
     <common/Unit>
@@ -51,7 +52,7 @@ def main():
         a owl:ObjectProperty ;
         rdfs:label "unit"@en ;
         rdfs:comment "The unit of measure for a physical quantity."@en ;
-        rdfs:range codeform:Unit ;
+        rdfs:range wmocommon:Unit ;
         .
 
     <common/dimensions>
