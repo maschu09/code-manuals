@@ -88,13 +88,13 @@ def make_collection(entries):
         if entry[5]:
             elemstr += '\tskos:note {}@en ;\n'.format(entry[5])
         unit = unit_of_measure(entry[6].replace('"',''))
-        elemstr += '\twmocommon:unit <http://codes.wmo.int/common/c-6/{u}> ;\n'.format(u=unit)
-        elemstr += '\tbufrcommon:unit {} ;\n'.format(entry[6])
+        elemstr += '\tbufrcommon:unit <http://codes.wmo.int/common/c-6/{u}> ;\n'.format(u=unit)
         elemstr += '\tbufrcommon:scale {} ;\n'.format(entry[7].replace('"',''))
         elemstr += '\tbufrcommon:referenceValue {} ;\n'.format(entry[8].replace('"',''))
         elemstr += '\tbufrcommon:dataWidth_Bits {} ;\n'.format(entry[9].replace('"',''))
         if entry[10]:
-            elemstr += '\tcrexcommon:unit {} ;\n'.format(entry[10])
+            cunit = unit_of_measure(entry[10].replace('"',''))
+            elemstr += '\tcrexcommon:unit <http://codes.wmo.int/common/c-6/{u}> ;\n'.format(u=unit)
         if entry[11]:
             elemstr += '\tcrexcommon:scale {} ;\n'.format(entry[11].replace('"',''))
         if entry[12]:
