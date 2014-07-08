@@ -81,8 +81,11 @@ def make_collection(cflags):
                 if urilabel in members:
                     raise ValueError('member already declared\n{}'.format(flag))
                 members.append(urilabel)
+                label = flag[4].replace('""', "''")
                 elemstr = '{} a skos:Concept ; \n'.format(urilabel)
-                elemstr += '\trdfs:label {}@en ;\n'.format(flag[4])
+                if not label:
+                    label = '""'
+                elemstr += '\trdfs:label {}@en ;\n'.format(label)
                 elemstr += '\tskos:notation {} ;\n'.format(val)
                 elemstr += '\tbufrcommon:fxy {} ;\n'.format(flag[1])
                 if flag[5]:
@@ -127,7 +130,7 @@ def make_collection(cflags):
     colstr += '\treg:owner <http://codes.wmo.int/system/organization/wmo> ;\n'
     colstr += '\tdct:publisher <http://codes.wmo.int/system/organization/wmo> ;\n'
     colstr += '\treg:manager <http://codes.wmo.int/system/organization/www-dm> ;\n'
-    colstr += '\trdfs:member '
+    colstr += '\tskos:member '
     astr = ',\n\t\t'.join(members)
     colstr += astr
     colstr += '\t.\n\n'
@@ -136,10 +139,14 @@ def make_collection(cflags):
             fhandle.write(ttlhead)
             fhandle.write(colstr)
             fhandle.write('\n'.join(elemstrs))
-        os.mkdir('ttl/bufr4/codeflag/{c}'.format(c=cflags[0][1].replace('"','')))
-        with open('ttl/bufr4/codeflag/{c}/rsvd_{c}.ttl'.format(c=cflags[0][1].replace('"','')), 'w') as fhandle:
-            fhandle.write(ttlhead)
-            fhandle.write('\n'.join(reservedstrs))
+        ## reserved cases too hard to handle with current API limitations
+        # if reservedstrs:
+        #     cname = cflags[0][1].replace('"','')
+        #     fname = '{}-{}-{}'.format(cname[0], cname[1:3], cname[3:6])
+        #     os.mkdir('ttl/bufr4/codeflag/{c}'.format(c=fname))
+        #     with open('ttl/bufr4/codeflag/{c}/rsvd_{c}.ttl'.format(c=fname), 'w') as fhandle:
+        #         fhandle.write(ttlhead)
+        #         fhandle.write('\n'.join(reservedstrs))
 
 def makettl(cflags):
     fxy = cflags[0][1]

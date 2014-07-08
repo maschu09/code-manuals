@@ -81,7 +81,8 @@ def make_collection(entries):
         test = (int(container), int(codeval))
         urilabel = '<{}/{}>'.format(container, codeval[-3:])
         elemstr = '{} a skos:Concept ; \n'.format(urilabel)
-        elemstr += '\trdfs:label {}@en ;\n'.format(entry[4])
+        label = entry[4].replace('""', '``')
+        elemstr += '\trdfs:label {}@en ;\n'.format(label)
         elemstr += '\tbufrcommon:fxy {} ;\n'.format(codeval)
         elemstr += '\tskos:notation {} ;\n'.format(codeval[-3:])
         if entry[5]:
@@ -92,9 +93,12 @@ def make_collection(entries):
         elemstr += '\tbufrcommon:scale {} ;\n'.format(entry[7].replace('"',''))
         elemstr += '\tbufrcommon:referenceValue {} ;\n'.format(entry[8].replace('"',''))
         elemstr += '\tbufrcommon:dataWidth_Bits {} ;\n'.format(entry[9].replace('"',''))
-        elemstr += '\tcrexcommon:unit {} ;\n'.format(entry[10])
-        elemstr += '\tcrexcommon:scale {} ;\n'.format(entry[11].replace('"',''))
-        elemstr += '\tcrexcommon:referenceValue {} ;\n'.format(entry[12].replace('"',''))
+        if entry[10]:
+            elemstr += '\tcrexcommon:unit {} ;\n'.format(entry[10])
+        if entry[11]:
+            elemstr += '\tcrexcommon:scale {} ;\n'.format(entry[11].replace('"',''))
+        if entry[12]:
+            elemstr += '\tcrexcommon:referenceValue {} ;\n'.format(entry[12].replace('"',''))
         elemstr += '\t.\n'
         if entry[13] == '"Operational"':
             members.append(urilabel)
@@ -106,7 +110,7 @@ def make_collection(entries):
     colstr += '\treg:owner <http://codes.wmo.int/system/organization/wmo> ;\n'
     colstr += '\tdct:publisher <http://codes.wmo.int/system/organization/wmo> ;\n'
     colstr += '\treg:manager <http://codes.wmo.int/system/organization/www-dm> ;\n'
-    colstr += '\trdfs:member '
+    colstr += '\tskos:member '
     astr = ',\n\t\t'.join(members)
     colstr += astr
     colstr += '\t.\n\n'
