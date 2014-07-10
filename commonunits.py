@@ -1,4 +1,5 @@
 import os
+import re
 
 import common
 import cleanttl
@@ -55,7 +56,7 @@ INPUTS = [('000', 'Dimensionless', '1', '1', '1', ' '),
           ('no', '(yocto)', '(y)', '(y)', ' ', ' '),
           ('110', 'degree (angle)', '\u02DA',  'deg', 'DEG', ' '),
           ('111', 'minute (angle)', '\'', '\'', 'MNT', ' '),
-          ('112', 'second (angle)', '"', '"', 'SEC', ' '),
+          ('112', 'second (angle)', "''", "''", 'SEC', ' '),
           ('120', 'litre', 'l', 'l', 'L', ' '),
           ('130', 'minute (time)', 'min', 'min', 'MIN', ' '),
           ('131', 'hour', 'h', 'h', 'HR', ' '),
@@ -161,7 +162,8 @@ INPUTS = [('000', 'Dimensionless', '1', '1', '1', ' '),
           ('835', 'decibels per metre', 'dB m^-1', 'dB/m'),
           ('836', 'decibels per degree', 'dB degree^-1', 'dB/deg'),
           ('841', 'pH unit', 'pH unit', 'pH unit'),
-          ('842', 'N units', 'N units', 'N units')]
+          ('842', 'N units', 'N units', 'N units')
+          ]
 
 
 
@@ -173,7 +175,7 @@ def file_write(members, member_elements):
         #     fhandle.write(ttlhead)
         #     fhandle.write('<common> a reg:Register ;\n')
         #     fhandle.write('\trdfs:label "WMO No. 306 Vol I.2 common concepts" ;\n')
-        #     fhandle.write('\tdc:description "Register of concepts common across WMO No. 306 Vol I.2 formats"@en ;\n')
+#     fhandle.write('\tdc:description "Register of concepts common across WMO No. 306 Vol I.2 formats"@en ;\n')
         #     fhandle.write('\treg:owner <http://codes.wmo.int/system/organization/wmo> ;\n')
         #     fhandle.write('\tdct:publisher <http://codes.wmo.int/system/organization/wmo> ;\n')
         #     fhandle.write('\treg:manager <http://codes.wmo.int/system/organization/www-dm> ;\n')
@@ -194,12 +196,19 @@ def file_write(members, member_elements):
 
 uri_pattern = '<c-6/{}>'
 
+slashunit = re.compile('^([-_123 ^a-zA-Z]*)/([a-zA-Z]*)')
+
 def main():
     members = []
     member_elements = []
     urilabel_list = []
     for unit in INPUTS:
-        if unit[3] == '%':
+        unitmatch = slashunit.match(unit[3])
+        if unitmatch:
+            if len(unitmatch.groups()) != 2:
+                raise ValueError('unit slash parsing failed with unit: {}'.format(unit))
+            urilabel = '{} {}-1'.format(unitmatch.group(1), unitmatch.group(2))
+        elif unit[3] == '%':
             urilabel = '%25'
         elif unit[0] == 'no':
             urilabel = '{}_pref'.format(unit[3])
@@ -209,9 +218,17 @@ def main():
             urilabel = unit[1].replace(' ', '_')
         elif unit[3] == 'C' and unit[0] == '350':
             urilabel = 'degC'
+        elif unit[3] == 'deg^2':
+            urilabel = 'deg2'
+        elif unit[3] == '0/00':
+            urilabel = '0.001'
         else:
             urilabel = unit[3]
         urilabel = urilabel.replace(' ', '_')
+        if urilabel.startswith('_'):
+            urilabel = urilabel.lstrip('_')
+        if len(urilabel.split('/')) > 1:
+            raise ValueError('{} uri with / not allowed\n{}'.format(urilabel, unit))
         m_elem_str = uri_pattern.format(urilabel)
         members.append(uri_pattern.format(urilabel))
         m_elem_str += ' a skos:Concept, wmocommon:Unit ;\n'
@@ -221,20 +238,20 @@ def main():
             m_elem_str += '\tskos:notation "{}" ;\n'.format('degC')
         else:
             m_elem_str += '\tskos:notation "{}" ;\n'.format(unit[3])
-        m_elem_str += '\thttp://codes.wmo.int/def/common/wmoAbbreviation "{}" ;\n'.format(unit[3])
+        m_elem_str += '\t<http://codes.wmo.int/def/common/wmoAbbreviation> "{}" ;\n'.format(unit[3])
         m_elem_str += '\tskos:altLabel "{}" ;\n'.format(unit[2])
-        m_elem_str += '\thttp://codes.wmo.int/def/common/code_figure "{}" ;\n'.format(unit[0])
+        m_elem_str += '\t<http://codes.wmo.int/def/common/code_figure> "{}" ;\n'.format(unit[0])
         try:
             if unit[4] and unit[4] != ' ':
-                m_elem_str += '\thttp://codes.wmo.int/def/common/wmoAbbreviationIA2 "{}" ;\n'.format(unit[4])
+                m_elem_str += '\t<http://codes.wmo.int/def/common/wmoAbbreviationIA2> "{}" ;\n'.format(unit[4])
             if unit[5] and unit[5] != ' ':
-                m_elem_str += '\thttp://codes.wmo.int/def/common/wmoAbbreviationIA5 "{}" ;\n'.format(unit[5])
+                m_elem_str += '\t<http://codes.wmo.int/def/common/wmoAbbreviationIA5> "{}" ;\n'.format(unit[5])
         except IndexError:
             pass
         m_elem_str += '\t.\n'
         member_elements.append(m_elem_str)
         if urilabel in urilabel_list:
-            raise ValueError('{} is already declared'.format(urilabel))
+            raise ValueError('{} is already declared\n{}'.format(urilabel, unit))
         else:
             urilabel_list.append(urilabel)
     file_write(members, member_elements)
