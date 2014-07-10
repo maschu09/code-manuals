@@ -15,7 +15,6 @@ parser.add_argument('root')
 args = parser.parse_args()
 
 uid = args.user_id
-uid = 'https://profiles.google.com/100578379482821123729'
 pss = args.passcode
 
 
