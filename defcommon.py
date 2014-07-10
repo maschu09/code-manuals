@@ -64,7 +64,7 @@ def main():
     <common/wmoAbbreviation> 
         a owl:ObjectProperty ;
         rdfs:label "WMO unit abbreviation"@en ;
-        rdfs:comment "Abbreviation for unit of measure - as defined within WMO No. 306 Vol I.2 Common code-table C-6 'List of units for TDCFs'."@en ;
+        rdfs:comment "Abbreviation for unit of measure - as defined within WMO No. 306 Common code-table C-6 'List of units for TDCFs'."@en ;
         rdfs:range xsd:string ;
         .
 

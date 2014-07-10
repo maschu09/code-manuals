@@ -80,7 +80,6 @@ def make_collection(cflags):
                     raise ValueError('wrong col\n{}'.format(flag))
                 if urilabel in members:
                     raise ValueError('member already declared\n{}'.format(flag))
-                members.append(urilabel)
                 label = flag[4].replace('""', "''")
                 elemstr = '{} a skos:Concept ; \n'.format(urilabel)
                 if not label:
@@ -99,9 +98,10 @@ def make_collection(cflags):
                     elemstr += '\trdfs:label "Neige fondante"@fr ;\n'
                     elemstr += '\tdct:description "Neige ou de glace sur le sol qui a \u00E9t\u00E9 r\u00E9duite \u00E0 un doux m\u00E9lange aqueux par la pluie, la temp\u00E9rature chaude et / ou le traitement chimique."@fr ;\n'
                 elemstr += '\t.\n'
-                if flag[4] == 'Reserved':
+                if flag[4].startswith('"Reserved'):
                     reservedstrs.append(elemstr)
                 else:
+                    members.append(urilabel)
                     elemstrs.append(elemstr)
             except ValueError:
                 pass

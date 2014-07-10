@@ -112,7 +112,7 @@ def makerdf(code):
         if codeflag is not None:
             entity = '<0.0/{}>'.format(codeflag)
             rdff = ('{e} a skos:Concept, grib2s:Discipline ;\n'
-                    '\twmocommon:edition <http://codes.wmo.int/codeform/GRIB2>;\n'
+                    '\twmocommon:edition <http://codes.wmo.int/codeform/grib2>;\n'
                     '\tskos:notation {c} ;\n'
                     '\trdfs:label {l}@en ;\n'
                     '\tskos:prefLabel {l}@en ;\n'
@@ -136,7 +136,7 @@ def makerdf(code):
             entity = '<4.1/{d}-{c}>'.format(d=disc, c=cat)
             rdff = ('{e} a skos:Concept, grib2s:Category ;\n'
                     '\tgrib2s:discipline <http://codes.wmo.int/grib2/codeflag/0.0/{d}> ;\n'
-                    '\twmocommon:edition <http://codes.wmo.int/codeform/GRIB2>;\n'
+                    '\twmocommon:edition <http://codes.wmo.int/codeform/grib2>;\n'
                     '\tskos:notation {c} ;\n'
                     '\trdfs:label {l}@en ;\n'
                     '\tskos:prefLabel {l}@en ;\n'
@@ -178,7 +178,7 @@ def makerdf(code):
             rdff = ('{e} a skos:Concept, grib2s:Parameter ;\n'
                     '\tgrib2s:discipline <http://codes.wmo.int/grib2/codeflag/0.0/{d}> ;\n'
                     '\tgrib2s:category <http://codes.wmo.int/grib2/codeflag/4.1/{d}-{c}> ;\n'
-                    '\twmocommon:edition <http://codes.wmo.int/codeform/GRIB2>;\n'
+                    '\twmocommon:edition <http://codes.wmo.int/codeform/grib2>;\n'
                     '\tskos:notation {pn} ;\n'
                     '\trdfs:label {l}@en ;\n'
                     '\tskos:prefLabel {l}@en ;\n'
@@ -187,7 +187,8 @@ def makerdf(code):
                     '\t.\n\n'.format(e=entity, d=disc, c=cat, pn=paramno,
                                      l=code.MeaningParameterDescription_en,
                                      u=unitstr, dc = datacodestr))
-            res = ('4.2', entity, rdff)
+            if not code.MeaningParameterDescription_en.startswith('"Reserved'):
+                res = ('4.2', entity, rdff)
     elif code.Title_en.startswith('"Code table 4.5 '):
         label = code.MeaningParameterDescription_en
         unit = unit_of_measure(code.UnitComments_en.replace('"',''))
@@ -202,14 +203,15 @@ def makerdf(code):
                 unitstr = '\twmocommon:unit <http://codes.wmo.int/common/c-6/{u}> ;\n'.format(u=unit)
             entity = '<4.5/{s}>'.format(s=paramno)
             rdff = ('{e} a skos:Concept ;\n'
-                    '\twmocommon:edition <http://codes.wmo.int/codeform/GRIB2>;\n'
+                    '\twmocommon:edition <http://codes.wmo.int/codeform/grib2>;\n'
                     '\tskos:notation {s} ;\n'
                     '\trdfs:label {l}@en ;\n'
                     '\tskos:prefLabel {l}@en ;\n'
                     '\tdc:description {l}@en ;\n'
                     '{u}'
                     '\t.\n\n'.format(e=entity, s=paramno, l=label, u=unitstr))
-            res = ('4.5', entity, rdff)
+            if not code.MeaningParameterDescription_en.startswith('"Reserved'):
+                res = ('4.5', entity, rdff)
     elif code.Title_en.startswith('"Code table 4.10 '):
         label = code.MeaningParameterDescription_en
         paramno = None
@@ -220,7 +222,7 @@ def makerdf(code):
         if paramno is not None:
             entity = '<4.10/{s}>'.format(s=paramno)
             rdff = ('{e} a skos:Concept ;\n'
-                    '\twmocommon:edition <http://codes.wmo.int/codeform/GRIB2>;\n'
+                    '\twmocommon:edition <http://codes.wmo.int/codeform/grib2>;\n'
                     '\tskos:notation {s} ;\n'
                     '\trdfs:label {l}@en ;\n'
                     '\tskos:prefLabel {l}@en ;\n'
@@ -348,15 +350,15 @@ def writettl(codeflags):
 
     ''')
 
-    os.mkdir('ttl/codeform')
-    with open('ttl/codeform.ttl', 'w') as fhandle:
-        fhandle.write(ttlhead)
-        fhandle.write('<codeform> a reg:Register ;\n')
-        fhandle.write('\tdc:description "WMO No. 306 FM 92"@en ;\n')
-        fhandle.write('\treg:owner <http://codes.wmo.int/system/organization/wmo> ;\n')
-        fhandle.write('\tdct:publisher <http://codes.wmo.int/system/organization/wmo> ;\n')
-        fhandle.write('\treg:manager <http://codes.wmo.int/system/organization/www-dm> ;\n')
-        fhandle.write('\trdfs:label "Code forms"@en.\n')
+    # os.mkdir('ttl/codeform')
+    # with open('ttl/codeform.ttl', 'w') as fhandle:
+    #     fhandle.write(ttlhead)
+    #     fhandle.write('<codeform> a reg:Register ;\n')
+    #     fhandle.write('\tdc:description "WMO No. 306 FM 92"@en ;\n')
+    #     fhandle.write('\treg:owner <http://codes.wmo.int/system/organization/wmo> ;\n')
+    #     fhandle.write('\tdct:publisher <http://codes.wmo.int/system/organization/wmo> ;\n')
+    #     fhandle.write('\treg:manager <http://codes.wmo.int/system/organization/www-dm> ;\n')
+    #     fhandle.write('\trdfs:label "Code forms"@en.\n')
 
     # os.mkdir('ttl/grib1')
     # with open('ttl/grib1.ttl', 'w') as fhandle:
@@ -390,22 +392,6 @@ def writettl(codeflags):
         fhandle.write('\trdfs:label "GRIB2 codes and flags"@en.\n')
 
 
-    with open('ttl/codeform/bulk_codeform.ttl', 'w') as fhandle:
-        fhandle.write(ttlhead)
-        fhandle.write('<codeform> a skos:Collection ;\n')
-        fhandle.write('\tdc:description  "WMO No. 306 Vol I.2"@en ;\n')
-        fhandle.write('\trdfs:label "WMO No. 306 Vol I.2"@en ;\n')
-        fhandle.write('\treg:owner <http://codes.wmo.int/system/organization/wmo> ;\n')
-        fhandle.write('\tdct:publisher <http://codes.wmo.int/system/organization/wmo> ;\n')
-        fhandle.write('\treg:manager <http://codes.wmo.int/system/organization/www-dm> ;\n')
-        fhandle.write('\tskos:member <codeform/GRIB1> ;\n')
-        fhandle.write('\tskos:member <codeform/GRIB2> ;\n\t.\n\n')
-        fhandle.write('<codeform/GRIB1> a skos:Concept ;\n')
-        fhandle.write('\trdfs:label "FM 92 GRIB edition 1"@en;\n')
-        fhandle.write('\tskos:notation 1 .\n\n')
-        fhandle.write('<codeform/GRIB2> a skos:Concept ;\n')
-        fhandle.write('\trdfs:label "FM 92 GRIB edition 2"@en;\n')
-        fhandle.write('\tskos:notation 2 .\n')
 
     with open('ttl/grib2/codeflag/bulk_disc.ttl', 'w') as fhandle:
         fhandle.write(ttlhead)

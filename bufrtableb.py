@@ -87,18 +87,23 @@ def make_collection(entries):
         elemstr += '\tskos:notation {} ;\n'.format(codeval[-3:])
         if entry[5]:
             elemstr += '\tskos:note {}@en ;\n'.format(entry[5])
-        unit = unit_of_measure(entry[6].replace('"',''))
+        unit = entry[6]
+        if not (unit.startswith('"CCITT IA5') or unit.startswith('"Character') or \
+                unit.startswith('"Code table') or unit.startswith('"Flag table')):
+            unit = unit_of_measure(unit.replace('"',''))
         elemstr += '\tbufrcommon:unit <http://codes.wmo.int/common/c-6/{u}> ;\n'.format(u=unit)
         elemstr += '\tbufrcommon:scale {} ;\n'.format(entry[7].replace('"',''))
         elemstr += '\tbufrcommon:referenceValue {} ;\n'.format(entry[8].replace('"',''))
         elemstr += '\tbufrcommon:dataWidth_Bits {} ;\n'.format(entry[9].replace('"',''))
-        if entry[10]:
-            cunit = unit_of_measure(entry[10].replace('"',''))
-            elemstr += '\tcrexcommon:unit <http://codes.wmo.int/common/c-6/{u}> ;\n'.format(u=unit)
-        if entry[11]:
-            elemstr += '\tcrexcommon:scale {} ;\n'.format(entry[11].replace('"',''))
-        if entry[12]:
-            elemstr += '\tcrexcommon:referenceValue {} ;\n'.format(entry[12].replace('"',''))
+        # if entry[10]:
+        #     unit = entry[10]
+        #     if not (unit == '"CCITT IA5"' or unit == '"Character"' or unit == '"Code Table"'):
+        #         unit = unit_of_measure(unit.replace('"',''))
+        #     elemstr += '\tcrexcommon:unit <http://codes.wmo.int/common/c-6/{u}> ;\n'.format(u=unit)
+        # if entry[11]:
+        #     elemstr += '\tcrexcommon:scale {} ;\n'.format(entry[11].replace('"',''))
+        # if entry[12]:
+        #     elemstr += '\tcrexcommon:referenceValue {} ;\n'.format(entry[12].replace('"',''))
         elemstr += '\t.\n'
         if entry[13] == '"Operational"':
             members.append(urilabel)
