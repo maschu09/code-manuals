@@ -68,7 +68,7 @@ def main():
         rdfs:range xsd:string ;
         .
 
-    <common/wmoAbbreviationIA5> 
+    <common/wmoAbbreviationIA5>
         a owl:ObjectProperty ;
         rdfs:label "WMO unit abbreviation (IA5)"@en ;
         rdfs:comment "Abbreviation for unit of measure (for IA5/ASCII) - as defined within WMO No. 306 Vol I.2 Common code-table C-6 'List of units for TDCFs'."@en ;
@@ -83,6 +83,24 @@ def main():
         .
 
     ''')
+
+    with open('ttl/def/z_common_gmsg.ttl', 'w') as fhandle:
+        fhandle.write(ttlhead)
+        fhandle.write('<grib_message> a owl:Class ;\n')
+        fhandle.write('\trdfs:label "GRIB message" ;\n')
+        fhandle.write('\tdct:description "GRIdded Binary message, as defined '
+                      'in WMO No. 306 FM 92 GRIB" ;\n')
+        fhandle.write('\t.\n')
+
+    with open('ttl/def/z_common_bmsg.ttl', 'w') as fhandle:
+        fhandle.write(ttlhead)
+        fhandle.write('<bufr_message> a owl:Class ;\n')
+        fhandle.write('\trdfs:label "BUFR message" ;\n')
+        fhandle.write('\tdct:description "Binary Universal Form for the '
+                      'Representation of meteorological data message, as '
+                      'defined in WMO No. 306 FM 94 BUFR" ;\n')
+        fhandle.write('\t.\n')
+
 
 if __name__ == '__main__':
     main()
