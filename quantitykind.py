@@ -141,6 +141,7 @@ def parseq(indict):
             m_elem_str += '\twmocommon:discipline "{}" ;\n'.format(key)
             if len(elem)== 6:
                 m_elem_str += '\tskos:note "{}" ;\n'.format(elem[5])
+            m_elem_str += '\t.\n\n'
             member_elems.append(m_elem_str)
     return members, member_elems
 
