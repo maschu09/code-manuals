@@ -185,8 +185,9 @@ def file_write(members, member_elements):
         fhandle.write(ttlhead)
 
         fhandle.write('<c-6> a skos:Collection ;\n')
-        fhandle.write('\trdfs:label       "List of units for TDCFs"@en ;\n')
+        fhandle.write('\trdfs:label       "Code Table C-6: List of units for TDCFs"@en ;\n')
         fhandle.write('\tdct:description  "WMO No. 306 Vol I.2 Common Code-table C-6 List of units for TDCFs."@en ;\n')
+        fhandle.write('\tskos:notation "C-6" ;\n')
         fhandle.write('\treg:manager      <http://codes.wmo.int/system/organization/www-dm> ;\n')
         fhandle.write('\treg:owner        <http://codes.wmo.int/system/organization/wmo> ;\n')
         fhandle.write('\tskos:member ')
