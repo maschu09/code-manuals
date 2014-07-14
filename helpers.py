@@ -10,7 +10,7 @@ def unit_of_measure(code):
     elif unit == 'sigma value' or unit == 'Numeric' or unit == 'Proportion':
         unit = '1'
     elif unit == '%':
-        unit = '%25'
+        unit = 'percent'
     unitmatch = slashunit.match(unit)
 
     if unitmatch:

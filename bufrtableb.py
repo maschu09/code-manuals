@@ -91,7 +91,7 @@ def make_collection(entries):
         if not (unit.startswith('"CCITT IA5') or unit.startswith('"Character') or \
                 unit.startswith('"Code table') or unit.startswith('"Flag table')):
             unit = unit_of_measure(unit.replace('"',''))
-        elemstr += '\tbufrcommon:unit <http://codes.wmo.int/common/c-6/{u}> ;\n'.format(u=unit)
+        elemstr += '\tbufrcommon:unit <http://codes.wmo.int/common/unit/{u}> ;\n'.format(u=unit)
         elemstr += '\tbufrcommon:scale {} ;\n'.format(entry[7].replace('"',''))
         elemstr += '\tbufrcommon:referenceValue {} ;\n'.format(entry[8].replace('"',''))
         elemstr += '\tbufrcommon:dataWidth_Bits {} ;\n'.format(entry[9].replace('"',''))

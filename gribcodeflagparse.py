@@ -173,7 +173,7 @@ def makerdf(code):
                 datacodestr = refs.format(cflag)
                 unit = 'N_unit'
             if unit:
-                unitstr = '\twmocommon:unit <http://codes.wmo.int/common/c-6/{u}> ;\n'.format(u=unit)
+                unitstr = '\twmocommon:unit <http://codes.wmo.int/common/unit/{u}> ;\n'.format(u=unit)
             entity = '<4.2/{d}-{c}-{pn}>'.format(d=disc, c=cat, pn=paramno)
             rdff = ('{e} a skos:Concept, grib2s:Parameter ;\n'
                     '\tgrib2s:discipline <http://codes.wmo.int/grib2/codeflag/0.0/{d}> ;\n'
@@ -200,7 +200,7 @@ def makerdf(code):
         if paramno is not None:
             unitstr = ''
             if unit:
-                unitstr = '\twmocommon:unit <http://codes.wmo.int/common/c-6/{u}> ;\n'.format(u=unit)
+                unitstr = '\twmocommon:unit <http://codes.wmo.int/common/unit/{u}> ;\n'.format(u=unit)
             entity = '<4.5/{s}>'.format(s=paramno)
             rdff = ('{e} a skos:Concept ;\n'
                     '\twmocommon:edition <http://codes.wmo.int/codeform/grib2>;\n'

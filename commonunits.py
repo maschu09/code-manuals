@@ -184,7 +184,7 @@ def file_write(members, member_elements):
     with open('ttl/common/bulk_c6.ttl', 'w') as fhandle:
         fhandle.write(ttlhead)
 
-        fhandle.write('<c-6> a skos:Collection ;\n')
+        fhandle.write('<unit> a skos:Collection ;\n')
         fhandle.write('\trdfs:label       "Code Table C-6: List of units for TDCFs"@en ;\n')
         fhandle.write('\tdct:description  "WMO No. 306 Vol I.2 Common Code-table C-6 List of units for TDCFs."@en ;\n')
         fhandle.write('\tskos:notation "C-6" ;\n')
@@ -195,7 +195,7 @@ def file_write(members, member_elements):
         fhandle.write('\t.\n\n')
         fhandle.write('\n'.join(member_elements))
 
-uri_pattern = '<c-6/{}>'
+uri_pattern = '<unit/{}>'
 
 slashunit = re.compile('^([-_123 ^a-zA-Z]*)/([a-zA-Z]*)')
 
@@ -210,7 +210,7 @@ def main():
                 raise ValueError('unit slash parsing failed with unit: {}'.format(unit))
             urilabel = '{} {}-1'.format(unitmatch.group(1), unitmatch.group(2))
         elif unit[3] == '%':
-            urilabel = '%25'
+            urilabel = 'percent'
         elif unit[0] == 'no':
             urilabel = '{}_pref'.format(unit[3])
         elif unit[3] == ' ' and unit[1]:
