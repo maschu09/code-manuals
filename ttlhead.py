@@ -9,8 +9,7 @@ ttlhead = '''@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix reg: <http://purl.org/linked-data/registry#> .
 @prefix qudt: <http://qudt.org/schema/qudt#> .
 @prefix wmocommon: <http://codes.wmo.int/def/common/> .
-@prefix bufrcommon: <http://codes.wmo.int/def/bufrcommon/> .
-@prefix crexcommon: <http://codes.wmo.int/def/crexcommon/> .
+@prefix bufrcommon: <http://codes.wmo.int/def/bufr4/> .
 @prefix grib2s: <http://codes.wmo.int/def/grib2/> .
 @prefix ldp: <http://www.w3.org/ns/ldp#> .
 

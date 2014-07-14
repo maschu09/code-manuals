@@ -83,15 +83,19 @@ def make_collection(entries):
         elemstr = '{} a skos:Concept ; \n'.format(urilabel)
         label = entry[4].replace('""', '``')
         elemstr += '\trdfs:label {}@en ;\n'.format(label)
-        elemstr += '\tbufrcommon:fxy {} ;\n'.format(codeval)
-        elemstr += '\tskos:notation {} ;\n'.format(codeval[-3:])
+        elemstr += '\tbufrcommon:fxy "{}" ;\n'.format(codeval)
+        elemstr += '\tskos:notation "{}" ;\n'.format(codeval[-3:])
         if entry[5]:
             elemstr += '\tskos:note {}@en ;\n'.format(entry[5])
         unit = entry[6]
         if not (unit.startswith('"CCITT IA5') or unit.startswith('"Character') or \
                 unit.startswith('"Code table') or unit.startswith('"Flag table')):
             unit = unit_of_measure(unit.replace('"',''))
-        elemstr += '\tbufrcommon:unit <http://codes.wmo.int/common/unit/{u}> ;\n'.format(u=unit)
+        if unit.startswith('"Code table') or unit.startswith('"Flag table'):
+            elemstr += '\tdct:references <http://codes.wmo.int/bufr4/codeflag/0-{}-{}> ;\n'.format(codeval[0:2], codeval[2:])
+            #unit = 'N_unit'
+        else:
+            elemstr += '\twmocommon:unit <http://codes.wmo.int/common/unit/{u}> ;\n'.format(u=unit)
         elemstr += '\tbufrcommon:scale {} ;\n'.format(entry[7].replace('"',''))
         elemstr += '\tbufrcommon:referenceValue {} ;\n'.format(entry[8].replace('"',''))
         elemstr += '\tbufrcommon:dataWidth_Bits {} ;\n'.format(entry[9].replace('"',''))
