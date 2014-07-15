@@ -51,6 +51,15 @@ def post_call(postfile, container, status, bulk=False):
 
 rootDir = os.path.join(os.getcwd(), 'ttl')
 
+## special case, do bulk cols first
+if os.path.exists('ttl/system/bulkCollectionTypes/ontology.ttl'):
+    status = 'Stable'
+    post_call(os.path.join(rootDir,'ttl/system/bulkCollectionTypes/ontology.ttl'),
+              os.path.relpath('system/bulkCollectionTypes'),
+              status,
+              False)
+    
+
 for dirName, subdirList, fileList in os.walk(rootDir):
     for fname in fileList:
         status = 'Experimental'

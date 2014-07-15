@@ -295,60 +295,54 @@ def writettl(codeflags):
                       '<grib2/Parameter>, '
                       '<grib2/discipline>, '
                       '<grib2/category>, '
-                      '<grib2/datacode> ;\n')
+                      '<grib2/parameter> ;\n')
         fhandle.write('\t.\n')
-        fhandle.write('''
-    <grib2/Discipline>
-        a owl:Class ;
-        rdfs:label "Product discipline (Class)"@en ;
-        dct:description "Product discipline within which a physical property may be categorised as defined in WMO No. 306 FM 92 GRIB (edition 2) code-table 0.0 'Discipline of processed data'."@en ;
-        rdfs:subClassOf skos:Concept ;
-        skos:notation "discipline" ;
-        .
-
-    <grib2/Category>
-        a owl:Class ;
-        rdfs:label "Parameter category (Class)"@en ;
-        dct:description "Parameter category within which a physical property may be categorised as defined in WMO No. 306 FM 92 GRIB (edition 2) code-table 4.1 'Parameter category'."@en ;
-        rdfs:subClassOf skos:Concept ;
-        skos:notation "parameterCategory" ;
-        .
-
-    <grib2/Parameter>
-        a owl:Class ;
-        rdfs:label "Parameter(Class)"@en ;
-        dct:description "Physical property as defined in WMO No. 306 FM 92 GRIB (edition 2) code-table 4.2 'Parameter number'."@en ;
-        rdfs:subClassOf skos:Concept ;
-        skos:notation "parameterNumber" ;
-        .
-
-    <grib2/discipline> 
-        a owl:ObjectProperty ;
-        rdfs:label "discipline (property)"@en ;
-        rdfs:comment "Object property describing the relationship between a physical property (e.g. QUDT QuantityKind) and the product discipline to which the physical property relates as defined in WMO No. 306 FM 92 GRIB (edition 2) code-table 0.0 'Discipline of processed data'."@en ;
-        rdfs:range grib2s:Discipline ;
-        rdfs:domain grib2s:Category, grib2s:Parameter ;
-        .
-
-    <grib2/category> 
-        a owl:ObjectProperty ;
-        rdfs:label "category (property)"@en ;
-        rdfs:comment "Object property describing the relationship between a physical property (e.g. QUDT QuantityKind) and the  parameter category to which the physical property relates as defined in WMO No. 306 FM 92 GRIB (edition 2) code-table 4.1 'Parameter category'."@en ;
-        rdfs:range grib2s:Category ;
-        rdfs:domain grib2s:Parameter ;
-        .
-
-    <grib2/datacode> 
-        a owl:ObjectProperty ;
-        rdfs:label "parameter data code table"@en ;
-        rdfs:comment "Object property describing the relationship between the encoded data values of a message and the code table which these data values reference."@en ;
-        rdfs:range skos:Collection ;
-        rdfs:domain grib2s:Parameter ;
-        .
+        fhandle.write('<grib2/Discipline> a owl:Class ; \n'
+                      '\trdfs:label "Product discipline (Class)"@en ;\n'
+                      '\tdct:description "Product discipline within which a physical property may be categorised as defined in WMO No. 306 FM 92 GRIB (edition 2) code-table 0.0 `Discipline of processed data`."@en ;\n'
+                      '\trdfs:subClassOf skos:Concept ;\n'
+                      '\tskos:notation "discipline" ;\n'
+                      '\trdfs:isDefinedBy <grib2>\n'
+                      '\t.\n\n')
+        fhandle.write('<grib2/Category> a owl:Class ;\n'
+                      '\trdfs:label "Parameter category (Class)"@en ;\n'
+                      '\tdct:description "Parameter category within which a physical property may be categorised as defined in WMO No. 306 FM 92 GRIB (edition 2) code-table 4.1 `Parameter category`."@en ;\n'
+                      '\trdfs:subClassOf skos:Concept ;\n'
+                      '\tskos:notation "parameterCategory" ;\n'
+                      '\trdfs:isDefinedBy <grib2>\n'
+                      '\t.\n\n')
+        fhandle.write('<grib2/Parameter> a owl:Class ;\n'
+                      '\trdfs:label "Parameter(Class)"@en ;\n'
+                      '\tdct:description "Physical property as defined in WMO No. 306 FM 92 GRIB (edition 2) code-table 4.2 `Parameter number`."@en ;\n'
+                      '\trdfs:subClassOf skos:Concept ;\n'
+                      '\tskos:notation "parameterNumber" ;\n'
+                      '\trdfs:isDefinedBy <grib2>\n'
+                      '\t.\n\n')
+        fhandle.write('<grib2/discipline> a owl:ObjectProperty ;\n'
+                      '\trdfs:label "discipline (property)"@en ;\n'
+                      '\trdfs:comment "Object property describing the relationship between a physical property (e.g. QUDT QuantityKind) and the product discipline to which the physical property relates as defined in WMO No. 306 FM 92 GRIB (edition 2) code-table 0.0 `Discipline of processed data`."@en ;\n'
+                      '\trdfs:range grib2s:Discipline ;\n'
+                      '\trdfs:domain grib2s:Category, grib2s:Parameter, wmocodeform:GRIB-message ;\n'
+                      '\trdfs:isDefinedBy <grib2>\n'
+                      '\t.\n\n')
+        fhandle.write('<grib2/category> a owl:ObjectProperty ;\n'
+                      '\trdfs:label "category (property)"@en ;\n'
+                      '\trdfs:comment "Object property describing the relationship between a physical property (e.g. QUDT QuantityKind) and the  parameter category to which the physical property relates as defined in WMO No. 306 FM 92 GRIB (edition 2) code-table 4.1 `Parameter category`."@en ;\n'
+                      '\trdfs:range grib2s:Category ;\n'
+                      '\trdfs:domain grib2s:Parameter, wmocodeform:GRIB-message ;\n'
+                      '\trdfs:isDefinedBy <grib2>\n'
+                      '\t.\n\n')
+        fhandle.write('<grib2/parameter> a owl:ObjectProperty ;\n'
+                      '\trdfs:label "parameter data code table"@en ;\n'
+                      '\trdfs:comment "Object property describing the relationship between the encoded data values of a message and the code table which these data values reference."@en ;\n'
+                      '\trdfs:range skos:Collection ;\n'
+                      '\trdfs:domain grib2s:Parameter, wmocodeform:GRIB-message ;\n'
+                      '\trdfs:isDefinedBy <grib2>\n'
+                      '\t.\n\n')
 
 
 
-    ''')
+
 
     # os.mkdir('ttl/codeform')
     # with open('ttl/codeform.ttl', 'w') as fhandle:
