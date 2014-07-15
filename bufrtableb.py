@@ -92,7 +92,7 @@ def make_collection(entries):
                 unit.startswith('"Code table') or unit.startswith('"Flag table')):
             unit = unit_of_measure(unit.replace('"',''))
         if unit.startswith('"Code table') or unit.startswith('"Flag table'):
-            elemstr += '\tdct:references <http://codes.wmo.int/bufr4/codeflag/0-{}-{}> ;\n'.format(codeval[0:2], codeval[2:])
+            elemstr += '\tdct:references <http://codes.wmo.int/bufr4/codeflag/{}-{}-{}> ;\n'.format(codeval[0], codeval[1:3], codeval[3:])
             #unit = 'N_unit'
         else:
             elemstr += '\twmocommon:unit <http://codes.wmo.int/common/unit/{u}> ;\n'.format(u=unit)

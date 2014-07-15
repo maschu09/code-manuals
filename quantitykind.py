@@ -43,7 +43,7 @@ d2 = {'Meteorological quantity kinds':[
 'Maximum diameter (size) of hailstone (observed).','L')
 ,
 ('Pressure tendency','pressureTendency', 'qudt:MechanicsQuantityKind',
-'Rate of change of atmospheric pressure with respect to time.','XXX')
+'Rate of change of atmospheric pressure with respect to time.','MLT-3')
 ,
 ('Snow depth water equivelant','snowDepthWaterEquivalent', 'qudt:SpaceAndTimeQuantityKind',
 'Depth of lying snow expressed as measure of equivalent depth of water.','L')
