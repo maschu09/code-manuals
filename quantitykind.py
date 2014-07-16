@@ -43,7 +43,7 @@ d2 = {'Meteorological quantity kinds':[
 'Maximum diameter (size) of hailstone (observed).','L')
 ,
 ('Pressure tendency','pressureTendency', 'qudt:MechanicsQuantityKind',
-'Rate of change of atmospheric pressure with respect to time.','XXX')
+'Rate of change of atmospheric pressure with respect to time.','MLT-3')
 ,
 ('Snow depth water equivelant','snowDepthWaterEquivalent', 'qudt:SpaceAndTimeQuantityKind',
 'Depth of lying snow expressed as measure of equivalent depth of water.','L')
@@ -106,17 +106,18 @@ d2 = {'Meteorological quantity kinds':[
 def file_write(members, member_elements):
     if not os.path.exists('ttl/common'):
         common.main()
-        with open('ttl/common/bulk_quantitykind.ttl', 'w') as fhandle:
-            fhandle.write(ttlhead)
-            fhandle.write('<quantity-kind> a skos:Collection ;\n')
-            fhandle.write('\trdfs:label       "Physical quantity kinds"@en ;\n')
-            fhandle.write('\tdct:description  "WMO No. 306 Vol I.3 Common Code-table D-2, Physical quantity kinds."@en ;\n')
-            fhandle.write('\treg:manager      <http://codes.wmo.int/system/organization/www-dm> ;\n')
-            fhandle.write('\treg:owner        <http://codes.wmo.int/system/organization/wmo> ;\n')
-            fhandle.write('\tskos:member ')
-            fhandle.write(', '.join(members))
-            fhandle.write('\t.\n\n')
-            fhandle.write('\n'.join(member_elements))
+    with open('ttl/common/bulk_quantitykind.ttl', 'w') as fhandle:
+        fhandle.write(ttlhead)
+        fhandle.write('<quantity-kind> a skos:Collection ;\n')
+        fhandle.write('\trdfs:label       "Code Table D-2: Physical quantity kinds"@en ;\n')
+        fhandle.write('\tskos:notation "D-2" ;\n')
+        fhandle.write('\tdct:description  "WMO No. 306 Vol I.3 Common Code-table D-2, Physical quantity kinds."@en ;\n')
+        fhandle.write('\treg:manager      <http://codes.wmo.int/system/organization/www-dm> ;\n')
+        fhandle.write('\treg:owner        <http://codes.wmo.int/system/organization/wmo> ;\n')
+        fhandle.write('\tskos:member ')
+        fhandle.write(', '.join(members))
+        fhandle.write('\t.\n\n')
+        fhandle.write('\n'.join(member_elements))
 
 def parseq(indict):
     members = []

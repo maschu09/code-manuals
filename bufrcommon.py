@@ -18,35 +18,31 @@ def main():
         fhandle.write('\trdfs:member <bufr4/fxy>,<bufr4/dataWidth_Bits>, <bufr4/referenceValue>, \n')
         fhandle.write('\t\t<bufr4/scale> ; \n')
         fhandle.write('\t. \n')
-        fhandle.write("""
-<bufr4/fxy>
-    a owl:ObjectProperty ; 
-    rdfs:label "FXY"@en ; 
-    rdfs:comment "6-digit BUFR descriptor for Element (from Table B) or Operator (from Table C)."@en ; 
-    rdfs:range xsd:string ;
-    .
+        fhandle.write('<bufr4/fxy> a owl:ObjectProperty ; \n'
+                      '\trdfs:label "FXY"@en ;\n'
+                      '\trdfs:comment "6-digit BUFR descriptor for Element (from Table B) or Operator (from Table C)."@en ; \n'
+                      '\trdfs:range xsd:string ;\n'
+                      '\trdfs:isDefinedBy <bufr4>\n'
+                      '\t.\n\n')
+        fhandle.write('<bufr4/dataWidth_Bits> a owl:ObjectProperty ;\n'
+                      '\trdfs:label "Data width (bits)"@en ;\n'
+                      '\trdfs:comment "Number of bits that are used when encoding the value of the BUFR Table B Element in WMO No. 306 Vol I.2 FM 94 BUFR."@en ; \n'
+                      '\trdfs:range xsd:integer ; \n'
+                      '\trdfs:isDefinedBy <bufr4>\n'
+                      '\t.\n\n')
+        fhandle.write('<bufr4/referenceValue>a owl:ObjectProperty ;\n'
+                      '\trdfs:label "Reference value"@en ;\n'
+                      '\trdfs:comment "Reference value used when encoding the value of the BUFR Table B Element in WMO No. 306 Vol I.2 FM 94 BUFR."@en ;\n'
+                      '\trdfs:range xsd:integer ;\n'
+                      '\trdfs:isDefinedBy <bufr4>\n'
+                      '\t.\n\n')
+        fhandle.write('<bufr4/scale> a owl:ObjectProperty ;\n'
+                      '\trdfs:label "Scale"@en ;\n'
+                      '\trdfs:comment "Scale factor used when encoding the value of the BUFR Table B Element in WMO No. 306 Vol I.2 FM 94 BUFR."@en ;\n'
+                      '\trdfs:range xsd:integer ;\n'
+                      '\trdfs:isDefinedBy <bufr4>\n'
+                      '\t.\n\n')
 
-<bufr4/dataWidth_Bits> 
-    a owl:ObjectProperty ; 
-    rdfs:label "Data width (bits)"@en ; 
-    rdfs:comment "Number of bits that are used when encoding the value of the BUFR Table B Element in WMO No. 306 Vol I.2 FM 94 BUFR."@en ; 
-    rdfs:range xsd:integer ; 
-    .
-
-<bufr4/referenceValue> 
-    a owl:ObjectProperty ;
-    rdfs:label "Reference value"@en ; 
-    rdfs:comment "Reference value used when encoding the value of the BUFR Table B Element in WMO No. 306 Vol I.2 FM 94 BUFR."@en ; 
-    rdfs:range xsd:integer ; 
-    .
-
-<bufr4/scale> 
-    a owl:ObjectProperty ;
-    rdfs:label "Scale"@en ; 
-    rdfs:comment "Scale factor used when encoding the value of the BUFR Table B Element in WMO No. 306 Vol I.2 FM 94 BUFR."@en ; 
-    rdfs:range xsd:integer ; 
-    .
-        """)
     if not os.path.exists('ttl/bufr4'):
         os.mkdir('ttl/bufr4')
     with open('ttl/bufr4.ttl', 'w') as fhandle:
