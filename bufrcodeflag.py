@@ -110,19 +110,42 @@ def make_collection(cflags):
             startfv = int(fv.split('-')[0])
             endfv = int(fv.split('-')[1])
             fvs = range(startfv, endfv+1)
-            for fv in fvs:
-                urilabel = '<{}-{}-{}/{}>'.format(container[0], container[1:3],
+            if container == '020089':
+                #import pdb; pdb.set_trace()
+                for fv in fvs:
+                    if fv < 10:
+                        label = '0.0{}'.format(fv)
+                    elif fv < 100:
+                        label = '0.{}'.format(fv)
+                    else:
+                        #raise ValueError('no label inferred for {}'.format(flag))
+                        continue
+                    urilabel = '<{}-{}-{}/{}>'.format(container[0], container[1:3],
                                                   container[3:6], fv)
-                if urilabel.split('/')[0] == collabel:
-                    raise ValueError('wrong col\n{}'.format(flag))
-                if urilabel in members:
-                    raise ValueError('member already declared\n{}'.format(flag))
-                elemstr = '{} a skos:Concept ; \n'.format(urilabel)
-                elemstr += '\tskos:notation {} ;\n'.format(fv)
-                elemstr += '\trdfs:label "Reserved"@en ;\n'.format(flag[4])
-                elemstr += '\tdct:description "Reserved for future use"@en ;\n'
-                elemstr += '\t.\n'
-                reservedstrs.append(elemstr)
+                    if urilabel.split('/')[0] == collabel:
+                        raise ValueError('wrong col\n{}'.format(flag))
+                    if urilabel in members:
+                        raise ValueError('member already declared\n{}'.format(flag))
+                    elemstr = '{} a skos:Concept ; \n'.format(urilabel)
+                    elemstr += '\tskos:notation {} ;\n'.format(fv)
+                    elemstr += '\tbufrcommon:fxy {} ;\n'.format(flag[1])
+                    elemstr += '\trdfs:label "{}"@en ;\n'.format(label)
+                    elemstr += '\t.\n'
+                    members.append(urilabel)
+                    elemstrs.append(elemstr)
+            # for fv in fvs:
+            #     urilabel = '<{}-{}-{}/{}>'.format(container[0], container[1:3],
+            #                                       container[3:6], fv)
+            #     if urilabel.split('/')[0] == collabel:
+            #         raise ValueError('wrong col\n{}'.format(flag))
+            #     if urilabel in members:
+            #         raise ValueError('member already declared\n{}'.format(flag))
+            #     elemstr = '{} a skos:Concept ; \n'.format(urilabel)
+            #     elemstr += '\tskos:notation {} ;\n'.format(fv)
+            #     elemstr += '\trdfs:label "Reserved"@en ;\n'.format(flag[4])
+            #     elemstr += '\tdct:description "Reserved for future use"@en ;\n'
+            #     elemstr += '\t.\n'
+            #     reservedstrs.append(elemstr)
 
 
     colstr = '{} a skos:Collection ;\n'.format(collabel)

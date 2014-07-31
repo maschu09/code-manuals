@@ -28,7 +28,7 @@ INPUTS = [('000', 'Dimensionless', '1', '1', '1', ' '),
           ('040', 'weber', 'Wb', 'Wb', 'WB', 'kg m^2 s^-2 A^-1'),
           ('041', 'tesla', 'T', 'T', 'T', 'kg s^-2 A^-1'),
           ('042', 'henry', 'H', 'H', 'H', 'kg m^2 s^-2 A^-2'),
-          ('060', 'degree Celsius', '\u02DA C', 'Cel', 'CEL', 'K+273.15'),
+          ('060', 'degree Celsius', '\u02DAC', 'Cel', 'CEL', 'K+273.15'),
           ('070', 'lumen', 'lm', 'lm', 'LM', 'cd sr'),
           ('071', 'lux', 'lx', 'lx', 'LX', 'cd sr m^-2'),
           ('080', 'becquerel', 'Bq', 'Bq', 'BQ', 's^-1'),
@@ -239,14 +239,22 @@ def main():
             m_elem_str += '\tskos:notation "{}" ;\n'.format('degC')
         else:
             m_elem_str += '\tskos:notation "{}" ;\n'.format(unit[3])
-        m_elem_str += '\t<http://codes.wmo.int/def/common/wmoAbbreviation> "{}" ;\n'.format(unit[3])
+        m_elem_str += '\t<http://codes.wmo.int/def/common/wmoAbbreviation> "{}" ;\n'.format(unit[2])
         m_elem_str += '\tskos:altLabel "{}" ;\n'.format(unit[2])
         m_elem_str += '\t<http://codes.wmo.int/def/common/code_figure> "{}" ;\n'.format(unit[0])
         try:
+            if unit[3] and unit[3] != ' ':
+                m_elem_str += '\t<http://codes.wmo.int/def/common/wmoAbbreviationIA2> "{}" ;\n'.format(unit[3])
+        except IndexError:
+            pass
+        try:
             if unit[4] and unit[4] != ' ':
-                m_elem_str += '\t<http://codes.wmo.int/def/common/wmoAbbreviationIA2> "{}" ;\n'.format(unit[4])
+                m_elem_str += '\t<http://codes.wmo.int/def/common/wmoAbbreviationIA5> "{}" ;\n'.format(unit[4])
+        except IndexError:
+            pass
+        try:
             if unit[5] and unit[5] != ' ':
-                m_elem_str += '\t<http://codes.wmo.int/def/common/wmoAbbreviationIA5> "{}" ;\n'.format(unit[5])
+                m_elem_str += '\tdct:definition "{}" ;\n'.format(unit[5])
         except IndexError:
             pass
         m_elem_str += '\t.\n'
