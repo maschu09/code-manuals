@@ -111,7 +111,7 @@ def make_forwards():
                        ]}
     for key, vals in redirects.iteritems():
         for redirect in vals:
-            fname = 'ttl/common/c-15/{}/{}.ttl'.format(key, redirect[0])
+            fname = 'ttl/common/c-15/{}/deprec_{}.ttl'.format(key, redirect[0])
             make_forward(fname, redirect[0], redirect[1])
 
 def main():
