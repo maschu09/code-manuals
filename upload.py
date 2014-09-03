@@ -60,55 +60,11 @@ def post_file(session, postfile, container, status, bulk=False):
     return session
 
 
-# authcall = ['curl', '-i' ,'-b', 'cookie-jar', '-c', 'cookie-jar', '--data', 'userid={}&password={}'.format(uid, pss), '{}/system/security/apilogin'.format(args.reg_uri)]
-# print(' '.join(authcall))
-# subprocess.check_call(authcall)
-
-# fpath = os.path.join(os.getcwd(), 'ttl')
-
-# def post_call(postfile, container, status, bulk=False):
-#     call = ['curl', '-i', '-b', 'cookie-jar', '-H', 'Content-type:text/turtle',
-#             "-X", "POST", "--data"]
-#     call.append('@{}'.format(postfile))
-#     bulkstr = ''
-#     if bulk:
-#         bulkstr = 'batch-managed&'
-#     if container == '.':
-#         container = ''
-#     else:
-#         container = '/' + container
-# #    container = '/' + container
-#     if not args.root and not container:
-#         container = '/'
-#     call.append("{u}{r}{c}?{b}status={s}".format(u=args.reg_uri,
-#                                                       r=args.root,
-#                                                       c=container,
-#                                                       b=bulkstr,
-#                                                       s=status))
-#     print('\n')
-#     print ' '.join(call)
-#     subprocess.check_call(call)
-#     print('\n')
-#     sys.stdout.flush()
-
 rootDir = os.path.join(os.getcwd(), 'ttl')
 
 
 session = requests.Session()
 session = authenticate(session, args.reg_uri, args.user_id, args.passcode)
-
-# ## special case, do bulk cols first
-# if os.path.exists('ttl/system/bulkCollectionTypes/ontology.ttl'):
-#     status = 'Stable'
-#     session = post_file(session,
-#               os.path.join(rootDir,'ttl/system/bulkCollectionTypes/ontology.ttl'),
-#               os.path.relpath('system/bulkCollectionTypes'),
-#               status,
-#               False)
-    # post_call(os.path.join(rootDir,'ttl/system/bulkCollectionTypes/ontology.ttl'),
-    #           os.path.relpath('system/bulkCollectionTypes'),
-    #           status,
-    #           False)
     
 
 for dirName, subdirList, fileList in os.walk(rootDir):
@@ -126,7 +82,3 @@ for dirName, subdirList, fileList in os.walk(rootDir):
                                 os.path.relpath(dirName, rootDir),
                                 status,
                                 fname.startswith('bulk_'))
-            # post_call(os.path.join(dirName,fname),
-            #           os.path.relpath(dirName, rootDir),
-            #           status,
-            #           fname.startswith('bulk_'))
