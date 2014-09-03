@@ -25,14 +25,13 @@ def main():
         fhandle.write('\tdct:publisher <http://codes.wmo.int/system/organization/wmo> ;\n')
         fhandle.write('\treg:manager <http://codes.wmo.int/system/organization/www-dm> ;\n')
         fhandle.write('\trdfs:member <common/Edition>, <common/edition>, \n')
+        fhandle.write('\t<common/Centre>, <common/centre>, \n')
         fhandle.write('\t\t<common/wmoAbbreviation>, <common/wmoAbbreviationIA5>, <common/wmoAbbreviationIA2>, \n')
         fhandle.write('\t\t<common/Unit>, <common/unit>, <common/dimensions> ;\n')
         fhandle.write('\t.\n')
         fhandle.write('<common/Edition>'
                       '\ta owl:Class ;\n'
                       '\trdfs:label "WMO No. 306 Format Edition Number"@en ;\n'
-                      '\trdfs:subClassOf skos:Concept ;\n'
-                      '\tskos:notation "editionNumber" ;\n'
                       '\trdfs:isDefinedBy <common>;\n'
                       '\t.\n\n')
         fhandle.write('<common/edition> a owl:ObjectProperty ;'
@@ -40,6 +39,22 @@ def main():
                       '\trdfs:comment "Object property describing the edition number for an entity."@en ;\n'
                       '\trdfs:range wmocommon:Edition ;\n'
                       '\trdfs:domain wmocodeform:GRIB-message, wmocodeform:BUFR-message ;\n'
+                      '\trdfs:subClassOf skos:Concept ;\n'
+                      '\tskos:notation "editionNumber" ;\n'
+                      '\trdfs:isDefinedBy <common>;\n'
+                      '\t.\n\n')
+        fhandle.write('<common/Centre>'
+                      '\ta owl:Class ;\n'
+                      '\trdfs:label "WMO Centre"@en ;\n'
+                      '\trdfs:isDefinedBy <common>;\n'
+                      '\t.\n\n')
+        fhandle.write('<common/centre> a owl:ObjectProperty ;'
+                      '\trdfs:label "WMO centre"@en ;\n'
+                      '\trdfs:comment "Object property describing the WMO centre for an entity."@en ;\n'
+                      '\trdfs:range wmocommon:Centre ;\n'
+                      '\trdfs:domain wmocodeform:GRIB-message, wmocodeform:BUFR-message ;\n'
+                      '\trdfs:subClassOf skos:Concept ;\n'
+                      '\tskos:notation "centre" ;\n'
                       '\trdfs:isDefinedBy <common>;\n'
                       '\t.\n\n')
         fhandle.write('<common/Unit> a owl:Class ;'
