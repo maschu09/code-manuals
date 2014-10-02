@@ -350,6 +350,15 @@ def writettl(codeflags):
                       '\tskos:notation "parameterNumber" ;\n'
                       '\trdfs:isDefinedBy <grib2>\n'
                       '\t.\n\n')
+        fhandle.write('<grib2/parameterId> a owl:ObjectProperty ;\n'
+                      '\trdfs:label "parameter identifier"@en ;\n'
+                      '\trdfs:comment "Object property defining the parameter for a GRIB (edition 2) message RDF representation."@en ;\n'
+                      '\trdfs:range grib2s:Parameter ;\n'
+                      '\trdfs:domain wmocodeform:GRIB-message ;\n'
+                      '\trdfs:subClassOf skos:Concept ;\n'
+                      '\tskos:notation "grib2_parameter" ;\n'
+                      '\trdfs:isDefinedBy <grib2>\n'
+                      '\t.\n\n')
 
 
 

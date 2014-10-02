@@ -29,7 +29,8 @@ def writettl():
         fhandle.write('\tdct:publisher <http://codes.wmo.int/system/organization/wmo> ;\n')
         fhandle.write('\treg:manager <http://codes.wmo.int/system/organization/www-dm> ;\n')
         fhandle.write('\trdfs:member <grib1/table2version>, '
-                      '<grib1/indicatorOfParameter> ;\n')
+                      '<grib1/indicatorOfParameter> ;\n'
+                      '<grib1/parameterId> ;\n')
         fhandle.write('\t.\n')
         fhandle.write('<grib1/table2version> a owl:ObjectProperty ;\n'
                       '\trdfs:label "table 2 version"@en ;\n'
@@ -44,6 +45,13 @@ def writettl():
                       '\trdfs:comment "Object property describing the indicator of parameter for a GRIB (edition 1) message."@en ;\n'
                       '\trdfs:subClassOf skos:Concept ;\n'
                       '\tskos:notation "indicatorOfParameter" ;\n'
+                      '\trdfs:isDefinedBy <grib1>\n'
+                      '\t.\n\n')
+        fhandle.write('<grib1/parameterId> a owl:ObjectProperty ;\n'
+                      '\trdfs:label "parameter identifier"@en ;\n'
+                      '\trdfs:comment "Object property identifying the parameter for a GRIB (edition 1) message rdf representation."@en ;\n'
+                      '\trdfs:subClassOf skos:Concept ;\n'
+                      '\tskos:notation "grib1_parameter" ;\n'
                       '\trdfs:isDefinedBy <grib1>\n'
                       '\t.\n\n')
 
