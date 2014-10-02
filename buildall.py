@@ -9,6 +9,8 @@ import bufrcodeflag
 import bufrtableb
 import c15
 import codeform
+import defgrib1
+import centres
 
 cleanttl.clean()
 
@@ -23,3 +25,5 @@ bufrcodeflag.main()
 bufrtableb.main()
 c15.main()
 codeform.main()
+defgrib1.main()
+centres.main()
