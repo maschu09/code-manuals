@@ -10,14 +10,17 @@ headers = {'content-type': 'text/turtle', 'Accept': 'text/turtle'}
 def update_id_pred(session, reg_uri, items):
     for url in items:
         url = url.format(reg_uri)
-        response = requests.get(url, headers=headers)
+        response = session.get(url, headers=headers)
         if response.status_code == 200:
-            replacement = response.text.replace(coulomb, degc)
+            replacement = response.text.replace(identifier, identified_by)
         params = {'status':'Stable'}
         res = session.put(url,
-                          headers={'Content-type':'text/turtle'},
-                          data=replacement,
-                          params=params)
+                      headers={'Content-type':'text/turtle; charset=utf-8'},
+                      data=replacement.encode('utf-8'),
+                      params=params)
+        if res.status_code != 204:
+            msg = 'Failed to PUT: \n{}\nto:\n{}'.format(replacement, url)
+            raise ValueError(msg)
 
 def authenticate(session, base, userid, pss):
     auth = session.post('{}/system/security/apilogin'.format(base),
@@ -28,7 +31,7 @@ def authenticate(session, base, userid, pss):
 
     return session
 
-def find_id_pred(reg_uri):
+def find_id_pred(session, reg_uri):
     sparql_query = ('SELECT ?entity '
                     'WHERE { '
                     '?entity  <http://metarelate.net/vocabulary/index.html#identifier> ?idr .'
@@ -36,7 +39,7 @@ def find_id_pred(reg_uri):
                     'group by ?entity')
     endpoint = '{}/system/query'.format(reg_uri)
     payload = {'query': sparql_query, 'output':'json'}
-    results = requests.get(endpoint, params=payload)
+    results = session.get(endpoint, params=payload)
     items = results.json()['results']['bindings']
     items = [i['entity']['value'] for i in items]
     return items
@@ -49,9 +52,9 @@ def main():
     parser.add_argument('reg_uri')
     args = parser.parse_args()
     session = requests.Session()
-    #session = authenticate(session, args.reg_uri, args.user_id, args.passcode)
-    items = find_id_pred(args.reg_uri)
-    #update_id_pred(session, args.reg_uri, items)
+    session = authenticate(session, args.reg_uri, args.user_id, args.passcode)
+    items = find_id_pred(session, args.reg_uri)
+    update_id_pred(session, args.reg_uri, items)
 
 if __name__ == '__main__':
     main()
