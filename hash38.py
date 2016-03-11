@@ -14,8 +14,10 @@ def update_id_pred(session, reg_uri, items):
         if response.status_code == 200:
             replacement = response.text.replace(identifier, identified_by)
         params = {'status':'Stable'}
+        params = {}
+        session.get('{}/common'.format(reg_uri))
         res = session.put(url,
-                      headers={'Content-type':'text/turtle; charset=utf-8'},
+                      headers={'Content-type':'text/turtle'},
                       data=replacement.encode('utf-8'),
                       params=params)
         if res.status_code != 204:
@@ -28,8 +30,8 @@ def authenticate(session, base, userid, pss):
                                 'password':pss})
     if not auth.status_code == 200:
         raise ValueError('auth failed')
+    session.get('{}/common'.format(base))
 
-    return session
 
 def find_id_pred(session, reg_uri):
     sparql_query = ('SELECT ?entity '
@@ -42,6 +44,7 @@ def find_id_pred(session, reg_uri):
     results = session.get(endpoint, params=payload)
     items = results.json()['results']['bindings']
     items = [i['entity']['value'] for i in items]
+    items = [i.replace('http://codes.wmo.int', '{}') for i in items]
     return items
     
 
@@ -52,7 +55,7 @@ def main():
     parser.add_argument('reg_uri')
     args = parser.parse_args()
     session = requests.Session()
-    session = authenticate(session, args.reg_uri, args.user_id, args.passcode)
+    authenticate(session, args.reg_uri, args.user_id, args.passcode)
     items = find_id_pred(session, args.reg_uri)
     update_id_pred(session, args.reg_uri, items)
 
