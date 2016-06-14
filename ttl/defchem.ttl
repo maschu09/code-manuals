@@ -3,7 +3,7 @@
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
-@prefix defchem: <https://ontology.geodab.eu/def/chemistry/>
+@prefix defchem: <https://wmo.codes.int/def/chemistry/>
 
 
 defchem:chemical-species
