@@ -3,15 +3,25 @@
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
-@prefix defchem: <https://wmo.codes.int/def/chemistry/>
 
 
-defchem:chemical-species
+<chemistry>
+        a                        reg:Register , ldp:Container , owl:Ontology ;
+        rdfs:label               "Chemical Species Definition Vocabulary."@en ;
+        rdfs:member              <chemistry/chemical-species> , <chemistry/chemical-species> ;
+        dct:description          "Ontology providing the vocaulary to define chemical species for use in WMO registers."@en ;
+        dct:publisher            <http://codes.wmo.int/system/organization/wmo> ;
+        reg:manager              <http://codes.wmo.int/system/organization/www-dm> ;
+        reg:owner                <http://codes.wmo.int/system/organization/wmo> ;
+        ldp:membershipPredicate  rdfs:member .
+
+
+<chemistry/chemical-species>
 	a	owl:objectProperty ;
 	rdfs:label "chemical species" ;
 	.
 
-defchem:medium
+<chemistry/medium>
 	a	owl:objectProperty ;
 	rdfs:label "medium" ;
 	.
