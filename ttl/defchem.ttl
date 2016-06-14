@@ -11,7 +11,7 @@
         a                        reg:Register , ldp:Container , owl:Ontology ;
         rdfs:label               "Chemical Species Definition Vocabulary."@en ;
         rdfs:member              <chemistry/chemical-species> , <chemistry/medium> ;
-        dct:description          "Ontology providing the vocaulary to define chemical species for use in WMO registers."@en ;
+        dct:description          "Ontology providing the vocabulary to define chemical species for use in WMO registers."@en ;
         dct:publisher            <http://codes.wmo.int/system/organization/wmo> ;
         reg:manager              <http://codes.wmo.int/system/organization/www-dm> ;
         reg:owner                <http://codes.wmo.int/system/organization/wmo> ;
