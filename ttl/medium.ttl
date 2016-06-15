@@ -2,7 +2,6 @@
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
-@prefix medium: <http://codes.wmo.int/common/medium/> .
 
 <medium>
         a skos:Collection ;
@@ -31,7 +30,6 @@
         rdfs:label "air and aerosol"@en ;
         dct:description "the medium that constitutes the Earth's atmosphere with all its components, in particular also including aerosol and water vapour."@en ;
         skos:prefLabel "air and aerosol"@en ;
-        skos:broader <medium/> ;
         skos:notation "air-and-aerosol" .
 
 <medium/air>
@@ -39,7 +37,6 @@
         rdfs:label "air"@en ;
         dct:description "the gas that constitutes the Earth's atmosphere with all its gaseous components, in particular also including the water vapour content"@en ;
         skos:prefLabel "air"@en ;
-        skos:broader <medium/> ;
         skos:notation "air" .
 
 <medium/dry-air>
@@ -63,7 +60,6 @@
         rdfs:label "aerosol"@en ;
         dct:description "particulate matter suspended in air, often containing liquid or frozen water. The size range (diameter) of aerosol is usually limited to the range 1 nm to 10 µm."@en ;
         skos:prefLabel "aerosol"@en ;
-        skos:broader <medium/> ;
         skos:notation "aerosol" .
 
 <medium/aerosol-in-size-range>
@@ -71,7 +67,6 @@
         rdfs:label "aerosol in size range"@en ;
         dct:description "particulate matter suspended in air, often containing liquid or frozen water. The size range (diameter) of aerosol is limited by the sampling method and must be specified separately."@en ;
         skos:prefLabel "aerosol in size range"@en ;
-        skos:broader <medium/> ;
         skos:notation "aerosol-in-size-range" .
 
 <medium/dry-aerosol>
@@ -119,7 +114,6 @@
         rdfs:label "water"@en ;
         dct:description "liquid water"@en ;
         skos:prefLabel "water"@en ;
-        skos:broader <medium/> ;
         skos:notation "water" .
 
 <medium/sea-water>
