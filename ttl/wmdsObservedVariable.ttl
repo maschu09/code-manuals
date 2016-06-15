@@ -1,0 +1,7167 @@
+
+#10000
+wmdsObservedVariable:Atmosphere
+a	skos:Concept ;
+skos:notation 10000 ;
+dct:notation 10000 ;
+rdfs:label "Atmosphere" ;
+.
+
+#37
+wmdsObservedVariable:Aerological soundings
+a	skos:Concept ;
+skos:notation 37 ;
+dct:notation 37 ;
+rdfs:label "Aerological soundings" ;
+skos:broader Atmosphere ;
+.
+
+#39
+wmdsObservedVariable:Atmospheric density
+a	skos:Concept ;
+skos:notation 39 ;
+dct:notation 39 ;
+rdfs:label "Atmospheric density" ;
+skos:broader Atmosphere ;
+.
+
+#44
+wmdsObservedVariable:Integrated air samples
+a	skos:Concept ;
+skos:notation 44 ;
+dct:notation 44 ;
+rdfs:label "Integrated air samples" ;
+skos:broader Atmosphere ;
+.
+
+#56
+wmdsObservedVariable:Special phenomena
+a	skos:Concept ;
+skos:notation 56 ;
+dct:notation 56 ;
+rdfs:label "Special phenomena" ;
+skos:broader Atmosphere ;
+.
+
+#57
+wmdsObservedVariable:State of ground
+a	skos:Concept ;
+skos:notation 57 ;
+dct:notation 57 ;
+rdfs:label "State of ground" ;
+skos:broader Atmosphere ;
+.
+
+#10001
+wmdsObservedVariable:Aerosol
+a	skos:Concept ;
+skos:notation 10001 ;
+dct:notation 10001 ;
+rdfs:label "Aerosol" ;
+skos:broader Atmosphere ;
+.
+
+#10002
+wmdsObservedVariable:Composition
+a	skos:Concept ;
+skos:notation 10002 ;
+dct:notation 10002 ;
+rdfs:label "Composition" ;
+skos:broader Aerosol ;
+.
+
+#579
+wmdsObservedVariable:Acidity/Alkalinity
+a	skos:Concept ;
+skos:notation 579 ;
+dct:notation 579 ;
+rdfs:label "Acidity/Alkalinity in total aerosol"" ;
+skos:broader Composition ;
+defchem:medium medium:total aerosol" ;
+.
+
+#10003
+wmdsObservedVariable:Inorganic anions
+a	skos:Concept ;
+skos:notation 10003 ;
+dct:notation 10003 ;
+rdfs:label "Inorganic anions" ;
+skos:broader Composition ;
+.
+
+#614
+wmdsObservedVariable:Chloride
+a	skos:Concept ;
+skos:notation 614 ;
+dct:notation 614 ;
+rdfs:label "Chloride(Cl-) in PM1"" ;
+skos:broader Inorganic anions ;
+defchem:medium medium:PM1" ;
+.
+
+#615
+wmdsObservedVariable:Chloride
+a	skos:Concept ;
+skos:notation 615 ;
+dct:notation 615 ;
+rdfs:label "Chloride(Cl-) in PM10"" ;
+skos:broader Inorganic anions ;
+defchem:medium medium:PM10" ;
+.
+
+#616
+wmdsObservedVariable:Chloride
+a	skos:Concept ;
+skos:notation 616 ;
+dct:notation 616 ;
+rdfs:label "Chloride(Cl-) in PM2.5"" ;
+skos:broader Inorganic anions ;
+defchem:medium medium:PM2.5" ;
+.
+
+#617
+wmdsObservedVariable:Chloride
+a	skos:Concept ;
+skos:notation 617 ;
+dct:notation 617 ;
+rdfs:label "Chloride(Cl-) in total aerosol"" ;
+skos:broader Inorganic anions ;
+defchem:medium medium:total aerosol" ;
+.
+
+#618
+wmdsObservedVariable:Fluoride
+a	skos:Concept ;
+skos:notation 618 ;
+dct:notation 618 ;
+rdfs:label "Fluoride(F-) in total aerosol"" ;
+skos:broader Inorganic anions ;
+defchem:medium medium:total aerosol" ;
+.
+
+#619
+wmdsObservedVariable:Sulphate
+a	skos:Concept ;
+skos:notation 619 ;
+dct:notation 619 ;
+rdfs:label "Sulphate(SO4=) in corrected"" ;
+skos:broader Inorganic anions ;
+defchem:medium medium:corrected" ;
+.
+
+#620
+wmdsObservedVariable:Sulphate
+a	skos:Concept ;
+skos:notation 620 ;
+dct:notation 620 ;
+rdfs:label "Sulphate(SO4=) in total"" ;
+skos:broader Inorganic anions ;
+defchem:medium medium:total" ;
+.
+
+#621
+wmdsObservedVariable:Sulphate , total
+a	skos:Concept ;
+skos:notation 621 ;
+dct:notation 621 ;
+rdfs:label "Sulphate , total(SO4=) in PM10"" ;
+skos:broader Inorganic anions ;
+defchem:medium medium:PM10" ;
+.
+
+#622
+wmdsObservedVariable:Sulphate , total
+a	skos:Concept ;
+skos:notation 622 ;
+dct:notation 622 ;
+rdfs:label "Sulphate , total(SO4=) in PM2.5"" ;
+skos:broader Inorganic anions ;
+defchem:medium medium:PM2.5" ;
+.
+
+#10004
+wmdsObservedVariable:Inorganic carbonaceous
+a	skos:Concept ;
+skos:notation 10004 ;
+dct:notation 10004 ;
+rdfs:label "Inorganic carbonaceous" ;
+skos:broader Composition ;
+.
+
+#623
+wmdsObservedVariable:Elemental carbon
+a	skos:Concept ;
+skos:notation 623 ;
+dct:notation 623 ;
+rdfs:label "Elemental carbon(coarse) in PM10"" ;
+skos:broader Inorganic carbonaceous ;
+defchem:medium medium:PM10" ;
+.
+
+#624
+wmdsObservedVariable:Elemental carbon
+a	skos:Concept ;
+skos:notation 624 ;
+dct:notation 624 ;
+rdfs:label "Elemental carbon in PM1"" ;
+skos:broader Inorganic carbonaceous ;
+defchem:medium medium:PM1" ;
+.
+
+#625
+wmdsObservedVariable:Elemental carbon
+a	skos:Concept ;
+skos:notation 625 ;
+dct:notation 625 ;
+rdfs:label "Elemental carbon in PM2.5"" ;
+skos:broader Inorganic carbonaceous ;
+defchem:medium medium:PM2.5" ;
+.
+
+#626
+wmdsObservedVariable:Total carbon
+a	skos:Concept ;
+skos:notation 626 ;
+dct:notation 626 ;
+rdfs:label "Total carbon(coarse) in PM10"" ;
+skos:broader Inorganic carbonaceous ;
+defchem:medium medium:PM10" ;
+.
+
+#10005
+wmdsObservedVariable:Inorganic cations
+a	skos:Concept ;
+skos:notation 10005 ;
+dct:notation 10005 ;
+rdfs:label "Inorganic cations" ;
+skos:broader Composition ;
+.
+
+#632
+wmdsObservedVariable:Calcium
+a	skos:Concept ;
+skos:notation 632 ;
+dct:notation 632 ;
+rdfs:label "Calcium(Ca++) in PM10"" ;
+skos:broader Inorganic cations ;
+defchem:medium medium:PM10" ;
+.
+
+#633
+wmdsObservedVariable:Calcium
+a	skos:Concept ;
+skos:notation 633 ;
+dct:notation 633 ;
+rdfs:label "Calcium(Ca++) in PM2.5"" ;
+skos:broader Inorganic cations ;
+defchem:medium medium:PM2.5" ;
+.
+
+#634
+wmdsObservedVariable:Calcium
+a	skos:Concept ;
+skos:notation 634 ;
+dct:notation 634 ;
+rdfs:label "Calcium(Ca++) in total aerosol"" ;
+skos:broader Inorganic cations ;
+defchem:medium medium:total aerosol" ;
+.
+
+#635
+wmdsObservedVariable:Magnesium
+a	skos:Concept ;
+skos:notation 635 ;
+dct:notation 635 ;
+rdfs:label "Magnesium(Mg++) in PM10"" ;
+skos:broader Inorganic cations ;
+defchem:medium medium:PM10" ;
+.
+
+#636
+wmdsObservedVariable:Magnesium
+a	skos:Concept ;
+skos:notation 636 ;
+dct:notation 636 ;
+rdfs:label "Magnesium(Mg++) in PM2.5"" ;
+skos:broader Inorganic cations ;
+defchem:medium medium:PM2.5" ;
+.
+
+#637
+wmdsObservedVariable:Magnesium
+a	skos:Concept ;
+skos:notation 637 ;
+dct:notation 637 ;
+rdfs:label "Magnesium(Mg++) in total aerosol"" ;
+skos:broader Inorganic cations ;
+defchem:medium medium:total aerosol" ;
+.
+
+#638
+wmdsObservedVariable:Potassium
+a	skos:Concept ;
+skos:notation 638 ;
+dct:notation 638 ;
+rdfs:label "Potassium(K+) in PM10"" ;
+skos:broader Inorganic cations ;
+defchem:medium medium:PM10" ;
+.
+
+#639
+wmdsObservedVariable:Potassium
+a	skos:Concept ;
+skos:notation 639 ;
+dct:notation 639 ;
+rdfs:label "Potassium(K+) in PM2.5"" ;
+skos:broader Inorganic cations ;
+defchem:medium medium:PM2.5" ;
+.
+
+#640
+wmdsObservedVariable:Potassium
+a	skos:Concept ;
+skos:notation 640 ;
+dct:notation 640 ;
+rdfs:label "Potassium(K+) in total aerosol"" ;
+skos:broader Inorganic cations ;
+defchem:medium medium:total aerosol" ;
+.
+
+#641
+wmdsObservedVariable:Sodium
+a	skos:Concept ;
+skos:notation 641 ;
+dct:notation 641 ;
+rdfs:label "Sodium(Na+) in PM10"" ;
+skos:broader Inorganic cations ;
+defchem:medium medium:PM10" ;
+.
+
+#642
+wmdsObservedVariable:Sodium
+a	skos:Concept ;
+skos:notation 642 ;
+dct:notation 642 ;
+rdfs:label "Sodium(Na+) in PM2.5"" ;
+skos:broader Inorganic cations ;
+defchem:medium medium:PM2.5" ;
+.
+
+#643
+wmdsObservedVariable:Sodium
+a	skos:Concept ;
+skos:notation 643 ;
+dct:notation 643 ;
+rdfs:label "Sodium(Na+) in total aerosol"" ;
+skos:broader Inorganic cations ;
+defchem:medium medium:total aerosol" ;
+.
+
+#10006
+wmdsObservedVariable:Inorganic nitrogen species
+a	skos:Concept ;
+skos:notation 10006 ;
+dct:notation 10006 ;
+rdfs:label "Inorganic nitrogen species" ;
+skos:broader Composition ;
+defchem:chemical-species chemical-species:inorganic-nitrogen-species ;
+.
+
+#644
+wmdsObservedVariable:Ammonia
+a	skos:Concept ;
+skos:notation 644 ;
+dct:notation 644 ;
+rdfs:label "Ammonia(NH3) in PM2.5"" ;
+skos:broader Inorganic nitrogen species ;
+defchem:chemical-species chemical-species:ammonia ;
+defchem:medium medium:PM2.5" ;
+.
+
+#645
+wmdsObservedVariable:Ammonium
+a	skos:Concept ;
+skos:notation 645 ;
+dct:notation 645 ;
+rdfs:label "Ammonium(NH4+) in PM10"" ;
+skos:broader Inorganic nitrogen species ;
+defchem:chemical-species chemical-species:ammonium ;
+defchem:medium medium:PM10" ;
+.
+
+#646
+wmdsObservedVariable:Ammonium
+a	skos:Concept ;
+skos:notation 646 ;
+dct:notation 646 ;
+rdfs:label "Ammonium(NH4+) in PM2.5"" ;
+skos:broader Inorganic nitrogen species ;
+defchem:chemical-species chemical-species:ammonium ;
+defchem:medium medium:PM2.5" ;
+.
+
+#647
+wmdsObservedVariable:Ammonium
+a	skos:Concept ;
+skos:notation 647 ;
+dct:notation 647 ;
+rdfs:label "Ammonium(NH4+) in total aerosol"" ;
+skos:broader Inorganic nitrogen species ;
+defchem:chemical-species chemical-species:ammonium ;
+defchem:medium medium:total aerosol" ;
+.
+
+#648
+wmdsObservedVariable:Ammonium nitrate
+a	skos:Concept ;
+skos:notation 648 ;
+dct:notation 648 ;
+rdfs:label "Ammonium nitrate(NH4NO3) in total aerosol"" ;
+skos:broader Inorganic nitrogen species ;
+defchem:medium medium:total aerosol" ;
+.
+
+#649
+wmdsObservedVariable:Ammonium nitrate (NH4NO3
+a	skos:Concept ;
+skos:notation 649 ;
+dct:notation 649 ;
+rdfs:label "Ammonium nitrate (NH4NO3 in PM1"" ;
+skos:broader Inorganic nitrogen species ;
+defchem:medium medium:PM1" ;
+.
+
+#650
+wmdsObservedVariable:Nitrate
+a	skos:Concept ;
+skos:notation 650 ;
+dct:notation 650 ;
+rdfs:label "Nitrate(NO3-) in PM10"" ;
+skos:broader Inorganic nitrogen species ;
+defchem:chemical-species chemical-species:nitrate ;
+defchem:medium medium:PM10" ;
+.
+
+#651
+wmdsObservedVariable:Nitrate
+a	skos:Concept ;
+skos:notation 651 ;
+dct:notation 651 ;
+rdfs:label "Nitrate(NO3-) in PM2.5"" ;
+skos:broader Inorganic nitrogen species ;
+defchem:chemical-species chemical-species:nitrate ;
+defchem:medium medium:PM2.5" ;
+.
+
+#652
+wmdsObservedVariable:Nitrate
+a	skos:Concept ;
+skos:notation 652 ;
+dct:notation 652 ;
+rdfs:label "Nitrate(NO3-) in total aerosol"" ;
+skos:broader Inorganic nitrogen species ;
+defchem:chemical-species chemical-species:nitrate ;
+defchem:medium medium:total aerosol" ;
+.
+
+#653
+wmdsObservedVariable:Nitrite
+a	skos:Concept ;
+skos:notation 653 ;
+dct:notation 653 ;
+rdfs:label "Nitrite(NO2-) in total aerosol"" ;
+skos:broader Inorganic nitrogen species ;
+defchem:medium medium:total aerosol" ;
+.
+
+#654
+wmdsObservedVariable:Sum of ammonia  and ammonium (NH4+)
+a	skos:Concept ;
+skos:notation 654 ;
+dct:notation 654 ;
+rdfs:label "Sum of ammonia  and ammonium (NH4+)(NH3) in air and aerosol"" ;
+skos:broader Inorganic nitrogen species ;
+defchem:medium medium:air and aerosol" ;
+.
+
+#655
+wmdsObservedVariable:Sum of nitric acid  and nitrate (NO3-)
+a	skos:Concept ;
+skos:notation 655 ;
+dct:notation 655 ;
+rdfs:label "Sum of nitric acid  and nitrate (NO3-)(HNO3) in air and aerosol"" ;
+skos:broader Inorganic nitrogen species ;
+defchem:medium medium:air and aerosol" ;
+.
+
+#10007
+wmdsObservedVariable:Major inorganic components
+a	skos:Concept ;
+skos:notation 10007 ;
+dct:notation 10007 ;
+rdfs:label "Major inorganic components" ;
+skos:broader Composition ;
+.
+
+#656
+wmdsObservedVariable:Major chemical components
+a	skos:Concept ;
+skos:notation 656 ;
+dct:notation 656 ;
+rdfs:label "Major chemical components(size fractionated)" ;
+skos:broader Major inorganic components ;
+.
+
+#657
+wmdsObservedVariable:Major inorganic components
+a	skos:Concept ;
+skos:notation 657 ;
+dct:notation 657 ;
+rdfs:label "Major inorganic components(TSP)" ;
+skos:broader Major inorganic components ;
+.
+
+#658
+wmdsObservedVariable:Major inorganic components
+a	skos:Concept ;
+skos:notation 658 ;
+dct:notation 658 ;
+rdfs:label "Major inorganic components(coarse)" ;
+skos:broader Major inorganic components ;
+.
+
+#659
+wmdsObservedVariable:Major inorganic components
+a	skos:Concept ;
+skos:notation 659 ;
+dct:notation 659 ;
+rdfs:label "Major inorganic components(fine)" ;
+skos:broader Major inorganic components ;
+.
+
+#660
+wmdsObservedVariable:Other chemical components
+a	skos:Concept ;
+skos:notation 660 ;
+dct:notation 660 ;
+rdfs:label "Other chemical components(coarse)" ;
+skos:broader Major inorganic components ;
+.
+
+#661
+wmdsObservedVariable:Other chemical components
+a	skos:Concept ;
+skos:notation 661 ;
+dct:notation 661 ;
+rdfs:label "Other chemical components(fine)" ;
+skos:broader Major inorganic components ;
+.
+
+#10008
+wmdsObservedVariable:Organic anions
+a	skos:Concept ;
+skos:notation 10008 ;
+dct:notation 10008 ;
+rdfs:label "Organic anions" ;
+skos:broader Composition ;
+.
+
+#662
+wmdsObservedVariable:C2H3O2-
+a	skos:Concept ;
+skos:notation 662 ;
+dct:notation 662 ;
+rdfs:label "C2H3O2-(CH3COO-, acetate) in PM1"" ;
+skos:broader Organic anions ;
+defchem:medium medium:PM1" ;
+.
+
+#663
+wmdsObservedVariable:C2H3O2-
+a	skos:Concept ;
+skos:notation 663 ;
+dct:notation 663 ;
+rdfs:label "C2H3O2-(CH3COO-, acetate) in aerosol"" ;
+skos:broader Organic anions ;
+defchem:medium medium:aerosol" ;
+.
+
+#664
+wmdsObservedVariable:C2O4=
+a	skos:Concept ;
+skos:notation 664 ;
+dct:notation 664 ;
+rdfs:label "C2O4=(oxalate, ethanedioate) in PM1.0"" ;
+skos:broader Organic anions ;
+defchem:medium medium:PM1.0" ;
+.
+
+#665
+wmdsObservedVariable:C2O4=
+a	skos:Concept ;
+skos:notation 665 ;
+dct:notation 665 ;
+rdfs:label "C2O4=(oxalate, ethanedioate) in PM10"" ;
+skos:broader Organic anions ;
+defchem:medium medium:PM10" ;
+.
+
+#666
+wmdsObservedVariable:C2O4=
+a	skos:Concept ;
+skos:notation 666 ;
+dct:notation 666 ;
+rdfs:label "C2O4=(oxalate, ethanedioate) in total aerosol"" ;
+skos:broader Organic anions ;
+defchem:medium medium:total aerosol" ;
+.
+
+#667
+wmdsObservedVariable:CH3O3S-
+a	skos:Concept ;
+skos:notation 667 ;
+dct:notation 667 ;
+rdfs:label "CH3O3S-(methanesulphonate) in PM1.0"" ;
+skos:broader Organic anions ;
+defchem:chemical-species chemical-species:methane-sulfonate-ion ;
+defchem:medium medium:PM1.0" ;
+.
+
+#668
+wmdsObservedVariable:CH3O3S-
+a	skos:Concept ;
+skos:notation 668 ;
+dct:notation 668 ;
+rdfs:label "CH3O3S-(methanesulphonate) in total aerosol"" ;
+skos:broader Organic anions ;
+defchem:chemical-species chemical-species:methane-sulfonate-ion ;
+defchem:medium medium:total aerosol" ;
+.
+
+#669
+wmdsObservedVariable:CHO2-
+a	skos:Concept ;
+skos:notation 669 ;
+dct:notation 669 ;
+rdfs:label "CHO2-(HCOO-, formate) in aerosol"" ;
+skos:broader Organic anions ;
+defchem:medium medium:aerosol" ;
+.
+
+#10009
+wmdsObservedVariable:Organic carbonaceous
+a	skos:Concept ;
+skos:notation 10009 ;
+dct:notation 10009 ;
+rdfs:label "Organic carbonaceous" ;
+skos:broader Composition ;
+.
+
+#670
+wmdsObservedVariable:Carbonaceous/organic material
+a	skos:Concept ;
+skos:notation 670 ;
+dct:notation 670 ;
+rdfs:label "Carbonaceous/organic material(coarse) in PM10"" ;
+skos:broader Organic carbonaceous ;
+defchem:medium medium:PM10" ;
+.
+
+#671
+wmdsObservedVariable:Carbonaceous/organic material
+a	skos:Concept ;
+skos:notation 671 ;
+dct:notation 671 ;
+rdfs:label "Carbonaceous/organic material(fine)" ;
+skos:broader Organic carbonaceous ;
+.
+
+#10010
+wmdsObservedVariable:Trace elements
+a	skos:Concept ;
+skos:notation 10010 ;
+dct:notation 10010 ;
+rdfs:label "Trace elements" ;
+skos:broader Composition ;
+.
+
+#672
+wmdsObservedVariable:Titanium
+a	skos:Concept ;
+skos:notation 672 ;
+dct:notation 672 ;
+rdfs:label "Titanium(Ti) in total aerosol"" ;
+skos:broader Trace elements ;
+defchem:chemical-species chemical-species:titanium ;
+defchem:medium medium:total aerosol" ;
+.
+
+#673
+wmdsObservedVariable:Aluminium
+a	skos:Concept ;
+skos:notation 673 ;
+dct:notation 673 ;
+rdfs:label "Aluminium(Al) in PM2.5"" ;
+skos:broader Trace elements ;
+defchem:chemical-species chemical-species:aluminium ;
+defchem:medium medium:PM2.5" ;
+.
+
+#674
+wmdsObservedVariable:Aluminium
+a	skos:Concept ;
+skos:notation 674 ;
+dct:notation 674 ;
+rdfs:label "Aluminium(Al) in total aerosol"" ;
+skos:broader Trace elements ;
+defchem:chemical-species chemical-species:aluminium ;
+defchem:medium medium:total aerosol" ;
+.
+
+#675
+wmdsObservedVariable:Antimony
+a	skos:Concept ;
+skos:notation 675 ;
+dct:notation 675 ;
+rdfs:label "Antimony(Sb) in PM2.5"" ;
+skos:broader Trace elements ;
+defchem:chemical-species chemical-species:antimony ;
+defchem:medium medium:PM2.5" ;
+.
+
+#676
+wmdsObservedVariable:Antimony
+a	skos:Concept ;
+skos:notation 676 ;
+dct:notation 676 ;
+rdfs:label "Antimony(Sb) in total aerosol"" ;
+skos:broader Trace elements ;
+defchem:chemical-species chemical-species:antimony ;
+defchem:medium medium:total aerosol" ;
+.
+
+#677
+wmdsObservedVariable:Arsenic
+a	skos:Concept ;
+skos:notation 677 ;
+dct:notation 677 ;
+rdfs:label "Arsenic(As) in PM10"" ;
+skos:broader Trace elements ;
+defchem:chemical-species chemical-species:arsenic ;
+defchem:medium medium:PM10" ;
+.
+
+#678
+wmdsObservedVariable:Arsenic
+a	skos:Concept ;
+skos:notation 678 ;
+dct:notation 678 ;
+rdfs:label "Arsenic(As) in total aerosol"" ;
+skos:broader Trace elements ;
+defchem:chemical-species chemical-species:arsenic ;
+defchem:medium medium:total aerosol" ;
+.
+
+#679
+wmdsObservedVariable:Barium
+a	skos:Concept ;
+skos:notation 679 ;
+dct:notation 679 ;
+rdfs:label "Barium(Ba) in PM2.5"" ;
+skos:broader Trace elements ;
+defchem:chemical-species chemical-species:barium ;
+defchem:medium medium:PM2.5" ;
+.
+
+#680
+wmdsObservedVariable:Barium
+a	skos:Concept ;
+skos:notation 680 ;
+dct:notation 680 ;
+rdfs:label "Barium(Ba) in total aerosol"" ;
+skos:broader Trace elements ;
+defchem:chemical-species chemical-species:barium ;
+defchem:medium medium:total aerosol" ;
+.
+
+#681
+wmdsObservedVariable:Bismuth
+a	skos:Concept ;
+skos:notation 681 ;
+dct:notation 681 ;
+rdfs:label "Bismuth(Bi) in PM2.5"" ;
+skos:broader Trace elements ;
+defchem:chemical-species chemical-species:bismuth ;
+defchem:medium medium:PM2.5" ;
+.
+
+#682
+wmdsObservedVariable:Bismuth
+a	skos:Concept ;
+skos:notation 682 ;
+dct:notation 682 ;
+rdfs:label "Bismuth(Bi) in total aerosol"" ;
+skos:broader Trace elements ;
+defchem:chemical-species chemical-species:bismuth ;
+defchem:medium medium:total aerosol" ;
+.
+
+#683
+wmdsObservedVariable:Cadmium
+a	skos:Concept ;
+skos:notation 683 ;
+dct:notation 683 ;
+rdfs:label "Cadmium(Cd) in PM1"" ;
+skos:broader Trace elements ;
+defchem:chemical-species chemical-species:cadmium ;
+defchem:medium medium:PM1" ;
+.
+
+#684
+wmdsObservedVariable:Cadmium
+a	skos:Concept ;
+skos:notation 684 ;
+dct:notation 684 ;
+rdfs:label "Cadmium(Cd) in PM10"" ;
+skos:broader Trace elements ;
+defchem:chemical-species chemical-species:cadmium ;
+defchem:medium medium:PM10" ;
+.
+
+#685
+wmdsObservedVariable:Cadmium
+a	skos:Concept ;
+skos:notation 685 ;
+dct:notation 685 ;
+rdfs:label "Cadmium(Cd) in PM2.5"" ;
+skos:broader Trace elements ;
+defchem:chemical-species chemical-species:cadmium ;
+defchem:medium medium:PM2.5" ;
+.
+
+#686
+wmdsObservedVariable:Cadmium
+a	skos:Concept ;
+skos:notation 686 ;
+dct:notation 686 ;
+rdfs:label "Cadmium(Cd) in PM2.5 thru PM10"" ;
+skos:broader Trace elements ;
+defchem:chemical-species chemical-species:cadmium ;
+defchem:medium medium:PM2.5 thru PM10" ;
+.
+
+#687
+wmdsObservedVariable:Cadmium
+a	skos:Concept ;
+skos:notation 687 ;
+dct:notation 687 ;
+rdfs:label "Cadmium(Cd) in total aerosol"" ;
+skos:broader Trace elements ;
+defchem:chemical-species chemical-species:cadmium ;
+defchem:medium medium:total aerosol" ;
+.
+
+#688
+wmdsObservedVariable:Cerium
+a	skos:Concept ;
+skos:notation 688 ;
+dct:notation 688 ;
+rdfs:label "Cerium(Ce) in PM2.5"" ;
+skos:broader Trace elements ;
+defchem:chemical-species chemical-species:cerium ;
+defchem:medium medium:PM2.5" ;
+.
+
+#689
+wmdsObservedVariable:Cerium
+a	skos:Concept ;
+skos:notation 689 ;
+dct:notation 689 ;
+rdfs:label "Cerium(Ce) in total aerosol"" ;
+skos:broader Trace elements ;
+defchem:chemical-species chemical-species:cerium ;
+defchem:medium medium:total aerosol" ;
+.
+
+#690
+wmdsObservedVariable:Chromium
+a	skos:Concept ;
+skos:notation 690 ;
+dct:notation 690 ;
+rdfs:label "Chromium(Cr) in total aerosol"" ;
+skos:broader Trace elements ;
+defchem:chemical-species chemical-species:chromium ;
+defchem:medium medium:total aerosol" ;
+.
+
+#691
+wmdsObservedVariable:Cobalt
+a	skos:Concept ;
+skos:notation 691 ;
+dct:notation 691 ;
+rdfs:label "Cobalt(Co) in total aerosol"" ;
+skos:broader Trace elements ;
+defchem:chemical-species chemical-species:cobalt ;
+defchem:medium medium:total aerosol" ;
+.
+
+#692
+wmdsObservedVariable:Copper
+a	skos:Concept ;
+skos:notation 692 ;
+dct:notation 692 ;
+rdfs:label "Copper(Cu) in PM10"" ;
+skos:broader Trace elements ;
+defchem:chemical-species chemical-species:copper ;
+defchem:medium medium:PM10" ;
+.
+
+#693
+wmdsObservedVariable:Copper
+a	skos:Concept ;
+skos:notation 693 ;
+dct:notation 693 ;
+rdfs:label "Copper(Cu) in total aerosol"" ;
+skos:broader Trace elements ;
+defchem:chemical-species chemical-species:copper ;
+defchem:medium medium:total aerosol" ;
+.
+
+#694
+wmdsObservedVariable:Iron
+a	skos:Concept ;
+skos:notation 694 ;
+dct:notation 694 ;
+rdfs:label "Iron(Fe) in total aerosol"" ;
+skos:broader Trace elements ;
+defchem:chemical-species chemical-species:iron ;
+defchem:medium medium:total aerosol" ;
+.
+
+#695
+wmdsObservedVariable:Lanthanum
+a	skos:Concept ;
+skos:notation 695 ;
+dct:notation 695 ;
+rdfs:label "Lanthanum(La) in PM2.5"" ;
+skos:broader Trace elements ;
+defchem:chemical-species chemical-species:lanthanum ;
+defchem:medium medium:PM2.5" ;
+.
+
+#696
+wmdsObservedVariable:Lanthanum
+a	skos:Concept ;
+skos:notation 696 ;
+dct:notation 696 ;
+rdfs:label "Lanthanum(La) in total aerosol"" ;
+skos:broader Trace elements ;
+defchem:chemical-species chemical-species:lanthanum ;
+defchem:medium medium:total aerosol" ;
+.
+
+#697
+wmdsObservedVariable:Lead
+a	skos:Concept ;
+skos:notation 697 ;
+dct:notation 697 ;
+rdfs:label "Lead(Pb) in PM10"" ;
+skos:broader Trace elements ;
+defchem:chemical-species chemical-species:lead ;
+defchem:medium medium:PM10" ;
+.
+
+#698
+wmdsObservedVariable:Lead
+a	skos:Concept ;
+skos:notation 698 ;
+dct:notation 698 ;
+rdfs:label "Lead(Pb) in total aerosol"" ;
+skos:broader Trace elements ;
+defchem:chemical-species chemical-species:lead ;
+defchem:medium medium:total aerosol" ;
+.
+
+#699
+wmdsObservedVariable:Lithium
+a	skos:Concept ;
+skos:notation 699 ;
+dct:notation 699 ;
+rdfs:label "Lithium(Li) in PM2.5"" ;
+skos:broader Trace elements ;
+defchem:chemical-species chemical-species:lithium ;
+defchem:medium medium:PM2.5" ;
+.
+
+#700
+wmdsObservedVariable:Lithium
+a	skos:Concept ;
+skos:notation 700 ;
+dct:notation 700 ;
+rdfs:label "Lithium(Li) in total aerosol"" ;
+skos:broader Trace elements ;
+defchem:chemical-species chemical-species:lithium ;
+defchem:medium medium:total aerosol" ;
+.
+
+#701
+wmdsObservedVariable:Manganese
+a	skos:Concept ;
+skos:notation 701 ;
+dct:notation 701 ;
+rdfs:label "Manganese(Mn) in PM10"" ;
+skos:broader Trace elements ;
+defchem:chemical-species chemical-species:manganese ;
+defchem:medium medium:PM10" ;
+.
+
+#702
+wmdsObservedVariable:Manganese
+a	skos:Concept ;
+skos:notation 702 ;
+dct:notation 702 ;
+rdfs:label "Manganese(Mn) in total aerosol"" ;
+skos:broader Trace elements ;
+defchem:chemical-species chemical-species:manganese ;
+defchem:medium medium:total aerosol" ;
+.
+
+#703
+wmdsObservedVariable:Mercury
+a	skos:Concept ;
+skos:notation 703 ;
+dct:notation 703 ;
+rdfs:label "Mercury(Hg) in total aerosol"" ;
+skos:broader Trace elements ;
+defchem:chemical-species chemical-species:mercury ;
+defchem:medium medium:total aerosol" ;
+.
+
+#704
+wmdsObservedVariable:Nickel
+a	skos:Concept ;
+skos:notation 704 ;
+dct:notation 704 ;
+rdfs:label "Nickel(Ni) in PM10"" ;
+skos:broader Trace elements ;
+defchem:chemical-species chemical-species:nickel ;
+defchem:medium medium:PM10" ;
+.
+
+#705
+wmdsObservedVariable:Nickel
+a	skos:Concept ;
+skos:notation 705 ;
+dct:notation 705 ;
+rdfs:label "Nickel(Ni) in total aerosol"" ;
+skos:broader Trace elements ;
+defchem:chemical-species chemical-species:nickel ;
+defchem:medium medium:total aerosol" ;
+.
+
+#706
+wmdsObservedVariable:Phosphorous
+a	skos:Concept ;
+skos:notation 706 ;
+dct:notation 706 ;
+rdfs:label "Phosphorous(P) in PM2.5"" ;
+skos:broader Trace elements ;
+defchem:medium medium:PM2.5" ;
+.
+
+#707
+wmdsObservedVariable:Phosphorous
+a	skos:Concept ;
+skos:notation 707 ;
+dct:notation 707 ;
+rdfs:label "Phosphorous(P) in total aerosol"" ;
+skos:broader Trace elements ;
+defchem:medium medium:total aerosol" ;
+.
+
+#708
+wmdsObservedVariable:Rubidium
+a	skos:Concept ;
+skos:notation 708 ;
+dct:notation 708 ;
+rdfs:label "Rubidium(Rb) in PM2.5"" ;
+skos:broader Trace elements ;
+defchem:chemical-species chemical-species:rubidium ;
+defchem:medium medium:PM2.5" ;
+.
+
+#709
+wmdsObservedVariable:Rubidium
+a	skos:Concept ;
+skos:notation 709 ;
+dct:notation 709 ;
+rdfs:label "Rubidium(Rb) in total aerosol"" ;
+skos:broader Trace elements ;
+defchem:chemical-species chemical-species:rubidium ;
+defchem:medium medium:total aerosol" ;
+.
+
+#710
+wmdsObservedVariable:Selenium
+a	skos:Concept ;
+skos:notation 710 ;
+dct:notation 710 ;
+rdfs:label "Selenium(Se) in total aerosol"" ;
+skos:broader Trace elements ;
+defchem:chemical-species chemical-species:selenium ;
+defchem:medium medium:total aerosol" ;
+.
+
+#711
+wmdsObservedVariable:Strontium
+a	skos:Concept ;
+skos:notation 711 ;
+dct:notation 711 ;
+rdfs:label "Strontium(Sr) in PM2.5"" ;
+skos:broader Trace elements ;
+defchem:chemical-species chemical-species:strontium ;
+defchem:medium medium:PM2.5" ;
+.
+
+#712
+wmdsObservedVariable:Strontium
+a	skos:Concept ;
+skos:notation 712 ;
+dct:notation 712 ;
+rdfs:label "Strontium(Sr) in total aerosol"" ;
+skos:broader Trace elements ;
+defchem:chemical-species chemical-species:strontium ;
+defchem:medium medium:total aerosol" ;
+.
+
+#713
+wmdsObservedVariable:Thallium
+a	skos:Concept ;
+skos:notation 713 ;
+dct:notation 713 ;
+rdfs:label "Thallium(Tl) in PM2.5"" ;
+skos:broader Trace elements ;
+defchem:medium medium:PM2.5" ;
+.
+
+#714
+wmdsObservedVariable:Thallium
+a	skos:Concept ;
+skos:notation 714 ;
+dct:notation 714 ;
+rdfs:label "Thallium(Tl) in total aerosol"" ;
+skos:broader Trace elements ;
+defchem:medium medium:total aerosol" ;
+.
+
+#715
+wmdsObservedVariable:Thorium
+a	skos:Concept ;
+skos:notation 715 ;
+dct:notation 715 ;
+rdfs:label "Thorium(Th) in PM2.5"" ;
+skos:broader Trace elements ;
+defchem:chemical-species chemical-species:thorium ;
+defchem:medium medium:PM2.5" ;
+.
+
+#716
+wmdsObservedVariable:Thorium
+a	skos:Concept ;
+skos:notation 716 ;
+dct:notation 716 ;
+rdfs:label "Thorium(Th) in total aerosol"" ;
+skos:broader Trace elements ;
+defchem:chemical-species chemical-species:thorium ;
+defchem:medium medium:total aerosol" ;
+.
+
+#717
+wmdsObservedVariable:Tin
+a	skos:Concept ;
+skos:notation 717 ;
+dct:notation 717 ;
+rdfs:label "Tin(Sn) in PM2.5"" ;
+skos:broader Trace elements ;
+defchem:chemical-species chemical-species:tin ;
+defchem:medium medium:PM2.5" ;
+.
+
+#718
+wmdsObservedVariable:Tin
+a	skos:Concept ;
+skos:notation 718 ;
+dct:notation 718 ;
+rdfs:label "Tin(Sn) in total aerosol"" ;
+skos:broader Trace elements ;
+defchem:chemical-species chemical-species:tin ;
+defchem:medium medium:total aerosol" ;
+.
+
+#719
+wmdsObservedVariable:Uranium
+a	skos:Concept ;
+skos:notation 719 ;
+dct:notation 719 ;
+rdfs:label "Uranium(U) in PM2.5"" ;
+skos:broader Trace elements ;
+defchem:chemical-species chemical-species:uranium ;
+defchem:medium medium:PM2.5" ;
+.
+
+#720
+wmdsObservedVariable:Uranium
+a	skos:Concept ;
+skos:notation 720 ;
+dct:notation 720 ;
+rdfs:label "Uranium(U) in total aerosol"" ;
+skos:broader Trace elements ;
+defchem:chemical-species chemical-species:uranium ;
+defchem:medium medium:total aerosol" ;
+.
+
+#721
+wmdsObservedVariable:Vanadium
+a	skos:Concept ;
+skos:notation 721 ;
+dct:notation 721 ;
+rdfs:label "Vanadium(V) in PM2.5"" ;
+skos:broader Trace elements ;
+defchem:chemical-species chemical-species:vanadium ;
+defchem:medium medium:PM2.5" ;
+.
+
+#722
+wmdsObservedVariable:Vanadium
+a	skos:Concept ;
+skos:notation 722 ;
+dct:notation 722 ;
+rdfs:label "Vanadium(V) in total aerosol"" ;
+skos:broader Trace elements ;
+defchem:chemical-species chemical-species:vanadium ;
+defchem:medium medium:total aerosol" ;
+.
+
+#723
+wmdsObservedVariable:Zinc
+a	skos:Concept ;
+skos:notation 723 ;
+dct:notation 723 ;
+rdfs:label "Zinc(Zn) in PM2.5"" ;
+skos:broader Trace elements ;
+defchem:chemical-species chemical-species:zinc ;
+defchem:medium medium:PM2.5" ;
+.
+
+#724
+wmdsObservedVariable:Zinc
+a	skos:Concept ;
+skos:notation 724 ;
+dct:notation 724 ;
+rdfs:label "Zinc(Zn) in total aerosol"" ;
+skos:broader Trace elements ;
+defchem:chemical-species chemical-species:zinc ;
+defchem:medium medium:total aerosol" ;
+.
+
+#10011
+wmdsObservedVariable:Optical properties
+a	skos:Concept ;
+skos:notation 10011 ;
+dct:notation 10011 ;
+rdfs:label "Optical properties" ;
+skos:broader Aerosol ;
+.
+
+#314
+wmdsObservedVariable:Aerosol Absorption Optical Depth
+a	skos:Concept ;
+skos:notation 314 ;
+dct:notation 314 ;
+rdfs:label "Aerosol Absorption Optical Depth" ;
+skos:broader Optical properties ;
+.
+
+#315
+wmdsObservedVariable:Aerosol Extinction Coefficient
+a	skos:Concept ;
+skos:notation 315 ;
+dct:notation 315 ;
+rdfs:label "Aerosol Extinction Coefficient" ;
+skos:broader Optical properties ;
+.
+
+#316
+wmdsObservedVariable:Light absorption coefficient
+a	skos:Concept ;
+skos:notation 316 ;
+dct:notation 316 ;
+rdfs:label "Light absorption coefficient in PM1"" ;
+skos:broader Optical properties ;
+defchem:medium medium:PM1" ;
+.
+
+#317
+wmdsObservedVariable:Light absorption coefficient
+a	skos:Concept ;
+skos:notation 317 ;
+dct:notation 317 ;
+rdfs:label "Light absorption coefficient in PM10"" ;
+skos:broader Optical properties ;
+defchem:medium medium:PM10" ;
+.
+
+#318
+wmdsObservedVariable:Light absorption coefficient
+a	skos:Concept ;
+skos:notation 318 ;
+dct:notation 318 ;
+rdfs:label "Light absorption coefficient in total aerosol"" ;
+skos:broader Optical properties ;
+defchem:medium medium:total aerosol" ;
+.
+
+#319
+wmdsObservedVariable:Light backscattering coefficient
+a	skos:Concept ;
+skos:notation 319 ;
+dct:notation 319 ;
+rdfs:label "Light backscattering coefficient in PM1"" ;
+skos:broader Optical properties ;
+defchem:medium medium:PM1" ;
+.
+
+#320
+wmdsObservedVariable:Light backscattering coefficient
+a	skos:Concept ;
+skos:notation 320 ;
+dct:notation 320 ;
+rdfs:label "Light backscattering coefficient in PM10"" ;
+skos:broader Optical properties ;
+defchem:medium medium:PM10" ;
+.
+
+#321
+wmdsObservedVariable:Light backscattering coefficient
+a	skos:Concept ;
+skos:notation 321 ;
+dct:notation 321 ;
+rdfs:label "Light backscattering coefficient in total aerosol"" ;
+skos:broader Optical properties ;
+defchem:medium medium:total aerosol" ;
+.
+
+#322
+wmdsObservedVariable:Light scattering coefficient
+a	skos:Concept ;
+skos:notation 322 ;
+dct:notation 322 ;
+rdfs:label "Light scattering coefficient in PM1"" ;
+skos:broader Optical properties ;
+defchem:medium medium:PM1" ;
+.
+
+#323
+wmdsObservedVariable:Light scattering coefficient
+a	skos:Concept ;
+skos:notation 323 ;
+dct:notation 323 ;
+rdfs:label "Light scattering coefficient in PM10"" ;
+skos:broader Optical properties ;
+defchem:medium medium:PM10" ;
+.
+
+#324
+wmdsObservedVariable:Light scattering coefficient
+a	skos:Concept ;
+skos:notation 324 ;
+dct:notation 324 ;
+rdfs:label "Light scattering coefficient in total aerosol"" ;
+skos:broader Optical properties ;
+defchem:medium medium:total aerosol" ;
+.
+
+#325
+wmdsObservedVariable:Multiwavelength optical depth
+a	skos:Concept ;
+skos:notation 325 ;
+dct:notation 325 ;
+rdfs:label "Multiwavelength optical depth in total aerosol"" ;
+skos:broader Optical properties ;
+defchem:medium medium:total aerosol" ;
+.
+
+#326
+wmdsObservedVariable:Vertical distribution of properties
+a	skos:Concept ;
+skos:notation 326 ;
+dct:notation 326 ;
+rdfs:label "Vertical distribution of properties" ;
+skos:broader Optical properties ;
+.
+
+#10012
+wmdsObservedVariable:Physical properties - primary
+a	skos:Concept ;
+skos:notation 10012 ;
+dct:notation 10012 ;
+rdfs:label "Physical properties - primary" ;
+skos:broader Aerosol ;
+.
+
+#361
+wmdsObservedVariable:Aerosol column burden
+a	skos:Concept ;
+skos:notation 361 ;
+dct:notation 361 ;
+rdfs:label "Aerosol column burden(mass density)" ;
+skos:broader Physical properties - primary ;
+.
+
+#362
+wmdsObservedVariable:Aerosol effective radius
+a	skos:Concept ;
+skos:notation 362 ;
+dct:notation 362 ;
+rdfs:label "Aerosol effective radius" ;
+skos:broader Physical properties - primary ;
+.
+
+#364
+wmdsObservedVariable:Mass concentration  or Mass PM10
+a	skos:Concept ;
+skos:notation 364 ;
+dct:notation 364 ;
+rdfs:label "Mass concentration  or Mass PM10(coarse)" ;
+skos:broader Physical properties - primary ;
+.
+
+#365
+wmdsObservedVariable:Mass concentration  or Mass PM1
+a	skos:Concept ;
+skos:notation 365 ;
+dct:notation 365 ;
+rdfs:label "Mass concentration  or Mass PM1(fine)" ;
+skos:broader Physical properties - primary ;
+.
+
+#366
+wmdsObservedVariable:Mass concentration
+a	skos:Concept ;
+skos:notation 366 ;
+dct:notation 366 ;
+rdfs:label "Mass concentration(medium) in PM2.5"" ;
+skos:broader Physical properties - primary ;
+defchem:medium medium:PM2.5" ;
+.
+
+#367
+wmdsObservedVariable:Mass concentration
+a	skos:Concept ;
+skos:notation 367 ;
+dct:notation 367 ;
+rdfs:label "Mass concentration(size fractionated)" ;
+skos:broader Physical properties - primary ;
+.
+
+#368
+wmdsObservedVariable:Mass concentration  or Mass TSP
+a	skos:Concept ;
+skos:notation 368 ;
+dct:notation 368 ;
+rdfs:label "Mass concentration  or Mass TSP(total aerosol)" ;
+skos:broader Physical properties - primary ;
+.
+
+#369
+wmdsObservedVariable:Number concentration
+a	skos:Concept ;
+skos:notation 369 ;
+dct:notation 369 ;
+rdfs:label "Number concentration" ;
+skos:broader Physical properties - primary ;
+.
+
+#370
+wmdsObservedVariable:Number size distribution
+a	skos:Concept ;
+skos:notation 370 ;
+dct:notation 370 ;
+rdfs:label "Number size distribution in PM10"" ;
+skos:broader Physical properties - primary ;
+defchem:medium medium:PM10" ;
+.
+
+#371
+wmdsObservedVariable:Number size distribution
+a	skos:Concept ;
+skos:notation 371 ;
+dct:notation 371 ;
+rdfs:label "Number size distribution in total aerosol"" ;
+skos:broader Physical properties - primary ;
+defchem:medium medium:total aerosol" ;
+.
+
+#10013
+wmdsObservedVariable:Dust
+a	skos:Concept ;
+skos:notation 10013 ;
+dct:notation 10013 ;
+rdfs:label "Dust" ;
+skos:broader Physical properties - primary ;
+defchem:chemical-species chemical-species:dust ;
+.
+
+#727
+wmdsObservedVariable:Aerosol dust concentration
+a	skos:Concept ;
+skos:notation 727 ;
+dct:notation 727 ;
+rdfs:label "Aerosol dust concentration(mass)" ;
+skos:broader Dust ;
+.
+
+#10014
+wmdsObservedVariable:Volcanic ash
+a	skos:Concept ;
+skos:notation 10014 ;
+dct:notation 10014 ;
+rdfs:label "Volcanic ash" ;
+skos:broader Physical properties - primary ;
+.
+
+#728
+wmdsObservedVariable:Aerosol volcanic ash
+a	skos:Concept ;
+skos:notation 728 ;
+dct:notation 728 ;
+rdfs:label "Aerosol volcanic ash(mass concentration)" ;
+skos:broader Volcanic ash ;
+.
+
+#729
+wmdsObservedVariable:Aerosol volcanic ash
+a	skos:Concept ;
+skos:notation 729 ;
+dct:notation 729 ;
+rdfs:label "Aerosol volcanic ash(Total column)" ;
+skos:broader Volcanic ash ;
+.
+
+#10015
+wmdsObservedVariable:Physical properties - secondary
+a	skos:Concept ;
+skos:notation 10015 ;
+dct:notation 10015 ;
+rdfs:label "Physical properties - secondary" ;
+skos:broader Aerosol ;
+.
+
+#411
+wmdsObservedVariable:CCN concentration at single supersaturation
+a	skos:Concept ;
+skos:notation 411 ;
+dct:notation 411 ;
+rdfs:label "CCN concentration at single supersaturation" ;
+skos:broader Physical properties - secondary ;
+.
+
+#412
+wmdsObservedVariable:CCN concentration spectra
+a	skos:Concept ;
+skos:notation 412 ;
+dct:notation 412 ;
+rdfs:label "CCN concentration spectra" ;
+skos:broader Physical properties - secondary ;
+.
+
+#413
+wmdsObservedVariable:Hygroscopic growth factor
+a	skos:Concept ;
+skos:notation 413 ;
+dct:notation 413 ;
+rdfs:label "Hygroscopic growth factor in 110 μm equivalent"" ;
+skos:broader Physical properties - secondary ;
+defchem:medium medium:110 μm equivalent" ;
+.
+
+#414
+wmdsObservedVariable:Hygroscopic growth factor
+a	skos:Concept ;
+skos:notation 414 ;
+dct:notation 414 ;
+rdfs:label "Hygroscopic growth factor in 165 μm equivalent"" ;
+skos:broader Physical properties - secondary ;
+defchem:medium medium:165 μm equivalent" ;
+.
+
+#415
+wmdsObservedVariable:Hygroscopic growth factor
+a	skos:Concept ;
+skos:notation 415 ;
+dct:notation 415 ;
+rdfs:label "Hygroscopic growth factor in 35 μm equivalent"" ;
+skos:broader Physical properties - secondary ;
+defchem:medium medium:35 μm equivalent" ;
+.
+
+#416
+wmdsObservedVariable:Hygroscopic growth factor
+a	skos:Concept ;
+skos:notation 416 ;
+dct:notation 416 ;
+rdfs:label "Hygroscopic growth factor in 50 μm equivalent"" ;
+skos:broader Physical properties - secondary ;
+defchem:medium medium:50 μm equivalent" ;
+.
+
+#417
+wmdsObservedVariable:Hygroscopic growth factor
+a	skos:Concept ;
+skos:notation 417 ;
+dct:notation 417 ;
+rdfs:label "Hygroscopic growth factor in 75 μm equivalent"" ;
+skos:broader Physical properties - secondary ;
+defchem:medium medium:75 μm equivalent" ;
+.
+
+#418
+wmdsObservedVariable:Hygroscopic growth factor
+a	skos:Concept ;
+skos:notation 418 ;
+dct:notation 418 ;
+rdfs:label "Hygroscopic growth factor in total aerosol"" ;
+skos:broader Physical properties - secondary ;
+defchem:medium medium:total aerosol" ;
+.
+
+#10016
+wmdsObservedVariable:Clouds
+a	skos:Concept ;
+skos:notation 10016 ;
+dct:notation 10016 ;
+rdfs:label "Clouds" ;
+skos:broader Atmosphere ;
+.
+
+#179
+wmdsObservedVariable:Cloud amount
+a	skos:Concept ;
+skos:notation 179 ;
+dct:notation 179 ;
+rdfs:label "Cloud amount" ;
+skos:broader Clouds ;
+.
+
+#180
+wmdsObservedVariable:Cloud cover
+a	skos:Concept ;
+skos:notation 180 ;
+dct:notation 180 ;
+rdfs:label "Cloud cover" ;
+skos:broader Clouds ;
+.
+
+#181
+wmdsObservedVariable:Cloud drop effective radius
+a	skos:Concept ;
+skos:notation 181 ;
+dct:notation 181 ;
+rdfs:label "Cloud drop effective radius" ;
+skos:broader Clouds ;
+.
+
+#182
+wmdsObservedVariable:Cloud hydrometeor concentration
+a	skos:Concept ;
+skos:notation 182 ;
+dct:notation 182 ;
+rdfs:label "Cloud hydrometeor concentration" ;
+skos:broader Clouds ;
+.
+
+#183
+wmdsObservedVariable:Effective radius of cloud hydrometeors
+a	skos:Concept ;
+skos:notation 183 ;
+dct:notation 183 ;
+rdfs:label "Effective radius of cloud hydrometeors" ;
+skos:broader Clouds ;
+.
+
+#186
+wmdsObservedVariable:Melting layer depth in clouds
+a	skos:Concept ;
+skos:notation 186 ;
+dct:notation 186 ;
+rdfs:label "Melting layer depth in clouds" ;
+skos:broader Clouds ;
+.
+
+#188
+wmdsObservedVariable:PSC occurrence
+a	skos:Concept ;
+skos:notation 188 ;
+dct:notation 188 ;
+rdfs:label "PSC occurrence" ;
+skos:broader Clouds ;
+.
+
+#10017
+wmdsObservedVariable:Ice
+a	skos:Concept ;
+skos:notation 10017 ;
+dct:notation 10017 ;
+rdfs:label "Ice" ;
+skos:broader Clouds ;
+.
+
+#327
+wmdsObservedVariable:Cloud ice
+a	skos:Concept ;
+skos:notation 327 ;
+dct:notation 327 ;
+rdfs:label "Cloud ice" ;
+skos:broader Ice ;
+.
+
+#328
+wmdsObservedVariable:Cloud ice
+a	skos:Concept ;
+skos:notation 328 ;
+dct:notation 328 ;
+rdfs:label "Cloud ice(total column)" ;
+skos:broader Ice ;
+.
+
+#329
+wmdsObservedVariable:Cloud ice effective radius
+a	skos:Concept ;
+skos:notation 329 ;
+dct:notation 329 ;
+rdfs:label "Cloud ice effective radius" ;
+skos:broader Ice ;
+.
+
+#330
+wmdsObservedVariable:Freezing level height in clouds
+a	skos:Concept ;
+skos:notation 330 ;
+dct:notation 330 ;
+rdfs:label "Freezing level height in clouds" ;
+skos:broader Ice ;
+.
+
+#331
+wmdsObservedVariable:Icing potential
+a	skos:Concept ;
+skos:notation 331 ;
+dct:notation 331 ;
+rdfs:label "Icing potential" ;
+skos:broader Ice ;
+.
+
+#10018
+wmdsObservedVariable:Liquid water
+a	skos:Concept ;
+skos:notation 10018 ;
+dct:notation 10018 ;
+rdfs:label "Liquid water" ;
+skos:broader Clouds ;
+.
+
+#373
+wmdsObservedVariable:Cloud liquid water
+a	skos:Concept ;
+skos:notation 373 ;
+dct:notation 373 ;
+rdfs:label "Cloud liquid water(CLW)" ;
+skos:broader Liquid water ;
+.
+
+#374
+wmdsObservedVariable:Cloud liquid water
+a	skos:Concept ;
+skos:notation 374 ;
+dct:notation 374 ;
+rdfs:label "Cloud liquid water(CLW, total column)" ;
+skos:broader Liquid water ;
+.
+
+#10019
+wmdsObservedVariable:Optical properties
+a	skos:Concept ;
+skos:notation 10019 ;
+dct:notation 10019 ;
+rdfs:label "Optical properties" ;
+skos:broader Clouds ;
+.
+
+#506
+wmdsObservedVariable:Cloud optical depth
+a	skos:Concept ;
+skos:notation 506 ;
+dct:notation 506 ;
+rdfs:label "Cloud optical depth" ;
+skos:broader Optical properties ;
+.
+
+#507
+wmdsObservedVariable:Optical depth of fog
+a	skos:Concept ;
+skos:notation 507 ;
+dct:notation 507 ;
+rdfs:label "Optical depth of fog" ;
+skos:broader Optical properties ;
+.
+
+#508
+wmdsObservedVariable:Optical depth within each layer
+a	skos:Concept ;
+skos:notation 508 ;
+dct:notation 508 ;
+rdfs:label "Optical depth within each layer" ;
+skos:broader Optical properties ;
+.
+
+#509
+wmdsObservedVariable:Short-wave cloud reflectance
+a	skos:Concept ;
+skos:notation 509 ;
+dct:notation 509 ;
+rdfs:label "Short-wave cloud reflectance" ;
+skos:broader Optical properties ;
+.
+
+#10020
+wmdsObservedVariable:Position
+a	skos:Concept ;
+skos:notation 10020 ;
+dct:notation 10020 ;
+rdfs:label "Position" ;
+skos:broader Clouds ;
+.
+
+#531
+wmdsObservedVariable:Height of cloud base
+a	skos:Concept ;
+skos:notation 531 ;
+dct:notation 531 ;
+rdfs:label "Height of cloud base" ;
+skos:broader Position ;
+.
+
+#532
+wmdsObservedVariable:Height of cloud top
+a	skos:Concept ;
+skos:notation 532 ;
+dct:notation 532 ;
+rdfs:label "Height of cloud top" ;
+skos:broader Position ;
+.
+
+#533
+wmdsObservedVariable:Height of inversion
+a	skos:Concept ;
+skos:notation 533 ;
+dct:notation 533 ;
+rdfs:label "Height of inversion" ;
+skos:broader Position ;
+.
+
+#10021
+wmdsObservedVariable:Type
+a	skos:Concept ;
+skos:notation 10021 ;
+dct:notation 10021 ;
+rdfs:label "Type" ;
+skos:broader Clouds ;
+.
+
+#550
+wmdsObservedVariable:Type of cloud
+a	skos:Concept ;
+skos:notation 550 ;
+dct:notation 550 ;
+rdfs:label "Type of cloud" ;
+skos:broader Type ;
+.
+
+#551
+wmdsObservedVariable:Type of high clouds
+a	skos:Concept ;
+skos:notation 551 ;
+dct:notation 551 ;
+rdfs:label "Type of high clouds" ;
+skos:broader Type ;
+.
+
+#552
+wmdsObservedVariable:Type of low clouds
+a	skos:Concept ;
+skos:notation 552 ;
+dct:notation 552 ;
+rdfs:label "Type of low clouds" ;
+skos:broader Type ;
+.
+
+#553
+wmdsObservedVariable:Type of middle clouds
+a	skos:Concept ;
+skos:notation 553 ;
+dct:notation 553 ;
+rdfs:label "Type of middle clouds" ;
+skos:broader Type ;
+.
+
+#10022
+wmdsObservedVariable:Dynamics
+a	skos:Concept ;
+skos:notation 10022 ;
+dct:notation 10022 ;
+rdfs:label "Dynamics" ;
+skos:broader Atmosphere ;
+.
+
+#248
+wmdsObservedVariable:Transport calculations
+a	skos:Concept ;
+skos:notation 248 ;
+dct:notation 248 ;
+rdfs:label "Transport calculations(e.g., trajectories)" ;
+skos:broader Dynamics ;
+.
+
+#249
+wmdsObservedVariable:Turbulence
+a	skos:Concept ;
+skos:notation 249 ;
+dct:notation 249 ;
+rdfs:label "Turbulence" ;
+skos:broader Dynamics ;
+.
+
+#250
+wmdsObservedVariable:Turbulence type
+a	skos:Concept ;
+skos:notation 250 ;
+dct:notation 250 ;
+rdfs:label "Turbulence type(low levels and wake vortex)" ;
+skos:broader Dynamics ;
+.
+
+#10023
+wmdsObservedVariable:Greenhouse Gas
+a	skos:Concept ;
+skos:notation 10023 ;
+dct:notation 10023 ;
+rdfs:label "Greenhouse Gas" ;
+skos:broader Atmosphere ;
+defchem:medium medium:air ;
+.
+
+#192
+wmdsObservedVariable:CH4
+a	skos:Concept ;
+skos:notation 192 ;
+dct:notation 192 ;
+rdfs:label "CH4" ;
+skos:broader Greenhouse Gas ;
+defchem:chemical-species chemical-species:methane ;
+defchem:medium medium:air ;
+.
+
+#193
+wmdsObservedVariable:CH4 [C-13]
+a	skos:Concept ;
+skos:notation 193 ;
+dct:notation 193 ;
+rdfs:label "CH4 [C-13]" ;
+skos:broader Greenhouse Gas ;
+defchem:medium medium:air ;
+.
+
+#194
+wmdsObservedVariable:CO2
+a	skos:Concept ;
+skos:notation 194 ;
+dct:notation 194 ;
+rdfs:label "CO2" ;
+skos:broader Greenhouse Gas ;
+defchem:chemical-species chemical-species:carbon-dioxide ;
+defchem:medium medium:air ;
+.
+
+#195
+wmdsObservedVariable:CO2 [C-13]
+a	skos:Concept ;
+skos:notation 195 ;
+dct:notation 195 ;
+rdfs:label "CO2 [C-13]" ;
+skos:broader Greenhouse Gas ;
+defchem:medium medium:air ;
+.
+
+#196
+wmdsObservedVariable:CO2 [O-18]
+a	skos:Concept ;
+skos:notation 196 ;
+dct:notation 196 ;
+rdfs:label "CO2 [O-18]" ;
+skos:broader Greenhouse Gas ;
+defchem:medium medium:air ;
+.
+
+#201
+wmdsObservedVariable:N2O
+a	skos:Concept ;
+skos:notation 201 ;
+dct:notation 201 ;
+rdfs:label "N2O" ;
+skos:broader Greenhouse Gas ;
+defchem:chemical-species chemical-species:dinitrogen-oxide ;
+defchem:medium medium:air ;
+.
+
+#203
+wmdsObservedVariable:SF6
+a	skos:Concept ;
+skos:notation 203 ;
+dct:notation 203 ;
+rdfs:label "SF6" ;
+skos:broader Greenhouse Gas ;
+defchem:chemical-species chemical-species:sulfur-hexafluoride ;
+defchem:medium medium:air ;
+.
+
+#204
+wmdsObservedVariable:SO2F2
+a	skos:Concept ;
+skos:notation 204 ;
+dct:notation 204 ;
+rdfs:label "SO2F2(sulphuryl fluoride)" ;
+skos:broader Greenhouse Gas ;
+defchem:chemical-species chemical-species:sulfuryl-fluoride ;
+defchem:medium medium:air ;
+.
+
+#10024
+wmdsObservedVariable:CFCs
+a	skos:Concept ;
+skos:notation 10024 ;
+dct:notation 10024 ;
+rdfs:label "CFCs" ;
+skos:broader Greenhouse Gas ;
+defchem:medium medium:air ;
+.
+
+#589
+wmdsObservedVariable:C2Cl2F4
+a	skos:Concept ;
+skos:notation 589 ;
+dct:notation 589 ;
+rdfs:label "C2Cl2F4(1, 2-dichlorotetrafluoroethane, CFC-114)" ;
+skos:broader CFCs ;
+defchem:medium medium:air ;
+.
+
+#590
+wmdsObservedVariable:C2Cl3F3
+a	skos:Concept ;
+skos:notation 590 ;
+dct:notation 590 ;
+rdfs:label "C2Cl3F3(1, 1, 2-trichloro-1, 2, 2-trifluoroethane, CFC-113)" ;
+skos:broader CFCs ;
+defchem:medium medium:air ;
+.
+
+#591
+wmdsObservedVariable:C2ClF5
+a	skos:Concept ;
+skos:notation 591 ;
+dct:notation 591 ;
+rdfs:label "C2ClF5(1-chloro-1, 1, 2, 2, 2-pentafluoroethane, CFC-115)" ;
+skos:broader CFCs ;
+defchem:medium medium:air ;
+.
+
+#592
+wmdsObservedVariable:CCl2F2
+a	skos:Concept ;
+skos:notation 592 ;
+dct:notation 592 ;
+rdfs:label "CCl2F2(dichlorodifluoromethane, CFC-12)" ;
+skos:broader CFCs ;
+defchem:chemical-species chemical-species:dichlorodifluoromethane ;
+defchem:medium medium:air ;
+.
+
+#593
+wmdsObservedVariable:CCl3F
+a	skos:Concept ;
+skos:notation 593 ;
+dct:notation 593 ;
+rdfs:label "CCl3F(trichlorofluoromethane, CFC-11)" ;
+skos:broader CFCs ;
+defchem:chemical-species chemical-species:trichlorofluoromethane ;
+defchem:medium medium:air ;
+.
+
+#10025
+wmdsObservedVariable:Halocarbons
+a	skos:Concept ;
+skos:notation 10025 ;
+dct:notation 10025 ;
+rdfs:label "Halocarbons" ;
+skos:broader Greenhouse Gas ;
+defchem:medium medium:air ;
+.
+
+#594
+wmdsObservedVariable:CCl4
+a	skos:Concept ;
+skos:notation 594 ;
+dct:notation 594 ;
+rdfs:label "CCl4(carbon tetrachloride)" ;
+skos:broader Halocarbons ;
+defchem:chemical-species chemical-species:carbon-tetrachloride ;
+defchem:medium medium:air ;
+.
+
+#595
+wmdsObservedVariable:CH3CCl3
+a	skos:Concept ;
+skos:notation 595 ;
+dct:notation 595 ;
+rdfs:label "CH3CCl3(1, 1, 1-trichloroethane)" ;
+skos:broader Halocarbons ;
+defchem:chemical-species chemical-species:1,1,1-trichloroethane ;
+defchem:medium medium:air ;
+.
+
+#10026
+wmdsObservedVariable:Halon
+a	skos:Concept ;
+skos:notation 10026 ;
+dct:notation 10026 ;
+rdfs:label "Halon" ;
+skos:broader Greenhouse Gas ;
+defchem:medium medium:air ;
+.
+
+#332
+wmdsObservedVariable:CBrClF2
+a	skos:Concept ;
+skos:notation 332 ;
+dct:notation 332 ;
+rdfs:label "CBrClF2(Halon 1211)" ;
+skos:broader Halon ;
+defchem:chemical-species chemical-species:bromochlorodifluoromethane ;
+defchem:medium medium:air ;
+.
+
+#333
+wmdsObservedVariable:CBrF3
+a	skos:Concept ;
+skos:notation 333 ;
+dct:notation 333 ;
+rdfs:label "CBrF3(bromotrifluoromethane, Halon 1301)" ;
+skos:broader Halon ;
+defchem:chemical-species chemical-species:bromotrifluoromethane ;
+defchem:medium medium:air ;
+.
+
+#10027
+wmdsObservedVariable:HCFCs
+a	skos:Concept ;
+skos:notation 10027 ;
+dct:notation 10027 ;
+rdfs:label "HCFCs" ;
+skos:broader Greenhouse Gas ;
+defchem:medium medium:air ;
+.
+
+#534
+wmdsObservedVariable:C2H3Cl2F
+a	skos:Concept ;
+skos:notation 534 ;
+dct:notation 534 ;
+rdfs:label "C2H3Cl2F(1, 1-dichloro-1-fluoroethane, HCFC-141b)" ;
+skos:broader HCFCs ;
+defchem:chemical-species chemical-species:1,1-dichloro-1-fluoroethane ;
+defchem:medium medium:air ;
+.
+
+#535
+wmdsObservedVariable:C2H3ClF2
+a	skos:Concept ;
+skos:notation 535 ;
+dct:notation 535 ;
+rdfs:label "C2H3ClF2(1-chloro-1, 1-difluoroethane, HCFC-142b)" ;
+skos:broader HCFCs ;
+defchem:chemical-species chemical-species:1-chloro-1,1-difluoroethane ;
+defchem:medium medium:air ;
+.
+
+#536
+wmdsObservedVariable:C2H3F3
+a	skos:Concept ;
+skos:notation 536 ;
+dct:notation 536 ;
+rdfs:label "C2H3F3(1, 1, 1-trifluoroethane, HCFC-143a)" ;
+skos:broader HCFCs ;
+defchem:medium medium:air ;
+.
+
+#537
+wmdsObservedVariable:CHClF2
+a	skos:Concept ;
+skos:notation 537 ;
+dct:notation 537 ;
+rdfs:label "CHClF2(chlorodifluoromethane, HCFC-22)" ;
+skos:broader HCFCs ;
+defchem:chemical-species chemical-species:chlorodifluoromethane ;
+defchem:medium medium:air ;
+.
+
+#10028
+wmdsObservedVariable:HFCs
+a	skos:Concept ;
+skos:notation 10028 ;
+dct:notation 10028 ;
+rdfs:label "HFCs" ;
+skos:broader Greenhouse Gas ;
+defchem:medium medium:air ;
+.
+
+#554
+wmdsObservedVariable:C2H2F4
+a	skos:Concept ;
+skos:notation 554 ;
+dct:notation 554 ;
+rdfs:label "C2H2F4(1, 1, 1, 2-tetrafluoroethane, HFC-134a)" ;
+skos:broader HFCs ;
+defchem:medium medium:air ;
+.
+
+#555
+wmdsObservedVariable:C2H4F2
+a	skos:Concept ;
+skos:notation 555 ;
+dct:notation 555 ;
+rdfs:label "C2H4F2(1, 1-difluoroethane, HFC-152a)" ;
+skos:broader HFCs ;
+defchem:medium medium:air ;
+.
+
+#556
+wmdsObservedVariable:C2HF5
+a	skos:Concept ;
+skos:notation 556 ;
+dct:notation 556 ;
+rdfs:label "C2HF5(pentafluoroethane, HFC-125)" ;
+skos:broader HFCs ;
+defchem:chemical-species chemical-species:pentafluoroethane ;
+defchem:medium medium:air ;
+.
+
+#557
+wmdsObservedVariable:C3H2F6
+a	skos:Concept ;
+skos:notation 557 ;
+dct:notation 557 ;
+rdfs:label "C3H2F6(1, 1, 1, 2, 3, 3-hexafluoropropane, HFC-236fa)" ;
+skos:broader HFCs ;
+defchem:chemical-species chemical-species:1,1,1,2,3,3-hexafluoropropane ;
+defchem:medium medium:air ;
+.
+
+#558
+wmdsObservedVariable:C3H3F5
+a	skos:Concept ;
+skos:notation 558 ;
+dct:notation 558 ;
+rdfs:label "C3H3F5(1, 1, 1, 3, 3-Pentafluoropropane, HFC-245fa)" ;
+skos:broader HFCs ;
+defchem:chemical-species chemical-species:1,1,1,3,3-pentafluoropropane ;
+defchem:medium medium:air ;
+.
+
+#559
+wmdsObservedVariable:C3HF7
+a	skos:Concept ;
+skos:notation 559 ;
+dct:notation 559 ;
+rdfs:label "C3HF7(1, 1, 1, 2, 3, 3, 3-Heptafluoropropane, HFC-227ea)" ;
+skos:broader HFCs ;
+defchem:chemical-species chemical-species:1,1,1,2,3,3,3-heptafluoropropane ;
+defchem:medium medium:air ;
+.
+
+#560
+wmdsObservedVariable:C4H5F5
+a	skos:Concept ;
+skos:notation 560 ;
+dct:notation 560 ;
+rdfs:label "C4H5F5(1, 1, 1, 3, 3-pentafluorobutane, HFC-365mfc)" ;
+skos:broader HFCs ;
+defchem:chemical-species chemical-species:1,1,1,3,3-pentafluorobutane ;
+defchem:medium medium:air ;
+.
+
+#561
+wmdsObservedVariable:CH2F2
+a	skos:Concept ;
+skos:notation 561 ;
+dct:notation 561 ;
+rdfs:label "CH2F2(difluoromethane, HFC-32)" ;
+skos:broader HFCs ;
+defchem:chemical-species chemical-species:difluoromethane ;
+defchem:medium medium:air ;
+.
+
+#562
+wmdsObservedVariable:CHF3
+a	skos:Concept ;
+skos:notation 562 ;
+dct:notation 562 ;
+rdfs:label "CHF3(trifluoromethane, HFC-23)" ;
+skos:broader HFCs ;
+defchem:chemical-species chemical-species:trifluoromethane ;
+defchem:medium medium:air ;
+.
+
+#10029
+wmdsObservedVariable:PFCs
+a	skos:Concept ;
+skos:notation 10029 ;
+dct:notation 10029 ;
+rdfs:label "PFCs" ;
+skos:broader Greenhouse Gas ;
+defchem:medium medium:air ;
+.
+
+#419
+wmdsObservedVariable:C2F6
+a	skos:Concept ;
+skos:notation 419 ;
+dct:notation 419 ;
+rdfs:label "C2F6(hexafluoroethane, PFC-116)" ;
+skos:broader PFCs ;
+defchem:chemical-species chemical-species:perfluoroethane ;
+defchem:medium medium:air ;
+.
+
+#420
+wmdsObservedVariable:C3F8
+a	skos:Concept ;
+skos:notation 420 ;
+dct:notation 420 ;
+rdfs:label "C3F8(octafluoropropane, PFC-218)" ;
+skos:broader PFCs ;
+defchem:chemical-species chemical-species:octafluoropropane ;
+defchem:medium medium:air ;
+.
+
+#421
+wmdsObservedVariable:CF4
+a	skos:Concept ;
+skos:notation 421 ;
+dct:notation 421 ;
+rdfs:label "CF4(tetrafluoromethane, carbon tetrafluoride, perfluoromethane, PFC-14)" ;
+skos:broader PFCs ;
+defchem:chemical-species chemical-species:tetrafluoromethane ;
+defchem:medium medium:air ;
+.
+
+#10030
+wmdsObservedVariable:Humidity
+a	skos:Concept ;
+skos:notation 10030 ;
+dct:notation 10030 ;
+rdfs:label "Humidity" ;
+skos:broader Atmosphere ;
+.
+
+#251
+wmdsObservedVariable:Humidity
+a	skos:Concept ;
+skos:notation 251 ;
+dct:notation 251 ;
+rdfs:label "Humidity(at specified distance from reference surface)" ;
+skos:broader Humidity ;
+.
+
+#252
+wmdsObservedVariable:Integrated water vapour
+a	skos:Concept ;
+skos:notation 252 ;
+dct:notation 252 ;
+rdfs:label "Integrated water vapour" ;
+skos:broader Humidity ;
+.
+
+#253
+wmdsObservedVariable:Mass mixing ratio
+a	skos:Concept ;
+skos:notation 253 ;
+dct:notation 253 ;
+rdfs:label "Mass mixing ratio" ;
+skos:broader Humidity ;
+.
+
+#254
+wmdsObservedVariable:Object wetness duration
+a	skos:Concept ;
+skos:notation 254 ;
+dct:notation 254 ;
+rdfs:label "Object wetness duration" ;
+skos:broader Humidity ;
+.
+
+#255
+wmdsObservedVariable:Water vapour pressure
+a	skos:Concept ;
+skos:notation 255 ;
+dct:notation 255 ;
+rdfs:label "Water vapour pressure" ;
+skos:broader Humidity ;
+.
+
+#256
+wmdsObservedVariable:Watervapor profile
+a	skos:Concept ;
+skos:notation 256 ;
+dct:notation 256 ;
+rdfs:label "Watervapor profile" ;
+skos:broader Humidity ;
+.
+
+#10031
+wmdsObservedVariable:Lightning
+a	skos:Concept ;
+skos:notation 10031 ;
+dct:notation 10031 ;
+rdfs:label "Lightning" ;
+skos:broader Atmosphere ;
+.
+
+#257
+wmdsObservedVariable:Lightning discharge energy
+a	skos:Concept ;
+skos:notation 257 ;
+dct:notation 257 ;
+rdfs:label "Lightning discharge energy" ;
+skos:broader Lightning ;
+.
+
+#258
+wmdsObservedVariable:Lightning discharge polarity
+a	skos:Concept ;
+skos:notation 258 ;
+dct:notation 258 ;
+rdfs:label "Lightning discharge polarity" ;
+skos:broader Lightning ;
+.
+
+#259
+wmdsObservedVariable:Lightning discharge rates
+a	skos:Concept ;
+skos:notation 259 ;
+dct:notation 259 ;
+rdfs:label "Lightning discharge rates" ;
+skos:broader Lightning ;
+.
+
+#260
+wmdsObservedVariable:Lightning discharge type
+a	skos:Concept ;
+skos:notation 260 ;
+dct:notation 260 ;
+rdfs:label "Lightning discharge type(cloud to cloud, cloud to surface)" ;
+skos:broader Lightning ;
+.
+
+#10032
+wmdsObservedVariable:Position
+a	skos:Concept ;
+skos:notation 10032 ;
+dct:notation 10032 ;
+rdfs:label "Position" ;
+skos:broader Lightning ;
+.
+
+#431
+wmdsObservedVariable:Lightning detection
+a	skos:Concept ;
+skos:notation 431 ;
+dct:notation 431 ;
+rdfs:label "Lightning detection(time and location)" ;
+skos:broader Position ;
+.
+
+#432
+wmdsObservedVariable:Lightning direction from station
+a	skos:Concept ;
+skos:notation 432 ;
+dct:notation 432 ;
+rdfs:label "Lightning direction from station" ;
+skos:broader Position ;
+.
+
+#433
+wmdsObservedVariable:Lightning distance from station
+a	skos:Concept ;
+skos:notation 433 ;
+dct:notation 433 ;
+rdfs:label "Lightning distance from station" ;
+skos:broader Position ;
+.
+
+#10033
+wmdsObservedVariable:Other Gas
+a	skos:Concept ;
+skos:notation 10033 ;
+dct:notation 10033 ;
+rdfs:label "Other Gas" ;
+skos:broader Atmosphere ;
+defchem:medium medium:air ;
+.
+
+#205
+wmdsObservedVariable:H2
+a	skos:Concept ;
+skos:notation 205 ;
+dct:notation 205 ;
+rdfs:label "H2" ;
+skos:broader Other Gas ;
+defchem:chemical-species chemical-species:hydrogen-molecule ;
+defchem:medium medium:air ;
+.
+
+#206
+wmdsObservedVariable:H2O
+a	skos:Concept ;
+skos:notation 206 ;
+dct:notation 206 ;
+rdfs:label "H2O(as a chemical species)" ;
+skos:broader Other Gas ;
+defchem:chemical-species chemical-species:water-vapor ;
+defchem:medium medium:air ;
+.
+
+#207
+wmdsObservedVariable:HDO
+a	skos:Concept ;
+skos:notation 207 ;
+dct:notation 207 ;
+rdfs:label "HDO(as a chemical species)" ;
+skos:broader Other Gas ;
+defchem:chemical-species chemical-species:deuteriated-water-vapor ;
+defchem:medium medium:air ;
+.
+
+#10034
+wmdsObservedVariable:Ozone
+a	skos:Concept ;
+skos:notation 10034 ;
+dct:notation 10034 ;
+rdfs:label "Ozone" ;
+skos:broader Atmosphere ;
+defchem:chemical-species chemical-species:ozone ;
+defchem:medium medium:air ;
+.
+
+#262
+wmdsObservedVariable:Surface ozone
+a	skos:Concept ;
+skos:notation 262 ;
+dct:notation 262 ;
+rdfs:label "Surface ozone" ;
+skos:broader Ozone ;
+defchem:medium medium:air ;
+.
+
+#263
+wmdsObservedVariable:Total column ozone
+a	skos:Concept ;
+skos:notation 263 ;
+dct:notation 263 ;
+rdfs:label "Total column ozone" ;
+skos:broader Ozone ;
+defchem:medium medium:air ;
+.
+
+#264
+wmdsObservedVariable:Vertical ozone profile
+a	skos:Concept ;
+skos:notation 264 ;
+dct:notation 264 ;
+rdfs:label "Vertical ozone profile" ;
+skos:broader Ozone ;
+defchem:medium medium:air ;
+.
+
+#10035
+wmdsObservedVariable:Past weather
+a	skos:Concept ;
+skos:notation 10035 ;
+dct:notation 10035 ;
+rdfs:label "Past weather" ;
+skos:broader Atmosphere ;
+.
+
+#265
+wmdsObservedVariable:Past weather
+a	skos:Concept ;
+skos:notation 265 ;
+dct:notation 265 ;
+rdfs:label "Past weather" ;
+skos:broader Past weather ;
+.
+
+#10036
+wmdsObservedVariable:POPs
+a	skos:Concept ;
+skos:notation 10036 ;
+dct:notation 10036 ;
+rdfs:label "POPs" ;
+skos:broader Atmosphere ;
+.
+
+#10037
+wmdsObservedVariable:PAH
+a	skos:Concept ;
+skos:notation 10037 ;
+dct:notation 10037 ;
+rdfs:label "PAH" ;
+skos:broader POPs ;
+defchem:chemical-species chemical-species:polycyclic-aromatic-hydrocarbon ;
+.
+
+#334
+wmdsObservedVariable:C13H10
+a	skos:Concept ;
+skos:notation 334 ;
+dct:notation 334 ;
+rdfs:label "C13H10(9H-fluorene, fluorene) in air"" ;
+skos:broader PAH ;
+defchem:medium medium:air" ;
+.
+
+#335
+wmdsObservedVariable:C14H10
+a	skos:Concept ;
+skos:notation 335 ;
+dct:notation 335 ;
+rdfs:label "C14H10(anthracene) in PM10"" ;
+skos:broader PAH ;
+defchem:chemical-species chemical-species:anthracene ;
+defchem:medium medium:PM10" ;
+.
+
+#336
+wmdsObservedVariable:C14H10
+a	skos:Concept ;
+skos:notation 336 ;
+dct:notation 336 ;
+rdfs:label "C14H10(anthracene) in aerosol"" ;
+skos:broader PAH ;
+defchem:chemical-species chemical-species:anthracene ;
+defchem:medium medium:aerosol" ;
+.
+
+#337
+wmdsObservedVariable:C14H10
+a	skos:Concept ;
+skos:notation 337 ;
+dct:notation 337 ;
+rdfs:label "C14H10(anthracene) in aerosol and air"" ;
+skos:broader PAH ;
+defchem:chemical-species chemical-species:anthracene ;
+defchem:medium medium:aerosol and air" ;
+.
+
+#338
+wmdsObservedVariable:C14H10
+a	skos:Concept ;
+skos:notation 338 ;
+dct:notation 338 ;
+rdfs:label "C14H10(anthracene) in air"" ;
+skos:broader PAH ;
+defchem:chemical-species chemical-species:anthracene ;
+defchem:medium medium:air" ;
+.
+
+#339
+wmdsObservedVariable:C14H10
+a	skos:Concept ;
+skos:notation 339 ;
+dct:notation 339 ;
+rdfs:label "C14H10(phenanthrene) in PM10"" ;
+skos:broader PAH ;
+defchem:chemical-species chemical-species:anthracene ;
+defchem:medium medium:PM10" ;
+.
+
+#340
+wmdsObservedVariable:C14H10
+a	skos:Concept ;
+skos:notation 340 ;
+dct:notation 340 ;
+rdfs:label "C14H10(phenanthrene) in aerosol"" ;
+skos:broader PAH ;
+defchem:chemical-species chemical-species:anthracene ;
+defchem:medium medium:aerosol" ;
+.
+
+#341
+wmdsObservedVariable:C14H10
+a	skos:Concept ;
+skos:notation 341 ;
+dct:notation 341 ;
+rdfs:label "C14H10(phenanthrene) in air"" ;
+skos:broader PAH ;
+defchem:chemical-species chemical-species:anthracene ;
+defchem:medium medium:air" ;
+.
+
+#342
+wmdsObservedVariable:C14H10
+a	skos:Concept ;
+skos:notation 342 ;
+dct:notation 342 ;
+rdfs:label "C14H10(phenanthrene) in air and aerosol"" ;
+skos:broader PAH ;
+defchem:chemical-species chemical-species:anthracene ;
+defchem:medium medium:air and aerosol" ;
+.
+
+#343
+wmdsObservedVariable:C14H10
+a	skos:Concept ;
+skos:notation 343 ;
+dct:notation 343 ;
+rdfs:label "C14H10(phenanthrene) in precipitation"" ;
+skos:broader PAH ;
+defchem:chemical-species chemical-species:anthracene ;
+defchem:medium medium:precipitation" ;
+.
+
+#344
+wmdsObservedVariable:C14H10
+a	skos:Concept ;
+skos:notation 344 ;
+dct:notation 344 ;
+rdfs:label "C14H10(phenanthrene) in total precipitation"" ;
+skos:broader PAH ;
+defchem:chemical-species chemical-species:anthracene ;
+defchem:medium medium:total precipitation" ;
+.
+
+#345
+wmdsObservedVariable:C16H10
+a	skos:Concept ;
+skos:notation 345 ;
+dct:notation 345 ;
+rdfs:label "C16H10(pyrene) in air and aerosol"" ;
+skos:broader PAH ;
+defchem:chemical-species chemical-species:fluoranthene ;
+defchem:medium medium:air and aerosol" ;
+.
+
+#346
+wmdsObservedVariable:C18H12 anthracene)
+a	skos:Concept ;
+skos:notation 346 ;
+dct:notation 346 ;
+rdfs:label "C18H12 anthracene)(Benz(a) in PM10"" ;
+skos:broader PAH ;
+defchem:medium medium:PM10" ;
+.
+
+#347
+wmdsObservedVariable:C18H12 anthracene)
+a	skos:Concept ;
+skos:notation 347 ;
+dct:notation 347 ;
+rdfs:label "C18H12 anthracene)(Benz(a) in aerosol"" ;
+skos:broader PAH ;
+defchem:medium medium:aerosol" ;
+.
+
+#348
+wmdsObservedVariable:C18H12 anthracene)
+a	skos:Concept ;
+skos:notation 348 ;
+dct:notation 348 ;
+rdfs:label "C18H12 anthracene)(Benz(a) in air"" ;
+skos:broader PAH ;
+defchem:medium medium:air" ;
+.
+
+#349
+wmdsObservedVariable:C18H12 anthracene)
+a	skos:Concept ;
+skos:notation 349 ;
+dct:notation 349 ;
+rdfs:label "C18H12 anthracene)(Benz(a) in air and aerosol"" ;
+skos:broader PAH ;
+defchem:medium medium:air and aerosol" ;
+.
+
+#350
+wmdsObservedVariable:C18H12 anthracene)
+a	skos:Concept ;
+skos:notation 350 ;
+dct:notation 350 ;
+rdfs:label "C18H12 anthracene)(Benz(a) in precipitation"" ;
+skos:broader PAH ;
+defchem:medium medium:precipitation" ;
+.
+
+#351
+wmdsObservedVariable:C18H12 anthracene)
+a	skos:Concept ;
+skos:notation 351 ;
+dct:notation 351 ;
+rdfs:label "C18H12 anthracene)(Benz(a) in total precipitation"" ;
+skos:broader PAH ;
+defchem:medium medium:total precipitation" ;
+.
+
+#10038
+wmdsObservedVariable:POP
+a	skos:Concept ;
+skos:notation 10038 ;
+dct:notation 10038 ;
+rdfs:label "POP" ;
+skos:broader POPs ;
+.
+
+#375
+wmdsObservedVariable:C12H8Cl6
+a	skos:Concept ;
+skos:notation 375 ;
+dct:notation 375 ;
+rdfs:label "C12H8Cl6(aldrin) in aerosol"" ;
+skos:broader POP ;
+defchem:chemical-species chemical-species:aldrin ;
+defchem:medium medium:aerosol" ;
+.
+
+#376
+wmdsObservedVariable:C12H8Cl6
+a	skos:Concept ;
+skos:notation 376 ;
+dct:notation 376 ;
+rdfs:label "C12H8Cl6(aldrin) in air"" ;
+skos:broader POP ;
+defchem:chemical-species chemical-species:aldrin ;
+defchem:medium medium:air" ;
+.
+
+#377
+wmdsObservedVariable:C12H8Cl6
+a	skos:Concept ;
+skos:notation 377 ;
+dct:notation 377 ;
+rdfs:label "C12H8Cl6(aldrin) in air and aerosol"" ;
+skos:broader POP ;
+defchem:chemical-species chemical-species:aldrin ;
+defchem:medium medium:air and aerosol" ;
+.
+
+#378
+wmdsObservedVariable:C12H8Cl6
+a	skos:Concept ;
+skos:notation 378 ;
+dct:notation 378 ;
+rdfs:label "C12H8Cl6(aldrin) in total precipitation"" ;
+skos:broader POP ;
+defchem:chemical-species chemical-species:aldrin ;
+defchem:medium medium:total precipitation" ;
+.
+
+#379
+wmdsObservedVariable:C12H8Cl6
+a	skos:Concept ;
+skos:notation 379 ;
+dct:notation 379 ;
+rdfs:label "C12H8Cl6(aldrin) in wet precipitation"" ;
+skos:broader POP ;
+defchem:chemical-species chemical-species:aldrin ;
+defchem:medium medium:wet precipitation" ;
+.
+
+#380
+wmdsObservedVariable:C6Cl6
+a	skos:Concept ;
+skos:notation 380 ;
+dct:notation 380 ;
+rdfs:label "C6Cl6(hexachlorobenzene, HCB) in air"" ;
+skos:broader POP ;
+defchem:medium medium:air" ;
+.
+
+#381
+wmdsObservedVariable:C6H6Cl6
+a	skos:Concept ;
+skos:notation 381 ;
+dct:notation 381 ;
+rdfs:label "C6H6Cl6(1, 2, 3, 4, 5, 6-hexachlorocyclohexane, alpha-lindane, alpha-HCH) in aerosol"" ;
+skos:broader POP ;
+defchem:medium medium:aerosol" ;
+.
+
+#382
+wmdsObservedVariable:C6H6Cl6
+a	skos:Concept ;
+skos:notation 382 ;
+dct:notation 382 ;
+rdfs:label "C6H6Cl6(1, 2, 3, 4, 5, 6-hexachlorocyclohexane, alpha-lindane, alpha-HCH) in air"" ;
+skos:broader POP ;
+defchem:medium medium:air" ;
+.
+
+#383
+wmdsObservedVariable:C6H6Cl6
+a	skos:Concept ;
+skos:notation 383 ;
+dct:notation 383 ;
+rdfs:label "C6H6Cl6(1, 2, 3, 4, 5, 6-hexachlorocyclohexane, alpha-lindane, alpha-HCH) in wet precipitation"" ;
+skos:broader POP ;
+defchem:medium medium:wet precipitation" ;
+.
+
+#384
+wmdsObservedVariable:C6H6Cl6
+a	skos:Concept ;
+skos:notation 384 ;
+dct:notation 384 ;
+rdfs:label "C6H6Cl6(1, 2, 3, 4, 5, 6-hexachlorocyclohexane, gamma-lindane, gamma-HCH) in air"" ;
+skos:broader POP ;
+defchem:medium medium:air" ;
+.
+
+#385
+wmdsObservedVariable:C6H6Cl6
+a	skos:Concept ;
+skos:notation 385 ;
+dct:notation 385 ;
+rdfs:label "C6H6Cl6(1, 2, 3, 4, 5, 6-hexachlorocyclohexane, gamma-lindane, gamma-HCH) in wet precipitation"" ;
+skos:broader POP ;
+defchem:medium medium:wet precipitation" ;
+.
+
+#10039
+wmdsObservedVariable:Precipitation
+a	skos:Concept ;
+skos:notation 10039 ;
+dct:notation 10039 ;
+rdfs:label "Precipitation" ;
+skos:broader Atmosphere ;
+.
+
+#210
+wmdsObservedVariable:Amount of precipitation
+a	skos:Concept ;
+skos:notation 210 ;
+dct:notation 210 ;
+rdfs:label "Amount of precipitation" ;
+skos:broader Precipitation ;
+.
+
+#211
+wmdsObservedVariable:Duration
+a	skos:Concept ;
+skos:notation 211 ;
+dct:notation 211 ;
+rdfs:label "Duration" ;
+skos:broader Precipitation ;
+.
+
+#212
+wmdsObservedVariable:Intensity of precipitation
+a	skos:Concept ;
+skos:notation 212 ;
+dct:notation 212 ;
+rdfs:label "Intensity of precipitation" ;
+skos:broader Precipitation ;
+.
+
+#213
+wmdsObservedVariable:Occurrence during last period
+a	skos:Concept ;
+skos:notation 213 ;
+dct:notation 213 ;
+rdfs:label "Occurrence during last period(yes/no)" ;
+skos:broader Precipitation ;
+.
+
+#214
+wmdsObservedVariable:Rate of ice accretion
+a	skos:Concept ;
+skos:notation 214 ;
+dct:notation 214 ;
+rdfs:label "Rate of ice accretion" ;
+skos:broader Precipitation ;
+.
+
+#215
+wmdsObservedVariable:Type of precipitation
+a	skos:Concept ;
+skos:notation 215 ;
+dct:notation 215 ;
+rdfs:label "Type of precipitation" ;
+skos:broader Precipitation ;
+.
+
+#10040
+wmdsObservedVariable:Present weather
+a	skos:Concept ;
+skos:notation 10040 ;
+dct:notation 10040 ;
+rdfs:label "Present weather" ;
+skos:broader Atmosphere ;
+.
+
+#266
+wmdsObservedVariable:Present weather
+a	skos:Concept ;
+skos:notation 266 ;
+dct:notation 266 ;
+rdfs:label "Present weather" ;
+skos:broader Present weather ;
+.
+
+#10041
+wmdsObservedVariable:Pressure
+a	skos:Concept ;
+skos:notation 10041 ;
+dct:notation 10041 ;
+rdfs:label "Pressure" ;
+skos:broader Atmosphere ;
+.
+
+#216
+wmdsObservedVariable:Atmospheric pressure
+a	skos:Concept ;
+skos:notation 216 ;
+dct:notation 216 ;
+rdfs:label "Atmospheric pressure" ;
+skos:broader Pressure ;
+.
+
+#217
+wmdsObservedVariable:Characteristic of pressure tendency
+a	skos:Concept ;
+skos:notation 217 ;
+dct:notation 217 ;
+rdfs:label "Characteristic of pressure tendency" ;
+skos:broader Pressure ;
+.
+
+#218
+wmdsObservedVariable:Pressure tendency
+a	skos:Concept ;
+skos:notation 218 ;
+dct:notation 218 ;
+rdfs:label "Pressure tendency" ;
+skos:broader Pressure ;
+.
+
+#10042
+wmdsObservedVariable:Radiation
+a	skos:Concept ;
+skos:notation 10042 ;
+dct:notation 10042 ;
+rdfs:label "Radiation" ;
+skos:broader Atmosphere ;
+.
+
+#267
+wmdsObservedVariable:Background luminance
+a	skos:Concept ;
+skos:notation 267 ;
+dct:notation 267 ;
+rdfs:label "Background luminance" ;
+skos:broader Radiation ;
+.
+
+#270
+wmdsObservedVariable:Sunshine duration
+a	skos:Concept ;
+skos:notation 270 ;
+dct:notation 270 ;
+rdfs:label "Sunshine duration" ;
+skos:broader Radiation ;
+.
+
+#271
+wmdsObservedVariable:Surface albedo
+a	skos:Concept ;
+skos:notation 271 ;
+dct:notation 271 ;
+rdfs:label "Surface albedo" ;
+skos:broader Radiation ;
+.
+
+#273
+wmdsObservedVariable:UV-B radiation
+a	skos:Concept ;
+skos:notation 273 ;
+dct:notation 273 ;
+rdfs:label "UV-B radiation" ;
+skos:broader Radiation ;
+.
+
+#10043
+wmdsObservedVariable:IR
+a	skos:Concept ;
+skos:notation 10043 ;
+dct:notation 10043 ;
+rdfs:label "IR" ;
+skos:broader Radiation ;
+.
+
+#565
+wmdsObservedVariable:Long-wave radiation
+a	skos:Concept ;
+skos:notation 565 ;
+dct:notation 565 ;
+rdfs:label "Long-wave radiation(direction unspecified)" ;
+skos:broader IR ;
+.
+
+#566
+wmdsObservedVariable:Long-wave radiation
+a	skos:Concept ;
+skos:notation 566 ;
+dct:notation 566 ;
+rdfs:label "Long-wave radiation(downwelling)" ;
+skos:broader IR ;
+.
+
+#567
+wmdsObservedVariable:Long-wave radiation
+a	skos:Concept ;
+skos:notation 567 ;
+dct:notation 567 ;
+rdfs:label "Long-wave radiation(upwelling)" ;
+skos:broader IR ;
+.
+
+#10044
+wmdsObservedVariable:Solar
+a	skos:Concept ;
+skos:notation 10044 ;
+dct:notation 10044 ;
+rdfs:label "Solar" ;
+skos:broader Radiation ;
+.
+
+#571
+wmdsObservedVariable:Diffuse solar radiation
+a	skos:Concept ;
+skos:notation 571 ;
+dct:notation 571 ;
+rdfs:label "Diffuse solar radiation" ;
+skos:broader Solar ;
+.
+
+#572
+wmdsObservedVariable:Direct solar radiation
+a	skos:Concept ;
+skos:notation 572 ;
+dct:notation 572 ;
+rdfs:label "Direct solar radiation" ;
+skos:broader Solar ;
+.
+
+#573
+wmdsObservedVariable:Global solar radiation
+a	skos:Concept ;
+skos:notation 573 ;
+dct:notation 573 ;
+rdfs:label "Global solar radiation(downwelling)" ;
+skos:broader Solar ;
+.
+
+#574
+wmdsObservedVariable:Global solar radiation
+a	skos:Concept ;
+skos:notation 574 ;
+dct:notation 574 ;
+rdfs:label "Global solar radiation(upwelling)" ;
+skos:broader Solar ;
+.
+
+#575
+wmdsObservedVariable:Reflected solar radiation
+a	skos:Concept ;
+skos:notation 575 ;
+dct:notation 575 ;
+rdfs:label "Reflected solar radiation" ;
+skos:broader Solar ;
+.
+
+#10045
+wmdsObservedVariable:UV
+a	skos:Concept ;
+skos:notation 10045 ;
+dct:notation 10045 ;
+rdfs:label "UV" ;
+skos:broader Radiation ;
+.
+
+#356
+wmdsObservedVariable:UV Broadband
+a	skos:Concept ;
+skos:notation 356 ;
+dct:notation 356 ;
+rdfs:label "UV Broadband" ;
+skos:broader UV ;
+.
+
+#357
+wmdsObservedVariable:UV Erythemally weighted
+a	skos:Concept ;
+skos:notation 357 ;
+dct:notation 357 ;
+rdfs:label "UV Erythemally weighted" ;
+skos:broader UV ;
+.
+
+#358
+wmdsObservedVariable:UV Multiband
+a	skos:Concept ;
+skos:notation 358 ;
+dct:notation 358 ;
+rdfs:label "UV Multiband" ;
+skos:broader UV ;
+.
+
+#359
+wmdsObservedVariable:UV Spectral
+a	skos:Concept ;
+skos:notation 359 ;
+dct:notation 359 ;
+rdfs:label "UV Spectral" ;
+skos:broader UV ;
+.
+
+#10046
+wmdsObservedVariable:Radionuclide
+a	skos:Concept ;
+skos:notation 10046 ;
+dct:notation 10046 ;
+rdfs:label "Radionuclide" ;
+skos:broader Atmosphere ;
+defchem:chemical-species chemical-species:radionuclide ;
+.
+
+#219
+wmdsObservedVariable:Beryllium [Be-7]
+a	skos:Concept ;
+skos:notation 219 ;
+dct:notation 219 ;
+rdfs:label "Beryllium [Be-7]" ;
+skos:broader Radionuclide ;
+.
+
+#220
+wmdsObservedVariable:CO2 [C-14]
+a	skos:Concept ;
+skos:notation 220 ;
+dct:notation 220 ;
+rdfs:label "CO2 [C-14]" ;
+skos:broader Radionuclide ;
+.
+
+#221
+wmdsObservedVariable:Krypton [Kr-85]
+a	skos:Concept ;
+skos:notation 221 ;
+dct:notation 221 ;
+rdfs:label "Krypton [Kr-85]" ;
+skos:broader Radionuclide ;
+.
+
+#222
+wmdsObservedVariable:Lead [Pb-210]
+a	skos:Concept ;
+skos:notation 222 ;
+dct:notation 222 ;
+rdfs:label "Lead [Pb-210]" ;
+skos:broader Radionuclide ;
+.
+
+#223
+wmdsObservedVariable:Radon [Rn-222]
+a	skos:Concept ;
+skos:notation 223 ;
+dct:notation 223 ;
+rdfs:label "Radon [Rn-222]" ;
+skos:broader Radionuclide ;
+.
+
+#10047
+wmdsObservedVariable:Reactive Gas
+a	skos:Concept ;
+skos:notation 10047 ;
+dct:notation 10047 ;
+rdfs:label "Reactive Gas" ;
+skos:broader Atmosphere ;
+defchem:medium medium:air ;
+.
+
+#274
+wmdsObservedVariable:BrO
+a	skos:Concept ;
+skos:notation 274 ;
+dct:notation 274 ;
+rdfs:label "BrO(bromine monoxide)" ;
+skos:broader Reactive Gas ;
+defchem:chemical-species chemical-species:bromine-oxide ;
+defchem:medium medium:air ;
+.
+
+#275
+wmdsObservedVariable:C2Cl4
+a	skos:Concept ;
+skos:notation 275 ;
+dct:notation 275 ;
+rdfs:label "C2Cl4(tetrachloroethene)" ;
+skos:broader Reactive Gas ;
+defchem:chemical-species chemical-species:tetrachloroethene ;
+defchem:medium medium:air ;
+.
+
+#276
+wmdsObservedVariable:C2HCl3
+a	skos:Concept ;
+skos:notation 276 ;
+dct:notation 276 ;
+rdfs:label "C2HCl3(trichloroethene)" ;
+skos:broader Reactive Gas ;
+defchem:chemical-species chemical-species:trichloroethene ;
+defchem:medium medium:air ;
+.
+
+#277
+wmdsObservedVariable:CH2Br2
+a	skos:Concept ;
+skos:notation 277 ;
+dct:notation 277 ;
+rdfs:label "CH2Br2(dibrimomethane)" ;
+skos:broader Reactive Gas ;
+defchem:chemical-species chemical-species:dibromomethane ;
+defchem:medium medium:air ;
+.
+
+#278
+wmdsObservedVariable:CH2Cl2
+a	skos:Concept ;
+skos:notation 278 ;
+dct:notation 278 ;
+rdfs:label "CH2Cl2(dichloromethane)" ;
+skos:broader Reactive Gas ;
+defchem:medium medium:air ;
+.
+
+#279
+wmdsObservedVariable:CH3Br
+a	skos:Concept ;
+skos:notation 279 ;
+dct:notation 279 ;
+rdfs:label "CH3Br(methylbromide)" ;
+skos:broader Reactive Gas ;
+defchem:chemical-species chemical-species:bromomethane ;
+defchem:medium medium:air ;
+.
+
+#280
+wmdsObservedVariable:CH3Cl
+a	skos:Concept ;
+skos:notation 280 ;
+dct:notation 280 ;
+rdfs:label "CH3Cl(methylchloride)" ;
+skos:broader Reactive Gas ;
+defchem:chemical-species chemical-species:chloromethane ;
+defchem:medium medium:air ;
+.
+
+#281
+wmdsObservedVariable:CH3I
+a	skos:Concept ;
+skos:notation 281 ;
+dct:notation 281 ;
+rdfs:label "CH3I(methyliodide)" ;
+skos:broader Reactive Gas ;
+defchem:chemical-species chemical-species:iodomethane ;
+defchem:medium medium:air ;
+.
+
+#282
+wmdsObservedVariable:CHBr3
+a	skos:Concept ;
+skos:notation 282 ;
+dct:notation 282 ;
+rdfs:label "CHBr3(bromoform)" ;
+skos:broader Reactive Gas ;
+defchem:chemical-species chemical-species:tribromomethane ;
+defchem:medium medium:air ;
+.
+
+#283
+wmdsObservedVariable:CHCl3
+a	skos:Concept ;
+skos:notation 283 ;
+dct:notation 283 ;
+rdfs:label "CHCl3(chloroform)" ;
+skos:broader Reactive Gas ;
+defchem:chemical-species chemical-species:trichloromethane ;
+defchem:medium medium:air ;
+.
+
+#284
+wmdsObservedVariable:CO
+a	skos:Concept ;
+skos:notation 284 ;
+dct:notation 284 ;
+rdfs:label "CO" ;
+skos:broader Reactive Gas ;
+defchem:chemical-species chemical-species:carbon-monoxide ;
+defchem:medium medium:air ;
+.
+
+#285
+wmdsObservedVariable:COF2
+a	skos:Concept ;
+skos:notation 285 ;
+dct:notation 285 ;
+rdfs:label "COF2(difluoromethanal, carbonyl fluoride)" ;
+skos:broader Reactive Gas ;
+defchem:chemical-species chemical-species:carbonyl-difluoride ;
+defchem:medium medium:air ;
+.
+
+#286
+wmdsObservedVariable:ClO
+a	skos:Concept ;
+skos:notation 286 ;
+dct:notation 286 ;
+rdfs:label "ClO(chlorine monoxide)" ;
+skos:broader Reactive Gas ;
+defchem:chemical-species chemical-species:chlorine-oxide ;
+defchem:medium medium:air ;
+.
+
+#287
+wmdsObservedVariable:H2O2
+a	skos:Concept ;
+skos:notation 287 ;
+dct:notation 287 ;
+rdfs:label "H2O2(hydrogen peroxide)" ;
+skos:broader Reactive Gas ;
+defchem:chemical-species chemical-species:hydrogen-peroxide ;
+defchem:medium medium:air ;
+.
+
+#288
+wmdsObservedVariable:HCl
+a	skos:Concept ;
+skos:notation 288 ;
+dct:notation 288 ;
+rdfs:label "HCl(hydrochloric acid)" ;
+skos:broader Reactive Gas ;
+defchem:chemical-species chemical-species:hydrogen-chloride ;
+defchem:medium medium:air ;
+.
+
+#289
+wmdsObservedVariable:HF
+a	skos:Concept ;
+skos:notation 289 ;
+dct:notation 289 ;
+rdfs:label "HF(hydrofluoric acid)" ;
+skos:broader Reactive Gas ;
+defchem:chemical-species chemical-species:hydrogen-fluoride ;
+defchem:medium medium:air ;
+.
+
+#291
+wmdsObservedVariable:ROOH
+a	skos:Concept ;
+skos:notation 291 ;
+dct:notation 291 ;
+rdfs:label "ROOH" ;
+skos:broader Reactive Gas ;
+defchem:chemical-species chemical-species:organic-peroxide ;
+defchem:medium medium:air ;
+.
+
+#10048
+wmdsObservedVariable:Nitrogen containing compounds
+a	skos:Concept ;
+skos:notation 10048 ;
+dct:notation 10048 ;
+rdfs:label "Nitrogen containing compounds" ;
+skos:broader Reactive Gas ;
+defchem:medium medium:air ;
+.
+
+#390
+wmdsObservedVariable:Ammonia
+a	skos:Concept ;
+skos:notation 390 ;
+dct:notation 390 ;
+rdfs:label "Ammonia(NH3)" ;
+skos:broader Nitrogen containing compounds ;
+defchem:chemical-species chemical-species:ammonia ;
+defchem:medium medium:air ;
+.
+
+#391
+wmdsObservedVariable:C2H3O5N
+a	skos:Concept ;
+skos:notation 391 ;
+dct:notation 391 ;
+rdfs:label "C2H3O5N(peroxyacetylnitrate, PAN)" ;
+skos:broader Nitrogen containing compounds ;
+defchem:medium medium:air ;
+.
+
+#392
+wmdsObservedVariable:ClONO2
+a	skos:Concept ;
+skos:notation 392 ;
+dct:notation 392 ;
+rdfs:label "ClONO2(chlorine nitrate)" ;
+skos:broader Nitrogen containing compounds ;
+defchem:chemical-species chemical-species:chlorine-nitrate ;
+defchem:medium medium:air ;
+.
+
+#393
+wmdsObservedVariable:HCN
+a	skos:Concept ;
+skos:notation 393 ;
+dct:notation 393 ;
+rdfs:label "HCN(formonitrile, hydrogen cyanide)" ;
+skos:broader Nitrogen containing compounds ;
+defchem:chemical-species chemical-species:hydrogen-cyanide ;
+defchem:medium medium:air ;
+.
+
+#394
+wmdsObservedVariable:HNO3
+a	skos:Concept ;
+skos:notation 394 ;
+dct:notation 394 ;
+rdfs:label "HNO3(nitric acid)" ;
+skos:broader Nitrogen containing compounds ;
+defchem:chemical-species chemical-species:nitric-acid ;
+defchem:medium medium:air ;
+.
+
+#395
+wmdsObservedVariable:NO
+a	skos:Concept ;
+skos:notation 395 ;
+dct:notation 395 ;
+rdfs:label "NO" ;
+skos:broader Nitrogen containing compounds ;
+defchem:chemical-species chemical-species:nitrogen-monoxide ;
+defchem:medium medium:air ;
+.
+
+#396
+wmdsObservedVariable:NO2
+a	skos:Concept ;
+skos:notation 396 ;
+dct:notation 396 ;
+rdfs:label "NO2" ;
+skos:broader Nitrogen containing compounds ;
+defchem:chemical-species chemical-species:nitrogen-dioxide ;
+defchem:medium medium:air ;
+.
+
+#397
+wmdsObservedVariable:NOx
+a	skos:Concept ;
+skos:notation 397 ;
+dct:notation 397 ;
+rdfs:label "NOx" ;
+skos:broader Nitrogen containing compounds ;
+defchem:chemical-species chemical-species:nox ;
+defchem:medium medium:air ;
+.
+
+#398
+wmdsObservedVariable:NOy
+a	skos:Concept ;
+skos:notation 398 ;
+dct:notation 398 ;
+rdfs:label "NOy" ;
+skos:broader Nitrogen containing compounds ;
+defchem:chemical-species chemical-species:noy ;
+defchem:medium medium:air ;
+.
+
+#10049
+wmdsObservedVariable:Sulfur containing compounds
+a	skos:Concept ;
+skos:notation 10049 ;
+dct:notation 10049 ;
+rdfs:label "Sulfur containing compounds" ;
+skos:broader Reactive Gas ;
+defchem:medium medium:air ;
+.
+
+#428
+wmdsObservedVariable:COS
+a	skos:Concept ;
+skos:notation 428 ;
+dct:notation 428 ;
+rdfs:label "COS(OCS, carbon oxide sulfide, carbonyl sulfide)" ;
+skos:broader Sulfur containing compounds ;
+defchem:chemical-species chemical-species:carbonyl-sulfide ;
+defchem:medium medium:air ;
+.
+
+#429
+wmdsObservedVariable:CS2
+a	skos:Concept ;
+skos:notation 429 ;
+dct:notation 429 ;
+rdfs:label "CS2(Carbon disulfide)" ;
+skos:broader Sulfur containing compounds ;
+defchem:chemical-species chemical-species:carbon-disulfide ;
+defchem:medium medium:air ;
+.
+
+#430
+wmdsObservedVariable:SO2
+a	skos:Concept ;
+skos:notation 430 ;
+dct:notation 430 ;
+rdfs:label "SO2" ;
+skos:broader Sulfur containing compounds ;
+defchem:chemical-species chemical-species:sulfur-dioxide ;
+defchem:medium medium:air ;
+.
+
+#10050
+wmdsObservedVariable:VOC
+a	skos:Concept ;
+skos:notation 10050 ;
+dct:notation 10050 ;
+rdfs:label "VOC" ;
+skos:broader Reactive Gas ;
+defchem:chemical-species chemical-species:volatile-organic-species ;
+defchem:medium medium:air ;
+.
+
+#434
+wmdsObservedVariable:C2H2
+a	skos:Concept ;
+skos:notation 434 ;
+dct:notation 434 ;
+rdfs:label "C2H2(ethyne, acetylene)" ;
+skos:broader VOC ;
+defchem:chemical-species chemical-species:ethyne ;
+defchem:medium medium:air ;
+.
+
+#435
+wmdsObservedVariable:C2H2O2
+a	skos:Concept ;
+skos:notation 435 ;
+dct:notation 435 ;
+rdfs:label "C2H2O2(oxaldehyde, ethanedial)" ;
+skos:broader VOC ;
+defchem:medium medium:air ;
+.
+
+#436
+wmdsObservedVariable:C2H4
+a	skos:Concept ;
+skos:notation 436 ;
+dct:notation 436 ;
+rdfs:label "C2H4(ethene)" ;
+skos:broader VOC ;
+defchem:chemical-species chemical-species:ethene ;
+defchem:medium medium:air ;
+.
+
+#437
+wmdsObservedVariable:C2H6
+a	skos:Concept ;
+skos:notation 437 ;
+dct:notation 437 ;
+rdfs:label "C2H6(ethane)" ;
+skos:broader VOC ;
+defchem:chemical-species chemical-species:ethane ;
+defchem:medium medium:air ;
+.
+
+#438
+wmdsObservedVariable:C2H6S
+a	skos:Concept ;
+skos:notation 438 ;
+dct:notation 438 ;
+rdfs:label "C2H6S(dimethylsulfide, DMS)" ;
+skos:broader VOC ;
+defchem:medium medium:air ;
+.
+
+#439
+wmdsObservedVariable:C3H4
+a	skos:Concept ;
+skos:notation 439 ;
+dct:notation 439 ;
+rdfs:label "C3H4(propyne)" ;
+skos:broader VOC ;
+defchem:chemical-species chemical-species:propyne ;
+defchem:medium medium:air ;
+.
+
+#440
+wmdsObservedVariable:C3H4O
+a	skos:Concept ;
+skos:notation 440 ;
+dct:notation 440 ;
+rdfs:label "C3H4O(prop-2-enal, acrolein)" ;
+skos:broader VOC ;
+defchem:chemical-species chemical-species:prop-2-enal ;
+defchem:medium medium:air ;
+.
+
+#441
+wmdsObservedVariable:C3H4O2
+a	skos:Concept ;
+skos:notation 441 ;
+dct:notation 441 ;
+rdfs:label "C3H4O2(2-oxopropanal, methylglyoxal)" ;
+skos:broader VOC ;
+defchem:medium medium:air ;
+.
+
+#442
+wmdsObservedVariable:C3H6
+a	skos:Concept ;
+skos:notation 442 ;
+dct:notation 442 ;
+rdfs:label "C3H6(propene)" ;
+skos:broader VOC ;
+defchem:chemical-species chemical-species:propene ;
+defchem:medium medium:air ;
+.
+
+#443
+wmdsObservedVariable:C3H6O
+a	skos:Concept ;
+skos:notation 443 ;
+dct:notation 443 ;
+rdfs:label "C3H6O(acetone, propanone)" ;
+skos:broader VOC ;
+defchem:chemical-species chemical-species:propanal ;
+defchem:medium medium:air ;
+.
+
+#444
+wmdsObservedVariable:C3H6O
+a	skos:Concept ;
+skos:notation 444 ;
+dct:notation 444 ;
+rdfs:label "C3H6O(propanal)" ;
+skos:broader VOC ;
+defchem:chemical-species chemical-species:propanal ;
+defchem:medium medium:air ;
+.
+
+#445
+wmdsObservedVariable:C3H8
+a	skos:Concept ;
+skos:notation 445 ;
+dct:notation 445 ;
+rdfs:label "C3H8(propane)" ;
+skos:broader VOC ;
+defchem:chemical-species chemical-species:propane ;
+defchem:medium medium:air ;
+.
+
+#446
+wmdsObservedVariable:C4H6
+a	skos:Concept ;
+skos:notation 446 ;
+dct:notation 446 ;
+rdfs:label "C4H6(1, 3-butadiene, butadiene)" ;
+skos:broader VOC ;
+defchem:chemical-species chemical-species:buta-1,3-diene ;
+defchem:medium medium:air ;
+.
+
+#447
+wmdsObservedVariable:C4H6O
+a	skos:Concept ;
+skos:notation 447 ;
+dct:notation 447 ;
+rdfs:label "C4H6O(2-methylprop-2-enal, methacrolein)" ;
+skos:broader VOC ;
+defchem:chemical-species chemical-species:2-methylprop-2-enal ;
+defchem:medium medium:air ;
+.
+
+#448
+wmdsObservedVariable:C4H6O
+a	skos:Concept ;
+skos:notation 448 ;
+dct:notation 448 ;
+rdfs:label "C4H6O(but-3-en-2-one, methylvinylketone)" ;
+skos:broader VOC ;
+defchem:chemical-species chemical-species:2-methylprop-2-enal ;
+defchem:medium medium:air ;
+.
+
+#449
+wmdsObservedVariable:C4H8
+a	skos:Concept ;
+skos:notation 449 ;
+dct:notation 449 ;
+rdfs:label "C4H8(1-butene)" ;
+skos:broader VOC ;
+defchem:chemical-species chemical-species:butenes ;
+defchem:medium medium:air ;
+.
+
+#450
+wmdsObservedVariable:C4H8
+a	skos:Concept ;
+skos:notation 450 ;
+dct:notation 450 ;
+rdfs:label "C4H8(sum of butenes)" ;
+skos:broader VOC ;
+defchem:chemical-species chemical-species:butenes ;
+defchem:medium medium:air ;
+.
+
+#451
+wmdsObservedVariable:C4H8O
+a	skos:Concept ;
+skos:notation 451 ;
+dct:notation 451 ;
+rdfs:label "C4H8O(butan-2-one, methylethylketone)" ;
+skos:broader VOC ;
+defchem:chemical-species chemical-species:butanal ;
+defchem:medium medium:air ;
+.
+
+#452
+wmdsObservedVariable:C4H8O
+a	skos:Concept ;
+skos:notation 452 ;
+dct:notation 452 ;
+rdfs:label "C4H8O(butanal isomers)" ;
+skos:broader VOC ;
+defchem:chemical-species chemical-species:butanal ;
+defchem:medium medium:air ;
+.
+
+#453
+wmdsObservedVariable:C5H10
+a	skos:Concept ;
+skos:notation 453 ;
+dct:notation 453 ;
+rdfs:label "C5H10(1-pentene)" ;
+skos:broader VOC ;
+defchem:chemical-species chemical-species:pentenes ;
+defchem:medium medium:air ;
+.
+
+#454
+wmdsObservedVariable:C5H10
+a	skos:Concept ;
+skos:notation 454 ;
+dct:notation 454 ;
+rdfs:label "C5H10(2-methyl-1-butene)" ;
+skos:broader VOC ;
+defchem:chemical-species chemical-species:pentenes ;
+defchem:medium medium:air ;
+.
+
+#455
+wmdsObservedVariable:C5H10
+a	skos:Concept ;
+skos:notation 455 ;
+dct:notation 455 ;
+rdfs:label "C5H10(2-methyl-2-butene)" ;
+skos:broader VOC ;
+defchem:chemical-species chemical-species:pentenes ;
+defchem:medium medium:air ;
+.
+
+#456
+wmdsObservedVariable:C5H10
+a	skos:Concept ;
+skos:notation 456 ;
+dct:notation 456 ;
+rdfs:label "C5H10(3-methyl-1-butene)" ;
+skos:broader VOC ;
+defchem:chemical-species chemical-species:pentenes ;
+defchem:medium medium:air ;
+.
+
+#457
+wmdsObservedVariable:C5H10
+a	skos:Concept ;
+skos:notation 457 ;
+dct:notation 457 ;
+rdfs:label "C5H10(cyclopentane)" ;
+skos:broader VOC ;
+defchem:chemical-species chemical-species:pentenes ;
+defchem:medium medium:air ;
+.
+
+#458
+wmdsObservedVariable:C5H10
+a	skos:Concept ;
+skos:notation 458 ;
+dct:notation 458 ;
+rdfs:label "C5H10(sum of 1-pentene & 2-methyl-2-butene)" ;
+skos:broader VOC ;
+defchem:chemical-species chemical-species:pentenes ;
+defchem:medium medium:air ;
+.
+
+#459
+wmdsObservedVariable:C5H10
+a	skos:Concept ;
+skos:notation 459 ;
+dct:notation 459 ;
+rdfs:label "C5H10(sum of pentenes)" ;
+skos:broader VOC ;
+defchem:chemical-species chemical-species:pentenes ;
+defchem:medium medium:air ;
+.
+
+#460
+wmdsObservedVariable:C5H10O
+a	skos:Concept ;
+skos:notation 460 ;
+dct:notation 460 ;
+rdfs:label "C5H10O(pentanal, valeraldehyde)" ;
+skos:broader VOC ;
+defchem:medium medium:air ;
+.
+
+#461
+wmdsObservedVariable:C5H12 & C4H8
+a	skos:Concept ;
+skos:notation 461 ;
+dct:notation 461 ;
+rdfs:label "C5H12 & C4H8(sum of 2, 2-dimethylpropane & c-2-butene)" ;
+skos:broader VOC ;
+defchem:medium medium:air ;
+.
+
+#462
+wmdsObservedVariable:C5H12
+a	skos:Concept ;
+skos:notation 462 ;
+dct:notation 462 ;
+rdfs:label "C5H12(2, 2-dimethylpropane)" ;
+skos:broader VOC ;
+defchem:chemical-species chemical-species:pentanes ;
+defchem:medium medium:air ;
+.
+
+#463
+wmdsObservedVariable:C5H14
+a	skos:Concept ;
+skos:notation 463 ;
+dct:notation 463 ;
+rdfs:label "C5H14(2, 3-dimethylbutane)" ;
+skos:broader VOC ;
+defchem:medium medium:air ;
+.
+
+#464
+wmdsObservedVariable:C5H8
+a	skos:Concept ;
+skos:notation 464 ;
+dct:notation 464 ;
+rdfs:label "C5H8(2-methyl-1, 3-butadiene, isoprene)" ;
+skos:broader VOC ;
+defchem:chemical-species chemical-species:2-methylbuta-1,3-diene ;
+defchem:medium medium:air ;
+.
+
+#465
+wmdsObservedVariable:C5H8
+a	skos:Concept ;
+skos:notation 465 ;
+dct:notation 465 ;
+rdfs:label "C5H8(cyclopentene)" ;
+skos:broader VOC ;
+defchem:chemical-species chemical-species:2-methylbuta-1,3-diene ;
+defchem:medium medium:air ;
+.
+
+#466
+wmdsObservedVariable:C5Hn
+a	skos:Concept ;
+skos:notation 466 ;
+dct:notation 466 ;
+rdfs:label "C5Hn(n={10, 8}; sum of 3-methyl-1-butene & cyclopentene)" ;
+skos:broader VOC ;
+defchem:medium medium:air ;
+.
+
+#467
+wmdsObservedVariable:C5Hn
+a	skos:Concept ;
+skos:notation 467 ;
+dct:notation 467 ;
+rdfs:label "C5Hn(n={12, 10}; sum of n-pentane & cyclopentane)" ;
+skos:broader VOC ;
+defchem:medium medium:air ;
+.
+
+#468
+wmdsObservedVariable:C6H12
+a	skos:Concept ;
+skos:notation 468 ;
+dct:notation 468 ;
+rdfs:label "C6H12(cyclohexane)" ;
+skos:broader VOC ;
+defchem:medium medium:air ;
+.
+
+#469
+wmdsObservedVariable:C6H12
+a	skos:Concept ;
+skos:notation 469 ;
+dct:notation 469 ;
+rdfs:label "C6H12(methylcyclopentane)" ;
+skos:broader VOC ;
+defchem:medium medium:air ;
+.
+
+#470
+wmdsObservedVariable:C6H12O
+a	skos:Concept ;
+skos:notation 470 ;
+dct:notation 470 ;
+rdfs:label "C6H12O(hexanal isomers)" ;
+skos:broader VOC ;
+defchem:medium medium:air ;
+.
+
+#471
+wmdsObservedVariable:C6H14
+a	skos:Concept ;
+skos:notation 471 ;
+dct:notation 471 ;
+rdfs:label "C6H14(2, 2-dimethylbutane)" ;
+skos:broader VOC ;
+defchem:chemical-species chemical-species:hexanes ;
+defchem:medium medium:air ;
+.
+
+#472
+wmdsObservedVariable:C6H14
+a	skos:Concept ;
+skos:notation 472 ;
+dct:notation 472 ;
+rdfs:label "C6H14(2-methylpentane)" ;
+skos:broader VOC ;
+defchem:chemical-species chemical-species:hexanes ;
+defchem:medium medium:air ;
+.
+
+#473
+wmdsObservedVariable:C6H14
+a	skos:Concept ;
+skos:notation 473 ;
+dct:notation 473 ;
+rdfs:label "C6H14(3-methylpentane)" ;
+skos:broader VOC ;
+defchem:chemical-species chemical-species:hexanes ;
+defchem:medium medium:air ;
+.
+
+#474
+wmdsObservedVariable:C6H14
+a	skos:Concept ;
+skos:notation 474 ;
+dct:notation 474 ;
+rdfs:label "C6H14(n-hexane)" ;
+skos:broader VOC ;
+defchem:chemical-species chemical-species:hexanes ;
+defchem:medium medium:air ;
+.
+
+#475
+wmdsObservedVariable:C6H14
+a	skos:Concept ;
+skos:notation 475 ;
+dct:notation 475 ;
+rdfs:label "C6H14(sum of methylpentanes)" ;
+skos:broader VOC ;
+defchem:chemical-species chemical-species:hexanes ;
+defchem:medium medium:air ;
+.
+
+#476
+wmdsObservedVariable:C6H6
+a	skos:Concept ;
+skos:notation 476 ;
+dct:notation 476 ;
+rdfs:label "C6H6(benzene)" ;
+skos:broader VOC ;
+defchem:chemical-species chemical-species:benzene ;
+defchem:medium medium:air ;
+.
+
+#477
+wmdsObservedVariable:C6Hn
+a	skos:Concept ;
+skos:notation 477 ;
+dct:notation 477 ;
+rdfs:label "C6Hn(n={14, 12}; sum of 3-methylpentane & cyclohexane)" ;
+skos:broader VOC ;
+defchem:medium medium:air ;
+.
+
+#478
+wmdsObservedVariable:C6Hn (n={14, 12}; sum of 2
+a	skos:Concept ;
+skos:notation 478 ;
+dct:notation 478 ;
+rdfs:label "C6Hn (n={14, 12}; sum of 2 in 2-dimethylbutane & methylcyclopentane"" ;
+skos:broader VOC ;
+defchem:medium medium:2-dimethylbutane & methylcyclopentane" ;
+.
+
+#479
+wmdsObservedVariable:C6Hn (n={14, 12}; sum of 2
+a	skos:Concept ;
+skos:notation 479 ;
+dct:notation 479 ;
+rdfs:label "C6Hn (n={14, 12}; sum of 2 in 3-dimethylbutane & methylcyclopentane"" ;
+skos:broader VOC ;
+defchem:medium medium:3-dimethylbutane & methylcyclopentane" ;
+.
+
+#480
+wmdsObservedVariable:C7H16
+a	skos:Concept ;
+skos:notation 480 ;
+dct:notation 480 ;
+rdfs:label "C7H16(sum of methylhexanes)" ;
+skos:broader VOC ;
+defchem:chemical-species chemical-species:heptanes ;
+defchem:medium medium:air ;
+.
+
+#481
+wmdsObservedVariable:C7H6O
+a	skos:Concept ;
+skos:notation 481 ;
+dct:notation 481 ;
+rdfs:label "C7H6O(benzene carbaldehyde)" ;
+skos:broader VOC ;
+defchem:medium medium:air ;
+.
+
+#482
+wmdsObservedVariable:C7H8
+a	skos:Concept ;
+skos:notation 482 ;
+dct:notation 482 ;
+rdfs:label "C7H8(toluene)" ;
+skos:broader VOC ;
+defchem:medium medium:air ;
+.
+
+#483
+wmdsObservedVariable:C8H10
+a	skos:Concept ;
+skos:notation 483 ;
+dct:notation 483 ;
+rdfs:label "C8H10(ethylbenzene)" ;
+skos:broader VOC ;
+defchem:medium medium:air ;
+.
+
+#484
+wmdsObservedVariable:C8H10
+a	skos:Concept ;
+skos:notation 484 ;
+dct:notation 484 ;
+rdfs:label "C8H10(m-xylene)" ;
+skos:broader VOC ;
+defchem:medium medium:air ;
+.
+
+#485
+wmdsObservedVariable:C8H10
+a	skos:Concept ;
+skos:notation 485 ;
+dct:notation 485 ;
+rdfs:label "C8H10(o-xylene)" ;
+skos:broader VOC ;
+defchem:medium medium:air ;
+.
+
+#486
+wmdsObservedVariable:C8H10
+a	skos:Concept ;
+skos:notation 486 ;
+dct:notation 486 ;
+rdfs:label "C8H10(p, m-xylene)" ;
+skos:broader VOC ;
+defchem:medium medium:air ;
+.
+
+#487
+wmdsObservedVariable:C9H12
+a	skos:Concept ;
+skos:notation 487 ;
+dct:notation 487 ;
+rdfs:label "C9H12(1, 2, 4-trimethylbenzene)" ;
+skos:broader VOC ;
+defchem:medium medium:air ;
+.
+
+#488
+wmdsObservedVariable:C9H12
+a	skos:Concept ;
+skos:notation 488 ;
+dct:notation 488 ;
+rdfs:label "C9H12(1, 3, 5-trimethylbenzene)" ;
+skos:broader VOC ;
+defchem:medium medium:air ;
+.
+
+#489
+wmdsObservedVariable:CH2O
+a	skos:Concept ;
+skos:notation 489 ;
+dct:notation 489 ;
+rdfs:label "CH2O(formaldehyde)" ;
+skos:broader VOC ;
+defchem:chemical-species chemical-species:formaldehyde ;
+defchem:medium medium:air ;
+.
+
+#490
+wmdsObservedVariable:CH3CH2OH
+a	skos:Concept ;
+skos:notation 490 ;
+dct:notation 490 ;
+rdfs:label "CH3CH2OH(ethanol)" ;
+skos:broader VOC ;
+defchem:medium medium:air ;
+.
+
+#491
+wmdsObservedVariable:CH3CHO
+a	skos:Concept ;
+skos:notation 491 ;
+dct:notation 491 ;
+rdfs:label "CH3CHO(acetaldehyde, ethanal)" ;
+skos:broader VOC ;
+defchem:chemical-species chemical-species:ethylaldehyde ;
+defchem:medium medium:air ;
+.
+
+#492
+wmdsObservedVariable:CH3CN
+a	skos:Concept ;
+skos:notation 492 ;
+dct:notation 492 ;
+rdfs:label "CH3CN(acetonitrile)" ;
+skos:broader VOC ;
+defchem:chemical-species chemical-species:acetonitrile ;
+defchem:medium medium:air ;
+.
+
+#493
+wmdsObservedVariable:CH3OH
+a	skos:Concept ;
+skos:notation 493 ;
+dct:notation 493 ;
+rdfs:label "CH3OH(methanol)" ;
+skos:broader VOC ;
+defchem:chemical-species chemical-species:methanol ;
+defchem:medium medium:air ;
+.
+
+#494
+wmdsObservedVariable:NMHC
+a	skos:Concept ;
+skos:notation 494 ;
+dct:notation 494 ;
+rdfs:label "NMHC" ;
+skos:broader VOC ;
+defchem:medium medium:air ;
+.
+
+#495
+wmdsObservedVariable:c-C4H8
+a	skos:Concept ;
+skos:notation 495 ;
+dct:notation 495 ;
+rdfs:label "c-C4H8(cis-2-butene)" ;
+skos:broader VOC ;
+defchem:medium medium:air ;
+.
+
+#496
+wmdsObservedVariable:c-C5H10
+a	skos:Concept ;
+skos:notation 496 ;
+dct:notation 496 ;
+rdfs:label "c-C5H10(cis-2-pentene)" ;
+skos:broader VOC ;
+defchem:medium medium:air ;
+.
+
+#497
+wmdsObservedVariable:i-C4H10
+a	skos:Concept ;
+skos:notation 497 ;
+dct:notation 497 ;
+rdfs:label "i-C4H10(2-methylpropane, iso-butane)" ;
+skos:broader VOC ;
+defchem:chemical-species chemical-species:2-methylpropane ;
+defchem:medium medium:air ;
+.
+
+#498
+wmdsObservedVariable:i-C4H8
+a	skos:Concept ;
+skos:notation 498 ;
+dct:notation 498 ;
+rdfs:label "i-C4H8(2-methylpropene, iso-butene)" ;
+skos:broader VOC ;
+defchem:medium medium:air ;
+.
+
+#499
+wmdsObservedVariable:i-C5H12
+a	skos:Concept ;
+skos:notation 499 ;
+dct:notation 499 ;
+rdfs:label "i-C5H12(2-methylbutane, iso-pentane)" ;
+skos:broader VOC ;
+defchem:chemical-species chemical-species:2-methylbutane ;
+defchem:medium medium:air ;
+.
+
+#500
+wmdsObservedVariable:i-C7H16
+a	skos:Concept ;
+skos:notation 500 ;
+dct:notation 500 ;
+rdfs:label "i-C7H16(2-methylhexane, isoheptane)" ;
+skos:broader VOC ;
+defchem:medium medium:air ;
+.
+
+#501
+wmdsObservedVariable:n-C4H10
+a	skos:Concept ;
+skos:notation 501 ;
+dct:notation 501 ;
+rdfs:label "n-C4H10(n-butane)" ;
+skos:broader VOC ;
+defchem:chemical-species chemical-species:butane ;
+defchem:medium medium:air ;
+.
+
+#502
+wmdsObservedVariable:n-C5H12
+a	skos:Concept ;
+skos:notation 502 ;
+dct:notation 502 ;
+rdfs:label "n-C5H12(n-pentane)" ;
+skos:broader VOC ;
+defchem:medium medium:air ;
+.
+
+#503
+wmdsObservedVariable:n-C7H16
+a	skos:Concept ;
+skos:notation 503 ;
+dct:notation 503 ;
+rdfs:label "n-C7H16(n-heptane)" ;
+skos:broader VOC ;
+defchem:chemical-species chemical-species:n-heptane ;
+defchem:medium medium:air ;
+.
+
+#504
+wmdsObservedVariable:t-C4H8
+a	skos:Concept ;
+skos:notation 504 ;
+dct:notation 504 ;
+rdfs:label "t-C4H8(trans-2-butene)" ;
+skos:broader VOC ;
+defchem:chemical-species chemical-species:trans-2-butene ;
+defchem:medium medium:air ;
+.
+
+#505
+wmdsObservedVariable:t-C5H10
+a	skos:Concept ;
+skos:notation 505 ;
+dct:notation 505 ;
+rdfs:label "t-C5H10(trans-2-pentene)" ;
+skos:broader VOC ;
+defchem:chemical-species chemical-species:trans-2-pentene ;
+defchem:medium medium:air ;
+.
+
+#10051
+wmdsObservedVariable:Temperature
+a	skos:Concept ;
+skos:notation 10051 ;
+dct:notation 10051 ;
+rdfs:label "Temperature" ;
+skos:broader Atmosphere ;
+.
+
+#224
+wmdsObservedVariable:Air temperature
+a	skos:Concept ;
+skos:notation 224 ;
+dct:notation 224 ;
+rdfs:label "Air temperature(at specified distance from reference surface)" ;
+skos:broader Temperature ;
+.
+
+#225
+wmdsObservedVariable:Dew-point temperature
+a	skos:Concept ;
+skos:notation 225 ;
+dct:notation 225 ;
+rdfs:label "Dew-point temperature(at specified distance from reference surface)" ;
+skos:broader Temperature ;
+.
+
+#226
+wmdsObservedVariable:Extreme temperature  (at specified distance from reference surface)
+a	skos:Concept ;
+skos:notation 226 ;
+dct:notation 226 ;
+rdfs:label "Extreme temperature  (at specified distance from reference surface)(min, max)" ;
+skos:broader Temperature ;
+.
+
+#227
+wmdsObservedVariable:Temperature profile
+a	skos:Concept ;
+skos:notation 227 ;
+dct:notation 227 ;
+rdfs:label "Temperature profile" ;
+skos:broader Temperature ;
+.
+
+#10052
+wmdsObservedVariable:Total Atmospheric Deposition
+a	skos:Concept ;
+skos:notation 10052 ;
+dct:notation 10052 ;
+rdfs:label "Total Atmospheric Deposition" ;
+skos:broader Atmosphere ;
+.
+
+#294
+wmdsObservedVariable:Acidity/Alkalinity
+a	skos:Concept ;
+skos:notation 294 ;
+dct:notation 294 ;
+rdfs:label "Acidity/Alkalinity" ;
+skos:broader Total Atmospheric Deposition ;
+.
+
+#295
+wmdsObservedVariable:Electric conductivity
+a	skos:Concept ;
+skos:notation 295 ;
+dct:notation 295 ;
+rdfs:label "Electric conductivity" ;
+skos:broader Total Atmospheric Deposition ;
+.
+
+#296
+wmdsObservedVariable:Hydrogen ion  or pH
+a	skos:Concept ;
+skos:notation 296 ;
+dct:notation 296 ;
+rdfs:label "Hydrogen ion  or pH(H+)" ;
+skos:broader Total Atmospheric Deposition ;
+.
+
+#302
+wmdsObservedVariable:Sulphur
+a	skos:Concept ;
+skos:notation 302 ;
+dct:notation 302 ;
+rdfs:label "Sulphur(S)" ;
+skos:broader Total Atmospheric Deposition ;
+.
+
+#10053
+wmdsObservedVariable:Inorganic acid
+a	skos:Concept ;
+skos:notation 10053 ;
+dct:notation 10053 ;
+rdfs:label "Inorganic acid" ;
+skos:broader Total Atmospheric Deposition ;
+defchem:chemical-species chemical-species:inorganic-acid ;
+.
+
+#529
+wmdsObservedVariable:Strong acids
+a	skos:Concept ;
+skos:notation 529 ;
+dct:notation 529 ;
+rdfs:label "Strong acids" ;
+skos:broader Inorganic acid ;
+.
+
+#10054
+wmdsObservedVariable:Inorganic anions
+a	skos:Concept ;
+skos:notation 10054 ;
+dct:notation 10054 ;
+rdfs:label "Inorganic anions" ;
+skos:broader Total Atmospheric Deposition ;
+.
+
+#538
+wmdsObservedVariable:Bromide
+a	skos:Concept ;
+skos:notation 538 ;
+dct:notation 538 ;
+rdfs:label "Bromide(Br-)" ;
+skos:broader Inorganic anions ;
+.
+
+#539
+wmdsObservedVariable:Chloride
+a	skos:Concept ;
+skos:notation 539 ;
+dct:notation 539 ;
+rdfs:label "Chloride(Cl-)" ;
+skos:broader Inorganic anions ;
+.
+
+#540
+wmdsObservedVariable:Fluoride
+a	skos:Concept ;
+skos:notation 540 ;
+dct:notation 540 ;
+rdfs:label "Fluoride(F-)" ;
+skos:broader Inorganic anions ;
+.
+
+#541
+wmdsObservedVariable:Iodide
+a	skos:Concept ;
+skos:notation 541 ;
+dct:notation 541 ;
+rdfs:label "Iodide(I-)" ;
+skos:broader Inorganic anions ;
+.
+
+#542
+wmdsObservedVariable:Phosphate
+a	skos:Concept ;
+skos:notation 542 ;
+dct:notation 542 ;
+rdfs:label "Phosphate(PO4---)" ;
+skos:broader Inorganic anions ;
+.
+
+#543
+wmdsObservedVariable:Sulphate
+a	skos:Concept ;
+skos:notation 543 ;
+dct:notation 543 ;
+rdfs:label "Sulphate(SO4=) in corrected"" ;
+skos:broader Inorganic anions ;
+defchem:medium medium:corrected" ;
+.
+
+#544
+wmdsObservedVariable:Sulphate
+a	skos:Concept ;
+skos:notation 544 ;
+dct:notation 544 ;
+rdfs:label "Sulphate(SO4=) in total"" ;
+skos:broader Inorganic anions ;
+defchem:medium medium:total" ;
+.
+
+#10055
+wmdsObservedVariable:Inorganic cations
+a	skos:Concept ;
+skos:notation 10055 ;
+dct:notation 10055 ;
+rdfs:label "Inorganic cations" ;
+skos:broader Total Atmospheric Deposition ;
+.
+
+#545
+wmdsObservedVariable:Calcium
+a	skos:Concept ;
+skos:notation 545 ;
+dct:notation 545 ;
+rdfs:label "Calcium(Ca++)" ;
+skos:broader Inorganic cations ;
+.
+
+#546
+wmdsObservedVariable:Magnesium
+a	skos:Concept ;
+skos:notation 546 ;
+dct:notation 546 ;
+rdfs:label "Magnesium(Mg++)" ;
+skos:broader Inorganic cations ;
+.
+
+#547
+wmdsObservedVariable:Potassium
+a	skos:Concept ;
+skos:notation 547 ;
+dct:notation 547 ;
+rdfs:label "Potassium(K+)" ;
+skos:broader Inorganic cations ;
+.
+
+#548
+wmdsObservedVariable:Sodium
+a	skos:Concept ;
+skos:notation 548 ;
+dct:notation 548 ;
+rdfs:label "Sodium(Na+)" ;
+skos:broader Inorganic cations ;
+.
+
+#10056
+wmdsObservedVariable:Inorganic nitrogen species
+a	skos:Concept ;
+skos:notation 10056 ;
+dct:notation 10056 ;
+rdfs:label "Inorganic nitrogen species" ;
+skos:broader Total Atmospheric Deposition ;
+defchem:chemical-species chemical-species:inorganic-nitrogen-species ;
+.
+
+#568
+wmdsObservedVariable:Ammonium
+a	skos:Concept ;
+skos:notation 568 ;
+dct:notation 568 ;
+rdfs:label "Ammonium(NH4+)" ;
+skos:broader Inorganic nitrogen species ;
+defchem:chemical-species chemical-species:ammonium ;
+.
+
+#569
+wmdsObservedVariable:Nitrate
+a	skos:Concept ;
+skos:notation 569 ;
+dct:notation 569 ;
+rdfs:label "Nitrate(NO3-)" ;
+skos:broader Inorganic nitrogen species ;
+defchem:chemical-species chemical-species:nitrate ;
+.
+
+#570
+wmdsObservedVariable:Nitrite
+a	skos:Concept ;
+skos:notation 570 ;
+dct:notation 570 ;
+rdfs:label "Nitrite(NO2-)" ;
+skos:broader Inorganic nitrogen species ;
+.
+
+#10057
+wmdsObservedVariable:Organic acid
+a	skos:Concept ;
+skos:notation 10057 ;
+dct:notation 10057 ;
+rdfs:label "Organic acid" ;
+skos:broader Total Atmospheric Deposition ;
+defchem:chemical-species chemical-species:organic-acid ;
+.
+
+#576
+wmdsObservedVariable:Acetate
+a	skos:Concept ;
+skos:notation 576 ;
+dct:notation 576 ;
+rdfs:label "Acetate(CH3COO-)" ;
+skos:broader Organic acid ;
+.
+
+#577
+wmdsObservedVariable:Formate
+a	skos:Concept ;
+skos:notation 577 ;
+dct:notation 577 ;
+rdfs:label "Formate(HCOO-)" ;
+skos:broader Organic acid ;
+.
+
+#578
+wmdsObservedVariable:Propionate
+a	skos:Concept ;
+skos:notation 578 ;
+dct:notation 578 ;
+rdfs:label "Propionate(C2H5COO-)" ;
+skos:broader Organic acid ;
+.
+
+#10058
+wmdsObservedVariable:Trace elements
+a	skos:Concept ;
+skos:notation 10058 ;
+dct:notation 10058 ;
+rdfs:label "Trace elements" ;
+skos:broader Total Atmospheric Deposition ;
+.
+
+#597
+wmdsObservedVariable:Aluminum
+a	skos:Concept ;
+skos:notation 597 ;
+dct:notation 597 ;
+rdfs:label "Aluminum(Al)" ;
+skos:broader Trace elements ;
+.
+
+#598
+wmdsObservedVariable:Arsenic
+a	skos:Concept ;
+skos:notation 598 ;
+dct:notation 598 ;
+rdfs:label "Arsenic(As)" ;
+skos:broader Trace elements ;
+defchem:chemical-species chemical-species:arsenic ;
+.
+
+#599
+wmdsObservedVariable:Cadmium
+a	skos:Concept ;
+skos:notation 599 ;
+dct:notation 599 ;
+rdfs:label "Cadmium(Cd)" ;
+skos:broader Trace elements ;
+defchem:chemical-species chemical-species:cadmium ;
+.
+
+#600
+wmdsObservedVariable:Chromium
+a	skos:Concept ;
+skos:notation 600 ;
+dct:notation 600 ;
+rdfs:label "Chromium(Cr)" ;
+skos:broader Trace elements ;
+defchem:chemical-species chemical-species:chromium ;
+.
+
+#601
+wmdsObservedVariable:Cobalt
+a	skos:Concept ;
+skos:notation 601 ;
+dct:notation 601 ;
+rdfs:label "Cobalt(Co)" ;
+skos:broader Trace elements ;
+defchem:chemical-species chemical-species:cobalt ;
+.
+
+#602
+wmdsObservedVariable:Copper
+a	skos:Concept ;
+skos:notation 602 ;
+dct:notation 602 ;
+rdfs:label "Copper(Cu)" ;
+skos:broader Trace elements ;
+defchem:chemical-species chemical-species:copper ;
+.
+
+#603
+wmdsObservedVariable:Iron
+a	skos:Concept ;
+skos:notation 603 ;
+dct:notation 603 ;
+rdfs:label "Iron(Fe)" ;
+skos:broader Trace elements ;
+defchem:chemical-species chemical-species:iron ;
+.
+
+#604
+wmdsObservedVariable:Lead
+a	skos:Concept ;
+skos:notation 604 ;
+dct:notation 604 ;
+rdfs:label "Lead(Pb)" ;
+skos:broader Trace elements ;
+defchem:chemical-species chemical-species:lead ;
+.
+
+#605
+wmdsObservedVariable:Manganese
+a	skos:Concept ;
+skos:notation 605 ;
+dct:notation 605 ;
+rdfs:label "Manganese(Mn)" ;
+skos:broader Trace elements ;
+defchem:chemical-species chemical-species:manganese ;
+.
+
+#606
+wmdsObservedVariable:Mercury
+a	skos:Concept ;
+skos:notation 606 ;
+dct:notation 606 ;
+rdfs:label "Mercury(Hg)" ;
+skos:broader Trace elements ;
+defchem:chemical-species chemical-species:mercury ;
+.
+
+#607
+wmdsObservedVariable:Nickel
+a	skos:Concept ;
+skos:notation 607 ;
+dct:notation 607 ;
+rdfs:label "Nickel(Ni)" ;
+skos:broader Trace elements ;
+defchem:chemical-species chemical-species:nickel ;
+.
+
+#608
+wmdsObservedVariable:Vanadium
+a	skos:Concept ;
+skos:notation 608 ;
+dct:notation 608 ;
+rdfs:label "Vanadium(V)" ;
+skos:broader Trace elements ;
+defchem:chemical-species chemical-species:vanadium ;
+.
+
+#609
+wmdsObservedVariable:Zinc
+a	skos:Concept ;
+skos:notation 609 ;
+dct:notation 609 ;
+rdfs:label "Zinc(Zn)" ;
+skos:broader Trace elements ;
+defchem:chemical-species chemical-species:zinc ;
+.
+
+#10059
+wmdsObservedVariable:Visibility
+a	skos:Concept ;
+skos:notation 10059 ;
+dct:notation 10059 ;
+rdfs:label "Visibility" ;
+skos:broader Atmosphere ;
+.
+
+#229
+wmdsObservedVariable:Runway visual range
+a	skos:Concept ;
+skos:notation 229 ;
+dct:notation 229 ;
+rdfs:label "Runway visual range" ;
+skos:broader Visibility ;
+.
+
+#230
+wmdsObservedVariable:Visibility
+a	skos:Concept ;
+skos:notation 230 ;
+dct:notation 230 ;
+rdfs:label "Visibility" ;
+skos:broader Visibility ;
+.
+
+#10060
+wmdsObservedVariable:Obscurations
+a	skos:Concept ;
+skos:notation 10060 ;
+dct:notation 10060 ;
+rdfs:label "Obscurations" ;
+skos:broader Visibility ;
+.
+
+#521
+wmdsObservedVariable:Extinction coefficient
+a	skos:Concept ;
+skos:notation 521 ;
+dct:notation 521 ;
+rdfs:label "Extinction coefficient" ;
+skos:broader Obscurations ;
+.
+
+#522
+wmdsObservedVariable:Hydrometeor radius
+a	skos:Concept ;
+skos:notation 522 ;
+dct:notation 522 ;
+rdfs:label "Hydrometeor radius" ;
+skos:broader Obscurations ;
+.
+
+#523
+wmdsObservedVariable:Hydrometeor type
+a	skos:Concept ;
+skos:notation 523 ;
+dct:notation 523 ;
+rdfs:label "Hydrometeor type" ;
+skos:broader Obscurations ;
+.
+
+#524
+wmdsObservedVariable:Lithometeor type
+a	skos:Concept ;
+skos:notation 524 ;
+dct:notation 524 ;
+rdfs:label "Lithometeor type" ;
+skos:broader Obscurations ;
+.
+
+#525
+wmdsObservedVariable:Meteorological Optical Range
+a	skos:Concept ;
+skos:notation 525 ;
+dct:notation 525 ;
+rdfs:label "Meteorological Optical Range" ;
+skos:broader Obscurations ;
+.
+
+#526
+wmdsObservedVariable:Obscuration type
+a	skos:Concept ;
+skos:notation 526 ;
+dct:notation 526 ;
+rdfs:label "Obscuration type" ;
+skos:broader Obscurations ;
+.
+
+#10061
+wmdsObservedVariable:Wind
+a	skos:Concept ;
+skos:notation 10061 ;
+dct:notation 10061 ;
+rdfs:label "Wind" ;
+skos:broader Atmosphere ;
+.
+
+#304
+wmdsObservedVariable:Direction of cloud movement
+a	skos:Concept ;
+skos:notation 304 ;
+dct:notation 304 ;
+rdfs:label "Direction of cloud movement" ;
+skos:broader Wind ;
+.
+
+#305
+wmdsObservedVariable:Gust Speed
+a	skos:Concept ;
+skos:notation 305 ;
+dct:notation 305 ;
+rdfs:label "Gust Speed" ;
+skos:broader Wind ;
+.
+
+#307
+wmdsObservedVariable:Wind
+a	skos:Concept ;
+skos:notation 307 ;
+dct:notation 307 ;
+rdfs:label "Wind(Z component, vertical)" ;
+skos:broader Wind ;
+.
+
+#309
+wmdsObservedVariable:Wind
+a	skos:Concept ;
+skos:notation 309 ;
+dct:notation 309 ;
+rdfs:label "Wind(surface wind direction and speed, horizontal)" ;
+skos:broader Wind ;
+.
+
+#310
+wmdsObservedVariable:Wind
+a	skos:Concept ;
+skos:notation 310 ;
+dct:notation 310 ;
+rdfs:label "Wind(X, Y components, horizontal)" ;
+skos:broader Wind ;
+.
+
+#10062
+wmdsObservedVariable:Earth
+a	skos:Concept ;
+skos:notation 10062 ;
+dct:notation 10062 ;
+rdfs:label "Earth" ;
+.
+
+#6
+wmdsObservedVariable:Crustal motion
+a	skos:Concept ;
+skos:notation 6 ;
+dct:notation 6 ;
+rdfs:label "Crustal motion(horizontal and vertical)" ;
+skos:broader Earth ;
+.
+
+#7
+wmdsObservedVariable:Crustal plates positioning
+a	skos:Concept ;
+skos:notation 7 ;
+dct:notation 7 ;
+rdfs:label "Crustal plates positioning" ;
+skos:broader Earth ;
+.
+
+#8
+wmdsObservedVariable:Earth Rotation
+a	skos:Concept ;
+skos:notation 8 ;
+dct:notation 8 ;
+rdfs:label "Earth Rotation" ;
+skos:broader Earth ;
+.
+
+#9
+wmdsObservedVariable:Geoid
+a	skos:Concept ;
+skos:notation 9 ;
+dct:notation 9 ;
+rdfs:label "Geoid" ;
+skos:broader Earth ;
+.
+
+#10
+wmdsObservedVariable:Geomagnetic field
+a	skos:Concept ;
+skos:notation 10 ;
+dct:notation 10 ;
+rdfs:label "Geomagnetic field" ;
+skos:broader Earth ;
+.
+
+#11
+wmdsObservedVariable:Gravity field
+a	skos:Concept ;
+skos:notation 11 ;
+dct:notation 11 ;
+rdfs:label "Gravity field" ;
+skos:broader Earth ;
+.
+
+#12
+wmdsObservedVariable:Gravity gradients
+a	skos:Concept ;
+skos:notation 12 ;
+dct:notation 12 ;
+rdfs:label "Gravity gradients" ;
+skos:broader Earth ;
+.
+
+#10063
+wmdsObservedVariable:Ocean
+a	skos:Concept ;
+skos:notation 10063 ;
+dct:notation 10063 ;
+rdfs:label "Ocean" ;
+.
+
+#10064
+wmdsObservedVariable:Topography
+a	skos:Concept ;
+skos:notation 10064 ;
+dct:notation 10064 ;
+rdfs:label "Topography" ;
+skos:broader Ocean ;
+.
+
+#13
+wmdsObservedVariable:Bathymetry
+a	skos:Concept ;
+skos:notation 13 ;
+dct:notation 13 ;
+rdfs:label "Bathymetry" ;
+skos:broader Topography ;
+.
+
+#64
+wmdsObservedVariable:Ocean dynamic topography
+a	skos:Concept ;
+skos:notation 64 ;
+dct:notation 64 ;
+rdfs:label "Ocean dynamic topography(ODT)" ;
+skos:broader Topography ;
+.
+
+#77
+wmdsObservedVariable:Sea surface height anomaly
+a	skos:Concept ;
+skos:notation 77 ;
+dct:notation 77 ;
+rdfs:label "Sea surface height anomaly(SSHA)" ;
+skos:broader Topography ;
+.
+
+#96
+wmdsObservedVariable:Coastal sea level
+a	skos:Concept ;
+skos:notation 96 ;
+dct:notation 96 ;
+rdfs:label "Coastal sea level(tide)" ;
+skos:broader Topography ;
+.
+
+#740
+wmdsObservedVariable:Mean dynamic topography
+a	skos:Concept ;
+skos:notation 740 ;
+dct:notation 740 ;
+rdfs:label "Mean dynamic topography(MDT)" ;
+skos:broader Topography ;
+.
+
+#741
+wmdsObservedVariable:Mean sea surface
+a	skos:Concept ;
+skos:notation 741 ;
+dct:notation 741 ;
+rdfs:label "Mean sea surface(MSS)" ;
+skos:broader Topography ;
+.
+
+#742
+wmdsObservedVariable:Sea surface height
+a	skos:Concept ;
+skos:notation 742 ;
+dct:notation 742 ;
+rdfs:label "Sea surface height(SSH, OST)" ;
+skos:broader Topography ;
+.
+
+#10065
+wmdsObservedVariable:Currents
+a	skos:Concept ;
+skos:notation 10065 ;
+dct:notation 10065 ;
+rdfs:label "Currents" ;
+skos:broader Ocean ;
+.
+
+#62
+wmdsObservedVariable:Ocean Current - Direction
+a	skos:Concept ;
+skos:notation 62 ;
+dct:notation 62 ;
+rdfs:label "Ocean Current - Direction" ;
+skos:broader Currents ;
+.
+
+#63
+wmdsObservedVariable:Ocean Current - Speed
+a	skos:Concept ;
+skos:notation 63 ;
+dct:notation 63 ;
+rdfs:label "Ocean Current - Speed" ;
+skos:broader Currents ;
+.
+
+#65
+wmdsObservedVariable:Ocean surface currents
+a	skos:Concept ;
+skos:notation 65 ;
+dct:notation 65 ;
+rdfs:label "Ocean surface currents(vector)" ;
+skos:broader Currents ;
+.
+
+#10066
+wmdsObservedVariable:Miscellaneous
+a	skos:Concept ;
+skos:notation 10066 ;
+dct:notation 10066 ;
+rdfs:label "Miscellaneous" ;
+skos:broader Ocean ;
+.
+
+#70
+wmdsObservedVariable:Diffuse attenuation coefficient
+a	skos:Concept ;
+skos:notation 70 ;
+dct:notation 70 ;
+rdfs:label "Diffuse attenuation coefficient(DAC) in turbidity"" ;
+skos:broader Miscellaneous ;
+defchem:medium medium:turbidity" ;
+.
+
+#72
+wmdsObservedVariable:Ocean suspended sediments concentration
+a	skos:Concept ;
+skos:notation 72 ;
+dct:notation 72 ;
+rdfs:label "Ocean suspended sediments concentration" ;
+skos:broader Miscellaneous ;
+.
+
+#73
+wmdsObservedVariable:Oil spill cover
+a	skos:Concept ;
+skos:notation 73 ;
+dct:notation 73 ;
+rdfs:label "Oil spill cover" ;
+skos:broader Miscellaneous ;
+.
+
+#75
+wmdsObservedVariable:Sea surface Mass Flux
+a	skos:Concept ;
+skos:notation 75 ;
+dct:notation 75 ;
+rdfs:label "Sea surface Mass Flux" ;
+skos:broader Miscellaneous ;
+.
+
+#76
+wmdsObservedVariable:Sea surface heat flux
+a	skos:Concept ;
+skos:notation 76 ;
+dct:notation 76 ;
+rdfs:label "Sea surface heat flux" ;
+skos:broader Miscellaneous ;
+.
+
+#78
+wmdsObservedVariable:Total alkalinity
+a	skos:Concept ;
+skos:notation 78 ;
+dct:notation 78 ;
+rdfs:label "Total alkalinity(AT)" ;
+skos:broader Miscellaneous ;
+.
+
+#79
+wmdsObservedVariable:pH
+a	skos:Concept ;
+skos:notation 79 ;
+dct:notation 79 ;
+rdfs:label "pH" ;
+skos:broader Miscellaneous ;
+.
+
+#739
+wmdsObservedVariable:Fluorescence
+a	skos:Concept ;
+skos:notation 739 ;
+dct:notation 739 ;
+rdfs:label "Fluorescence(DOM)" ;
+skos:broader Miscellaneous ;
+.
+
+#10116
+wmdsObservedVariable:Carbon species
+a	skos:Concept ;
+skos:notation 10116 ;
+dct:notation 10116 ;
+rdfs:label "Carbon species" ;
+skos:broader Miscellaneous ;
+.
+
+#67
+wmdsObservedVariable:Dissolved inorganic carbon
+a	skos:Concept ;
+skos:notation 67 ;
+dct:notation 67 ;
+rdfs:label "Dissolved inorganic carbon(DIC)" ;
+skos:broader Carbon species ;
+.
+
+#68
+wmdsObservedVariable:Dissolved organic carbon
+a	skos:Concept ;
+skos:notation 68 ;
+dct:notation 68 ;
+rdfs:label "Dissolved organic carbon" ;
+skos:broader Carbon species ;
+.
+
+#10117
+wmdsObservedVariable:Nitrogen species
+a	skos:Concept ;
+skos:notation 10117 ;
+dct:notation 10117 ;
+rdfs:label "Nitrogen species" ;
+skos:broader Miscellaneous ;
+.
+
+#69
+wmdsObservedVariable:Dissolved organic nitrogen
+a	skos:Concept ;
+skos:notation 69 ;
+dct:notation 69 ;
+rdfs:label "Dissolved organic nitrogen" ;
+skos:broader Nitrogen species ;
+.
+
+#10067
+wmdsObservedVariable:Biology
+a	skos:Concept ;
+skos:notation 10067 ;
+dct:notation 10067 ;
+rdfs:label "Biology" ;
+skos:broader Ocean ;
+.
+
+#71
+wmdsObservedVariable:Chlorophyll concentration
+a	skos:Concept ;
+skos:notation 71 ;
+dct:notation 71 ;
+rdfs:label "Chlorophyll concentration" ;
+skos:broader Biology ;
+.
+
+#74
+wmdsObservedVariable:Primary production
+a	skos:Concept ;
+skos:notation 74 ;
+dct:notation 74 ;
+rdfs:label "Primary production" ;
+skos:broader Biology ;
+.
+
+#82
+wmdsObservedVariable:SiO3=
+a	skos:Concept ;
+skos:notation 82 ;
+dct:notation 82 ;
+rdfs:label "SiO3=(metasilicate)" ;
+skos:broader Biology ;
+.
+
+#733
+wmdsObservedVariable:Zooplankton
+a	skos:Concept ;
+skos:notation 733 ;
+dct:notation 733 ;
+rdfs:label "Zooplankton(size and/or development stage)" ;
+skos:broader Biology ;
+.
+
+#10068
+wmdsObservedVariable:Nitrogen species
+a	skos:Concept ;
+skos:notation 10068 ;
+dct:notation 10068 ;
+rdfs:label "Nitrogen species" ;
+skos:broader Biology ;
+.
+
+#311
+wmdsObservedVariable:NO2-
+a	skos:Concept ;
+skos:notation 311 ;
+dct:notation 311 ;
+rdfs:label "NO2-(nitrite)" ;
+skos:broader Nitrogen species ;
+defchem:chemical-species chemical-species:nitrite-ion ;
+.
+
+#312
+wmdsObservedVariable:NO3-
+a	skos:Concept ;
+skos:notation 312 ;
+dct:notation 312 ;
+rdfs:label "NO3-(nitrate)" ;
+skos:broader Nitrogen species ;
+defchem:chemical-species chemical-species:nitrate-ion ;
+.
+
+#10069
+wmdsObservedVariable:Phosporus species
+a	skos:Concept ;
+skos:notation 10069 ;
+dct:notation 10069 ;
+rdfs:label "Phosporus species" ;
+skos:broader Biology ;
+.
+
+#399
+wmdsObservedVariable:PO4=
+a	skos:Concept ;
+skos:notation 399 ;
+dct:notation 399 ;
+rdfs:label "PO4=(phosphate)" ;
+skos:broader Phosporus species ;
+.
+
+#400
+wmdsObservedVariable:Total organic phosphorus
+a	skos:Concept ;
+skos:notation 400 ;
+dct:notation 400 ;
+rdfs:label "Total organic phosphorus" ;
+skos:broader Phosporus species ;
+.
+
+#10070
+wmdsObservedVariable:Other Gas
+a	skos:Concept ;
+skos:notation 10070 ;
+dct:notation 10070 ;
+rdfs:label "Other Gas" ;
+skos:broader Ocean ;
+.
+
+#84
+wmdsObservedVariable:N2, Ar
+a	skos:Concept ;
+skos:notation 84 ;
+dct:notation 84 ;
+rdfs:label "N2, Ar in O2 "" ;
+skos:broader Other Gas ;
+defchem:medium medium:O2 " ;
+.
+
+#85
+wmdsObservedVariable:O2/Ar ratio
+a	skos:Concept ;
+skos:notation 85 ;
+dct:notation 85 ;
+rdfs:label "O2/Ar ratio" ;
+skos:broader Other Gas ;
+.
+
+#86
+wmdsObservedVariable:Ocean subsurface dissolved oxygen concentration
+a	skos:Concept ;
+skos:notation 86 ;
+dct:notation 86 ;
+rdfs:label "Ocean subsurface dissolved oxygen concentration" ;
+skos:broader Other Gas ;
+.
+
+#87
+wmdsObservedVariable:Oxygen
+a	skos:Concept ;
+skos:notation 87 ;
+dct:notation 87 ;
+rdfs:label "Oxygen in dissolved"" ;
+skos:broader Other Gas ;
+defchem:medium medium:dissolved" ;
+.
+
+#10071
+wmdsObservedVariable:CTD
+a	skos:Concept ;
+skos:notation 10071 ;
+dct:notation 10071 ;
+rdfs:label "CTD" ;
+skos:broader Other Gas ;
+.
+
+#549
+wmdsObservedVariable:pO2
+a	skos:Concept ;
+skos:notation 549 ;
+dct:notation 549 ;
+rdfs:label "pO2" ;
+skos:broader CTD ;
+.
+
+#10072
+wmdsObservedVariable:Pressure
+a	skos:Concept ;
+skos:notation 10072 ;
+dct:notation 10072 ;
+rdfs:label "Pressure" ;
+skos:broader Ocean ;
+.
+
+#10073
+wmdsObservedVariable:CTD
+a	skos:Concept ;
+skos:notation 10073 ;
+dct:notation 10073 ;
+rdfs:label "CTD" ;
+skos:broader Pressure ;
+.
+
+#10074
+wmdsObservedVariable:Radiation
+a	skos:Concept ;
+skos:notation 10074 ;
+dct:notation 10074 ;
+rdfs:label "Radiation" ;
+skos:broader Ocean ;
+.
+
+#89
+wmdsObservedVariable:Water-leaving spectral radiance
+a	skos:Concept ;
+skos:notation 89 ;
+dct:notation 89 ;
+rdfs:label "Water-leaving spectral radiance" ;
+skos:broader Radiation ;
+.
+
+#10075
+wmdsObservedVariable:Reactive Gas
+a	skos:Concept ;
+skos:notation 10075 ;
+dct:notation 10075 ;
+rdfs:label "Reactive Gas" ;
+skos:broader Ocean ;
+.
+
+#90
+wmdsObservedVariable:C2H6S
+a	skos:Concept ;
+skos:notation 90 ;
+dct:notation 90 ;
+rdfs:label "C2H6S(dimethylsulfide, DMS)" ;
+skos:broader Reactive Gas ;
+.
+
+#10076
+wmdsObservedVariable:Basic Physical Properties
+a	skos:Concept ;
+skos:notation 10076 ;
+dct:notation 10076 ;
+rdfs:label "Basic Physical Properties" ;
+skos:broader Ocean ;
+.
+
+#18
+wmdsObservedVariable:Pressure
+a	skos:Concept ;
+skos:notation 18 ;
+dct:notation 18 ;
+rdfs:label "Pressure" ;
+skos:broader Basic Physical Properties ;
+.
+
+#91
+wmdsObservedVariable:Ocean salinity
+a	skos:Concept ;
+skos:notation 91 ;
+dct:notation 91 ;
+rdfs:label "Ocean salinity" ;
+skos:broader Basic Physical Properties ;
+.
+
+#92
+wmdsObservedVariable:Sea surface salinity
+a	skos:Concept ;
+skos:notation 92 ;
+dct:notation 92 ;
+rdfs:label "Sea surface salinity" ;
+skos:broader Basic Physical Properties ;
+.
+
+#94
+wmdsObservedVariable:Ocean temperature
+a	skos:Concept ;
+skos:notation 94 ;
+dct:notation 94 ;
+rdfs:label "Ocean temperature" ;
+skos:broader Basic Physical Properties ;
+.
+
+#95
+wmdsObservedVariable:Sea surface temperature
+a	skos:Concept ;
+skos:notation 95 ;
+dct:notation 95 ;
+rdfs:label "Sea surface temperature" ;
+skos:broader Basic Physical Properties ;
+.
+
+#731
+wmdsObservedVariable:Conductivity
+a	skos:Concept ;
+skos:notation 731 ;
+dct:notation 731 ;
+rdfs:label "Conductivity" ;
+skos:broader Basic Physical Properties ;
+.
+
+#732
+wmdsObservedVariable:Density
+a	skos:Concept ;
+skos:notation 732 ;
+dct:notation 732 ;
+rdfs:label "Density" ;
+skos:broader Basic Physical Properties ;
+.
+
+#10077
+wmdsObservedVariable:Snow / Ice / Glacier
+a	skos:Concept ;
+skos:notation 10077 ;
+dct:notation 10077 ;
+rdfs:label "Snow / Ice / Glacier" ;
+skos:broader Ocean ;
+.
+
+#10078
+wmdsObservedVariable:Ice
+a	skos:Concept ;
+skos:notation 10078 ;
+dct:notation 10078 ;
+rdfs:label "Ice" ;
+skos:broader Snow / Ice / Glacier ;
+.
+
+#401
+wmdsObservedVariable:Sea-ice cover
+a	skos:Concept ;
+skos:notation 401 ;
+dct:notation 401 ;
+rdfs:label "Sea-ice cover" ;
+skos:broader Ice ;
+.
+
+#402
+wmdsObservedVariable:Sea-ice elevation
+a	skos:Concept ;
+skos:notation 402 ;
+dct:notation 402 ;
+rdfs:label "Sea-ice elevation" ;
+skos:broader Ice ;
+.
+
+#403
+wmdsObservedVariable:Sea-ice motion
+a	skos:Concept ;
+skos:notation 403 ;
+dct:notation 403 ;
+rdfs:label "Sea-ice motion" ;
+skos:broader Ice ;
+.
+
+#404
+wmdsObservedVariable:Sea-ice surface characteristics
+a	skos:Concept ;
+skos:notation 404 ;
+dct:notation 404 ;
+rdfs:label "Sea-ice surface characteristics" ;
+skos:broader Ice ;
+.
+
+#405
+wmdsObservedVariable:Sea-ice surface temperature
+a	skos:Concept ;
+skos:notation 405 ;
+dct:notation 405 ;
+rdfs:label "Sea-ice surface temperature" ;
+skos:broader Ice ;
+.
+
+#406
+wmdsObservedVariable:Sea-ice thickness
+a	skos:Concept ;
+skos:notation 406 ;
+dct:notation 406 ;
+rdfs:label "Sea-ice thickness" ;
+skos:broader Ice ;
+.
+
+#407
+wmdsObservedVariable:Sea-ice type
+a	skos:Concept ;
+skos:notation 407 ;
+dct:notation 407 ;
+rdfs:label "Sea-ice type" ;
+skos:broader Ice ;
+.
+
+#10079
+wmdsObservedVariable:Temperature
+a	skos:Concept ;
+skos:notation 10079 ;
+dct:notation 10079 ;
+rdfs:label "Temperature" ;
+skos:broader Ocean ;
+.
+
+#10080
+wmdsObservedVariable:Tides
+a	skos:Concept ;
+skos:notation 10080 ;
+dct:notation 10080 ;
+rdfs:label "Tides" ;
+skos:broader Ocean ;
+.
+
+#10081
+wmdsObservedVariable:Transmissivity
+a	skos:Concept ;
+skos:notation 10081 ;
+dct:notation 10081 ;
+rdfs:label "Transmissivity" ;
+skos:broader Ocean ;
+.
+
+#10082
+wmdsObservedVariable:CTD
+a	skos:Concept ;
+skos:notation 10082 ;
+dct:notation 10082 ;
+rdfs:label "CTD" ;
+skos:broader Transmissivity ;
+.
+
+#408
+wmdsObservedVariable:Transmissivity
+a	skos:Concept ;
+skos:notation 408 ;
+dct:notation 408 ;
+rdfs:label "Transmissivity" ;
+skos:broader CTD ;
+.
+
+#10083
+wmdsObservedVariable:Waves
+a	skos:Concept ;
+skos:notation 10083 ;
+dct:notation 10083 ;
+rdfs:label "Waves" ;
+skos:broader Ocean ;
+.
+
+#98
+wmdsObservedVariable:Dominant wave direction
+a	skos:Concept ;
+skos:notation 98 ;
+dct:notation 98 ;
+rdfs:label "Dominant wave direction" ;
+skos:broader Waves ;
+.
+
+#99
+wmdsObservedVariable:Dominant wave period
+a	skos:Concept ;
+skos:notation 99 ;
+dct:notation 99 ;
+rdfs:label "Dominant wave period" ;
+skos:broader Waves ;
+.
+
+#100
+wmdsObservedVariable:Significant wave height
+a	skos:Concept ;
+skos:notation 100 ;
+dct:notation 100 ;
+rdfs:label "Significant wave height" ;
+skos:broader Waves ;
+.
+
+#101
+wmdsObservedVariable:Wave 1D energy frequency spectrum
+a	skos:Concept ;
+skos:notation 101 ;
+dct:notation 101 ;
+rdfs:label "Wave 1D energy frequency spectrum" ;
+skos:broader Waves ;
+.
+
+#102
+wmdsObservedVariable:Wave directional energy frequency spectrum
+a	skos:Concept ;
+skos:notation 102 ;
+dct:notation 102 ;
+rdfs:label "Wave directional energy frequency spectrum" ;
+skos:broader Waves ;
+.
+
+#743
+wmdsObservedVariable:Wave height
+a	skos:Concept ;
+skos:notation 743 ;
+dct:notation 743 ;
+rdfs:label "Wave height" ;
+skos:broader Waves ;
+.
+
+#744
+wmdsObservedVariable:Wave period
+a	skos:Concept ;
+skos:notation 744 ;
+dct:notation 744 ;
+rdfs:label "Wave period" ;
+skos:broader Waves ;
+.
+
+#745
+wmdsObservedVariable:Directional waves
+a	skos:Concept ;
+skos:notation 745 ;
+dct:notation 745 ;
+rdfs:label "Directional waves" ;
+skos:broader Waves ;
+.
+
+#10084
+wmdsObservedVariable:Wind
+a	skos:Concept ;
+skos:notation 10084 ;
+dct:notation 10084 ;
+rdfs:label "Wind" ;
+skos:broader Ocean ;
+.
+
+#103
+wmdsObservedVariable:Wind stress
+a	skos:Concept ;
+skos:notation 103 ;
+dct:notation 103 ;
+rdfs:label "Wind stress" ;
+skos:broader Wind ;
+.
+
+#10115
+wmdsObservedVariable:Greenhouse Gas
+a	skos:Concept ;
+skos:notation 10115 ;
+dct:notation 10115 ;
+rdfs:label "Greenhouse Gas" ;
+skos:broader Ocean ;
+.
+
+#735
+wmdsObservedVariable:pCO2
+a	skos:Concept ;
+skos:notation 735 ;
+dct:notation 735 ;
+rdfs:label "pCO2" ;
+skos:broader Greenhouse Gas ;
+.
+
+#736
+wmdsObservedVariable:pCO2 air-sea flux
+a	skos:Concept ;
+skos:notation 736 ;
+dct:notation 736 ;
+rdfs:label "pCO2 air-sea flux" ;
+skos:broader Greenhouse Gas ;
+.
+
+#10085
+wmdsObservedVariable:Outer Space
+a	skos:Concept ;
+skos:notation 10085 ;
+dct:notation 10085 ;
+rdfs:label "Outer Space" ;
+.
+
+#10086
+wmdsObservedVariable:Energetic particles / solar wind
+a	skos:Concept ;
+skos:notation 10086 ;
+dct:notation 10086 ;
+rdfs:label "Energetic particles / solar wind" ;
+skos:broader Outer Space ;
+.
+
+#104
+wmdsObservedVariable:Electron flux energy spectrum
+a	skos:Concept ;
+skos:notation 104 ;
+dct:notation 104 ;
+rdfs:label "Electron flux energy spectrum" ;
+skos:broader Energetic particles / solar wind ;
+.
+
+#105
+wmdsObservedVariable:Electrostatic charge
+a	skos:Concept ;
+skos:notation 105 ;
+dct:notation 105 ;
+rdfs:label "Electrostatic charge" ;
+skos:broader Energetic particles / solar wind ;
+.
+
+#106
+wmdsObservedVariable:Heavy ion angular flux energy and mass spectrum
+a	skos:Concept ;
+skos:notation 106 ;
+dct:notation 106 ;
+rdfs:label "Heavy ion angular flux energy and mass spectrum" ;
+skos:broader Energetic particles / solar wind ;
+.
+
+#107
+wmdsObservedVariable:Heavy ion flux energy and mass spectrum
+a	skos:Concept ;
+skos:notation 107 ;
+dct:notation 107 ;
+rdfs:label "Heavy ion flux energy and mass spectrum" ;
+skos:broader Energetic particles / solar wind ;
+.
+
+#108
+wmdsObservedVariable:Interplanetary magnetic field
+a	skos:Concept ;
+skos:notation 108 ;
+dct:notation 108 ;
+rdfs:label "Interplanetary magnetic field" ;
+skos:broader Energetic particles / solar wind ;
+.
+
+#111
+wmdsObservedVariable:Radiation Dose Rate
+a	skos:Concept ;
+skos:notation 111 ;
+dct:notation 111 ;
+rdfs:label "Radiation Dose Rate" ;
+skos:broader Energetic particles / solar wind ;
+.
+
+#112
+wmdsObservedVariable:Solar wind temperature
+a	skos:Concept ;
+skos:notation 112 ;
+dct:notation 112 ;
+rdfs:label "Solar wind temperature" ;
+skos:broader Energetic particles / solar wind ;
+.
+
+#113
+wmdsObservedVariable:Solar wind velocity
+a	skos:Concept ;
+skos:notation 113 ;
+dct:notation 113 ;
+rdfs:label "Solar wind velocity" ;
+skos:broader Energetic particles / solar wind ;
+.
+
+#10087
+wmdsObservedVariable:Particle density
+a	skos:Concept ;
+skos:notation 10087 ;
+dct:notation 10087 ;
+rdfs:label "Particle density" ;
+skos:broader Energetic particles / solar wind ;
+.
+
+#409
+wmdsObservedVariable:Solar wind density
+a	skos:Concept ;
+skos:notation 409 ;
+dct:notation 409 ;
+rdfs:label "Solar wind density" ;
+skos:broader Particle density ;
+.
+
+#10088
+wmdsObservedVariable:Particle flux
+a	skos:Concept ;
+skos:notation 10088 ;
+dct:notation 10088 ;
+rdfs:label "Particle flux" ;
+skos:broader Energetic particles / solar wind ;
+.
+
+#511
+wmdsObservedVariable:Alpha particles differential directional flux
+a	skos:Concept ;
+skos:notation 511 ;
+dct:notation 511 ;
+rdfs:label "Alpha particles differential directional flux" ;
+skos:broader Particle flux ;
+.
+
+#512
+wmdsObservedVariable:Alpha particles integral directional flux
+a	skos:Concept ;
+skos:notation 512 ;
+dct:notation 512 ;
+rdfs:label "Alpha particles integral directional flux" ;
+skos:broader Particle flux ;
+.
+
+#513
+wmdsObservedVariable:Cosmic ray neutron flux spectrum
+a	skos:Concept ;
+skos:notation 513 ;
+dct:notation 513 ;
+rdfs:label "Cosmic ray neutron flux spectrum" ;
+skos:broader Particle flux ;
+.
+
+#514
+wmdsObservedVariable:Electron differential directional flux
+a	skos:Concept ;
+skos:notation 514 ;
+dct:notation 514 ;
+rdfs:label "Electron differential directional flux" ;
+skos:broader Particle flux ;
+.
+
+#515
+wmdsObservedVariable:Electron flux density
+a	skos:Concept ;
+skos:notation 515 ;
+dct:notation 515 ;
+rdfs:label "Electron flux density" ;
+skos:broader Particle flux ;
+.
+
+#516
+wmdsObservedVariable:Electron integral directional flux
+a	skos:Concept ;
+skos:notation 516 ;
+dct:notation 516 ;
+rdfs:label "Electron integral directional flux" ;
+skos:broader Particle flux ;
+.
+
+#517
+wmdsObservedVariable:Heavy ion differential directional flux
+a	skos:Concept ;
+skos:notation 517 ;
+dct:notation 517 ;
+rdfs:label "Heavy ion differential directional flux" ;
+skos:broader Particle flux ;
+.
+
+#518
+wmdsObservedVariable:Heavy ion integral directional flux
+a	skos:Concept ;
+skos:notation 518 ;
+dct:notation 518 ;
+rdfs:label "Heavy ion integral directional flux" ;
+skos:broader Particle flux ;
+.
+
+#519
+wmdsObservedVariable:Proton differential directional flux
+a	skos:Concept ;
+skos:notation 519 ;
+dct:notation 519 ;
+rdfs:label "Proton differential directional flux" ;
+skos:broader Particle flux ;
+.
+
+#520
+wmdsObservedVariable:Proton integral directional flux
+a	skos:Concept ;
+skos:notation 520 ;
+dct:notation 520 ;
+rdfs:label "Proton integral directional flux" ;
+skos:broader Particle flux ;
+.
+
+#10089
+wmdsObservedVariable:Ionospheric disturbances
+a	skos:Concept ;
+skos:notation 10089 ;
+dct:notation 10089 ;
+rdfs:label "Ionospheric disturbances" ;
+skos:broader Outer Space ;
+.
+
+#114
+wmdsObservedVariable:Aurora
+a	skos:Concept ;
+skos:notation 114 ;
+dct:notation 114 ;
+rdfs:label "Aurora" ;
+skos:broader Ionospheric disturbances ;
+.
+
+#115
+wmdsObservedVariable:Electric Field
+a	skos:Concept ;
+skos:notation 115 ;
+dct:notation 115 ;
+rdfs:label "Electric Field" ;
+skos:broader Ionospheric disturbances ;
+.
+
+#116
+wmdsObservedVariable:Electron Density
+a	skos:Concept ;
+skos:notation 116 ;
+dct:notation 116 ;
+rdfs:label "Electron Density" ;
+skos:broader Ionospheric disturbances ;
+.
+
+#117
+wmdsObservedVariable:Ionospheric Radio Absorption
+a	skos:Concept ;
+skos:notation 117 ;
+dct:notation 117 ;
+rdfs:label "Ionospheric Radio Absorption" ;
+skos:broader Ionospheric disturbances ;
+.
+
+#118
+wmdsObservedVariable:Ionospheric Scintillation
+a	skos:Concept ;
+skos:notation 118 ;
+dct:notation 118 ;
+rdfs:label "Ionospheric Scintillation" ;
+skos:broader Ionospheric disturbances ;
+.
+
+#119
+wmdsObservedVariable:Ionospheric Vertical Total Electron Content
+a	skos:Concept ;
+skos:notation 119 ;
+dct:notation 119 ;
+rdfs:label "Ionospheric Vertical Total Electron Content(VTEC)" ;
+skos:broader Ionospheric disturbances ;
+.
+
+#120
+wmdsObservedVariable:Ionospheric plasma density
+a	skos:Concept ;
+skos:notation 120 ;
+dct:notation 120 ;
+rdfs:label "Ionospheric plasma density" ;
+skos:broader Ionospheric disturbances ;
+.
+
+#121
+wmdsObservedVariable:Ionospheric plasma velocity
+a	skos:Concept ;
+skos:notation 121 ;
+dct:notation 121 ;
+rdfs:label "Ionospheric plasma velocity" ;
+skos:broader Ionospheric disturbances ;
+.
+
+#122
+wmdsObservedVariable:Spread F
+a	skos:Concept ;
+skos:notation 122 ;
+dct:notation 122 ;
+rdfs:label "Spread F" ;
+skos:broader Ionospheric disturbances ;
+.
+
+#123
+wmdsObservedVariable:foEs
+a	skos:Concept ;
+skos:notation 123 ;
+dct:notation 123 ;
+rdfs:label "foEs" ;
+skos:broader Ionospheric disturbances ;
+.
+
+#124
+wmdsObservedVariable:foF2
+a	skos:Concept ;
+skos:notation 124 ;
+dct:notation 124 ;
+rdfs:label "foF2" ;
+skos:broader Ionospheric disturbances ;
+.
+
+#125
+wmdsObservedVariable:h'F
+a	skos:Concept ;
+skos:notation 125 ;
+dct:notation 125 ;
+rdfs:label "h'F" ;
+skos:broader Ionospheric disturbances ;
+.
+
+#126
+wmdsObservedVariable:hmF2
+a	skos:Concept ;
+skos:notation 126 ;
+dct:notation 126 ;
+rdfs:label "hmF2" ;
+skos:broader Ionospheric disturbances ;
+.
+
+#10090
+wmdsObservedVariable:Solar monitoring
+a	skos:Concept ;
+skos:notation 10090 ;
+dct:notation 10090 ;
+rdfs:label "Solar monitoring" ;
+skos:broader Outer Space ;
+.
+
+#127
+wmdsObservedVariable:EUV flux
+a	skos:Concept ;
+skos:notation 127 ;
+dct:notation 127 ;
+rdfs:label "EUV flux" ;
+skos:broader Solar monitoring ;
+.
+
+#128
+wmdsObservedVariable:EUV flux spectrum
+a	skos:Concept ;
+skos:notation 128 ;
+dct:notation 128 ;
+rdfs:label "EUV flux spectrum" ;
+skos:broader Solar monitoring ;
+.
+
+#129
+wmdsObservedVariable:EUV sky image
+a	skos:Concept ;
+skos:notation 129 ;
+dct:notation 129 ;
+rdfs:label "EUV sky image" ;
+skos:broader Solar monitoring ;
+.
+
+#130
+wmdsObservedVariable:Gamma-ray flux
+a	skos:Concept ;
+skos:notation 130 ;
+dct:notation 130 ;
+rdfs:label "Gamma-ray flux" ;
+skos:broader Solar monitoring ;
+.
+
+#131
+wmdsObservedVariable:Gamma-ray flux spectrum
+a	skos:Concept ;
+skos:notation 131 ;
+dct:notation 131 ;
+rdfs:label "Gamma-ray flux spectrum" ;
+skos:broader Solar monitoring ;
+.
+
+#132
+wmdsObservedVariable:Heliospheric image
+a	skos:Concept ;
+skos:notation 132 ;
+dct:notation 132 ;
+rdfs:label "Heliospheric image" ;
+skos:broader Solar monitoring ;
+.
+
+#133
+wmdsObservedVariable:Radio-waves
+a	skos:Concept ;
+skos:notation 133 ;
+dct:notation 133 ;
+rdfs:label "Radio-waves" ;
+skos:broader Solar monitoring ;
+.
+
+#134
+wmdsObservedVariable:Solar Ca II-K image
+a	skos:Concept ;
+skos:notation 134 ;
+dct:notation 134 ;
+rdfs:label "Solar Ca II-K image" ;
+skos:broader Solar monitoring ;
+.
+
+#135
+wmdsObservedVariable:Solar EUV flux
+a	skos:Concept ;
+skos:notation 135 ;
+dct:notation 135 ;
+rdfs:label "Solar EUV flux" ;
+skos:broader Solar monitoring ;
+.
+
+#136
+wmdsObservedVariable:Solar EUV flux spectrum
+a	skos:Concept ;
+skos:notation 136 ;
+dct:notation 136 ;
+rdfs:label "Solar EUV flux spectrum" ;
+skos:broader Solar monitoring ;
+.
+
+#137
+wmdsObservedVariable:Solar EUV image
+a	skos:Concept ;
+skos:notation 137 ;
+dct:notation 137 ;
+rdfs:label "Solar EUV image" ;
+skos:broader Solar monitoring ;
+.
+
+#138
+wmdsObservedVariable:Solar H-alpha image
+a	skos:Concept ;
+skos:notation 138 ;
+dct:notation 138 ;
+rdfs:label "Solar H-alpha image" ;
+skos:broader Solar monitoring ;
+.
+
+#139
+wmdsObservedVariable:Solar Lyman-alpha flux
+a	skos:Concept ;
+skos:notation 139 ;
+dct:notation 139 ;
+rdfs:label "Solar Lyman-alpha flux" ;
+skos:broader Solar monitoring ;
+.
+
+#140
+wmdsObservedVariable:Solar Lyman-alpha image
+a	skos:Concept ;
+skos:notation 140 ;
+dct:notation 140 ;
+rdfs:label "Solar Lyman-alpha image" ;
+skos:broader Solar monitoring ;
+.
+
+#141
+wmdsObservedVariable:Solar UV flux
+a	skos:Concept ;
+skos:notation 141 ;
+dct:notation 141 ;
+rdfs:label "Solar UV flux" ;
+skos:broader Solar monitoring ;
+.
+
+#142
+wmdsObservedVariable:Solar UV flux spectrum
+a	skos:Concept ;
+skos:notation 142 ;
+dct:notation 142 ;
+rdfs:label "Solar UV flux spectrum" ;
+skos:broader Solar monitoring ;
+.
+
+#143
+wmdsObservedVariable:Solar UV image
+a	skos:Concept ;
+skos:notation 143 ;
+dct:notation 143 ;
+rdfs:label "Solar UV image" ;
+skos:broader Solar monitoring ;
+.
+
+#144
+wmdsObservedVariable:Solar VIS flux
+a	skos:Concept ;
+skos:notation 144 ;
+dct:notation 144 ;
+rdfs:label "Solar VIS flux" ;
+skos:broader Solar monitoring ;
+.
+
+#145
+wmdsObservedVariable:Solar VIS flux spectrum
+a	skos:Concept ;
+skos:notation 145 ;
+dct:notation 145 ;
+rdfs:label "Solar VIS flux spectrum" ;
+skos:broader Solar monitoring ;
+.
+
+#146
+wmdsObservedVariable:Solar VIS image
+a	skos:Concept ;
+skos:notation 146 ;
+dct:notation 146 ;
+rdfs:label "Solar VIS image" ;
+skos:broader Solar monitoring ;
+.
+
+#147
+wmdsObservedVariable:Solar X-ray flux
+a	skos:Concept ;
+skos:notation 147 ;
+dct:notation 147 ;
+rdfs:label "Solar X-ray flux" ;
+skos:broader Solar monitoring ;
+.
+
+#148
+wmdsObservedVariable:Solar X-ray flux spectrum
+a	skos:Concept ;
+skos:notation 148 ;
+dct:notation 148 ;
+rdfs:label "Solar X-ray flux spectrum" ;
+skos:broader Solar monitoring ;
+.
+
+#149
+wmdsObservedVariable:Solar X-ray image
+a	skos:Concept ;
+skos:notation 149 ;
+dct:notation 149 ;
+rdfs:label "Solar X-ray image" ;
+skos:broader Solar monitoring ;
+.
+
+#150
+wmdsObservedVariable:Solar coronagraphic image
+a	skos:Concept ;
+skos:notation 150 ;
+dct:notation 150 ;
+rdfs:label "Solar coronagraphic image" ;
+skos:broader Solar monitoring ;
+.
+
+#151
+wmdsObservedVariable:Solar electric field
+a	skos:Concept ;
+skos:notation 151 ;
+dct:notation 151 ;
+rdfs:label "Solar electric field" ;
+skos:broader Solar monitoring ;
+.
+
+#152
+wmdsObservedVariable:Solar gamma-ray flux
+a	skos:Concept ;
+skos:notation 152 ;
+dct:notation 152 ;
+rdfs:label "Solar gamma-ray flux" ;
+skos:broader Solar monitoring ;
+.
+
+#153
+wmdsObservedVariable:Solar gamma-ray flux spectrum
+a	skos:Concept ;
+skos:notation 153 ;
+dct:notation 153 ;
+rdfs:label "Solar gamma-ray flux spectrum" ;
+skos:broader Solar monitoring ;
+.
+
+#154
+wmdsObservedVariable:Solar magnetic field
+a	skos:Concept ;
+skos:notation 154 ;
+dct:notation 154 ;
+rdfs:label "Solar magnetic field" ;
+skos:broader Solar monitoring ;
+.
+
+#155
+wmdsObservedVariable:Solar radio flux
+a	skos:Concept ;
+skos:notation 155 ;
+dct:notation 155 ;
+rdfs:label "Solar radio flux" ;
+skos:broader Solar monitoring ;
+.
+
+#156
+wmdsObservedVariable:Solar radio flux spectrum
+a	skos:Concept ;
+skos:notation 156 ;
+dct:notation 156 ;
+rdfs:label "Solar radio flux spectrum" ;
+skos:broader Solar monitoring ;
+.
+
+#157
+wmdsObservedVariable:Solar radio image
+a	skos:Concept ;
+skos:notation 157 ;
+dct:notation 157 ;
+rdfs:label "Solar radio image" ;
+skos:broader Solar monitoring ;
+.
+
+#158
+wmdsObservedVariable:Solar velocity fields
+a	skos:Concept ;
+skos:notation 158 ;
+dct:notation 158 ;
+rdfs:label "Solar velocity fields" ;
+skos:broader Solar monitoring ;
+.
+
+#159
+wmdsObservedVariable:Solar white light image
+a	skos:Concept ;
+skos:notation 159 ;
+dct:notation 159 ;
+rdfs:label "Solar white light image" ;
+skos:broader Solar monitoring ;
+.
+
+#160
+wmdsObservedVariable:UV flux
+a	skos:Concept ;
+skos:notation 160 ;
+dct:notation 160 ;
+rdfs:label "UV flux" ;
+skos:broader Solar monitoring ;
+.
+
+#161
+wmdsObservedVariable:UV sky image
+a	skos:Concept ;
+skos:notation 161 ;
+dct:notation 161 ;
+rdfs:label "UV sky image" ;
+skos:broader Solar monitoring ;
+.
+
+#162
+wmdsObservedVariable:X-ray flux
+a	skos:Concept ;
+skos:notation 162 ;
+dct:notation 162 ;
+rdfs:label "X-ray flux" ;
+skos:broader Solar monitoring ;
+.
+
+#163
+wmdsObservedVariable:X-ray flux spectrum
+a	skos:Concept ;
+skos:notation 163 ;
+dct:notation 163 ;
+rdfs:label "X-ray flux spectrum" ;
+skos:broader Solar monitoring ;
+.
+
+#164
+wmdsObservedVariable:X-ray sky image
+a	skos:Concept ;
+skos:notation 164 ;
+dct:notation 164 ;
+rdfs:label "X-ray sky image" ;
+skos:broader Solar monitoring ;
+.
+
+#10091
+wmdsObservedVariable:Terrestrial
+a	skos:Concept ;
+skos:notation 10091 ;
+dct:notation 10091 ;
+rdfs:label "Terrestrial" ;
+.
+
+#10092
+wmdsObservedVariable:Ground water
+a	skos:Concept ;
+skos:notation 10092 ;
+dct:notation 10092 ;
+rdfs:label "Ground water" ;
+skos:broader Terrestrial ;
+.
+
+#165
+wmdsObservedVariable:Ground water
+a	skos:Concept ;
+skos:notation 165 ;
+dct:notation 165 ;
+rdfs:label "Ground water(amount per unit area)" ;
+skos:broader Ground water ;
+.
+
+#166
+wmdsObservedVariable:Ground water
+a	skos:Concept ;
+skos:notation 166 ;
+dct:notation 166 ;
+rdfs:label "Ground water(level)" ;
+skos:broader Ground water ;
+.
+
+#10093
+wmdsObservedVariable:Lake
+a	skos:Concept ;
+skos:notation 10093 ;
+dct:notation 10093 ;
+rdfs:label "Lake" ;
+skos:broader Terrestrial ;
+.
+
+#167
+wmdsObservedVariable:Lake area
+a	skos:Concept ;
+skos:notation 167 ;
+dct:notation 167 ;
+rdfs:label "Lake area" ;
+skos:broader Lake ;
+.
+
+#168
+wmdsObservedVariable:Lake level
+a	skos:Concept ;
+skos:notation 168 ;
+dct:notation 168 ;
+rdfs:label "Lake level" ;
+skos:broader Lake ;
+.
+
+#10094
+wmdsObservedVariable:Snow / Ice / Glacier
+a	skos:Concept ;
+skos:notation 10094 ;
+dct:notation 10094 ;
+rdfs:label "Snow / Ice / Glacier" ;
+skos:broader Lake ;
+.
+
+#10095
+wmdsObservedVariable:Ice
+a	skos:Concept ;
+skos:notation 10095 ;
+dct:notation 10095 ;
+rdfs:label "Ice" ;
+skos:broader Snow / Ice / Glacier ;
+.
+
+#725
+wmdsObservedVariable:Ice thickness
+a	skos:Concept ;
+skos:notation 725 ;
+dct:notation 725 ;
+rdfs:label "Ice thickness" ;
+skos:broader Ice ;
+.
+
+#10096
+wmdsObservedVariable:Temperature
+a	skos:Concept ;
+skos:notation 10096 ;
+dct:notation 10096 ;
+rdfs:label "Temperature" ;
+skos:broader Lake ;
+.
+
+#410
+wmdsObservedVariable:Lake Surface Temperature
+a	skos:Concept ;
+skos:notation 410 ;
+dct:notation 410 ;
+rdfs:label "Lake Surface Temperature" ;
+skos:broader Temperature ;
+.
+
+#10097
+wmdsObservedVariable:Land surface
+a	skos:Concept ;
+skos:notation 10097 ;
+dct:notation 10097 ;
+rdfs:label "Land surface" ;
+skos:broader Terrestrial ;
+.
+
+#231
+wmdsObservedVariable:Braking action/friction coefficient
+a	skos:Concept ;
+skos:notation 231 ;
+dct:notation 231 ;
+rdfs:label "Braking action/friction coefficient" ;
+skos:broader Land surface ;
+.
+
+#232
+wmdsObservedVariable:Coastlines
+a	skos:Concept ;
+skos:notation 232 ;
+dct:notation 232 ;
+rdfs:label "Coastlines" ;
+skos:broader Land surface ;
+.
+
+#236
+wmdsObservedVariable:Land cover
+a	skos:Concept ;
+skos:notation 236 ;
+dct:notation 236 ;
+rdfs:label "Land cover" ;
+skos:broader Land surface ;
+.
+
+#237
+wmdsObservedVariable:Land surface topography
+a	skos:Concept ;
+skos:notation 237 ;
+dct:notation 237 ;
+rdfs:label "Land surface topography" ;
+skos:broader Land surface ;
+.
+
+#239
+wmdsObservedVariable:Runway conditions
+a	skos:Concept ;
+skos:notation 239 ;
+dct:notation 239 ;
+rdfs:label "Runway conditions" ;
+skos:broader Land surface ;
+.
+
+#243
+wmdsObservedVariable:Wetland extent
+a	skos:Concept ;
+skos:notation 243 ;
+dct:notation 243 ;
+rdfs:label "Wetland extent" ;
+skos:broader Land surface ;
+.
+
+#10098
+wmdsObservedVariable:Fire
+a	skos:Concept ;
+skos:notation 10098 ;
+dct:notation 10098 ;
+rdfs:label "Fire" ;
+skos:broader Land surface ;
+.
+
+#386
+wmdsObservedVariable:Fire fractional cover
+a	skos:Concept ;
+skos:notation 386 ;
+dct:notation 386 ;
+rdfs:label "Fire fractional cover" ;
+skos:broader Fire ;
+.
+
+#387
+wmdsObservedVariable:Fire radiative power
+a	skos:Concept ;
+skos:notation 387 ;
+dct:notation 387 ;
+rdfs:label "Fire radiative power" ;
+skos:broader Fire ;
+.
+
+#388
+wmdsObservedVariable:Fire temperature
+a	skos:Concept ;
+skos:notation 388 ;
+dct:notation 388 ;
+rdfs:label "Fire temperature" ;
+skos:broader Fire ;
+.
+
+#10099
+wmdsObservedVariable:Greenhouse Gas
+a	skos:Concept ;
+skos:notation 10099 ;
+dct:notation 10099 ;
+rdfs:label "Greenhouse Gas" ;
+skos:broader Land surface ;
+.
+
+#422
+wmdsObservedVariable:CO2 flux
+a	skos:Concept ;
+skos:notation 422 ;
+dct:notation 422 ;
+rdfs:label "CO2 flux" ;
+skos:broader Greenhouse Gas ;
+.
+
+#10100
+wmdsObservedVariable:Humidity
+a	skos:Concept ;
+skos:notation 10100 ;
+dct:notation 10100 ;
+rdfs:label "Humidity" ;
+skos:broader Land surface ;
+.
+
+#510
+wmdsObservedVariable:Evaporation
+a	skos:Concept ;
+skos:notation 510 ;
+dct:notation 510 ;
+rdfs:label "Evaporation" ;
+skos:broader Humidity ;
+.
+
+#10101
+wmdsObservedVariable:Radiation
+a	skos:Concept ;
+skos:notation 10101 ;
+dct:notation 10101 ;
+rdfs:label "Radiation" ;
+skos:broader Land surface ;
+.
+
+#563
+wmdsObservedVariable:Fraction of Absorbed PAR
+a	skos:Concept ;
+skos:notation 563 ;
+dct:notation 563 ;
+rdfs:label "Fraction of Absorbed PAR(FAPAR)" ;
+skos:broader Radiation ;
+.
+
+#564
+wmdsObservedVariable:Photosynthetically Active Radiation
+a	skos:Concept ;
+skos:notation 564 ;
+dct:notation 564 ;
+rdfs:label "Photosynthetically Active Radiation(PAR)" ;
+skos:broader Radiation ;
+.
+
+#10102
+wmdsObservedVariable:Snow / Ice / Glacier
+a	skos:Concept ;
+skos:notation 10102 ;
+dct:notation 10102 ;
+rdfs:label "Snow / Ice / Glacier" ;
+skos:broader Land surface ;
+.
+
+#354
+wmdsObservedVariable:Permafrost
+a	skos:Concept ;
+skos:notation 354 ;
+dct:notation 354 ;
+rdfs:label "Permafrost" ;
+skos:broader Snow / Ice / Glacier ;
+.
+
+#10103
+wmdsObservedVariable:Glacier
+a	skos:Concept ;
+skos:notation 10103 ;
+dct:notation 10103 ;
+rdfs:label "Glacier" ;
+skos:broader Snow / Ice / Glacier ;
+.
+
+#610
+wmdsObservedVariable:Glacier cover
+a	skos:Concept ;
+skos:notation 610 ;
+dct:notation 610 ;
+rdfs:label "Glacier cover" ;
+skos:broader Glacier ;
+.
+
+#611
+wmdsObservedVariable:Glacier motion
+a	skos:Concept ;
+skos:notation 611 ;
+dct:notation 611 ;
+rdfs:label "Glacier motion" ;
+skos:broader Glacier ;
+.
+
+#612
+wmdsObservedVariable:Glacier topography
+a	skos:Concept ;
+skos:notation 612 ;
+dct:notation 612 ;
+rdfs:label "Glacier topography" ;
+skos:broader Glacier ;
+.
+
+#10104
+wmdsObservedVariable:Ice
+a	skos:Concept ;
+skos:notation 10104 ;
+dct:notation 10104 ;
+rdfs:label "Ice" ;
+skos:broader Snow / Ice / Glacier ;
+.
+
+#613
+wmdsObservedVariable:Ice sheet topography
+a	skos:Concept ;
+skos:notation 613 ;
+dct:notation 613 ;
+rdfs:label "Ice sheet topography" ;
+skos:broader Ice ;
+.
+
+#10105
+wmdsObservedVariable:Snow
+a	skos:Concept ;
+skos:notation 10105 ;
+dct:notation 10105 ;
+rdfs:label "Snow" ;
+skos:broader Snow / Ice / Glacier ;
+.
+
+#627
+wmdsObservedVariable:Depth of fresh snowfall
+a	skos:Concept ;
+skos:notation 627 ;
+dct:notation 627 ;
+rdfs:label "Depth of fresh snowfall" ;
+skos:broader Snow ;
+.
+
+#628
+wmdsObservedVariable:Snow cover
+a	skos:Concept ;
+skos:notation 628 ;
+dct:notation 628 ;
+rdfs:label "Snow cover(fraction of area)" ;
+skos:broader Snow ;
+.
+
+#629
+wmdsObservedVariable:Snow depth
+a	skos:Concept ;
+skos:notation 629 ;
+dct:notation 629 ;
+rdfs:label "Snow depth" ;
+skos:broader Snow ;
+.
+
+#630
+wmdsObservedVariable:Snow status
+a	skos:Concept ;
+skos:notation 630 ;
+dct:notation 630 ;
+rdfs:label "Snow status(wet/dry)" ;
+skos:broader Snow ;
+.
+
+#631
+wmdsObservedVariable:Snow water equivalent
+a	skos:Concept ;
+skos:notation 631 ;
+dct:notation 631 ;
+rdfs:label "Snow water equivalent" ;
+skos:broader Snow ;
+.
+
+#10106
+wmdsObservedVariable:Temperature
+a	skos:Concept ;
+skos:notation 10106 ;
+dct:notation 10106 ;
+rdfs:label "Temperature" ;
+skos:broader Land surface ;
+.
+
+#389
+wmdsObservedVariable:Land surface temperature
+a	skos:Concept ;
+skos:notation 389 ;
+dct:notation 389 ;
+rdfs:label "Land surface temperature" ;
+skos:broader Temperature ;
+.
+
+#10107
+wmdsObservedVariable:Vegetation
+a	skos:Concept ;
+skos:notation 10107 ;
+dct:notation 10107 ;
+rdfs:label "Vegetation" ;
+skos:broader Land surface ;
+.
+
+#423
+wmdsObservedVariable:Biomass
+a	skos:Concept ;
+skos:notation 423 ;
+dct:notation 423 ;
+rdfs:label "Biomass" ;
+skos:broader Vegetation ;
+.
+
+#424
+wmdsObservedVariable:Fraction of vegetated land
+a	skos:Concept ;
+skos:notation 424 ;
+dct:notation 424 ;
+rdfs:label "Fraction of vegetated land" ;
+skos:broader Vegetation ;
+.
+
+#425
+wmdsObservedVariable:Leaf Area Index
+a	skos:Concept ;
+skos:notation 425 ;
+dct:notation 425 ;
+rdfs:label "Leaf Area Index(LAI)" ;
+skos:broader Vegetation ;
+.
+
+#426
+wmdsObservedVariable:Normalised Difference Vegetation Index
+a	skos:Concept ;
+skos:notation 426 ;
+dct:notation 426 ;
+rdfs:label "Normalised Difference Vegetation Index(NDVI)" ;
+skos:broader Vegetation ;
+.
+
+#427
+wmdsObservedVariable:Vegetation type
+a	skos:Concept ;
+skos:notation 427 ;
+dct:notation 427 ;
+rdfs:label "Vegetation type" ;
+skos:broader Vegetation ;
+.
+
+#10108
+wmdsObservedVariable:River
+a	skos:Concept ;
+skos:notation 10108 ;
+dct:notation 10108 ;
+rdfs:label "River" ;
+skos:broader Terrestrial ;
+.
+
+#171
+wmdsObservedVariable:River discharge
+a	skos:Concept ;
+skos:notation 171 ;
+dct:notation 171 ;
+rdfs:label "River discharge" ;
+skos:broader River ;
+.
+
+#172
+wmdsObservedVariable:River stage
+a	skos:Concept ;
+skos:notation 172 ;
+dct:notation 172 ;
+rdfs:label "River stage(level above reference)" ;
+skos:broader River ;
+.
+
+#10109
+wmdsObservedVariable:Snow / Ice / Glacier
+a	skos:Concept ;
+skos:notation 10109 ;
+dct:notation 10109 ;
+rdfs:label "Snow / Ice / Glacier" ;
+skos:broader River ;
+.
+
+#10110
+wmdsObservedVariable:Ice
+a	skos:Concept ;
+skos:notation 10110 ;
+dct:notation 10110 ;
+rdfs:label "Ice" ;
+skos:broader Snow / Ice / Glacier ;
+.
+
+#726
+wmdsObservedVariable:Ice thickness
+a	skos:Concept ;
+skos:notation 726 ;
+dct:notation 726 ;
+rdfs:label "Ice thickness" ;
+skos:broader Ice ;
+.
+
+#10111
+wmdsObservedVariable:Soil
+a	skos:Concept ;
+skos:notation 10111 ;
+dct:notation 10111 ;
+rdfs:label "Soil" ;
+skos:broader Terrestrial ;
+.
+
+#245
+wmdsObservedVariable:Soil heat Flux
+a	skos:Concept ;
+skos:notation 245 ;
+dct:notation 245 ;
+rdfs:label "Soil heat Flux" ;
+skos:broader Soil ;
+.
+
+#246
+wmdsObservedVariable:Soil type
+a	skos:Concept ;
+skos:notation 246 ;
+dct:notation 246 ;
+rdfs:label "Soil type" ;
+skos:broader Soil ;
+.
+
+#10112
+wmdsObservedVariable:Humidity
+a	skos:Concept ;
+skos:notation 10112 ;
+dct:notation 10112 ;
+rdfs:label "Humidity" ;
+skos:broader Soil ;
+.
+
+#527
+wmdsObservedVariable:Soil moisture
+a	skos:Concept ;
+skos:notation 527 ;
+dct:notation 527 ;
+rdfs:label "Soil moisture(in the roots region)" ;
+skos:broader Humidity ;
+.
+
+#528
+wmdsObservedVariable:Soil moisture at surface
+a	skos:Concept ;
+skos:notation 528 ;
+dct:notation 528 ;
+rdfs:label "Soil moisture at surface" ;
+skos:broader Humidity ;
+.
+
+#10113
+wmdsObservedVariable:Temperature
+a	skos:Concept ;
+skos:notation 10113 ;
+dct:notation 10113 ;
+rdfs:label "Temperature" ;
+skos:broader Soil ;
+.
+
+#596
+wmdsObservedVariable:Soil temperature
+a	skos:Concept ;
+skos:notation 596 ;
+dct:notation 596 ;
+rdfs:label "Soil temperature" ;
+skos:broader Temperature ;
+.
+
+#10114
+wmdsObservedVariable:Well
+a	skos:Concept ;
+skos:notation 10114 ;
+dct:notation 10114 ;
+rdfs:label "Well" ;
+skos:broader Terrestrial ;
+.
+
+#174
+wmdsObservedVariable:Well discharge
+a	skos:Concept ;
+skos:notation 174 ;
+dct:notation 174 ;
+rdfs:label "Well discharge" ;
+skos:broader Well ;
+.
+
