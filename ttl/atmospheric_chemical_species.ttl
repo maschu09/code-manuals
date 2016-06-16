@@ -1,0 +1,4138 @@
+@prefix dct:   <http://purl.org/dc/terms/> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix gemet: <http://www.eionet.europa.eu/gemet/> .
+@prefix nist:  <http://webbook.nist.gov/> .
+@prefix ofmpub:  <http://ofmpub.epa.gov/sor_internet/registry/substreg/searchandretrieve/substancesearch/search.do?details=displayDetails&> .
+
+<chemical-species>
+        a skos:Collection ;
+        rdfs:label "chemical-species"@en ;
+        dct:description "Chemical substances that are present in the atmosphere"@en ;
+        skos:member    <chemical-species/gas-phase-species>,
+                       <chemical-species/particle-phase-species>,
+                       <chemical-species/inorganic-species>,
+                       <chemical-species/organic-species>,
+                       <chemical-species/isotopically-substituted-molecule>,
+                       <chemical-species/inorganic-acid>,
+                       <chemical-species/organic-acid>,
+                       <chemical-species/inorganic-oxygen-species>,
+                       <chemical-species/oxygen-atom>,
+                       <chemical-species/oxygen-atom-3p>,
+                       <chemical-species/oxygen-atom-1d>,
+                       <chemical-species/oxygen-molecule>,
+                       <chemical-species/ozone>,
+                       <chemical-species/oxygen-dimer>,
+                       <chemical-species/inorganic-hydrogen-oxide-species>,
+                       <chemical-species/hydrogen-atom>,
+                       <chemical-species/deuterium>,
+                       <chemical-species/tritium>,
+                       <chemical-species/hydrogen-molecule>,
+                       <chemical-species/water-vapor>,
+                       <chemical-species/normal-water-vapor>,
+                       <chemical-species/deuteriated-water-vapor>,
+                       <chemical-species/18-o-water-vapor>,
+                       <chemical-species/hydrogen-peroxide>,
+                       <chemical-species/hydroxil-radical>,
+                       <chemical-species/hydroperoxy-radical>,
+                       <chemical-species/inorganic-nitrogen-species>,
+                       <chemical-species/nitrogen-atom>,
+                       <chemical-species/nitrogen-molecule>,
+                       <chemical-species/dinitrogen-oxide>,
+                       <chemical-species/nitrogen-monoxide>,
+                       <chemical-species/nitrogen-dioxide>,
+                       <chemical-species/nitrate>,
+                       <chemical-species/dinitrogen-pentoxide>,
+                       <chemical-species/nitrous-acid>,
+                       <chemical-species/nitric-acid>,
+                       <chemical-species/peroxynitric-acid>,
+                       <chemical-species/ammonia>,
+                       <chemical-species/nox>,
+                       <chemical-species/noy>,
+                       <chemical-species/inorganic-carbon-species>,
+                       <chemical-species/carbon-monoxide>,
+                       <chemical-species/carbon-dioxide>,
+                       <chemical-species/12c-carbon-dioxide>,
+                       <chemical-species/13c-carbon-dioxide>,
+                       <chemical-species/14c-carbon-dioxide>,
+                       <chemical-species/18o-carbon-dioxide>,
+                       <chemical-species/inorganic-sulfur-species>,
+                       <chemical-species/sulfur>,
+                       <chemical-species/sulfur-dioxide>,
+                       <chemical-species/sulfur-trioxide>,
+                       <chemical-species/sulfuric-acid>,
+                       <chemical-species/hydrogen-sulfide>,
+                       <chemical-species/carbon-disulfide>,
+                       <chemical-species/sulfuryl-fluoride>,
+                       <chemical-species/inorganic-halogen-species>,
+                       <chemical-species/atomic-bromine>,
+                       <chemical-species/dibromine>,
+                       <chemical-species/bromine-oxide>,
+                       <chemical-species/hydrogen-bromide>,
+                       <chemical-species/hypobromous-acid>,
+                       <chemical-species/bromine-nitrate>,
+                       <chemical-species/atomic-chlorine>,
+                       <chemical-species/dichlorine>,
+                       <chemical-species/chlorine-oxide>,
+                       <chemical-species/chlorine-dioxide>,
+                       <chemical-species/dichlorine-peroxide>,
+                       <chemical-species/hydrogen-chloride>,
+                       <chemical-species/hypochlorous-acid>,
+                       <chemical-species/chlorine-nitrate>,
+                       <chemical-species/bromine-chloride>,
+                       <chemical-species/atomic-iodine>,
+                       <chemical-species/iodine-oxide>,
+                       <chemical-species/atomic-fluorine>,
+                       <chemical-species/hydrogen-fluoride>,
+                       <chemical-species/carbonyl-difluoride>,
+                       <chemical-species/sulfur-hexafluoride>,
+                       <chemical-species/radionuclide>,
+                       <chemical-species/noble-gas>,
+                       <chemical-species/helium>,
+                       <chemical-species/neon>,
+                       <chemical-species/argon>,
+                       <chemical-species/krypton>,
+                       <chemical-species/85-krypton>,
+                       <chemical-species/xenon>,
+                       <chemical-species/radon>,
+                       <chemical-species/trace-metal>,
+                       <chemical-species/heavy-metal>,
+                       <chemical-species/lead>,
+                       <chemical-species/210-lead>,
+                       <chemical-species/mercury>,
+                       <chemical-species/phosphorus>,
+                       <chemical-species/cadmium>,
+                       <chemical-species/chromium>,
+                       <chemical-species/cobalt>,
+                       <chemical-species/copper>,
+                       <chemical-species/iron>,
+                       <chemical-species/nickel>,
+                       <chemical-species/antimony>,
+                       <chemical-species/tin>,
+                       <chemical-species/aluminium>,
+                       <chemical-species/arsenic>,
+                       <chemical-species/manganese>,
+                       <chemical-species/vanadium>,
+                       <chemical-species/zinc>,
+                       <chemical-species/caesium>,
+                       <chemical-species/beryllium>,
+                       <chemical-species/barium>,
+                       <chemical-species/bismuth>,
+                       <chemical-species/cerium>,
+                       <chemical-species/lanthanum>,
+                       <chemical-species/lithium>,
+                       <chemical-species/rubidium>,
+                       <chemical-species/selenium>,
+                       <chemical-species/strontium>,
+                       <chemical-species/tallium>,
+                       <chemical-species/thorium>,
+                       <chemical-species/titanium>,
+                       <chemical-species/uranium>,
+                       <chemical-species/7-beryllium>,
+                       <chemical-species/10-beryllium>,
+                       <chemical-species/dust>,
+                       <chemical-species/volcanic-ash>,
+                       <chemical-species/volatile-organic-species>,
+                       <chemical-species/non-methane-volatile-organic-species>,
+                       <chemical-species/cyanide>,
+                       <chemical-species/hydrogen-cyanide>,
+                       <chemical-species/acetonitrile>,
+                       <chemical-species/carbonyl-sulfide>,
+                       <chemical-species/dimethylsulfide>,
+                       <chemical-species/methane-sulfonic-acid>,
+                       <chemical-species/hydrocarbon>,
+                       <chemical-species/non-methane-hydrocarbon>,
+                       <chemical-species/alkane>,
+                       <chemical-species/methane>,
+                       <chemical-species/12c-methane>,
+                       <chemical-species/13c-methane>,
+                       <chemical-species/ch3d>,
+                       <chemical-species/ethane>,
+                       <chemical-species/propane>,
+                       <chemical-species/butanes>,
+                       <chemical-species/butane>,
+                       <chemical-species/2-methylpropane>,
+                       <chemical-species/pentanes>,
+                       <chemical-species/pentane>,
+                       <chemical-species/2-methylbutane>,
+                       <chemical-species/2-dimethylpropane>,
+                       <chemical-species/hexanes>,
+                       <chemical-species/2,2-dimethylbutane>,
+                       <chemical-species/2,3-dimethylbutane>,
+                       <chemical-species/2-methyl-pentane>,
+                       <chemical-species/3-methyl-pentane>,
+                       <chemical-species/methyl-pentanes>,
+                       <chemical-species/heptanes>,
+                       <chemical-species/n-heptane>,
+                       <chemical-species/2-methyl-hexane>,
+                       <chemical-species/3-methyl-hexane>,
+                       <chemical-species/methyl-cyclo-hexane>,
+                       <chemical-species/octanes>,
+                       <chemical-species/n-octane>,
+                       <chemical-species/2,2,4-trimethylpentane>,
+                       <chemical-species/n-nonane>,
+                       <chemical-species/n-decane>,
+                       <chemical-species/n-undecane>,
+                       <chemical-species/alkene>,
+                       <chemical-species/ethene>,
+                       <chemical-species/propene>,
+                       <chemical-species/butenes>,
+                       <chemical-species/1-butene>,
+                       <chemical-species/2-butene>,
+                       <chemical-species/trans-2-butene>,
+                       <chemical-species/buta-1,3-diene>,
+                       <chemical-species/pentenes>,
+                       <chemical-species/trans-2-pentene>,
+                       <chemical-species/2-methylbut-1-ene>,
+                       <chemical-species/3-methylbut-1-ene>,
+                       <chemical-species/2-methylbut-2-ene>,
+                       <chemical-species/2-methylbuta-1,3-diene>,
+                       <chemical-species/terpenes>,
+                       <chemical-species/alpha-pinene>,
+                       <chemical-species/beta-pinene>,
+                       <chemical-species/limonene>,
+                       <chemical-species/myrcene>,
+                       <chemical-species/beta-caryophyllene>,
+                       <chemical-species/alkyne>,
+                       <chemical-species/ethyne>,
+                       <chemical-species/propyne>,
+                       <chemical-species/aromatic-hydrocarbon>,
+                       <chemical-species/benzene>,
+                       <chemical-species/toluene>,
+                       <chemical-species/xylenes>,
+                       <chemical-species/o-xylene>,
+                       <chemical-species/m-xylene>,
+                       <chemical-species/p-xylene>,
+                       <chemical-species/1-2-3-trimethylbenzene>,
+                       <chemical-species/1-2-4-trimethylbenzene>,
+                       <chemical-species/1-3-5-trimethylbenzene>,
+                       <chemical-species/ethylbenzene>,
+                       <chemical-species/2-ethyltoluene>,
+                       <chemical-species/3-ethyltoluene>,
+                       <chemical-species/4-ethyltoluene>,
+                       <chemical-species/propylbenzene>,
+                       <chemical-species/isopropylbenzene>,
+                       <chemical-species/phenylethene>,
+                       <chemical-species/benzopyrene>,
+                       <chemical-species/phenol>,
+                       <chemical-species/dioxin>,
+                       <chemical-species/furan>,
+                       <chemical-species/halogenated-hydrocarbon>,
+                       <chemical-species/chlorinated-hydrocarbon>,
+                       <chemical-species/perfluorinated-species>,
+                       <chemical-species/chloroethylene>,
+                       <chemical-species/trichloroethene>,
+                       <chemical-species/1,4-dichlorobenzene(p)>,
+                       <chemical-species/chlorophenol>,
+                       <chemical-species/pentachlorophenol>,
+                       <chemical-species/tetrachloroethene>,
+                       <chemical-species/hexachlorobenzene>,
+                       <chemical-species/chlorofluorocarbon>,
+                       <chemical-species/hcfc>,
+                       <chemical-species/carbon-tetrachloride>,
+                       <chemical-species/trichlorofluoromethane>,
+                       <chemical-species/dichlorodifluoromethane>,
+                       <chemical-species/chlorotrifluoromethane>,
+                       <chemical-species/pentachlorofluoroethane>,
+                       <chemical-species/1,1,2,2-tetrachloro-1,2-difluoroethane>,
+                       <chemical-species/1,1,1,2-tetrachloro-2,2-difluoroethane>,
+                       <chemical-species/1,1,2-trichloro-1,2,2-trifluoroethane>,
+                       <chemical-species/1,1,1-trichloro-2,2,2-trifluoroethane>,
+                       <chemical-species/1,2-dichlorotetrafluoroethane>,
+                       <chemical-species/1,1-dichloro-1,2,2,2-tetrafluoroethane>,
+                       <chemical-species/chloropentafluoroethane>,
+                       <chemical-species/perfluoroethane>,
+                       <chemical-species/1,1,1-trichloroethane>,
+                       <chemical-species/bromochlorodifluoromethane>,
+                       <chemical-species/bromotrifluoromethane>,
+                       <chemical-species/dibromodifluoromethane>,
+                       <chemical-species/dibromotetrafluoroethane>,
+                       <chemical-species/1,1-dichloro-1-fluoroethane>,
+                       <chemical-species/1-chloro-1,1-difluoroethane>,
+                       <chemical-species/1,1,1-trifluoroethane>,
+                       <chemical-species/1,2,2-trifluoroethane>,
+                       <chemical-species/chlorodifluoromethane>,
+                       <chemical-species/1,1-dichloro-2,2,2-trifluoroethane>,
+                       <chemical-species/1,2-dichloro-1,2,2-trifluoroethane>,
+                       <chemical-species/2,2-dichloro-1,1,2-trifluoroethane>,
+                       <chemical-species/1-chloro-1,2,2,2-tetrafluoroethane>,
+                       <chemical-species/2-chloro-1,1,2,2-tetrafluoroethane>,
+                       <chemical-species/chlorotrifluoroethane>,
+                       <chemical-species/dichlorofluoromethane>,
+                       <chemical-species/chlorofluoromethane>,
+                       <chemical-species/pentafluoroethane>,
+                       <chemical-species/1,1,1,2-tetrafluoroethane>,
+                       <chemical-species/1,1,2,2-tetrafluoroethane>,
+                       <chemical-species/1,1-difluoroethane>,
+                       <chemical-species/trifluoromethane>,
+                       <chemical-species/1,1,1,2,3,3,3-heptafluoropropane>,
+                       <chemical-species/1,1,1,2,3,3-hexafluoropropane>,
+                       <chemical-species/1,1,1,3,3-pentafluoropropane>,
+                       <chemical-species/difluoromethane>,
+                       <chemical-species/fluoromethane>,
+                       <chemical-species/1,1,1,3,3-pentafluorobutane>,
+                       <chemical-species/tetrafluoromethane>,
+                       <chemical-species/hexafluoroethane>,
+                       <chemical-species/octafluoropropane>,
+                       <chemical-species/dibromomethane>,
+                       <chemical-species/bromomethane>,
+                       <chemical-species/chloromethane>,
+                       <chemical-species/iodomethane>,
+                       <chemical-species/tribromomethane>,
+                       <chemical-species/trichloromethane>,
+                       <chemical-species/ethyliodide>,
+                       <chemical-species/1-bromopropane>,
+                       <chemical-species/aldehyde>,
+                       <chemical-species/formaldehyde>,
+                       <chemical-species/ethylaldehyde>,
+                       <chemical-species/ethanedial>,
+                       <chemical-species/prop-2-enal>,
+                       <chemical-species/2-oxopropanal>,
+                       <chemical-species/propanal>,
+                       <chemical-species/2-methylprop-2-enal>,
+                       <chemical-species/butanal>,
+                       <chemical-species/pentanal>,
+                       <chemical-species/ketone>,
+                       <chemical-species/acetone>,
+                       <chemical-species/butenone>,
+                       <chemical-species/butan-2-one>,
+                       <chemical-species/2-pentanone>,
+                       <chemical-species/organic-nitrate>,
+                       <chemical-species/peroxyacetylnitrate>,
+                       <chemical-species/methoxy-peroxyacetyl-nitrate>,
+                       <chemical-species/methyl-nitrate>,
+                       <chemical-species/ethyl-nitrate>,
+                       <chemical-species/2-butyl-nitrate>,
+                       <chemical-species/2-pentyl-nitrate>,
+                       <chemical-species/3-methyl-2-butyl-nitrate>,
+                       <chemical-species/3-pentyl-nitrate>,
+                       <chemical-species/peroxyacryloyl-nitrate>,
+                       <chemical-species/peroxymethacryloyl-nitrate>,
+                       <chemical-species/peroxybutyryl-nitrate>,
+                       <chemical-species/peroxybenzoyl-nitrate>,
+                       <chemical-species/peroxyisobutyric-nitrate>,
+                       <chemical-species/peroxy-pentyryl-nitrate>,
+                       <chemical-species/peroxyl-propionyl-nitrate>,
+                       <chemical-species/propyl-nitrate>,
+                       <chemical-species/alcohol>,
+                       <chemical-species/methanol>,
+                       <chemical-species/ethanol>,
+                       <chemical-species/propanol>,
+                       <chemical-species/butanol>,
+                       <chemical-species/organic-peroxide>,
+                       <chemical-species/methyl-hydroperoxide>,
+                       <chemical-species/ether>,
+                       <chemical-species/2-methoxy-2-methylpropane>,
+                       <chemical-species/ester>,
+                       <chemical-species/methyl-acetate>,
+                       <chemical-species/ethaneperoxoic-acid>,
+                       <chemical-species/propanoic-acid>,
+                       <chemical-species/polycyclic-aromatic-hydrocarbon>,
+                       <chemical-species/naphtalene>,
+                       <chemical-species/acenaphthylene>,
+                       <chemical-species/acenaphthene>,
+                       <chemical-species/fluorene>,
+                       <chemical-species/anthracene>,
+                       <chemical-species/phenantrene>,
+                       <chemical-species/fluoranthene>,
+                       <chemical-species/tetracene>,
+                       <chemical-species/chrysene>,
+                       <chemical-species/triphenylene>,
+                       <chemical-species/benz(a)anthracene>,
+                       <chemical-species/pyrene>,
+                       <chemical-species/benzo(a)pyrene>,
+                       <chemical-species/benzo(b)fluoranthene>,
+                       <chemical-species/benzo(j)fluoranthene>,
+                       <chemical-species/benzo(k)fluoranthene>,
+                       <chemical-species/dibenz(a,h)anthracene>,
+                       <chemical-species/indeno(1,2,3-cd)pyrene>,
+                       <chemical-species/polychlorinated-pesticide>,
+                       <chemical-species/polychlorinated-biphenyl>,
+                       <chemical-species/aldrin>,
+                       <chemical-species/alpha-hexachlorocyclohexane>,
+                       <chemical-species/beta-hexachlorocyclohexane>,
+                       <chemical-species/gamma-hexachlorocyclohexane>,
+                       <chemical-species/ion>,
+                       <chemical-species/anion>,
+                       <chemical-species/cation>,
+                       <chemical-species/hydrogen-ion>,
+                       <chemical-species/bromide-ion>,
+                       <chemical-species/chloride-ion>,
+                       <chemical-species/fluoride-ion>,
+                       <chemical-species/iodide-ion>,
+                       <chemical-species/phosphate-ion>,
+                       <chemical-species/sulphate-ion>,
+                       <chemical-species/calcium-ion>,
+                       <chemical-species/magnesium-ion>,
+                       <chemical-species/potassium-ion>,
+                       <chemical-species/sodium-ion>,
+                       <chemical-species/ammonium>,
+                       <chemical-species/nitrate-ion>,
+                       <chemical-species/nitrite-ion>,
+                       <chemical-species/formate-ion>,
+                       <chemical-species/acetate-ion>,
+                       <chemical-species/proprionate-ion>,
+                       <chemical-species/methane-sulfonate-ion>,
+                       <chemical-species/elemental-carbon>,
+                       <chemical-species/total-carbon>,
+                       <chemical-species/organic-carbon>,
+                       <chemical-species/brown-carbon>,
+                       <chemical-species/black-carbon>,
+                       <chemical-species/water-soluble-carbon>,
+                       <chemical-species/ammonium-nitrate> ;
+        skos:prefLabel "chemical-species"@en.
+
+<chemical-species/gas-phase-species>
+        a skos:Concept ;
+        rdfs:label "gas phase species"@en ;
+        dct:description "gaseous species in the atmosphere (trace gases)"@en ;
+        skos:prefLabel "gas phase species"@en ;
+        skos:closeMatch  gemet:concept?cp=623 ;
+        skos:notation "gas-phase-species" .
+
+<chemical-species/particle-phase-species>
+        a skos:Concept ;
+        rdfs:label "particle phase species"@en ;
+        dct:description "species contained in the atmospheric aerosol particle phase"@en ;
+        skos:prefLabel "particle phase species"@en ;
+        skos:notation "particle-phase-species" .
+
+<chemical-species/inorganic-species>
+        a skos:Concept ;
+        rdfs:label "inorganic species"@en ;
+        dct:description "inorganic species in the atmosphere"@en ;
+        skos:prefLabel "inorganic species"@en ;
+        skos:closeMatch  gemet:concept?cp=4350 ;
+        skos:notation "inorganic-species" .
+
+<chemical-species/organic-species>
+        a skos:Concept ;
+        rdfs:label "organic species"@en ;
+        dct:description "organic gaseous or semivolatile species in the atmosphere"@en ;
+        skos:prefLabel "organic species"@en ;
+        skos:notation "organic-species" .
+
+<chemical-species/isotopically-substituted-molecule>
+        a skos:Concept ;
+        rdfs:label "isotopically substituted molecule"@en ;
+        dct:description "a molecule in which one or more atoms are substituted by their isotopical homologues"@en ;
+        skos:prefLabel "isotopes"@en ;
+        skos:altLabel "isotopically substituted molecule"@en ;
+        skos:notation "isotopically-substituted-molecule" .
+
+<chemical-species/inorganic-acid>
+        a skos:Concept ;
+        rdfs:label "inorganic acid"@en ;
+        dct:description "inorganic species in the atmosphere with acidic properties"@en ;
+        skos:prefLabel "inorganic acid"@en ;
+        skos:broader <chemical-species/inorganic-species> ;
+        skos:notation "inorganic-acid" .
+
+<chemical-species/organic-acid>
+        a skos:Concept ;
+        rdfs:label "organic acid"@en ;
+        dct:description "organic species in the atmosphere with acidic properties"@en ;
+        skos:prefLabel "organic acid"@en ;
+        skos:broader <chemical-species/organic-species> ;
+        skos:notation "organic-acid" .
+
+<chemical-species/inorganic-oxygen-species>
+        a skos:Concept ;
+        rdfs:label "inorganic oxygen species"@en ;
+        dct:description "inorganic species in the atmosphere which consist only of oxygen atoms"@en ;
+        skos:prefLabel "oxygen species"@en ;
+        skos:altLabel "Ox"@en ;
+        skos:broader <chemical-species/inorganic-species> ;
+        skos:notation "inorganic-oxygen-species" .
+
+<chemical-species/oxygen-atom>
+        a skos:Concept ;
+        rdfs:label "oxygen atom"@en ;
+        dct:description "atomic oxygen"@en ;
+        skos:prefLabel "oxygen atom"@en ;
+        skos:altLabel "atomic oxygen"@en ;
+        skos:broader <chemical-species/inorganic-species> ;
+        skos:notation "oxygen-atom" .
+
+<chemical-species/oxygen-atom-3p>
+        a skos:Concept ;
+        rdfs:label "oxygen atom 3p"@en ;
+        dct:description "atomic oxygen in triplett P state, i.e. in electronic ground state"@en ;
+        skos:prefLabel "O(3P)"@en ;
+        skos:altLabel "ground state atomic oxygen"@en ;
+        skos:altLabel "atomic oxygen 3p"@en ;
+        skos:altLabel "oxygen atom in ground state"@en ;
+        skos:altLabel "oxygen atom in triplett P state"@en ;
+        skos:broader <chemical-species/oxygen-atom> ;
+        skos:notation "oxygen-atom-3p" .
+
+<chemical-species/oxygen-atom-1d>
+        a skos:Concept ;
+        rdfs:label "oxygen atom 1d"@en ;
+        dct:description "atomic oxygen in singlett D state, i.e. in electronically excited state"@en ;
+        skos:prefLabel "O(1D)"@en ;
+        skos:altLabel "excited state atomic oxygen"@en ;
+        skos:altLabel "atomic oxygen 1d"@en ;
+        skos:altLabel "atomic oxygen in excited state"@en ;
+        skos:altLabel "oxygen atom in singlett D state"@en ;
+        skos:broader <chemical-species/oxygen-atom> ;
+        skos:notation "oxygen-atom-1d" .
+
+<chemical-species/oxygen-molecule>
+        a skos:Concept ;
+        rdfs:label "oxygen molecule"@en ;
+        dct:description "molecular oxygen, i.e. a molecule consisting of two oxygen atoms"@en ;
+        skos:prefLabel "O2"@en ;
+        skos:altLabel "oxygen molecule"@en ;
+        skos:altLabel "molecular oxygen"@en ;
+        skos:altLabel "O\u2082"@en ;
+        skos:hiddenLabel "oxigen molecule"@en ;
+        skos:broader <chemical-species/inorganic-species> ;
+        skos:exactMatch  gemet:concept?cp=5982 ;
+        skos:notation "oxygen-molecule" .
+
+<chemical-species/ozone>
+        a skos:Concept ;
+        rdfs:label "ozone"@en ;
+        dct:description "ozone, i.e. a molecule consisting of three oxygen atoms. Chemical formula: O3"@en ;
+        skos:prefLabel "O3"@en ;
+        skos:altLabel "ozone"@en ;
+        skos:altLabel "O\u2083"@en ;
+        skos:broader <chemical-species/inorganic-species> ;
+        skos:exactMatch  gemet:concept?cp=5991 ;
+        skos:notation "ozone" .
+
+<chemical-species/oxygen-dimer>
+        a skos:Concept ;
+        rdfs:label "oxygen dimer"@en ;
+        dct:description "cluster of two oxygen molecules"@en ;
+        skos:prefLabel "O4"@en ;
+        skos:altLabel "oxygen dimer"@en ;
+        skos:altLabel "O\u2084"@en ;
+        skos:broader <chemical-species/inorganic-species> ;
+        skos:notation "oxygen-dimer" .
+
+<chemical-species/inorganic-hydrogen-oxide-species>
+        a skos:Concept ;
+        rdfs:label "inorganic hydrogen oxide species"@en ;
+        dct:description "inorganic species in the atmosphere which consist only of hydrogen and possibly oxygen atoms"@en ;
+        skos:prefLabel "hydrogen oxide species"@en ;
+        skos:altLabel "HOx"@en ;
+        skos:broader <chemical-species/inorganic-species> ;
+        skos:notation "inorganic-hydrogen-oxide-species" .
+
+<chemical-species/hydrogen-atom>
+        a skos:Concept ;
+        rdfs:label "hydrogen atom"@en ;
+        dct:description "atomic hydrogen"@en ;
+        skos:prefLabel "H"@en ;
+        skos:altLabel "hydrogen atom"@en ;
+        skos:altLabel "atomic hydrogen"@en ;
+        skos:broader <chemical-species/inorganic-hydrogen-oxide-species> ;
+        skos:notation "hydrogen-atom" .
+
+<chemical-species/deuterium>
+        a skos:Concept ;
+        rdfs:label "deuterium"@en ;
+        dct:description "atomic hydrogen with mass number 2"@en ;
+        skos:prefLabel "D"@en ;
+        skos:altLabel "deuterium"@en ;
+        skos:broader <chemical-species/inorganic-hydrogen-oxide-species> ;
+        skos:notation "deuterium" .
+
+<chemical-species/tritium>
+        a skos:Concept ;
+        rdfs:label "tritium"@en ;
+        dct:description "atomic hydrogen with mass number 3"@en ;
+        skos:prefLabel "tritium"@en ;
+        skos:broader <chemical-species/inorganic-hydrogen-oxide-species> ;
+        skos:broader <chemical-species/radionuclide> ;
+        skos:exactMatch  gemet:concept?cp=8680 ;
+        skos:notation "tritium" .
+
+<chemical-species/hydrogen-molecule>
+        a skos:Concept ;
+        rdfs:label "hydrogen molecule"@en ;
+        dct:description "molecular hydrogen, i.e. a molecule consisting of two hydrogen atoms"@en ;
+        skos:prefLabel "H2"@en ;
+        skos:altLabel "hydrogen molecule"@en ;
+        skos:altLabel "molecular hydrogen"@en ;
+        skos:altLabel "H\u2082"@en ;
+        skos:broader <chemical-species/inorganic-hydrogen-oxide-species> ;
+        skos:exactMatch  gemet:concept?cp=4103 ;
+        skos:notation "hydrogen-molecule" .
+
+<chemical-species/water-vapor>
+        a skos:Concept ;
+        rdfs:label "water vapor"@en ;
+        dct:description "water vapor or gas-phase dihydrogen oxide, i.e. H2O"@en ;
+        skos:prefLabel "H2O"@en ;
+        skos:altLabel "water vapor"@en ;
+        skos:altLabel "gaseous water"@en ;
+        skos:altLabel "hydrogen dioxide"@en ;
+        skos:altLabel "H\u2082O"@en ;
+        skos:hiddenLabel "water vapour"@en ;
+        skos:broader <chemical-species/inorganic-hydrogen-oxide-species> ;
+        skos:notation "water-vapor" .
+
+<chemical-species/normal-water-vapor>
+        a skos:Concept ;
+        rdfs:label "normal water vapor"@en ;
+        dct:description "the default isotopic composition of water vapor, i.e. 1H-1H-16O"@en ;
+        skos:prefLabel "H2O"@en ;
+        skos:altLabel "normal water vapor"@en ;
+        skos:broader <chemical-species/inorganic-hydrogen-oxide-species> ;
+        skos:notation "normal-water-vapor" .
+
+<chemical-species/deuteriated-water-vapor>
+        a skos:Concept ;
+        rdfs:label "deuteriated water vapor"@en ;
+        dct:description "water vapor in which one hydrogen atom is substituted with deuterium"@en ;
+        skos:prefLabel "HDO"@en ;
+        skos:altLabel "deuteriated water vapor"@en ;
+        skos:broader <chemical-species/inorganic-hydrogen-oxide-species> ;
+        skos:broader <chemical-species/isotopically-substituted-molecule> ;
+        skos:notation "deuteriated-water-vapor" .
+
+<chemical-species/18-o-water-vapor>
+        a skos:Concept ;
+        rdfs:label "18-o water vapor"@en ;
+        dct:description "water vapor in which one oxygen atom is substituted with 18O"@en ;
+        skos:prefLabel "H2(18)O"@en ;
+        skos:altLabel "18-o water vapor"@en ;
+        skos:broader <chemical-species/inorganic-hydrogen-oxide-species> ;
+        skos:broader <chemical-species/isotopically-substituted-molecule> ;
+        skos:notation "18-o-water-vapor" .
+
+<chemical-species/hydrogen-peroxide>
+        a skos:Concept ;
+        rdfs:label "hydrogen peroxide"@en ;
+        dct:description "hydrogen peroxide, i.e. a molecule consisting of two hydrogen atoms and two oxygen atoms"@en ;
+        skos:prefLabel "H2O2"@en ;
+        skos:altLabel "hydrogen peroxide"@en ;
+        skos:altLabel "H\u2082O\u2082"@en ;
+        skos:broader <chemical-species/inorganic-hydrogen-oxide-species> ;
+        skos:notation "hydrogen-peroxide" .
+
+<chemical-species/hydroxil-radical>
+        a skos:Concept ;
+        rdfs:label "hydroxil radical"@en ;
+        dct:description "hydroxil radical, i.e. a molecule consisting of one hydrogen atom and one oxygen atom"@en ;
+        skos:prefLabel "OH"@en ;
+        skos:altLabel "hydroxil radical"@en ;
+        skos:altLabel "HO"@en ;
+        skos:hiddenLabel "hydroxyl radical"@en ;
+        skos:broader <chemical-species/inorganic-hydrogen-oxide-species> ;
+        skos:notation "hydroxil-radical" .
+
+<chemical-species/hydroperoxy-radical>
+        a skos:Concept ;
+        rdfs:label "hydroperoxy radical"@en ;
+        dct:description "hydroperoxy radical, i.e. a molecule consisting of one hydrogen atom and two oxygen atoms"@en ;
+        skos:prefLabel "HO2"@en ;
+        skos:altLabel "hydroperoxy radical"@en ;
+        skos:altLabel "HO\u2082"@en ;
+        skos:broader <chemical-species/inorganic-hydrogen-oxide-species> ;
+        skos:notation "hydroperoxy-radical" .
+
+<chemical-species/inorganic-nitrogen-species>
+        a skos:Concept ;
+        rdfs:label "inorganic nitrogen species"@en ;
+        dct:description "inorganic species in the atmosphere which consist only of nitrogen and possibly oxygen and hydrogen atoms"@en ;
+        skos:prefLabel "inorganic nitrogen species"@en ;
+        skos:altLabel "inorganic nitrogen"@en ;
+        skos:broader <chemical-species/inorganic-species> ;
+        skos:closeMatch  gemet:concept?cp=5605 ;
+        skos:notation "inorganic-nitrogen-species" .
+
+<chemical-species/nitrogen-atom>
+        a skos:Concept ;
+        rdfs:label "nitrogen atom"@en ;
+        dct:description "atomic nitrogen"@en ;
+        skos:prefLabel "N"@en ;
+        skos:altLabel "nitrogen atom"@en ;
+        skos:altLabel "atomic nitrogen"@en ;
+        skos:broader <chemical-species/inorganic-nitrogen-species> ;
+        skos:notation "nitrogen-atom" .
+
+<chemical-species/nitrogen-molecule>
+        a skos:Concept ;
+        rdfs:label "nitrogen molecule"@en ;
+        dct:description "molecular nitrogen, i.e. a molecule consisting of two nitrogen atoms"@en ;
+        skos:prefLabel "N2"@en ;
+        skos:altLabel "nitrogen molecule"@en ;
+        skos:altLabel "molecular nitrogen"@en ;
+        skos:altLabel "N\u2082"@en ;
+        skos:broader <chemical-species/inorganic-nitrogen-species> ;
+        skos:notation "nitrogen-molecule" .
+
+<chemical-species/dinitrogen-oxide>
+        a skos:Concept ;
+        rdfs:label "dinitrogen oxide"@en ;
+        dct:description "dinitrogen oxide, i.e. a molecule consisting of two nitrogen atoms and one oxygen atom"@en ;
+        skos:prefLabel "N2O"@en ;
+        skos:altLabel "dinitrogen oxide"@en ;
+        skos:altLabel "N\u2082O"@en ;
+        skos:altLabel "nitrous oxide"@en ;
+        skos:broader <chemical-species/inorganic-nitrogen-species> ;
+        skos:notation "dinitrogen-oxide" .
+
+<chemical-species/nitrogen-monoxide>
+        a skos:Concept ;
+        rdfs:label "nitrogen monoxide"@en ;
+        dct:description "nitrogen monoxide, i.e. a molecule consisting of one nitrogen atom, and one oxygen atom"@en ;
+        skos:prefLabel "NO"@en ;
+        skos:altLabel "nitrogen monoxide"@en ;
+        skos:altLabel "nitric oxide"@en ;
+        skos:broader <chemical-species/inorganic-nitrogen-species> ;
+        skos:exactMatch  gemet:concept?cp=5612 ;
+        skos:notation "nitrogen-monoxide" .
+
+<chemical-species/nitrogen-dioxide>
+        a skos:Concept ;
+        rdfs:label "nitrogen dioxide"@en ;
+        dct:description "nitrogen dioxide, i.e. a molecule consisting of one nitrogen atom, and two oxygen atoms"@en ;
+        skos:prefLabel "NO2"@en ;
+        skos:altLabel "nitrogen dioxide"@en ;
+        skos:altLabel "NO\u2082"@en ;
+        skos:broader <chemical-species/inorganic-nitrogen-species> ;
+        skos:exactMatch  gemet:concept?cp=5608 ;
+        skos:notation "nitrogen-dioxide" .
+
+<chemical-species/nitrate>
+        a skos:Concept ;
+        rdfs:label "nitrate"@en ;
+        dct:description "nitrate, i.e. a molecule consisting of one nitrogen atom, and three oxygen atoms"@en ;
+        skos:prefLabel "NO3"@en ;
+        skos:altLabel "nitrate"@en ;
+        skos:altLabel "NO\u2083"@en ;
+        skos:broader <chemical-species/inorganic-nitrogen-species> ;
+        skos:closeMatch  gemet:concept?cp=5593 ;
+        skos:notation "nitrate" .
+
+<chemical-species/dinitrogen-pentoxide>
+        a skos:Concept ;
+        rdfs:label "dinitrogen pentoxide"@en ;
+        dct:description "dinitrogen pentoxide, i.e. a molecule consisting of one nitrogen atom, and two oxygen atoms"@en ;
+        skos:prefLabel "N2O5"@en ;
+        skos:altLabel "dinitrogen pentoxide"@en ;
+        skos:altLabel "N\u2082O\u2085"@en ;
+        skos:broader <chemical-species/inorganic-nitrogen-species> ;
+        skos:notation "dinitrogen-pentoxide" .
+
+<chemical-species/nitrous-acid>
+        a skos:Concept ;
+        rdfs:label "nitrous acid"@en ;
+        dct:description "nitrous acid, i.e. a molecule consisting of one nitrogen atom, one hydrogen atom, and two oxygen atoms"@en ;
+        skos:prefLabel "HONO"@en ;
+        skos:altLabel "nitrous acid"@en ;
+        skos:altLabel "hydroxidooxidonitrogen"@en ;
+        skos:broader <chemical-species/inorganic-nitrogen-species> ;
+        skos:broader <chemical-species/inorganic-acid> ;
+        skos:notation "nitrous-acid" .
+
+<chemical-species/nitric-acid>
+        a skos:Concept ;
+        rdfs:label "nitric acid"@en ;
+        dct:description "nitric acid, i.e. a molecule consisting of one nitrogen atom, one hydrogen atom, and three oxygen atoms"@en ;
+        skos:prefLabel "HNO3"@en ;
+        skos:altLabel "nitric acid"@en ;
+        skos:altLabel "hydrogen nitrate"@en ;
+        skos:altLabel "HNO\u2083"@en ;
+        skos:broader <chemical-species/inorganic-nitrogen-species> ;
+        skos:broader <chemical-species/inorganic-acid> ;
+        skos:notation "nitric-acid" .
+
+<chemical-species/peroxynitric-acid>
+        a skos:Concept ;
+        rdfs:label "peroxynitric acid"@en ;
+        dct:description "peroxynitric acid, i.e. a molecule consisting of one nitrogen atom, and two oxygen atoms"@en ;
+        skos:prefLabel "HO2NO2"@en ;
+        skos:altLabel "hydroxy nitrate"@en ;
+        skos:altLabel "pernitric acid"@en ;
+        skos:altLabel "HNO4"@en ;
+        skos:altLabel "HO\u2082O\u2082"@en ;
+        skos:broader <chemical-species/inorganic-nitrogen-species> ;
+        skos:broader <chemical-species/inorganic-acid> ;
+        skos:notation "peroxynitric-acid" .
+
+<chemical-species/ammonia>
+        a skos:Concept ;
+        rdfs:label "ammonia"@en ;
+        dct:description "ammonia, i.e. a molecule consisting of one nitrogen atom and three hydrogen atoms"@en ;
+        skos:prefLabel "NH3"@en ;
+        skos:altLabel "ammonia"@en ;
+        skos:altLabel "azane"@en ;
+        skos:altLabel "NH\u2083"@en ;
+        skos:broader <chemical-species/inorganic-nitrogen-species> ;
+        skos:exactMatch  gemet:concept?cp=375 ;
+        skos:notation "ammonia" .
+
+<chemical-species/nox>
+        a skos:Concept ;
+        rdfs:label "nox"@en ;
+        dct:description "sum of reactive nitrogen oxides, i.e. NO and NO2"@en ;
+        skos:prefLabel "NOx"@en ;
+        skos:altLabel "nox"@en ;
+        skos:broader <chemical-species/inorganic-nitrogen-species> ;
+        skos:closeMatch  gemet:concept?cp=13577 ;
+        skos:notation "nox" .
+
+<chemical-species/noy>
+        a skos:Concept ;
+        rdfs:label "noy"@en ;
+        dct:description "sum of nitrogen oxide species with oxidation state greater than 2, i.e. the sum of NO, NO2, PAN, HNO3, HONO, HO2NO2, and others, possibly also containing halogenated nitrogen oxide species such as BrONO2 or ClONO2"@en ;
+        skos:prefLabel "NOy"@en ;
+        skos:altLabel "noy"@en ;
+        skos:broader <chemical-species/inorganic-nitrogen-species> ;
+        skos:closeMatch  gemet:concept?cp=5613 ;
+        skos:notation "noy" .
+
+<chemical-species/inorganic-carbon-species>
+        a skos:Concept ;
+        rdfs:label "inorganic carbon species"@en ;
+        dct:description "species in the atmosphere which contain carbon but are not classified as organic substances"@en ;
+        skos:prefLabel "inorganic carbon species"@en ;
+        skos:altLabel "inorganic carbon"@en ;
+        skos:broader <chemical-species/inorganic-species> ;
+        skos:notation "inorganic-carbon-species" .
+
+<chemical-species/carbon-monoxide>
+        a skos:Concept ;
+        rdfs:label "carbon monoxide"@en ;
+        dct:description "carbon monoxide, i.e. a molecule consisting of one carbon and one oxygen atom"@en ;
+        skos:prefLabel "CO"@en ;
+        skos:altLabel "carbon monoxide"@en ;
+        skos:broader <chemical-species/inorganic-carbon-species> ;
+        skos:exactMatch  gemet:concept?cp=1173 ;
+        skos:notation "carbon-monoxide" .
+
+<chemical-species/carbon-dioxide>
+        a skos:Concept ;
+        rdfs:label "carbon dioxide"@en ;
+        dct:description "carbon dioxide, i.e. a molecule consisting of one carbon and two oxygen atoms"@en ;
+        skos:prefLabel "CO2"@en ;
+        skos:altLabel "carbon dioxide"@en ;
+        skos:broader <chemical-species/inorganic-carbon-species> ;
+        skos:exactMatch  gemet:concept?cp=1168 ;
+        skos:notation "carbon-dioxide" .
+
+<chemical-species/12c-carbon-dioxide>
+        a skos:Concept ;
+        rdfs:label "12c carbon dioxide"@en ;
+        dct:description "12C16O16O: the most abundant isotopic composition of carbon dioxide"@en ;
+        skos:prefLabel "C(12)O2"@en ;
+        skos:altLabel "\u2071\u2072CO\u2082"@en ;
+        skos:altLabel "12-C carbon dioxide"@en ;
+        skos:broader <chemical-species/carbon-dioxide> ;
+        skos:notation "12c-carbon-dioxide" .
+
+<chemical-species/13c-carbon-dioxide>
+        a skos:Concept ;
+        rdfs:label "13c carbon dioxide"@en ;
+        dct:description "13C16O16O: an isotope of carbon dioxide"@en ;
+        skos:prefLabel "C(13)O2"@en ;
+        skos:altLabel "\u2071\u2073CO\u2082"@en ;
+        skos:altLabel "13-C carbon dioxide"@en ;
+        skos:broader <chemical-species/carbon-dioxide> ;
+        skos:broader <chemical-species/isotopically-substituted-molecule> ;
+        skos:notation "13c-carbon-dioxide" .
+
+<chemical-species/14c-carbon-dioxide>
+        a skos:Concept ;
+        rdfs:label "14c carbon dioxide"@en ;
+        dct:description "14C16O16O: an isotope of carbon dioxide"@en ;
+        skos:prefLabel "C(14)O2"@en ;
+        skos:altLabel "\u2071\u2074CO\u2082"@en ;
+        skos:altLabel "14-C carbon dioxide"@en ;
+        skos:broader <chemical-species/carbon-dioxide> ;
+        skos:broader <chemical-species/isotopically-substituted-molecule> ;
+        skos:notation "14c-carbon-dioxide" .
+
+<chemical-species/18o-carbon-dioxide>
+        a skos:Concept ;
+        rdfs:label "18o carbon dioxide"@en ;
+        dct:description "12C18O16O: an isotope of carbon dioxide"@en ;
+        skos:prefLabel "CO(18)O(16)"@en ;
+        skos:altLabel "\u2071\u2072C\u2071\u2078O\u2071\u2076O"@en ;
+        skos:altLabel "18-O carbon dioxide"@en ;
+        skos:broader <chemical-species/carbon-dioxide> ;
+        skos:broader <chemical-species/isotopically-substituted-molecule> ;
+        skos:notation "18o-carbon-dioxide" .
+
+<chemical-species/inorganic-sulfur-species>
+        a skos:Concept ;
+        rdfs:label "inorganic sulfur species"@en ;
+        dct:description "inorganic species in the atmosphere which consist only of sulfur and possibly oxygen and hydrogen atoms"@en ;
+        skos:prefLabel "inorganic sulfur species"@en ;
+        skos:altLabel "inorganic sulphur species"@en ;
+        skos:broader <chemical-species/inorganic-species> ;
+        skos:notation "inorganic-sulfur-species" .
+
+<chemical-species/sulfur>
+        a skos:Concept ;
+        rdfs:label "sulfur"@en ;
+        dct:description "sulfur atom"@en ;
+        skos:prefLabel "S"@en ;
+        skos:altLabel "sulfur"@en ;
+        skos:broader <chemical-species/inorganic-sulfur-species> ;
+        skos:notation "sulfur" .
+
+<chemical-species/sulfur-dioxide>
+        a skos:Concept ;
+        rdfs:label "sulfur dioxide"@en ;
+        dct:description "sulfur dioxide, i.e. a molecule consisting of one sulfur and two oxygen atoms"@en ;
+        skos:prefLabel "SO2"@en ;
+        skos:altLabel "sulfur dioxide"@en ;
+        skos:altLabel "sulphur dioxide"@en ;
+        skos:broader <chemical-species/inorganic-sulfur-species> ;
+        skos:exactMatch  gemet:concept?cp=8202 ;
+        skos:notation "sulfur-dioxide" .
+
+<chemical-species/sulfur-trioxide>
+        a skos:Concept ;
+        rdfs:label "sulfur trioxide"@en ;
+        dct:description "sulfur trioxide, i.e. a molecule consisting of one sulfur and three oxygen atoms"@en ;
+        skos:prefLabel "SO3"@en ;
+        skos:altLabel "sulfur trioxide"@en ;
+        skos:altLabel "sulphur trioxide"@en ;
+        skos:broader <chemical-species/inorganic-sulfur-species> ;
+        skos:notation "sulfur-trioxide" .
+
+<chemical-species/sulfuric-acid>
+        a skos:Concept ;
+        rdfs:label "sulfuric acid"@en ;
+        dct:description "sulfuric acid, i.e. a molecule consisting of one sulfur, two hydrogen, and four oxygen atoms"@en ;
+        skos:prefLabel "H2SO4"@en ;
+        skos:altLabel "sulfuric acid"@en ;
+        skos:broader <chemical-species/inorganic-sulfur-species> ;
+        skos:exactMatch  gemet:concept?cp=8203 ;
+        skos:notation "sulfuric-acid" .
+
+<chemical-species/hydrogen-sulfide>
+        a skos:Concept ;
+        rdfs:label "hydrogen sulfide"@en ;
+        dct:description "hydrogen sulfide, i.e. a molecule consisting of one sulfur and two hydrogen atoms"@en ;
+        skos:prefLabel "H2S"@en ;
+        skos:altLabel "hydrogen sulfide"@en ;
+        skos:altLabel "sulfane"@en ;
+        skos:altLabel "hydrogen sulphide"@en ;
+        skos:altLabel "sulphane"@en ;
+        skos:broader <chemical-species/inorganic-sulfur-species> ;
+        skos:exactMatch  gemet:concept?cp=4107 ;
+        skos:notation "hydrogen-sulfide" .
+
+<chemical-species/carbon-disulfide>
+        a skos:Concept ;
+        rdfs:label "carbon disulfide"@en ;
+        dct:description "carbon disulfide, i.e. a molecule consisting of one carbon and two sulfur atoms"@en ;
+        skos:prefLabel "CS2"@en ;
+        skos:altLabel "carbon disulfide"@en ;
+        skos:broader <chemical-species/inorganic-sulfur-species> ;
+        skos:notation "carbon-disulfide" .
+
+<chemical-species/sulfuryl-fluoride>
+        a skos:Concept ;
+        rdfs:label "sulfuryl fluoride"@en ;
+        dct:description "sulfuryl fluoride"@en ;
+        skos:prefLabel "SO2F2"@en ;
+        skos:altLabel "sulfuryl fluoride"@en ;
+        skos:altLabel "sulphuryl fluoride"@en ;
+        skos:broader <chemical-species/inorganic-sulfur-species> ;
+        skos:notation "sulfuryl-fluoride" .
+
+<chemical-species/inorganic-halogen-species>
+        a skos:Concept ;
+        rdfs:label "inorganic halogen species"@en ;
+        dct:description "inorganic species in the atmosphere which consist only of a halogen atom (Cl, Br, I) and possibly oxygen and hydrogen atoms"@en ;
+        skos:prefLabel "inorganic halogen species"@en ;
+        skos:broader <chemical-species/inorganic-species> ;
+        skos:notation "inorganic-halogen-species" .
+
+<chemical-species/atomic-bromine>
+        a skos:Concept ;
+        rdfs:label "atomic bromine"@en ;
+        dct:description "atomic bromine"@en ;
+        skos:prefLabel "Br"@en ;
+        skos:altLabel "bromine"@en ;
+        skos:altLabel "atomic bromine"@en ;
+        skos:altLabel "bromine atom"@en ;
+        skos:broader <chemical-species/inorganic-halogen-species> ;
+        skos:closeMatch  gemet:concept?cp=1007 ;
+        skos:notation "atomic-bromine" .
+
+<chemical-species/dibromine>
+        a skos:Concept ;
+        rdfs:label "dibromine"@en ;
+        dct:description "molecular bromine, i.e. a molecule consisting of two bromine atoms"@en ;
+        skos:prefLabel "Br2"@en ;
+        skos:altLabel "dibromine"@en ;
+        skos:altLabel "molecular bromine"@en ;
+        skos:altLabel "bromine molecule"@en ;
+        skos:broader <chemical-species/inorganic-halogen-species> ;
+        skos:notation "dibromine" .
+
+<chemical-species/bromine-oxide>
+        a skos:Concept ;
+        rdfs:label "bromine oxide"@en ;
+        dct:description "bromine oxide, i.e. a molecule consisting of one bromine and one oxygen atom"@en ;
+        skos:prefLabel "BrO"@en ;
+        skos:altLabel "bromine oxide"@en ;
+        skos:broader <chemical-species/inorganic-halogen-species> ;
+        skos:notation "bromine-oxide" .
+
+<chemical-species/hydrogen-bromide>
+        a skos:Concept ;
+        rdfs:label "hydrogen bromide"@en ;
+        dct:description "hydrogen bromide, i.e. a molecule consisting of one bromine and one hydrogen atom"@en ;
+        skos:prefLabel "HBr"@en ;
+        skos:altLabel "hydrogen bromide"@en ;
+        skos:altLabel "bromane"@en ;
+        skos:broader <chemical-species/inorganic-halogen-species> ;
+        skos:notation "hydrogen-bromide" .
+
+<chemical-species/hypobromous-acid>
+        a skos:Concept ;
+        rdfs:label "hypobromous acid"@en ;
+        dct:description "hypobromous acid, i.e. a molecule consisting of one bromine, one oxygen, and one hydrogen atom"@en ;
+        skos:prefLabel "HOBr"@en ;
+        skos:altLabel "hypobromous acid"@en ;
+        skos:altLabel "HBrO"@en ;
+        skos:broader <chemical-species/inorganic-halogen-species> ;
+        skos:broader <chemical-species/inorganic-acid> ;
+        skos:notation "hypobromous-acid" .
+
+<chemical-species/bromine-nitrate>
+        a skos:Concept ;
+        rdfs:label "bromine nitrate"@en ;
+        dct:description "bromine nitrate, i.e. a molecule consisting of one bromine, one nitrogen, and three oxygen atoms"@en ;
+        skos:prefLabel "BrONO2"@en ;
+        skos:altLabel "bromine nitrate"@en ;
+        skos:altLabel "bromo nitrate"@en ;
+        skos:broader <chemical-species/inorganic-halogen-species> ;
+        skos:notation "bromine-nitrate" .
+
+<chemical-species/atomic-chlorine>
+        a skos:Concept ;
+        rdfs:label "atomic chlorine"@en ;
+        dct:description "atomic chlorine"@en ;
+        skos:prefLabel "Cl"@en ;
+        skos:altLabel "chlorine"@en ;
+        skos:altLabel "atomic chlorine"@en ;
+        skos:altLabel "chlorine atom"@en ;
+        skos:broader <chemical-species/inorganic-halogen-species> ;
+        skos:closeMatch  gemet:concept?cp=1373 ;
+        skos:notation "atomic-chlorine" .
+
+<chemical-species/dichlorine>
+        a skos:Concept ;
+        rdfs:label "dichlorine"@en ;
+        dct:description "molecular chlorine, i.e. a molecule consisting of two chlorine atoms"@en ;
+        skos:prefLabel "Cl2"@en ;
+        skos:altLabel "dichlorine"@en ;
+        skos:altLabel "molecular chlorine"@en ;
+        skos:altLabel "chlorine molecule"@en ;
+        skos:broader <chemical-species/inorganic-halogen-species> ;
+        skos:notation "dichlorine" .
+
+<chemical-species/chlorine-oxide>
+        a skos:Concept ;
+        rdfs:label "chlorine oxide"@en ;
+        dct:description "chlorine oxide, , i.e. a molecule consisting of one chlorine and one oxygen atom"@en ;
+        skos:prefLabel "ClO"@en ;
+        skos:altLabel "chlorine oxide"@en ;
+        skos:broader <chemical-species/inorganic-halogen-species> ;
+        skos:notation "chlorine-oxide" .
+
+<chemical-species/chlorine-dioxide>
+        a skos:Concept ;
+        rdfs:label "chlorine dioxide"@en ;
+        dct:description "chlorine dioxide, i.e. a molecule consisting of one chlorine and two oxygen atoms"@en ;
+        skos:prefLabel "OClO"@en ;
+        skos:altLabel "chlorine dioxide"@en ;
+        skos:altLabel "ClO2"@en ;
+        skos:broader <chemical-species/inorganic-halogen-species> ;
+        skos:notation "chlorine-dioxide" .
+
+<chemical-species/dichlorine-peroxide>
+        a skos:Concept ;
+        rdfs:label "dichlorine peroxide"@en ;
+        dct:description "dichlorine peroxide, i.e. a molecule consisting of two chlorine and two oxygen atoms"@en ;
+        skos:prefLabel "Cl2O2"@en ;
+        skos:altLabel "dichlorine peroxide"@en ;
+        skos:altLabel "chlorooxy hypochlorite"@en ;
+        skos:broader <chemical-species/inorganic-halogen-species> ;
+        skos:notation "dichlorine-peroxide" .
+
+<chemical-species/hydrogen-chloride>
+        a skos:Concept ;
+        rdfs:label "hydrogen chloride"@en ;
+        dct:description "hydrogen chloride, i.e. a molecule consisting of one chlorine and one hydrogen atom"@en ;
+        skos:prefLabel "HCl"@en ;
+        skos:altLabel "hydrogen chloride"@en ;
+        skos:altLabel "chlorane"@en ;
+        skos:altLabel "hydrochloric acid"@en ;
+        skos:broader <chemical-species/inorganic-halogen-species> ;
+        skos:closeMatch  gemet:concept?cp=4094 ;
+        skos:notation "hydrogen-chloride" .
+
+<chemical-species/hypochlorous-acid>
+        a skos:Concept ;
+        rdfs:label "hypochlorous acid"@en ;
+        dct:description "hypochlorous acid, i.e. a molecule consisting of one chlorine, one oxygen, and one hydrogen atom"@en ;
+        skos:prefLabel "HOCl"@en ;
+        skos:altLabel "hypochlorous acid"@en ;
+        skos:altLabel "HClO"@en ;
+        skos:broader <chemical-species/inorganic-halogen-species> ;
+        skos:broader <chemical-species/inorganic-acid> ;
+        skos:notation "hypochlorous-acid" .
+
+<chemical-species/chlorine-nitrate>
+        a skos:Concept ;
+        rdfs:label "chlorine nitrate"@en ;
+        dct:description "chlorine nitrate, i.e. a molecule consisting of one chlorine, one nitrogen, and three oxygen atoms"@en ;
+        skos:prefLabel "ClONO2"@en ;
+        skos:altLabel "chlorine nitrate"@en ;
+        skos:altLabel "chloro nitrate"@en ;
+        skos:broader <chemical-species/inorganic-halogen-species> ;
+        skos:notation "chlorine-nitrate" .
+
+<chemical-species/bromine-chloride>
+        a skos:Concept ;
+        rdfs:label "bromine chloride"@en ;
+        dct:description "bromine chloride, i.e. a molecule consisting of one bromine, and one chlorine atom"@en ;
+        skos:prefLabel "BrCl"@en ;
+        skos:altLabel "bromine chloride"@en ;
+        skos:broader <chemical-species/inorganic-halogen-species> ;
+        skos:notation "bromine-chloride" .
+
+<chemical-species/atomic-iodine>
+        a skos:Concept ;
+        rdfs:label "atomic iodine"@en ;
+        dct:description "atomic iodine"@en ;
+        skos:prefLabel "I"@en ;
+        skos:altLabel "iodine"@en ;
+        skos:altLabel "atomic iodine"@en ;
+        skos:altLabel "iodine atom"@en ;
+        skos:broader <chemical-species/inorganic-halogen-species> ;
+        skos:closeMatch  gemet:concept?cp=4483 ;
+        skos:notation "atomic-iodine" .
+
+<chemical-species/iodine-oxide>
+        a skos:Concept ;
+        rdfs:label "iodine oxide"@en ;
+        dct:description "iodine oxide, i.e. a molecule consisting of one iodine and one oxygen atom"@en ;
+        skos:prefLabel "IO"@en ;
+        skos:altLabel "iodine oxide"@en ;
+        skos:broader <chemical-species/inorganic-halogen-species> ;
+        skos:notation "iodine-oxide" .
+
+<chemical-species/atomic-fluorine>
+        a skos:Concept ;
+        rdfs:label "atomic fluorine"@en ;
+        dct:description "atomic fluorine"@en ;
+        skos:prefLabel "F"@en ;
+        skos:altLabel "fluorine"@en ;
+        skos:altLabel "atomic fluorine"@en ;
+        skos:altLabel "fluorine atom"@en ;
+        skos:broader <chemical-species/inorganic-halogen-species> ;
+        skos:closeMatch  gemet:concept?cp=3334 ;
+        skos:notation "atomic-fluorine" .
+
+<chemical-species/hydrogen-fluoride>
+        a skos:Concept ;
+        rdfs:label "hydrogen fluoride"@en ;
+        dct:description "hydrogen fluoride, i.e. a molecule consisting of one fluoride and one hydrogen atom"@en ;
+        skos:prefLabel "HF"@en ;
+        skos:altLabel "hydrogen fluoride"@en ;
+        skos:altLabel "fluorane"@en ;
+        skos:broader <chemical-species/inorganic-halogen-species> ;
+        skos:notation "hydrogen-fluoride" .
+
+<chemical-species/carbonyl-difluoride>
+        a skos:Concept ;
+        rdfs:label "carbonyl difluoride"@en ;
+        dct:description "carbonyl difluoride"@en ;
+        skos:prefLabel "COF2"@en ;
+        skos:altLabel "carbonyl difluoride"@en ;
+        skos:altLabel "fluorophosgene"@en ;
+        skos:altLabel "difuoromethanal"@en ;
+        skos:broader <chemical-species/inorganic-halogen-species> ;
+        skos:notation "carbonyl-difluoride" .
+
+<chemical-species/sulfur-hexafluoride>
+        a skos:Concept ;
+        rdfs:label "sulfur hexafluoride"@en ;
+        dct:description "sulfur hexafluoride, i.e. a molecule consisting of one sulfur, and six fluoride atom"@en ;
+        skos:prefLabel "SF6"@en ;
+        skos:altLabel "sulfur hexafluoride"@en ;
+        skos:altLabel "hexafluoro-lambda6-sulfane"@en ;
+        skos:altLabel "sulphur hexafluoride"@en ;
+        skos:altLabel "hexafluoro-lambda6-sulphane"@en ;
+        skos:broader <chemical-species/inorganic-halogen-species> ;
+        skos:broader <chemical-species/inorganic-sulfur-species> ;
+        skos:notation "sulfur-hexafluoride" .
+
+<chemical-species/radionuclide>
+        a skos:Concept ;
+        rdfs:label "radionuclide"@en ;
+        dct:description "an atom that exhibits radioactivity"@en ;
+        skos:prefLabel "radionuclide"@en ;
+        skos:closeMatch  gemet:concept?cp=6928 ;
+        skos:notation "radionuclide" .
+
+<chemical-species/noble-gas>
+        a skos:Concept ;
+        rdfs:label "noble gas"@en ;
+        dct:description "gaseous species in the atmosphere which consist of noble gases"@en ;
+        skos:prefLabel "noble gas"@en ;
+        skos:broader <chemical-species/inorganic-gas-phase-species> ;
+        skos:notation "noble-gas" .
+
+<chemical-species/helium>
+        a skos:Concept ;
+        rdfs:label "helium"@en ;
+        dct:description "Helium"@en ;
+        skos:prefLabel "He"@en ;
+        skos:altLabel "helium"@en ;
+        skos:broader <chemical-species/noble-gas> ;
+        skos:notation "helium" .
+
+<chemical-species/neon>
+        a skos:Concept ;
+        rdfs:label "neon"@en ;
+        dct:description "Neon"@en ;
+        skos:prefLabel "Ne"@en ;
+        skos:altLabel "neon"@en ;
+        skos:broader <chemical-species/noble-gas> ;
+        skos:notation "neon" .
+
+<chemical-species/argon>
+        a skos:Concept ;
+        rdfs:label "argon"@en ;
+        dct:description "Argon"@en ;
+        skos:prefLabel "Ar"@en ;
+        skos:altLabel "argon"@en ;
+        skos:broader <chemical-species/noble-gas> ;
+        skos:notation "argon" .
+
+<chemical-species/krypton>
+        a skos:Concept ;
+        rdfs:label "krypton"@en ;
+        dct:description "Krypton"@en ;
+        skos:prefLabel "Kr"@en ;
+        skos:altLabel "krypton"@en ;
+        skos:broader <chemical-species/noble-gas> ;
+        skos:notation "krypton" .
+
+<chemical-species/85-krypton>
+        a skos:Concept ;
+        rdfs:label "85-krypton"@en ;
+        dct:description "radioactive isotope of krypton with mass number 85"@en ;
+        skos:prefLabel "(85)Kr"@en ;
+        skos:altLabel "85-krypton"@en ;
+        skos:broader <chemical-species/noble-gas> ;
+        skos:broader <chemical-species/radionuclide> ;
+        skos:notation "85-krypton" .
+
+<chemical-species/xenon>
+        a skos:Concept ;
+        rdfs:label "xenon"@en ;
+        dct:description "Xenon"@en ;
+        skos:prefLabel "Xe"@en ;
+        skos:altLabel "xenon"@en ;
+        skos:broader <chemical-species/noble-gas> ;
+        skos:notation "xenon" .
+
+<chemical-species/radon>
+        a skos:Concept ;
+        rdfs:label "radon"@en ;
+        dct:description "Radon"@en ;
+        skos:prefLabel "Rn"@en ;
+        skos:altLabel "radon"@en ;
+        skos:broader <chemical-species/noble-gas> ;
+        skos:broader <chemical-species/radionuclide> ;
+        skos:exactMatch  gemet:concept?cp=6935 ;
+        skos:notation "radon" .
+
+<chemical-species/trace-metal>
+        a skos:Concept ;
+        rdfs:label "trace metal"@en ;
+        dct:description "species in the atmosphere which consist of or contain metal elements"@en ;
+        skos:prefLabel "trace metals"@en ;
+        skos:altLabel "trace metal"@en ;
+        skos:broader <chemical-species/inorganic-species> ;
+        skos:notation "trace-metal" .
+
+<chemical-species/heavy-metal>
+        a skos:Concept ;
+        rdfs:label "heavy metal"@en ;
+        dct:description "a metal whose specific gravity is approximately 5.0 or higher. (Source: MGH)"@en ;
+        skos:prefLabel "heavy metal"@en ;
+        skos:broader <chemical-species/trace-metal> ;
+        skos:closeMatch  gemet:concept?cp=3915 ;
+        skos:notation "heavy-metal" .
+
+<chemical-species/lead>
+        a skos:Concept ;
+        rdfs:label "lead"@en ;
+        dct:description "Lead"@en ;
+        skos:prefLabel "Pb"@en ;
+        skos:altLabel "lead"@en ;
+        skos:broader <chemical-species/trace-metal> ;
+        skos:broader <chemical-species/heavy-metal> ;
+        skos:exactMatch  gemet:concept?cp=4723 ;
+        skos:notation "lead" .
+
+<chemical-species/210-lead>
+        a skos:Concept ;
+        rdfs:label "210-lead"@en ;
+        dct:description "radioactive isotope of lead with mass number 210"@en ;
+        skos:prefLabel "(210)Pb"@en ;
+        skos:altLabel "lead 210"@en ;
+        skos:broader <chemical-species/trace-metal> ;
+        skos:broader <chemical-species/heavy-metal> ;
+        skos:broader <chemical-species/radionuclide> ;
+        skos:notation "210-lead" .
+
+<chemical-species/mercury>
+        a skos:Concept ;
+        rdfs:label "mercury"@en ;
+        dct:description "Mercury"@en ;
+        skos:prefLabel "Hg"@en ;
+        skos:altLabel "mercury"@en ;
+        skos:broader <chemical-species/trace-metal> ;
+        skos:broader <chemical-species/heavy-metal> ;
+        skos:exactMatch  gemet:concept?cp=5154 ;
+        skos:notation "mercury" .
+
+<chemical-species/phosphorus>
+        a skos:Concept ;
+        rdfs:label "phosphorus"@en ;
+        dct:description "Phosphorus"@en ;
+        skos:prefLabel "P"@en ;
+        skos:altLabel "phosphorus"@en ;
+        skos:broader <chemical-species/trace-metal> ;
+        skos:exactMatch  gemet:concept?cp=6196 ;
+        skos:notation "phosphorus" .
+
+<chemical-species/cadmium>
+        a skos:Concept ;
+        rdfs:label "cadmium"@en ;
+        dct:description "Cadmium"@en ;
+        skos:prefLabel "Cd"@en ;
+        skos:altLabel "cadmium"@en ;
+        skos:broader <chemical-species/trace-metal> ;
+        skos:broader <chemical-species/heavy-metal> ;
+        skos:exactMatch  gemet:concept?cp=1100 ;
+        skos:notation "cadmium" .
+
+<chemical-species/chromium>
+        a skos:Concept ;
+        rdfs:label "chromium"@en ;
+        dct:description "Chromium"@en ;
+        skos:prefLabel "Cr"@en ;
+        skos:altLabel "chromium"@en ;
+        skos:broader <chemical-species/trace-metal> ;
+        skos:broader <chemical-species/heavy-metal> ;
+        skos:exactMatch  gemet:concept?cp=1401 ;
+        skos:notation "chromium" .
+
+<chemical-species/cobalt>
+        a skos:Concept ;
+        rdfs:label "cobalt"@en ;
+        dct:description "Cobalt"@en ;
+        skos:prefLabel "Co"@en ;
+        skos:altLabel "cobalt"@en ;
+        skos:broader <chemical-species/trace-metal> ;
+        skos:broader <chemical-species/heavy-metal> ;
+        skos:exactMatch  gemet:concept?cp=1532 ;
+        skos:notation "cobalt" .
+
+<chemical-species/copper>
+        a skos:Concept ;
+        rdfs:label "copper"@en ;
+        dct:description "Copper"@en ;
+        skos:prefLabel "Cu"@en ;
+        skos:altLabel "copper"@en ;
+        skos:broader <chemical-species/trace-metal> ;
+        skos:broader <chemical-species/heavy-metal> ;
+        skos:exactMatch  gemet:concept?cp=1792 ;
+        skos:notation "copper" .
+
+<chemical-species/iron>
+        a skos:Concept ;
+        rdfs:label "iron"@en ;
+        dct:description "Iron"@en ;
+        skos:prefLabel "Fe"@en ;
+        skos:altLabel "iron"@en ;
+        skos:broader <chemical-species/trace-metal> ;
+        skos:broader <chemical-species/heavy-metal> ;
+        skos:exactMatch  gemet:concept?cp=4498 ;
+        skos:notation "iron" .
+
+<chemical-species/nickel>
+        a skos:Concept ;
+        rdfs:label "nickel"@en ;
+        dct:description "Nickel"@en ;
+        skos:prefLabel "Ni"@en ;
+        skos:altLabel "nickel"@en ;
+        skos:broader <chemical-species/trace-metal> ;
+        skos:broader <chemical-species/heavy-metal> ;
+        skos:exactMatch  gemet:concept?cp=5589 ;
+        skos:notation "nickel" .
+
+<chemical-species/antimony>
+        a skos:Concept ;
+        rdfs:label "antimony"@en ;
+        dct:description "Antimony"@en ;
+        skos:prefLabel "Sb"@en ;
+        skos:altLabel "antimony"@en ;
+        skos:broader <chemical-species/trace-metal> ;
+        skos:broader <chemical-species/heavy-metal> ;
+        skos:notation "antimony" .
+
+<chemical-species/tin>
+        a skos:Concept ;
+        rdfs:label "tin"@en ;
+        dct:description "Tin (element)"@en ;
+        skos:prefLabel "Sn"@en ;
+        skos:altLabel "tin"@en ;
+        skos:broader <chemical-species/trace-metal> ;
+        skos:broader <chemical-species/heavy-metal> ;
+        skos:exactMatch  gemet:concept?cp=8490 ;
+        skos:notation "tin" .
+
+<chemical-species/aluminium>
+        a skos:Concept ;
+        rdfs:label "aluminium"@en ;
+        dct:description "Aluminium (metal)"@en ;
+        skos:prefLabel "Al"@en ;
+        skos:altLabel "aluminium"@en ;
+        skos:altLabel "aluminum"@en ;
+        skos:broader <chemical-species/trace-metal> ;
+        skos:notation "aluminium" .
+
+<chemical-species/arsenic>
+        a skos:Concept ;
+        rdfs:label "arsenic"@en ;
+        dct:description "Arsenic"@en ;
+        skos:prefLabel "As"@en ;
+        skos:altLabel "arsenic"@en ;
+        skos:broader <chemical-species/trace-metal> ;
+        skos:notation "arsenic" .
+
+<chemical-species/manganese>
+        a skos:Concept ;
+        rdfs:label "manganese"@en ;
+        dct:description "Manganese"@en ;
+        skos:prefLabel "Mn"@en ;
+        skos:altLabel "manganese"@en ;
+        skos:broader <chemical-species/trace-metal> ;
+        skos:notation "manganese" .
+
+<chemical-species/vanadium>
+        a skos:Concept ;
+        rdfs:label "vanadium"@en ;
+        dct:description "Vanadium"@en ;
+        skos:prefLabel "V"@en ;
+        skos:altLabel "vanadium"@en ;
+        skos:broader <chemical-species/trace-metal> ;
+        skos:notation "vanadium" .
+
+<chemical-species/zinc>
+        a skos:Concept ;
+        rdfs:label "zinc"@en ;
+        dct:description "Zinc"@en ;
+        skos:prefLabel "Zn"@en ;
+        skos:altLabel "zinc"@en ;
+        skos:broader <chemical-species/trace-metal> ;
+        skos:notation "zinc" .
+
+<chemical-species/caesium>
+        a skos:Concept ;
+        rdfs:label "caesium"@en ;
+        dct:description "Caesium"@en ;
+        skos:prefLabel "Cs"@en ;
+        skos:altLabel "caesium"@en ;
+        skos:broader <chemical-species/trace-metal> ;
+        skos:exactMatch  gemet:concept?cp=1103 ;
+        skos:notation "caesium" .
+
+<chemical-species/beryllium>
+        a skos:Concept ;
+        rdfs:label "beryllium"@en ;
+        dct:description "Beryllium"@en ;
+        skos:prefLabel "Be"@en ;
+        skos:altLabel "beryllium"@en ;
+        skos:broader <chemical-species/trace-metal> ;
+        skos:exactMatch  gemet:concept?cp=781 ;
+        skos:notation "beryllium" .
+
+<chemical-species/barium>
+        a skos:Concept ;
+        rdfs:label "barium"@en ;
+        dct:description "Barium"@en ;
+        skos:prefLabel "Ba"@en ;
+        skos:altLabel "barium"@en ;
+        skos:broader <chemical-species/trace-metal> ;
+        skos:notation "barium" .
+
+<chemical-species/bismuth>
+        a skos:Concept ;
+        rdfs:label "bismuth"@en ;
+        dct:description "Bismuth"@en ;
+        skos:prefLabel "Bi"@en ;
+        skos:altLabel "bismuth"@en ;
+        skos:broader <chemical-species/trace-metal> ;
+        skos:notation "bismuth" .
+
+<chemical-species/cerium>
+        a skos:Concept ;
+        rdfs:label "cerium"@en ;
+        dct:description "Cerium"@en ;
+        skos:prefLabel "Ce"@en ;
+        skos:altLabel "cerium"@en ;
+        skos:broader <chemical-species/trace-metal> ;
+        skos:notation "cerium" .
+
+<chemical-species/lanthanum>
+        a skos:Concept ;
+        rdfs:label "lanthanum"@en ;
+        dct:description "Lanthanum"@en ;
+        skos:prefLabel "La"@en ;
+        skos:altLabel "lanthanum"@en ;
+        skos:broader <chemical-species/trace-metal> ;
+        skos:notation "lanthanum" .
+
+<chemical-species/lithium>
+        a skos:Concept ;
+        rdfs:label "lithium"@en ;
+        dct:description "Lithium"@en ;
+        skos:prefLabel "Li"@en ;
+        skos:altLabel "lithium"@en ;
+        skos:broader <chemical-species/trace-metal> ;
+        skos:notation "lithium" .
+
+<chemical-species/rubidium>
+        a skos:Concept ;
+        rdfs:label "rubidium"@en ;
+        dct:description "Rubidium"@en ;
+        skos:prefLabel "Rb"@en ;
+        skos:altLabel "rubidium"@en ;
+        skos:broader <chemical-species/trace-metal> ;
+        skos:notation "rubidium" .
+
+<chemical-species/selenium>
+        a skos:Concept ;
+        rdfs:label "selenium"@en ;
+        dct:description "Selenium"@en ;
+        skos:prefLabel "Se"@en ;
+        skos:altLabel "selenium"@en ;
+        skos:broader <chemical-species/trace-metal> ;
+        skos:notation "selenium" .
+
+<chemical-species/strontium>
+        a skos:Concept ;
+        rdfs:label "strontium"@en ;
+        dct:description "Strontium"@en ;
+        skos:prefLabel "Sr"@en ;
+        skos:altLabel "strontium"@en ;
+        skos:broader <chemical-species/trace-metal> ;
+        skos:notation "strontium" .
+
+<chemical-species/tallium>
+        a skos:Concept ;
+        rdfs:label "tallium"@en ;
+        dct:description "Tallium"@en ;
+        skos:prefLabel "Tl"@en ;
+        skos:altLabel "tallium"@en ;
+        skos:broader <chemical-species/trace-metal> ;
+        skos:notation "tallium" .
+
+<chemical-species/thorium>
+        a skos:Concept ;
+        rdfs:label "thorium"@en ;
+        dct:description "Thorium"@en ;
+        skos:prefLabel "Th"@en ;
+        skos:altLabel "thorium"@en ;
+        skos:broader <chemical-species/trace-metal> ;
+        skos:notation "thorium" .
+
+<chemical-species/titanium>
+        a skos:Concept ;
+        rdfs:label "titanium"@en ;
+        dct:description "Titanium"@en ;
+        skos:prefLabel "Ti"@en ;
+        skos:altLabel "titanium"@en ;
+        skos:broader <chemical-species/trace-metal> ;
+        skos:notation "titanium" .
+
+<chemical-species/uranium>
+        a skos:Concept ;
+        rdfs:label "uranium"@en ;
+        dct:description "Uranium"@en ;
+        skos:prefLabel "U"@en ;
+        skos:altLabel "uranium"@en ;
+        skos:broader <chemical-species/trace-metal> ;
+        skos:notation "uranium" .
+
+<chemical-species/7-beryllium>
+        a skos:Concept ;
+        rdfs:label "7-beryllium"@en ;
+        dct:description "Isotope of Beryllium with mass number 7"@en ;
+        skos:prefLabel "(7)Be"@en ;
+        skos:altLabel "7-beryllium"@en ;
+        skos:broader <chemical-species/trace-metal> ;
+        skos:broader <chemical-species/isotopically-substituted-molecule> ;
+        skos:notation "7-beryllium" .
+
+<chemical-species/10-beryllium>
+        a skos:Concept ;
+        rdfs:label "10-beryllium"@en ;
+        dct:description "Isotope of Beryllium with mass number 10"@en ;
+        skos:prefLabel "(10)Be"@en ;
+        skos:altLabel "10-beryllium"@en ;
+        skos:broader <chemical-species/trace-metal> ;
+        skos:broader <chemical-species/isotopically-substituted-molecule> ;
+        skos:notation "10-beryllium" .
+
+<chemical-species/dust>
+        a skos:Concept ;
+        rdfs:label "dust"@en ;
+        dct:description "mineral dust"@en ;
+        skos:prefLabel "dust"@en ;
+        skos:broader <chemical-species/inorganic-species-> ;
+        skos:broader <chemical-species/-particle-phase-species> ;
+        skos:notation "dust" .
+
+<chemical-species/volcanic-ash>
+        a skos:Concept ;
+        rdfs:label "volcanic ash"@en ;
+        dct:description "volcanic ash"@en ;
+        skos:prefLabel "ash"@en ;
+        skos:altLabel "volcanic ash"@en ;
+        skos:broader <chemical-species/inorganic-species-> ;
+        skos:broader <chemical-species/-particle-phase-species> ;
+        skos:notation "volcanic-ash" .
+
+<chemical-species/volatile-organic-species>
+        a skos:Concept ;
+        rdfs:label "volatile organic species"@en ;
+        dct:description "organic molecule in the atmosphere which can be in both, gas and particle phase"@en ;
+        skos:prefLabel "VOC"@en ;
+        skos:altLabel "volatile organic species"@en ;
+        skos:broader <chemical-species/organic-species> ;
+        skos:closeMatch  gemet:concept?cp=8993 ;
+        skos:notation "volatile-organic-species" .
+
+<chemical-species/non-methane-volatile-organic-species>
+        a skos:Concept ;
+        rdfs:label "non methane volatile organic species"@en ;
+        dct:description "organic molecule which is usually in gaseous phase in the atmosphere: all VOC except methane"@en ;
+        skos:prefLabel "NMVOC"@en ;
+        skos:altLabel "non methane volatile organic species"@en ;
+        skos:broader <chemical-species/organic-species> ;
+        skos:notation "non-methane-volatile-organic-species" .
+
+<chemical-species/cyanide>
+        a skos:Concept ;
+        rdfs:label "cyanide"@en ;
+        dct:description "a molecule containing the CN group and derived from HCN"@en ;
+        skos:prefLabel "cyanide"@en ;
+        skos:broader <chemical-species/volatile-organic-species> ;
+        skos:exactMatch  gemet:concept?cp=1933 ;
+        skos:notation "cyanide" .
+
+<chemical-species/hydrogen-cyanide>
+        a skos:Concept ;
+        rdfs:label "hydrogen cyanide"@en ;
+        dct:description "hydrogen cyanide, i.e. a molecule consisting of one carbon, one nitrogen, and one hydrogen atom"@en ;
+        skos:prefLabel "HCN"@en ;
+        skos:altLabel "hydrogen cyanide"@en ;
+        skos:altLabel "formonitrile"@en ;
+        skos:broader <chemical-species/volatile-organic-species> ;
+        skos:broader <chemical-species/cyanide> ;
+        skos:notation "hydrogen-cyanide" .
+
+<chemical-species/acetonitrile>
+        a skos:Concept ;
+        rdfs:label "acetonitrile"@en ;
+        dct:description "acetonitrile, i.e. an organic molecule consisting of a methyl group bound to a cyanide group"@en ;
+        skos:prefLabel "CH3CN"@en ;
+        skos:altLabel "acetonitrile"@en ;
+        skos:altLabel "aceto nitrile"@en ;
+        skos:altLabel "methyl cyanide"@en ;
+        skos:broader <chemical-species/volatile-organic-species> ;
+        skos:broader <chemical-species/cyanide> ;
+        skos:notation "acetonitrile" .
+
+<chemical-species/carbonyl-sulfide>
+        a skos:Concept ;
+        rdfs:label "carbonyl sulfide"@en ;
+        dct:description "carbonyl sulfide, i.e. a molecule consisting of one carbon, one oxygen, and one sulfur atom"@en ;
+        skos:prefLabel "OCS"@en ;
+        skos:altLabel "COS"@en ;
+        skos:altLabel "carbonyl sulfide"@en ;
+        skos:altLabel "carbonyl sulphide"@en ;
+        skos:broader <chemical-species/volatile-organic-species> ;
+        skos:notation "carbonyl-sulfide" .
+
+<chemical-species/dimethylsulfide>
+        a skos:Concept ;
+        rdfs:label "dimethylsulfide"@en ;
+        dct:description "dimethylsulfide, i.e. a molecule consisting of one sulfur atom and two methyl groups"@en ;
+        skos:prefLabel "DMS"@en ;
+        skos:altLabel "dimethylsulfide"@en ;
+        skos:altLabel "methylsulfanylmethane"@en ;
+        skos:altLabel "dimethylsulphide"@en ;
+        skos:altLabel "methylsulphanylmethane"@en ;
+        skos:hiddenLabel "dimethylsulphide"@en ;
+        skos:broader <chemical-species/volatile-organic-species> ;
+        skos:notation "dimethylsulfide" .
+
+<chemical-species/methane-sulfonic-acid>
+        a skos:Concept ;
+        rdfs:label "methane sulfonic acid"@en ;
+        dct:description "methane sulfonic acid, i.e. a monoprotic organosulfur acid with a sulfur atom bearing a methyl group, two double bonded oxygens and an hydroxyl group"@en ;
+        skos:prefLabel "MSA"@en ;
+        skos:altLabel "methane sulfonic acid"@en ;
+        skos:altLabel "methane sulphonic acid"@en ;
+        skos:broader <chemical-species/volatile-organic-species> ;
+        skos:notation "methane-sulfonic-acid" .
+
+<chemical-species/hydrocarbon>
+        a skos:Concept ;
+        rdfs:label "hydrocarbon"@en ;
+        dct:description "organic molecule consisting of carbon and hydrogen atoms"@en ;
+        skos:prefLabel "hydrocarbon"@en ;
+        skos:altLabel "HC"@en ;
+        skos:broader <chemical-species/volatile-organic-species> ;
+        skos:exactMatch  gemet:concept?cp=4091 ;
+        skos:notation "hydrocarbon" .
+
+<chemical-species/non-methane-hydrocarbon>
+        a skos:Concept ;
+        rdfs:label "non methane hydrocarbon"@en ;
+        dct:description "any hydrocarbon except methane"@en ;
+        skos:prefLabel "NMHC"@en ;
+        skos:altLabel "non methane hydrocarbon"@en ;
+        skos:broader <chemical-species/hydrocarbon> ;
+        skos:notation "non-methane-hydrocarbon" .
+
+<chemical-species/alkane>
+        a skos:Concept ;
+        rdfs:label "alkane"@en ;
+        dct:description "a hydrocarbon that consists entirely of single-bonded carbon and hydrogen atoms and lacks any other functional groups"@en ;
+        skos:prefLabel "alkane"@en ;
+        skos:broader <chemical-species/hydrocarbon> ;
+        skos:notation "alkane" .
+
+<chemical-species/methane>
+        a skos:Concept ;
+        rdfs:label "methane"@en ;
+        dct:description "a hydrocarbon consisting of one carbon atom and four hydrogen atoms"@en ;
+        skos:prefLabel "CH4"@en ;
+        skos:altLabel "methane"@en ;
+        skos:broader <chemical-species/alkane> ;
+        skos:exactMatch  gemet:concept?cp=5199 ;
+        skos:notation "methane" .
+
+<chemical-species/12c-methane>
+        a skos:Concept ;
+        rdfs:label "12c methane"@en ;
+        dct:description "12CH4: the most abundant isotopic composition of methane"@en ;
+        skos:prefLabel "C(12)H4"@en ;
+        skos:altLabel "\u2071\u2072CH\u2084"@en ;
+        skos:altLabel "12-C methane"@en ;
+        skos:broader <chemical-species/methane> ;
+        skos:notation "12c-methane" .
+
+<chemical-species/13c-methane>
+        a skos:Concept ;
+        rdfs:label "13c methane"@en ;
+        dct:description "13CH4: an isotope of methane"@en ;
+        skos:prefLabel "C(13)H4"@en ;
+        skos:altLabel "\u2071\u2073CH\u2084"@en ;
+        skos:altLabel "13-C methane"@en ;
+        skos:broader <chemical-species/methane> ;
+        skos:broader <chemical-species/isotopically-substituted-molecule> ;
+        skos:notation "13c-methane" .
+
+<chemical-species/ch3d>
+        a skos:Concept ;
+        rdfs:label "ch3d"@en ;
+        dct:description "CH3D: an isotope of methane"@en ;
+        skos:prefLabel "CH3D"@en ;
+        skos:altLabel "CH\u2083D"@en ;
+        skos:altLabel "deuteriated methane"@en ;
+        skos:broader <chemical-species/methane> ;
+        skos:broader <chemical-species/isotopically-substituted-molecule> ;
+        skos:notation "ch3d" .
+
+<chemical-species/ethane>
+        a skos:Concept ;
+        rdfs:label "ethane"@en ;
+        dct:description "an alkane (hydrocarbon) consisting of two carbon atoms and six hydrogen atoms"@en ;
+        skos:prefLabel "C2H6"@en ;
+        skos:altLabel "ethane"@en ;
+        skos:broader <chemical-species/alkane> ;
+        skos:notation "ethane" .
+
+<chemical-species/propane>
+        a skos:Concept ;
+        rdfs:label "propane"@en ;
+        dct:description "an alkane (hydrocarbon) consisting of three carbon atoms and eight hydrogen atoms"@en ;
+        skos:prefLabel "C3H8"@en ;
+        skos:altLabel "propane"@en ;
+        skos:broader <chemical-species/alkane> ;
+        skos:notation "propane" .
+
+<chemical-species/butanes>
+        a skos:Concept ;
+        rdfs:label "butanes"@en ;
+        dct:description "the sum of all alkanes (hydrocarbons) consisting of four carbon atoms and ten hydrogen atoms, i.e. the sum of butane and 2-methylpropane"@en ;
+        skos:prefLabel "C4H10"@en ;
+        skos:altLabel "butanes"@en ;
+        skos:broader <chemical-species/alkane> ;
+        skos:notation "butanes" .
+
+<chemical-species/butane>
+        a skos:Concept ;
+        rdfs:label "butane"@en ;
+        dct:description "an alkane (hydrocarbon) consisting of four carbon atoms and ten hydrogen atoms where all carbon atoms are arranged in a straight chain"@en ;
+        skos:prefLabel "C4H10"@en ;
+        skos:altLabel "n-C4H10"@en ;
+        skos:altLabel "n-butane"@en ;
+        skos:broader <chemical-species/alkane> ;
+        skos:notation "butane" .
+
+<chemical-species/2-methylpropane>
+        a skos:Concept ;
+        rdfs:label "2-methylpropane"@en ;
+        dct:description "an alkane (hydrocarbon) consisting of four carbon atoms and ten hydrogen atoms where one methyl group is branched off the second C atom of the straight chain"@en ;
+        skos:prefLabel "2-methylpropane"@en ;
+        skos:altLabel "i-C4H10"@en ;
+        skos:altLabel "i-butane"@en ;
+        skos:altLabel "isobutane"@en ;
+        skos:broader <chemical-species/alkane> ;
+        skos:notation "2-methylpropane" .
+
+<chemical-species/pentanes>
+        a skos:Concept ;
+        rdfs:label "pentanes"@en ;
+        dct:description "the sum of all alkanes (hydrocarbons) consisting of five carbon atoms and twelve hydrogen atoms, i.e. the sum of pentane, 2-methylbutane, and 2-dimethylpropane"@en ;
+        skos:prefLabel "C5H12"@en ;
+        skos:altLabel "pentanes"@en ;
+        skos:broader <chemical-species/alkane> ;
+        skos:notation "pentanes" .
+
+<chemical-species/pentane>
+        a skos:Concept ;
+        rdfs:label "pentane"@en ;
+        dct:description "an alkane (hydrocarbon) consisting of five  carbon atoms and twelve hydrogen atoms  where all carbon atoms are arranged in a straight chain"@en ;
+        skos:prefLabel "C5H12"@en ;
+        skos:altLabel "n-C5H12"@en ;
+        skos:altLabel "n-pentane"@en ;
+        skos:broader <chemical-species/alkane> ;
+        skos:notation "pentane" .
+
+<chemical-species/2-methylbutane>
+        a skos:Concept ;
+        rdfs:label "2-methylbutane"@en ;
+        dct:description "an alkane (hydrocarbon) consisting of five  carbon atoms and twelve hydrogen atoms  where one methyl group is branched off the second C atom of the straight chain"@en ;
+        skos:prefLabel "2-methylbutane"@en ;
+        skos:altLabel "i-C5H12"@en ;
+        skos:altLabel "i-pentane"@en ;
+        skos:altLabel "i-C5H12"@en ;
+        skos:broader <chemical-species/alkane> ;
+        skos:notation "2-methylbutane" .
+
+<chemical-species/2-dimethylpropane>
+        a skos:Concept ;
+        rdfs:label "2-dimethylpropane"@en ;
+        dct:description "an alkane (hydrocarbon) consisting of five  carbon atoms and twelve hydrogen atoms  where two methyl groups are branched off the second C atom of the straight chain"@en ;
+        skos:prefLabel "2-dimethylpropane"@en ;
+        skos:broader <chemical-species/alkane> ;
+        skos:notation "2-dimethylpropane" .
+
+<chemical-species/hexanes>
+        a skos:Concept ;
+        rdfs:label "hexanes"@en ;
+        dct:description "the sum of all alkanes (hydrocarbons) consisting of six carbon atoms and fourteen hydrogen atoms"@en ;
+        skos:prefLabel "C6H14"@en ;
+        skos:altLabel "hexanes"@en ;
+        skos:broader <chemical-species/alkane> ;
+        skos:notation "hexanes" .
+
+<chemical-species/2,2-dimethylbutane>
+        a skos:Concept ;
+        rdfs:label "2,2-dimethylbutane"@en ;
+        dct:description "2,2-dimethylbutane, i.e. an alkane consisting of a four carbon atoms chain with two methyl groups bound to the same internal carbon atom"@en ;
+        skos:prefLabel "C6H14"@en ;
+        skos:altLabel "2,2-dimethylbutane"@en ;
+        skos:altLabel "neohexane"@en ;
+        skos:broader <chemical-species/alkane> ;
+        skos:notation "2,2-dimethylbutane" .
+
+<chemical-species/2,3-dimethylbutane>
+        a skos:Concept ;
+        rdfs:label "2,3-dimethylbutane"@en ;
+        dct:description "2,3-dimethylbutane, i.e. an alkane consisting of a four carbon atoms chain with one methyl group bound to each internal carbon atom"@en ;
+        skos:prefLabel "C6H14"@en ;
+        skos:altLabel "2,3-dimethylbutane"@en ;
+        skos:altLabel "diisopropyl"@en ;
+        skos:broader <chemical-species/alkane> ;
+        skos:notation "2,3-dimethylbutane" .
+
+<chemical-species/2-methyl-pentane>
+        a skos:Concept ;
+        rdfs:label "2-methyl pentane"@en ;
+        dct:description "2-methyl pentane, i.e. an alkane consisting of a five carbon atoms chain with a methyl group bound to the second carbon atom"@en ;
+        skos:prefLabel "C6H14"@en ;
+        skos:altLabel "2-methyl pentane"@en ;
+        skos:altLabel "isohexane"@en ;
+        skos:broader <chemical-species/alkane> ;
+        skos:notation "2-methyl-pentane" .
+
+<chemical-species/3-methyl-pentane>
+        a skos:Concept ;
+        rdfs:label "3-methyl pentane"@en ;
+        dct:description "3-methyl pentane,  i.e. an alkane consisting of a five carbon atoms chain with a methyl group bound to the central carbon atom"@en ;
+        skos:prefLabel "C6H14"@en ;
+        skos:altLabel "3-methyl pentane"@en ;
+        skos:broader <chemical-species/alkane> ;
+        skos:notation "3-methyl-pentane" .
+
+<chemical-species/methyl-pentanes>
+        a skos:Concept ;
+        rdfs:label "methyl pentanes"@en ;
+        dct:description "sum of 2-methyl pentane and 3-methyl pentane"@en ;
+        skos:prefLabel "C6H14"@en ;
+        skos:altLabel "methyl pentanes"@en ;
+        skos:broader <chemical-species/alkane> ;
+        skos:notation "methyl-pentanes" .
+
+<chemical-species/heptanes>
+        a skos:Concept ;
+        rdfs:label "heptanes"@en ;
+        dct:description "the sum of all alkanes (hydrocarbons) consisting of seven carbon atoms and sixteen hydrogen atoms"@en ;
+        skos:prefLabel "C7H16"@en ;
+        skos:altLabel "heptanes"@en ;
+        skos:broader <chemical-species/alkane> ;
+        skos:notation "heptanes" .
+
+<chemical-species/n-heptane>
+        a skos:Concept ;
+        rdfs:label "n-heptane"@en ;
+        dct:description "n-heptane, i.e. a linear alkane with a seven carbon atoms chain"@en ;
+        skos:prefLabel "n-C7H16"@en ;
+        skos:altLabel "n-heptane"@en ;
+        skos:broader <chemical-species/alkane> ;
+        skos:notation "n-heptane" .
+
+<chemical-species/2-methyl-hexane>
+        a skos:Concept ;
+        rdfs:label "2-methyl hexane"@en ;
+        dct:description "2-methyl hexane, i.e. a six carbon atoms chain with a methyl group on the second carbon atom"@en ;
+        skos:prefLabel "C7H16"@en ;
+        skos:altLabel "2-methyl hexane"@en ;
+        skos:altLabel "isoheptane"@en ;
+        skos:altLabel "ethylisobutylmethane"@en ;
+        skos:broader <chemical-species/alkane> ;
+        skos:notation "2-methyl-hexane" .
+
+<chemical-species/3-methyl-hexane>
+        a skos:Concept ;
+        rdfs:label "3-methyl hexane"@en ;
+        dct:description "3-methyl hexane, i.e. a six carbon atoms chain with a methyl group on the second carbon atom"@en ;
+        skos:prefLabel "C7H16"@en ;
+        skos:altLabel "3-methyl hexane"@en ;
+        skos:broader <chemical-species/alkane> ;
+        skos:notation "3-methyl-hexane" .
+
+<chemical-species/methyl-cyclo-hexane>
+        a skos:Concept ;
+        rdfs:label "methyl cyclo hexane"@en ;
+        dct:description "methyl cyclo hexane, i.e. a six-membered alkane ring bearing a methyl group"@en ;
+        skos:prefLabel "C7H14"@en ;
+        skos:altLabel "methyl cyclo hexane"@en ;
+        skos:broader <chemical-species/alkane> ;
+        skos:notation "methyl-cyclo-hexane" .
+
+<chemical-species/octanes>
+        a skos:Concept ;
+        rdfs:label "octanes"@en ;
+        dct:description "the sum of all alkanes (hydrocarbons) consisting of eight carbon atoms and eighteen hydrogen atoms"@en ;
+        skos:prefLabel "C8H18"@en ;
+        skos:altLabel "octanes"@en ;
+        skos:broader <chemical-species/alkane> ;
+        skos:notation "octanes" .
+
+<chemical-species/n-octane>
+        a skos:Concept ;
+        rdfs:label "n-octane"@en ;
+        dct:description "n-octane, i.e. a linear alkane with a eight carbon atoms chain"@en ;
+        skos:prefLabel "C8H18"@en ;
+        skos:altLabel "n-octane"@en ;
+        skos:broader <chemical-species/alkane> ;
+        skos:notation "n-octane" .
+
+<chemical-species/2,2,4-trimethylpentane>
+        a skos:Concept ;
+        rdfs:label "2,2,4-trimethylpentane"@en ;
+        dct:description "2,2,4-trimethylpentane, i.e. an alkane consisting of a five carbon atoms chain with two methyl groups bound to the second and one methyl group on the fourth carbon atom, respectively"@en ;
+        skos:prefLabel "C8H18"@en ;
+        skos:altLabel "2,2,4-trimethylpentane"@en ;
+        skos:altLabel "isooctane"@en ;
+        skos:altLabel "iso-octane"@en ;
+        skos:broader <chemical-species/alkane> ;
+        skos:notation "2,2,4-trimethylpentane" .
+
+<chemical-species/n-nonane>
+        a skos:Concept ;
+        rdfs:label "n-nonane"@en ;
+        dct:description "n-nonane, i.e. a linear alkane with a nine carbon atoms chain"@en ;
+        skos:prefLabel "C9H20"@en ;
+        skos:altLabel "n-nonane"@en ;
+        skos:broader <chemical-species/alkane> ;
+        skos:notation "n-nonane" .
+
+<chemical-species/n-decane>
+        a skos:Concept ;
+        rdfs:label "n-decane"@en ;
+        dct:description "n-decane, i.e. a linear alkane with a ten carbon atoms chain"@en ;
+        skos:prefLabel "C10H22"@en ;
+        skos:altLabel "n-decane"@en ;
+        skos:broader <chemical-species/alkane> ;
+        skos:notation "n-decane" .
+
+<chemical-species/n-undecane>
+        a skos:Concept ;
+        rdfs:label "n-undecane"@en ;
+        dct:description "n-undecane, i.e. a linear alkane with a eleven carbon atoms chain"@en ;
+        skos:prefLabel "C11H24"@en ;
+        skos:altLabel "n-undecane"@en ;
+        skos:broader <chemical-species/alkane> ;
+        skos:notation "n-undecane" .
+
+<chemical-species/alkene>
+        a skos:Concept ;
+        rdfs:label "alkene"@en ;
+        dct:description "a hydrocarbon that consists of carbon and hydrogen atoms with at least one double bond between two carbon atoms and lacks any other functional groups"@en ;
+        skos:prefLabel "alkene"@en ;
+        skos:broader <chemical-species/hydrocarbon> ;
+        skos:notation "alkene" .
+
+<chemical-species/ethene>
+        a skos:Concept ;
+        rdfs:label "ethene"@en ;
+        dct:description "an alkene (hydrocarbon) consisting of two  carbon atoms and four hydrogen atoms"@en ;
+        skos:prefLabel "C2H4"@en ;
+        skos:altLabel "ethene"@en ;
+        skos:altLabel "ethylene"@en ;
+        skos:broader <chemical-species/alkene> ;
+        skos:exactMatch  nist:cgi/inchi/InChI%3D1S/C2H4/c1-2/h1-2H2 ;
+        skos:exactMatch  ofmpub:selectedSubstanceId=48545 ;
+        skos:notation "ethene" .
+
+<chemical-species/propene>
+        a skos:Concept ;
+        rdfs:label "propene"@en ;
+        dct:description "an alkene (hydrocarbon) consisting of three  carbon atoms and six hydrogen atoms"@en ;
+        skos:prefLabel "C3H6"@en ;
+        skos:altLabel "propene"@en ;
+        skos:broader <chemical-species/alkene> ;
+        skos:exactMatch  nist:cgi/inchi/InChI%3D1S/C3H6/c1-3-2/h3H%2C1H2%2C2H3 ;
+        skos:exactMatch  ofmpub:selectedSubstanceId=47173 ;
+        skos:notation "propene" .
+
+<chemical-species/butenes>
+        a skos:Concept ;
+        rdfs:label "butenes"@en ;
+        dct:description "the sum of all alkenes (hydrocarbons) consisting of four  carbon atoms and eight hydrogen atoms"@en ;
+        skos:prefLabel "C4H8"@en ;
+        skos:altLabel "butenes"@en ;
+        skos:broader <chemical-species/alkene> ;
+        skos:notation "butenes" .
+
+<chemical-species/1-butene>
+        a skos:Concept ;
+        rdfs:label "1-butene"@en ;
+        dct:description "an alkene (hydrocarbon) consisting of two  carbon atoms and four hydrogen atoms"@en ;
+        skos:prefLabel "1-butene"@en ;
+        skos:broader <chemical-species/alkene> ;
+        skos:exactMatch  nist:cgi/inchi/InChI%3D1S/C4H8/c1-3-4-2/h3H%2C1%2C4H2%2C2H3 ;
+        skos:exactMatch  ofmpub:selectedSubstanceId=47491 ;
+        skos:notation "1-butene" .
+
+<chemical-species/2-butene>
+        a skos:Concept ;
+        rdfs:label "2-butene"@en ;
+        dct:description "an alkene (hydrocarbon) consisting of two  carbon atoms and four hydrogen atoms"@en ;
+        skos:prefLabel "2-butene"@en ;
+        skos:broader <chemical-species/alkene> ;
+        skos:exactMatch  nist:cgi/inchi/InChI%3D1S/C4H8/c1-3-4-2/h3-4H%2C1-2H3 ;
+        skos:exactMatch  ofmpub:selectedSubstanceId=47489 ;
+        skos:notation "2-butene" .
+
+<chemical-species/trans-2-butene>
+        a skos:Concept ;
+        rdfs:label "trans-2-butene"@en ;
+        dct:description "trans-2-butene, i.e. a simple four carbon atoms alkene with a central double bond unit bearing methyl groups that are opposite to each other"@en ;
+        skos:prefLabel "t-C4H8"@en ;
+        skos:altLabel "trans-2-butene"@en ;
+        skos:altLabel "but-2-ene"@en ;
+        skos:altLabel "beta butylene"@en ;
+        skos:broader <chemical-species/alkene> ;
+        skos:exactMatch  nist:cgi/inchi/InChI%3D1S/C4H8/c1-3-4-2/h3-4H%2C1-2H3/b4-3%2B ;
+        skos:exactMatch  ofmpub:selectedSubstanceId=44707 ;
+        skos:notation "trans-2-butene" .
+
+<chemical-species/buta-1,3-diene>
+        a skos:Concept ;
+        rdfs:label "buta-1,3-diene"@en ;
+        dct:description "an alkene (hydrocarbon) consisting of two  carbon atoms and four hydrogen atoms"@en ;
+        skos:prefLabel "C4H6"@en ;
+        skos:altLabel "butadiene"@en ;
+        skos:altLabel "buta-1,3-diene"@en ;
+        skos:altLabel "1,3-butadiene"@en ;
+        skos:broader <chemical-species/alkene> ;
+        skos:exactMatch  nist:cgi/inchi/InChI%3D1S/C4H6/c1-3-4-2/h3-4H%2C1-2H2 ;
+        skos:exactMatch  ofmpub:selectedSubstanceId=47490 ;
+        skos:notation "buta-1,3-diene" .
+
+<chemical-species/pentenes>
+        a skos:Concept ;
+        rdfs:label "pentenes"@en ;
+        dct:description "an alkene (hydrocarbon) consisting of two  carbon atoms and four hydrogen atoms"@en ;
+        skos:prefLabel "C5H10"@en ;
+        skos:altLabel "pentenes"@en ;
+        skos:broader <chemical-species/alkene> ;
+        skos:notation "pentenes" .
+
+<chemical-species/trans-2-pentene>
+        a skos:Concept ;
+        rdfs:label "trans-2-pentene"@en ;
+        dct:description "trans-2-pentene, i.e. a simple five carbon atoms alkene with a double bond unit bearing a methyl and an ethyl group that are opposite to each other"@en ;
+        skos:prefLabel "t-C5H10"@en ;
+        skos:altLabel "trans-2-pentene"@en ;
+        skos:altLabel "pent-2-ene"@en ;
+        skos:altLabel "methylbut-1-ene"@en ;
+        skos:broader <chemical-species/alkene> ;
+        skos:exactMatch  nist:cgi/inchi/InChI%3D1S/C5H10/c1-3-5-4-2/h3%2C5H%2C4H2%2C1-2H3/b5-3%2B ;
+        skos:exactMatch  ofmpub:selectedSubstanceId=44399 ;
+        skos:notation "trans-2-pentene" .
+
+<chemical-species/2-methylbut-1-ene>
+        a skos:Concept ;
+        rdfs:label "2-methylbut-1-ene"@en ;
+        dct:description "2-methylbut-1-ene, i.e. an alkene with terminal double bond unit bearing a methyl and an ethyl group on the same carbon atom"@en ;
+        skos:prefLabel "C5H10"@en ;
+        skos:altLabel "2-methylbut-1-ene"@en ;
+        skos:altLabel "1-butene"@en ;
+        skos:altLabel "2-methylbutene"@en ;
+        skos:altLabel "1-isoamylene"@en ;
+        skos:broader <chemical-species/alkene> ;
+        skos:exactMatch  nist:cgi/inchi/InChI%3D1S/C5H10/c1-4-5(2)3/h2%2C4H2%2C1%2C3H3 ;
+        skos:notation "2-methylbut-1-ene" .
+
+<chemical-species/3-methylbut-1-ene>
+        a skos:Concept ;
+        rdfs:label "3-methylbut-1-ene"@en ;
+        dct:description "3-methylbut-1-ene, i.e. an alkene with terminal double bond unit bearing an isopropyl group on one carbon atom"@en ;
+        skos:prefLabel "C5H10"@en ;
+        skos:altLabel "3-methylbut-1-ene"@en ;
+        skos:altLabel "3-methyl-1-butene"@en ;
+        skos:altLabel "isopentene"@en ;
+        skos:altLabel "isopropylethylene"@en ;
+        skos:broader <chemical-species/alkene> ;
+        skos:exactMatch  nist:cgi/inchi/InChI%3D1S/C5H10/c1-4-5(2)3/h4-5H%2C1H2%2C2-3H3 ;
+        skos:notation "3-methylbut-1-ene" .
+
+<chemical-species/2-methylbut-2-ene>
+        a skos:Concept ;
+        rdfs:label "2-methylbut-2-ene"@en ;
+        dct:description "2-methylbut-2-ene, i.e. an alkene with a double bond unit bearing two and one methyl groups, respectively"@en ;
+        skos:prefLabel "C5H10"@en ;
+        skos:altLabel "2-methylbut-2-ene"@en ;
+        skos:altLabel "2-methyl-2-butene"@en ;
+        skos:altLabel "trimethylethylene"@en ;
+        skos:altLabel "2-butene"@en ;
+        skos:altLabel "n-amylene"@en ;
+        skos:broader <chemical-species/alkene> ;
+        skos:exactMatch  nist:cgi/inchi/InChI%3D1S/C5H10/c1-4-5(2)3/h4H%2C1-3H3 ;
+        skos:exactMatch  ofmpub:selectedSubstanceId=89823 ;
+        skos:notation "2-methylbut-2-ene" .
+
+<chemical-species/2-methylbuta-1,3-diene>
+        a skos:Concept ;
+        rdfs:label "2-methylbuta-1,3-diene"@en ;
+        dct:description "2-methylbuta-1,3-diene, i.e. an alkene with two conjugated double bond units with a methyl group on the second carbon atom"@en ;
+        skos:prefLabel "isoprene"@en ;
+        skos:altLabel "2-methylbuta-1,3-diene"@en ;
+        skos:altLabel "C5H8"@en ;
+        skos:broader <chemical-species/alkene> ;
+        skos:exactMatch  nist:cgi/inchi/InChI%3D1S/C5H8/c1-4-5(2)3/h4H%2C1-2H2%2C3H3 ;
+        skos:exactMatch  ofmpub:selectedSubstanceId=48755 ;
+        skos:notation "2-methylbuta-1,3-diene" .
+
+<chemical-species/terpenes>
+        a skos:Concept ;
+        rdfs:label "terpenes"@en ;
+        dct:description "the sum of all alkenes (hydrocarbons) consisting of ten carbon atoms and sixteen hydrogen atoms, sometimes also including sesquiterpenes, i.e. molecules with fifteen carbon atoms and twentyfour hydrogen atoms"@en ;
+        skos:prefLabel "terpenes"@en ;
+        skos:altLabel "C10H16"@en ;
+        skos:broader <chemical-species/alkene> ;
+        skos:notation "terpenes" .
+
+<chemical-species/alpha-pinene>
+        a skos:Concept ;
+        rdfs:label "alpha-pinene"@en ;
+        dct:description "alpha-pinene, i.e. a bridged bycyclic terpene with an internal double bond"@en ;
+        skos:prefLabel "a-pinene"@en ;
+        skos:altLabel "4,6,6-trimethylbicyclo(3.1.1)hept-3-ene"@en ;
+        skos:broader <chemical-species/alkene> ;
+        skos:exactMatch  nist:cgi/inchi/InChI%3D1S/C10H16/c1-7-4-5-8-6-9(7)10(8%2C2)3/h4%2C8-9H%2C5-6H2%2C1-3H3 ;
+        skos:exactMatch  ofmpub:selectedSubstanceId=48668 ;
+        skos:notation "alpha-pinene" .
+
+<chemical-species/beta-pinene>
+        a skos:Concept ;
+        rdfs:label "beta-pinene"@en ;
+        dct:description "beta-pinene, i.e. a bridged bycyclic terpene with an external double bond"@en ;
+        skos:prefLabel "b-pinene"@en ;
+        skos:altLabel "6,6-dimethyl-4-methylidenebicyclo(3.1.1)heptane"@en ;
+        skos:broader <chemical-species/alkene> ;
+        skos:exactMatch  ofmpub:selectedSubstanceId=46731 ;
+        skos:notation "beta-pinene" .
+
+<chemical-species/limonene>
+        a skos:Concept ;
+        rdfs:label "limonene"@en ;
+        dct:description "limonene, i.e. a terpene with an unsaturated six-membered ring bearing a methyl group and a isopropenyl group (external double bond)"@en ;
+        skos:prefLabel "limonene"@en ;
+        skos:altLabel "1-methyl-4-prop-1-en-2-ylcyclohexene"@en ;
+        skos:broader <chemical-species/alkene> ;
+        skos:exactMatch  ofmpub:selectedSubstanceId=46540 ;
+        skos:notation "limonene" .
+
+<chemical-species/myrcene>
+        a skos:Concept ;
+        rdfs:label "myrcene"@en ;
+        dct:description "myrcene, i.e. a terpene with a eight carbon atom chain bearing three double bonds, two of which external and conjugated and one internal"@en ;
+        skos:prefLabel "myrcene"@en ;
+        skos:altLabel "2-methyl-6-methylideneocta-1,7-diene"@en ;
+        skos:broader <chemical-species/alkene> ;
+        skos:exactMatch  nist:cgi/inchi/InChI%3D1S/C10H16/c1-5-10(4)8-6-7-9(2)3/h5%2C7H%2C1%2C4%2C6%2C8H2%2C2-3H3 ;
+        skos:exactMatch  ofmpub:selectedSubstanceId=47208 ;
+        skos:notation "myrcene" .
+
+<chemical-species/beta-caryophyllene>
+        a skos:Concept ;
+        rdfs:label "beta-Caryophyllene"@en ;
+        dct:description "beta-Caryophyllene, i.e. a bycyclic sesquiterpene (with 15 carbon atoms) with an internal and an external double bond on the large nine-membered ring"@en ;
+        skos:prefLabel "b-Caryophyllene"@en ;
+        skos:altLabel "(1R,4E,9S)-4,11,11-trimethyl-8-methylidenebicyclo(7.2.0)undec-4-ene"@en ;
+        skos:broader <chemical-species/alkene> ;
+        skos:notation "beta-caryophyllene" .
+
+<chemical-species/alkyne>
+        a skos:Concept ;
+        rdfs:label "alkyne"@en ;
+        dct:description "a hydrocarbon that consists of carbon and hydrogen atoms with at least one triple bond between two carbon atoms and lacks any other functional groups"@en ;
+        skos:prefLabel "alkyne"@en ;
+        skos:broader <chemical-species/hydrocarbon> ;
+        skos:notation "alkyne" .
+
+<chemical-species/ethyne>
+        a skos:Concept ;
+        rdfs:label "ethyne"@en ;
+        dct:description "an alkyne (hydrocarbon) consisting of two  carbon atoms and two hydrogen atoms"@en ;
+        skos:prefLabel "C2H2"@en ;
+        skos:altLabel "ethyne"@en ;
+        skos:altLabel "acetylene"@en ;
+        skos:broader <chemical-species/alkyne> ;
+        skos:notation "ethyne" .
+
+<chemical-species/propyne>
+        a skos:Concept ;
+        rdfs:label "propyne"@en ;
+        dct:description "an alkyne (hydrocarbon) consisting of three  carbon atoms and four hydrogen atoms"@en ;
+        skos:prefLabel "C3H4"@en ;
+        skos:altLabel "propyne"@en ;
+        skos:altLabel "methylacetylene"@en ;
+        skos:altLabel "allylene"@en ;
+        skos:broader <chemical-species/alkyne> ;
+        skos:notation "propyne" .
+
+<chemical-species/aromatic-hydrocarbon>
+        a skos:Concept ;
+        rdfs:label "aromatic hydrocarbon"@en ;
+        dct:description "a hydrocarbon with a ring structure consisting of six or more carbon atoms"@en ;
+        skos:prefLabel "aromatic hydrocarbon"@en ;
+        skos:broader <chemical-species/hydrocarbon> ;
+        skos:closeMatch  gemet:concept?cp=562 ;
+        skos:notation "aromatic-hydrocarbon" .
+
+<chemical-species/benzene>
+        a skos:Concept ;
+        rdfs:label "benzene"@en ;
+        dct:description "an aromatic hydrocarbon with six carbon atoms and six hydrogen atoms"@en ;
+        skos:prefLabel "C6H6"@en ;
+        skos:altLabel "benzene"@en ;
+        skos:altLabel "benzol"@en ;
+        skos:broader <chemical-species/aromatic-hydrocarbon> ;
+        skos:exactMatch  gemet:concept?cp=776 ;
+        skos:exactMatch  nist:cgi/inchi/InChI%3D1S/C6H6/c1-2-4-6-5-3-1/h1-6H ;
+        skos:exactMatch  ofmpub:selectedSubstanceId=98385 ;
+        skos:notation "benzene" .
+
+<chemical-species/toluene>
+        a skos:Concept ;
+        rdfs:label "toluene"@en ;
+        dct:description "an aromatic hydrocarbon with six carbon atoms in a ring structure and one methyl group"@en ;
+        skos:prefLabel "toluene"@en ;
+        skos:altLabel "methyl benzene"@en ;
+        skos:broader <chemical-species/aromatic-hydrocarbon> ;
+        skos:exactMatch  nist:cgi/inchi/InChI%3D1S/C7H8/c1-7-5-3-2-4-6-7/h2-6H,1H3 ;
+        skos:notation "toluene" .
+
+<chemical-species/xylenes>
+        a skos:Concept ;
+        rdfs:label "xylenes"@en ;
+        dct:description "the sum of aromatic hydrocarbon with six carbon atoms in a ring structure and two methyl groups in ortho-, para-, or meta-arrangement"@en ;
+        skos:prefLabel "xylenes"@en ;
+        skos:broader <chemical-species/aromatic-hydrocarbon> ;
+        skos:notation "xylenes" .
+
+<chemical-species/o-xylene>
+        a skos:Concept ;
+        rdfs:label "o-xylene"@en ;
+        dct:description "an aromatic hydrocarbon with six carbon atoms in a ring structure and two methyl groups in ortho-configuration, i.e. on opposite ends of the ring"@en ;
+        skos:prefLabel "o-xylene"@en ;
+        skos:broader <chemical-species/aromatic-hydrocarbon> ;
+        skos:notation "o-xylene" .
+
+<chemical-species/m-xylene>
+        a skos:Concept ;
+        rdfs:label "m-xylene"@en ;
+        dct:description "an aromatic hydrocarbon with six carbon atoms in a ring structure and two methyl groups in meta-configuration, i.e. with one C atom in between"@en ;
+        skos:prefLabel "m-xylene"@en ;
+        skos:broader <chemical-species/aromatic-hydrocarbon> ;
+        skos:notation "m-xylene" .
+
+<chemical-species/p-xylene>
+        a skos:Concept ;
+        rdfs:label "p-xylene"@en ;
+        dct:description "an aromatic hydrocarbon with six carbon atoms in a ring structure and two methyl groups in para-configuration, i.e. on neighbouring positions"@en ;
+        skos:prefLabel "p-xylene"@en ;
+        skos:broader <chemical-species/aromatic-hydrocarbon> ;
+        skos:notation "p-xylene" .
+
+<chemical-species/1-2-3-trimethylbenzene>
+        a skos:Concept ;
+        rdfs:label "1-2-3-trimethylbenzene"@en ;
+        dct:description "1-2-3-trimethylbenzene"@en ;
+        skos:prefLabel "1-2-3-trimethylbenzene"@en ;
+        skos:altLabel "1-2-3-trimethylbenzene"@en ;
+        skos:broader <chemical-species/aromatic-hydrocarbon> ;
+        skos:notation "1-2-3-trimethylbenzene" .
+
+<chemical-species/1-2-4-trimethylbenzene>
+        a skos:Concept ;
+        rdfs:label "1-2-4-trimethylbenzene"@en ;
+        dct:description "1-2-4-trimethylbenzene"@en ;
+        skos:prefLabel "1-2-4-trimethylbenzene"@en ;
+        skos:altLabel "1-2-4-trimethylbenzene"@en ;
+        skos:broader <chemical-species/aromatic-hydrocarbon> ;
+        skos:notation "1-2-4-trimethylbenzene" .
+
+<chemical-species/1-3-5-trimethylbenzene>
+        a skos:Concept ;
+        rdfs:label "1-3-5-trimethylbenzene"@en ;
+        dct:description "1-3-5-trimethylbenzene"@en ;
+        skos:prefLabel "1-3-5-trimethylbenzene"@en ;
+        skos:altLabel "1-3-5-trimethylbenzene"@en ;
+        skos:broader <chemical-species/aromatic-hydrocarbon> ;
+        skos:notation "1-3-5-trimethylbenzene" .
+
+<chemical-species/ethylbenzene>
+        a skos:Concept ;
+        rdfs:label "ethylbenzene"@en ;
+        dct:description "ethylbenzene"@en ;
+        skos:prefLabel "ethylbenzene"@en ;
+        skos:altLabel "ethylbenzene"@en ;
+        skos:broader <chemical-species/aromatic-hydrocarbon> ;
+        skos:notation "ethylbenzene" .
+
+<chemical-species/2-ethyltoluene>
+        a skos:Concept ;
+        rdfs:label "2-ethyltoluene"@en ;
+        dct:description "2-ethyltoluene"@en ;
+        skos:prefLabel "2-ethyltoluene"@en ;
+        skos:altLabel "2-ethyltoluene"@en ;
+        skos:broader <chemical-species/aromatic-hydrocarbon> ;
+        skos:notation "2-ethyltoluene" .
+
+<chemical-species/3-ethyltoluene>
+        a skos:Concept ;
+        rdfs:label "3-ethyltoluene"@en ;
+        dct:description "3-ethyltoluene"@en ;
+        skos:prefLabel "3-ethyltoluene"@en ;
+        skos:altLabel "3-ethyltoluene"@en ;
+        skos:broader <chemical-species/aromatic-hydrocarbon> ;
+        skos:notation "3-ethyltoluene" .
+
+<chemical-species/4-ethyltoluene>
+        a skos:Concept ;
+        rdfs:label "4-ethyltoluene"@en ;
+        dct:description "4-ethyltoluene"@en ;
+        skos:prefLabel "4-ethyltoluene"@en ;
+        skos:altLabel "4-ethyltoluene"@en ;
+        skos:broader <chemical-species/aromatic-hydrocarbon> ;
+        skos:notation "4-ethyltoluene" .
+
+<chemical-species/propylbenzene>
+        a skos:Concept ;
+        rdfs:label "propylbenzene"@en ;
+        dct:description "propylbenzene"@en ;
+        skos:prefLabel "propylbenzene"@en ;
+        skos:altLabel "propylbenzene"@en ;
+        skos:broader <chemical-species/aromatic-hydrocarbon> ;
+        skos:notation "propylbenzene" .
+
+<chemical-species/isopropylbenzene>
+        a skos:Concept ;
+        rdfs:label "isopropylbenzene"@en ;
+        dct:description "isopropylbenzene"@en ;
+        skos:prefLabel "isopropylbenzene"@en ;
+        skos:altLabel "isopropylbenzene"@en ;
+        skos:broader <chemical-species/aromatic-hydrocarbon> ;
+        skos:notation "isopropylbenzene" .
+
+<chemical-species/phenylethene>
+        a skos:Concept ;
+        rdfs:label "phenylethene"@en ;
+        dct:description "phenylethene"@en ;
+        skos:prefLabel "phenylethene"@en ;
+        skos:altLabel "phenylethene"@en ;
+        skos:altLabel "styrene"@en ;
+        skos:altLabel "ethenylbenzene"@en ;
+        skos:altLabel "vinylbenzene"@en ;
+        skos:broader <chemical-species/aromatic-hydrocarbon> ;
+        skos:notation "phenylethene" .
+
+<chemical-species/benzopyrene>
+        a skos:Concept ;
+        rdfs:label "benzopyrene"@en ;
+        dct:description "a five-ring hydrocarbon with the formula C20H12"@en ;
+        skos:prefLabel "benzopyrene"@en ;
+        skos:broader <chemical-species/aromatic-hydrocarbon> ;
+        skos:exactMatch  gemet:concept?cp=777 ;
+        skos:notation "benzopyrene" .
+
+<chemical-species/phenol>
+        a skos:Concept ;
+        rdfs:label "phenol"@en ;
+        dct:description "an aromatic alcohol derived from benzene"@en ;
+        skos:prefLabel "phenol"@en ;
+        skos:altLabel "carbolic acid"@en ;
+        skos:altLabel "C6H5OH"@en ;
+        skos:altLabel "C\u2086H\u2085OH"@en ;
+        skos:broader <chemical-species/aromatic-hydrocarbon> ;
+        skos:broader <chemical-species/alcohol> ;
+        skos:exactMatch  gemet:concept?cp=6183 ;
+        skos:notation "phenol" .
+
+<chemical-species/dioxin>
+        a skos:Concept ;
+        rdfs:label "dioxin"@en ;
+        dct:description "a heterocyclic, organic species with the formula C4H4O2. It exists in the forms of 1,2-dioxin and 1,4-dioxin."@en ;
+        skos:prefLabel "dioxin"@en ;
+        skos:altLabel "C\u2084H\u2084O\u2082"@en ;
+        skos:broader <chemical-species/volatile-organic-species> ;
+        skos:exactMatch  gemet:concept?cp=2207 ;
+        skos:notation "dioxin" .
+
+<chemical-species/furan>
+        a skos:Concept ;
+        rdfs:label "furan"@en ;
+        dct:description "a heterocyclic, organic species with a five-membered ring and the formula C4H4O"@en ;
+        skos:prefLabel "furan"@en ;
+        skos:altLabel "C\u2084H\u2084O"@en ;
+        skos:broader <chemical-species/volatile-organic-species> ;
+        skos:exactMatch  gemet:concept?cp=3536 ;
+        skos:notation "furan" .
+
+<chemical-species/halogenated-hydrocarbon>
+        a skos:Concept ;
+        rdfs:label "halogenated hydrocarbon"@en ;
+        dct:description "a hydrocarbon with one or more halogen atoms replacing hydrogen atoms"@en ;
+        skos:prefLabel "halogenated hydrocarbon"@en ;
+        skos:broader <chemical-species/volatile-organic-species> ;
+        skos:exactMatch  gemet:concept?cp=3820 ;
+        skos:notation "halogenated-hydrocarbon" .
+
+<chemical-species/chlorinated-hydrocarbon>
+        a skos:Concept ;
+        rdfs:label "chlorinated hydrocarbon"@en ;
+        dct:description "a hydrocarbon with one or more chlorine atoms replacing hydrogen atoms"@en ;
+        skos:prefLabel "chlorinated hydrocarbon"@en ;
+        skos:broader <chemical-species/halogenated-hydrocarbon> ;
+        skos:notation "chlorinated-hydrocarbon" .
+
+<chemical-species/perfluorinated-species>
+        a skos:Concept ;
+        rdfs:label "perfluorinated species"@en ;
+        dct:description "a volatile organic species containing only C-C and C-F bonds as well as possible functional groups"@en ;
+        skos:prefLabel "PFC"@en ;
+        skos:altLabel "perfluorinated species"@en ;
+        skos:broader <chemical-species/halogenated-hydrocarbon> ;
+        skos:notation "perfluorinated-species" .
+
+<chemical-species/chloroethylene>
+        a skos:Concept ;
+        rdfs:label "chloroethylene"@en ;
+        dct:description "a hydrocarbon with two carbon atoms with a double bond, three hydrogen atoms, and one chlorine atom"@en ;
+        skos:prefLabel "C2H3Cl"@en ;
+        skos:altLabel "chloroethylene"@en ;
+        skos:altLabel "vinylchloride"@en ;
+        skos:altLabel "C\u2082H\u2083Cl"@en ;
+        skos:broader <chemical-species/chlorinated-hydrocarbon> ;
+        skos:exactMatch  gemet:concept?cp=1378 ;
+        skos:notation "chloroethylene" .
+
+<chemical-species/trichloroethene>
+        a skos:Concept ;
+        rdfs:label "trichloroethene"@en ;
+        dct:description "a hydrocarbon with two carbon atoms with a double bond, one hydrogen atom, and three chlorine atoms - commonly used as solvent"@en ;
+        skos:prefLabel "C2HCl3"@en ;
+        skos:altLabel "trichloroethene"@en ;
+        skos:altLabel "1,1,2-trichloroethene"@en ;
+        skos:altLabel "1,1-dichloro-2-chloroethylene"@en ;
+        skos:altLabel "1-chloro-2,2-dichloroethylene"@en ;
+        skos:altLabel "acetylene trichloride"@en ;
+        skos:altLabel "triclene"@en ;
+        skos:altLabel "HCC-1120"@en ;
+        skos:notation "trichloroethene" .
+
+<chemical-species/1,4-dichlorobenzene(p)>
+        a skos:Concept ;
+        rdfs:label "1,4-Dichlorobenzene(p)"@en ;
+        dct:description "an aromatic hydrocarbon with six carbon atoms, four hydrogen atoms, and two chlorine atoms"@en ;
+        skos:prefLabel "1,4-dichlorobenzene(p)"@en ;
+        skos:broader <chemical-species/aromatic-hydrocarbon> ;
+        skos:broader <chemical-species/chlorinated-hydrocarbon> ;
+        skos:notation "1,4-dichlorobenzene(p)" .
+
+<chemical-species/chlorophenol>
+        a skos:Concept ;
+        rdfs:label "chlorophenol"@en ;
+        dct:description "an aromatic hydrocarbon with a hydroxy group and substitution of one or more hydrogen atoms by chlorine"@en ;
+        skos:prefLabel "chlorophenol"@en ;
+        skos:broader <chemical-species/chlorinated-hydrocarbon> ;
+        skos:exactMatch  gemet:concept?cp=1389 ;
+        skos:notation "chlorophenol" .
+
+<chemical-species/pentachlorophenol>
+        a skos:Concept ;
+        rdfs:label "pentachlorophenol"@en ;
+        dct:description "a phenol in which all 5 hydrogen atoms are substituted by chlorine atoms."@en ;
+        skos:prefLabel "pentachlorophenol"@en ;
+        skos:altLabel "C6Cl5OH"@en ;
+        skos:altLabel "C\u2086Cl\u2085OH"@en ;
+        skos:exactMatch  gemet:concept?cp=6106 ;
+        skos:notation "pentachlorophenol" .
+
+<chemical-species/tetrachloroethene>
+        a skos:Concept ;
+        rdfs:label "tetrachloroethene"@en ;
+        dct:description "a halogenated, organic molecule with two carbon atoms joined with a double bond and four chlorine atoms"@en ;
+        skos:prefLabel "tetrachloroethene"@en ;
+        skos:altLabel "tetrachloroethylene"@en ;
+        skos:altLabel "perchloroethylene"@en ;
+        skos:altLabel "per"@en ;
+        skos:altLabel "C2Cl4"@en ;
+        skos:altLabel "C\u2082Cl\u2084"@en ;
+        skos:broader <chemical-species/chlorinated-hydrocarbon> ;
+        skos:exactMatch  gemet:concept?cp=6109 ;
+        skos:notation "tetrachloroethene" .
+
+<chemical-species/hexachlorobenzene>
+        a skos:Concept ;
+        rdfs:label "hexachlorobenzene"@en ;
+        dct:description "a halogenated, organic molecule derived from benzene, where all 6 hydrogen atoms are replaced with chlorine atoms"@en ;
+        skos:prefLabel "hexachlorobenzene"@en ;
+        skos:altLabel "PCB"@en ;
+        skos:altLabel "perchlorobenzene"@en ;
+        skos:altLabel "benzene hexachloride"@en ;
+        skos:broader <chemical-species/chlorinated-hydrocarbon> ;
+        skos:broader <chemical-species/polychlorinated-pesticide> ;
+        skos:notation "hexachlorobenzene" .
+
+<chemical-species/chlorofluorocarbon>
+        a skos:Concept ;
+        rdfs:label "chlorofluorocarbon"@en ;
+        dct:description "gases containing chlorine, fluorine, and carbon atoms, and potentially hydrogen atoms"@en ;
+        skos:prefLabel "CFC"@en ;
+        skos:altLabel "chlorofluorocarbon"@en ;
+        skos:broader <chemical-species/volatile-organic-species> ;
+        skos:closeMatch  gemet:concept?cp=1381 ;
+        skos:notation "chlorofluorocarbon" .
+
+<chemical-species/hcfc>
+        a skos:Concept ;
+        rdfs:label "hcfc"@en ;
+        dct:description "partially halogenated chlorofluorocarbon molecule"@en ;
+        skos:prefLabel "HCFC"@en ;
+        skos:altLabel "hcfc"@en ;
+        skos:broader <chemical-species/chlorofluorocarbon> ;
+        skos:exactMatch  gemet:concept?cp=1385 ;
+        skos:notation "hcfc" .
+
+<chemical-species/carbon-tetrachloride>
+        a skos:Concept ;
+        rdfs:label "carbon tetrachloride"@en ;
+        dct:description "carbon tetrachloride"@en ;
+        skos:prefLabel "CCl4"@en ;
+        skos:altLabel "carbon tetrachloride"@en ;
+        skos:broader <chemical-species/chlorofluorocarbon> ;
+        skos:notation "carbon-tetrachloride" .
+
+<chemical-species/trichlorofluoromethane>
+        a skos:Concept ;
+        rdfs:label "trichlorofluoromethane"@en ;
+        dct:description "trichlorofluoromethane"@en ;
+        skos:prefLabel "CFC-11"@en ;
+        skos:altLabel "trichlorofluoromethane"@en ;
+        skos:altLabel "fluorotrichloromethane"@en ;
+        skos:altLabel "CCl3F"@en ;
+        skos:broader <chemical-species/chlorofluorocarbon> ;
+        skos:notation "trichlorofluoromethane" .
+
+<chemical-species/dichlorodifluoromethane>
+        a skos:Concept ;
+        rdfs:label "dichlorodifluoromethane"@en ;
+        dct:description "dichlorodifluoromethane"@en ;
+        skos:prefLabel "CFC-12"@en ;
+        skos:altLabel "dichlorodifluoromethane"@en ;
+        skos:altLabel "carbon dichloride difluoride"@en ;
+        skos:altLabel "dichloro-difluoro-methane"@en ;
+        skos:altLabel "difluorodichloromethane"@en ;
+        skos:altLabel "CCl2F2"@en ;
+        skos:broader <chemical-species/chlorofluorocarbon> ;
+        skos:notation "dichlorodifluoromethane" .
+
+<chemical-species/chlorotrifluoromethane>
+        a skos:Concept ;
+        rdfs:label "chlorotrifluoromethane"@en ;
+        dct:description "chlorotrifluoromethane"@en ;
+        skos:prefLabel "CFC-13"@en ;
+        skos:altLabel "chlorotrifluoromethane"@en ;
+        skos:altLabel "carbon chloride trifluoride"@en ;
+        skos:altLabel "chloro-trifluoro-methane"@en ;
+        skos:altLabel "trifluorochloromethane"@en ;
+        skos:altLabel "CClF3"@en ;
+        skos:broader <chemical-species/chlorofluorocarbon> ;
+        skos:notation "chlorotrifluoromethane" .
+
+<chemical-species/pentachlorofluoroethane>
+        a skos:Concept ;
+        rdfs:label "pentachlorofluoroethane"@en ;
+        dct:description "pentachlorofluoroethane"@en ;
+        skos:prefLabel "CFC-111"@en ;
+        skos:altLabel "1,1,1,2,2-pentachloro-2-fluoroethane"@en ;
+        skos:altLabel "pentachlorofluoroethane"@en ;
+        skos:altLabel "C2Cl5F"@en ;
+        skos:broader <chemical-species/chlorofluorocarbon> ;
+        skos:notation "pentachlorofluoroethane" .
+
+<chemical-species/1,1,2,2-tetrachloro-1,2-difluoroethane>
+        a skos:Concept ;
+        rdfs:label "1,1,2,2-tetrachloro-1,2-difluoroethane"@en ;
+        dct:description "1,1,2,2-tetrachloro-1,2-difluoroethane"@en ;
+        skos:prefLabel "CFC-112"@en ;
+        skos:altLabel "1,1,2,2-tetrachloro-1,2-difluoroethane"@en ;
+        skos:altLabel "tetrachloro-1,2-difluoroethane"@en ;
+        skos:altLabel "CCl2FCCl2F"@en ;
+        skos:broader <chemical-species/chlorofluorocarbon> ;
+        skos:notation "1,1,2,2-tetrachloro-1,2-difluoroethane" .
+
+<chemical-species/1,1,1,2-tetrachloro-2,2-difluoroethane>
+        a skos:Concept ;
+        rdfs:label "1,1,1,2-tetrachloro-2,2-difluoroethane"@en ;
+        dct:description "1,1,1,2-tetrachloro-2,2-difluoroethane"@en ;
+        skos:prefLabel "CFC-112a"@en ;
+        skos:altLabel "1,1,1,2-tetrachloro-2,2-difluoroethane"@en ;
+        skos:altLabel "tetrachloro-2,2-difluoroethane"@en ;
+        skos:altLabel "CCl3CClF2"@en ;
+        skos:broader <chemical-species/chlorofluorocarbon> ;
+        skos:notation "1,1,1,2-tetrachloro-2,2-difluoroethane" .
+
+<chemical-species/1,1,2-trichloro-1,2,2-trifluoroethane>
+        a skos:Concept ;
+        rdfs:label "1,1,2-trichloro-1,2,2-trifluoroethane"@en ;
+        dct:description "1,1,2-trichloro-1,2,2-trifluoroethane"@en ;
+        skos:prefLabel "CFC-113"@en ;
+        skos:altLabel "1,1,2-trichloro-1,2,2-trifluoroethane"@en ;
+        skos:altLabel "trichlorotrifluoroethane"@en ;
+        skos:altLabel "Cl2FC-CClF2"@en ;
+        skos:altLabel "CCl2FCClF2"@en ;
+        skos:broader <chemical-species/chlorofluorocarbon> ;
+        skos:notation "1,1,2-trichloro-1,2,2-trifluoroethane" .
+
+<chemical-species/1,1,1-trichloro-2,2,2-trifluoroethane>
+        a skos:Concept ;
+        rdfs:label "1,1,1-trichloro-2,2,2-trifluoroethane"@en ;
+        dct:description "1,1,1-trichloro-2,2,2-trifluoroethane"@en ;
+        skos:prefLabel "CFC-113a"@en ;
+        skos:altLabel "1,1,1-trichloro-2,2,2-trifluoroethane"@en ;
+        skos:altLabel "trichlorotrifluoroethane"@en ;
+        skos:altLabel "CCl3CF3"@en ;
+        skos:broader <chemical-species/chlorofluorocarbon> ;
+        skos:notation "1,1,1-trichloro-2,2,2-trifluoroethane" .
+
+<chemical-species/1,2-dichlorotetrafluoroethane>
+        a skos:Concept ;
+        rdfs:label "1,2-dichlorotetrafluoroethane"@en ;
+        dct:description "1,2-dichlorotetrafluoroethane"@en ;
+        skos:prefLabel "CFC-114"@en ;
+        skos:altLabel "1,2-dichlorotetrafluoroethane"@en ;
+        skos:altLabel "CClF2CClF2"@en ;
+        skos:altLabel "halon 242"@en ;
+        skos:altLabel "cryofluorane"@en ;
+        skos:broader <chemical-species/chlorofluorocarbon> ;
+        skos:notation "1,2-dichlorotetrafluoroethane" .
+
+<chemical-species/1,1-dichloro-1,2,2,2-tetrafluoroethane>
+        a skos:Concept ;
+        rdfs:label "1,1-dichloro-1,2,2,2-tetrafluoroethane"@en ;
+        dct:description "1,1-dichloro-1,2,2,2-tetrafluoroethane"@en ;
+        skos:prefLabel "CFC-114a"@en ;
+        skos:altLabel "1,1-dichloro-1,2,2,2-tetrafluoroethane"@en ;
+        skos:altLabel "CCl2FCF3"@en ;
+        skos:altLabel "halon 242"@en ;
+        skos:altLabel "cryofluorane"@en ;
+        skos:broader <chemical-species/chlorofluorocarbon> ;
+        skos:notation "1,1-dichloro-1,2,2,2-tetrafluoroethane" .
+
+<chemical-species/chloropentafluoroethane>
+        a skos:Concept ;
+        rdfs:label "chloropentafluoroethane"@en ;
+        dct:description "chloropentafluoroethane"@en ;
+        skos:prefLabel "CFC-115"@en ;
+        skos:altLabel "1-chloro-1,1,2,2,2-pentafluoroethane"@en ;
+        skos:altLabel "chloropentafluoroethane"@en ;
+        skos:altLabel "monochloropentafluoroethane"@en ;
+        skos:broader <chemical-species/chlorofluorocarbon> ;
+        skos:notation "chloropentafluoroethane" .
+
+<chemical-species/perfluoroethane>
+        a skos:Concept ;
+        rdfs:label "perfluoroethane"@en ;
+        dct:description "perfluoroethane"@en ;
+        skos:prefLabel "CFC-116"@en ;
+        skos:altLabel "1,1,1,2,2,2-hexafluoroethane"@en ;
+        skos:altLabel "carbon hexafluoride"@en ;
+        skos:altLabel "perfluoroethane"@en ;
+        skos:altLabel "ethforane"@en ;
+        skos:altLabel "C2F6"@en ;
+        skos:broader <chemical-species/chlorofluorocarbon> ;
+        skos:notation "perfluoroethane" .
+
+<chemical-species/1,1,1-trichloroethane>
+        a skos:Concept ;
+        rdfs:label "1,1,1-trichloroethane"@en ;
+        dct:description "1,1,1-trichloroethane"@en ;
+        skos:prefLabel "CH3CCl3"@en ;
+        skos:altLabel "1,1,1-trichloroethane"@en ;
+        skos:altLabel "methyl chloroform"@en ;
+        skos:altLabel "chlorothene"@en ;
+        skos:broader <chemical-species/hcfc> ;
+        skos:notation "1,1,1-trichloroethane" .
+
+<chemical-species/bromochlorodifluoromethane>
+        a skos:Concept ;
+        rdfs:label "bromochlorodifluoromethane"@en ;
+        dct:description "bromochlorodifluoromethane"@en ;
+        skos:prefLabel "CBrClF2"@en ;
+        skos:altLabel "bromochlorodifluoromethane"@en ;
+        skos:altLabel "halon 1211"@en ;
+        skos:broader <chemical-species/chlorinated-hydrocarbon> ;
+        skos:notation "bromochlorodifluoromethane" .
+
+<chemical-species/bromotrifluoromethane>
+        a skos:Concept ;
+        rdfs:label "bromotrifluoromethane"@en ;
+        dct:description "bromotrifluoromethane"@en ;
+        skos:prefLabel "CBrF3"@en ;
+        skos:altLabel "bromotrifluoromethane"@en ;
+        skos:altLabel "halon 1301"@en ;
+        skos:broader <chemical-species/chlorinated-hydrocarbon> ;
+        skos:notation "bromotrifluoromethane" .
+
+<chemical-species/dibromodifluoromethane>
+        a skos:Concept ;
+        rdfs:label "dibromodifluoromethane"@en ;
+        dct:description "dibromodifluoromethane"@en ;
+        skos:prefLabel "CBr2F2"@en ;
+        skos:altLabel "dibromodifluoromethane"@en ;
+        skos:altLabel "halon 1202"@en ;
+        skos:broader <chemical-species/chlorinated-hydrocarbon> ;
+        skos:notation "dibromodifluoromethane" .
+
+<chemical-species/dibromotetrafluoroethane>
+        a skos:Concept ;
+        rdfs:label "dibromotetrafluoroethane"@en ;
+        dct:description "dibromotetrafluoroethane"@en ;
+        skos:prefLabel "CBrF2CBrF2"@en ;
+        skos:altLabel "dibromotetrafluoroethane"@en ;
+        skos:altLabel "halon 2402"@en ;
+        skos:broader <chemical-species/chlorinated-hydrocarbon> ;
+        skos:notation "dibromotetrafluoroethane" .
+
+<chemical-species/1,1-dichloro-1-fluoroethane>
+        a skos:Concept ;
+        rdfs:label "1,1-dichloro-1-fluoroethane"@en ;
+        dct:description "1,1-dichloro-1-fluoroethane"@en ;
+        skos:prefLabel "HCFC-141b"@en ;
+        skos:altLabel "1,1-dichloro-1-fluoroethane"@en ;
+        skos:altLabel "C2H3Cl2F"@en ;
+        skos:broader <chemical-species/hcfc> ;
+        skos:notation "1,1-dichloro-1-fluoroethane" .
+
+<chemical-species/1-chloro-1,1-difluoroethane>
+        a skos:Concept ;
+        rdfs:label "1-chloro-1,1-difluoroethane"@en ;
+        dct:description "1-chloro-1,1-difluoroethane"@en ;
+        skos:prefLabel "HCFC-142b"@en ;
+        skos:altLabel "1-chloro-1,1-difluoroethane"@en ;
+        skos:altLabel "C2H3ClF2"@en ;
+        skos:broader <chemical-species/hcfc> ;
+        skos:notation "1-chloro-1,1-difluoroethane" .
+
+<chemical-species/1,1,1-trifluoroethane>
+        a skos:Concept ;
+        rdfs:label "1,1,1-trifluoroethane"@en ;
+        dct:description "1,1,1-trifluoroethane"@en ;
+        skos:prefLabel "HCFC-143a"@en ;
+        skos:altLabel "1,1,1-trifluoroethane"@en ;
+        skos:altLabel "CF3CH3"@en ;
+        skos:broader <chemical-species/hcfc> ;
+        skos:notation "1,1,1-trifluoroethane" .
+
+<chemical-species/1,2,2-trifluoroethane>
+        a skos:Concept ;
+        rdfs:label "1,2,2-trifluoroethane"@en ;
+        dct:description "1,2,2-trifluoroethane"@en ;
+        skos:prefLabel "HCFC-143"@en ;
+        skos:altLabel "1,2,2-trifluoroethane"@en ;
+        skos:altLabel "CH2FCHF2"@en ;
+        skos:broader <chemical-species/hcfc> ;
+        skos:notation "1,2,2-trifluoroethane" .
+
+<chemical-species/chlorodifluoromethane>
+        a skos:Concept ;
+        rdfs:label "chlorodifluoromethane"@en ;
+        dct:description "chlorodifluoromethane"@en ;
+        skos:prefLabel "HCFC-22"@en ;
+        skos:altLabel "chlorodifluoromethane"@en ;
+        skos:altLabel "CHClF2"@en ;
+        skos:broader <chemical-species/hcfc> ;
+        skos:notation "chlorodifluoromethane" .
+
+<chemical-species/1,1-dichloro-2,2,2-trifluoroethane>
+        a skos:Concept ;
+        rdfs:label "1,1-dichloro-2,2,2-trifluoroethane"@en ;
+        dct:description "1,1-dichloro-2,2,2-trifluoroethane"@en ;
+        skos:prefLabel "HCFC-123"@en ;
+        skos:altLabel "1,1-dichloro-2,2,2-trifluoroethane"@en ;
+        skos:altLabel "dichlorotrifluoroethane"@en ;
+        skos:altLabel "CHCl2CF3"@en ;
+        skos:broader <chemical-species/hcfc> ;
+        skos:notation "1,1-dichloro-2,2,2-trifluoroethane" .
+
+<chemical-species/1,2-dichloro-1,2,2-trifluoroethane>
+        a skos:Concept ;
+        rdfs:label "1,2-dichloro-1,2,2-trifluoroethane"@en ;
+        dct:description "1,2-dichloro-1,2,2-trifluoroethane"@en ;
+        skos:prefLabel "HCFC-123a"@en ;
+        skos:altLabel "1,2-dichloro-1,2,2-trifluoroethane"@en ;
+        skos:altLabel "dichlorotrifluoroethane"@en ;
+        skos:altLabel "CHClFCF2Cl"@en ;
+        skos:broader <chemical-species/hcfc> ;
+        skos:notation "1,2-dichloro-1,2,2-trifluoroethane" .
+
+<chemical-species/2,2-dichloro-1,1,2-trifluoroethane>
+        a skos:Concept ;
+        rdfs:label "2,2-dichloro-1,1,2-trifluoroethane"@en ;
+        dct:description "2,2-dichloro-1,1,2-trifluoroethane"@en ;
+        skos:prefLabel "HCFC-123b"@en ;
+        skos:altLabel "2,2-dichloro-1,1,2-trifluoroethane"@en ;
+        skos:altLabel "dichlorotrifluoroethane"@en ;
+        skos:altLabel "CHF2CCl2F"@en ;
+        skos:broader <chemical-species/hcfc> ;
+        skos:notation "2,2-dichloro-1,1,2-trifluoroethane" .
+
+<chemical-species/1-chloro-1,2,2,2-tetrafluoroethane>
+        a skos:Concept ;
+        rdfs:label "1-chloro-1,2,2,2-tetrafluoroethane"@en ;
+        dct:description "1-chloro-1,2,2,2-tetrafluoroethane"@en ;
+        skos:prefLabel "HCFC-124"@en ;
+        skos:altLabel "1-chloro-1,2,2,2-tetrafluoroethane"@en ;
+        skos:altLabel "chlorotetrafluoroethane"@en ;
+        skos:altLabel "CHClFCF3"@en ;
+        skos:broader <chemical-species/hcfc> ;
+        skos:notation "1-chloro-1,2,2,2-tetrafluoroethane" .
+
+<chemical-species/2-chloro-1,1,2,2-tetrafluoroethane>
+        a skos:Concept ;
+        rdfs:label "2-chloro-1,1,2,2-tetrafluoroethane"@en ;
+        dct:description "2-chloro-1,1,2,2-tetrafluoroethane"@en ;
+        skos:prefLabel "HCFC-124a"@en ;
+        skos:altLabel "2-chloro-1,1,2,2-tetrafluoroethane"@en ;
+        skos:altLabel "chlorotetrafluoroethane"@en ;
+        skos:altLabel "CHF2CClF2"@en ;
+        skos:broader <chemical-species/hcfc> ;
+        skos:notation "2-chloro-1,1,2,2-tetrafluoroethane" .
+
+<chemical-species/chlorotrifluoroethane>
+        a skos:Concept ;
+        rdfs:label "chlorotrifluoroethane"@en ;
+        dct:description "chlorotrifluoroethane"@en ;
+        skos:prefLabel "HCFC-133a"@en ;
+        skos:altLabel "chlorotrifluoroethane"@en ;
+        skos:altLabel "CH2ClCF3"@en ;
+        skos:broader <chemical-species/hcfc> ;
+        skos:notation "chlorotrifluoroethane" .
+
+<chemical-species/dichlorofluoromethane>
+        a skos:Concept ;
+        rdfs:label "dichlorofluoromethane"@en ;
+        dct:description "dichlorofluoromethane"@en ;
+        skos:prefLabel "HCFC-21"@en ;
+        skos:altLabel "dichlorofluoromethane"@en ;
+        skos:altLabel "CHCl2F"@en ;
+        skos:broader <chemical-species/hcfc> ;
+        skos:notation "dichlorofluoromethane" .
+
+<chemical-species/chlorofluoromethane>
+        a skos:Concept ;
+        rdfs:label "chlorofluoromethane"@en ;
+        dct:description "chlorofluoromethane"@en ;
+        skos:prefLabel "HCFC-31"@en ;
+        skos:altLabel "chlorofluoromethane"@en ;
+        skos:altLabel "CH2ClF"@en ;
+        skos:broader <chemical-species/hcfc> ;
+        skos:notation "chlorofluoromethane" .
+
+<chemical-species/pentafluoroethane>
+        a skos:Concept ;
+        rdfs:label "pentafluoroethane"@en ;
+        dct:description "pentafluoroethane"@en ;
+        skos:prefLabel "HFC-125"@en ;
+        skos:altLabel "pentafluoroethane"@en ;
+        skos:altLabel "C2HF5"@en ;
+        skos:broader <chemical-species/hcfc> ;
+        skos:notation "pentafluoroethane" .
+
+<chemical-species/1,1,1,2-tetrafluoroethane>
+        a skos:Concept ;
+        rdfs:label "1,1,1,2-tetrafluoroethane"@en ;
+        dct:description "1,1,1,2-tetrafluoroethane"@en ;
+        skos:prefLabel "HFC-134a"@en ;
+        skos:altLabel "1,1,1,2-tetrafluoroethane"@en ;
+        skos:altLabel "CF3CH2F"@en ;
+        skos:broader <chemical-species/hcfc> ;
+        skos:notation "1,1,1,2-tetrafluoroethane" .
+
+<chemical-species/1,1,2,2-tetrafluoroethane>
+        a skos:Concept ;
+        rdfs:label "1,1,2,2-tetrafluoroethane"@en ;
+        dct:description "1,1,2,2-tetrafluoroethane"@en ;
+        skos:prefLabel "HFC-134"@en ;
+        skos:altLabel "1,1,2,2-tetrafluoroethane"@en ;
+        skos:altLabel "CHF2CHF2"@en ;
+        skos:broader <chemical-species/hcfc> ;
+        skos:notation "1,1,2,2-tetrafluoroethane" .
+
+<chemical-species/1,1-difluoroethane>
+        a skos:Concept ;
+        rdfs:label "1,1-difluoroethane"@en ;
+        dct:description "1,1-difluoroethane"@en ;
+        skos:prefLabel "HFC-152a"@en ;
+        skos:altLabel "1,1-difluoroethane"@en ;
+        skos:altLabel "CHF2CH3"@en ;
+        skos:broader <chemical-species/hcfc> ;
+        skos:notation "1,1-difluoroethane" .
+
+<chemical-species/trifluoromethane>
+        a skos:Concept ;
+        rdfs:label "trifluoromethane"@en ;
+        dct:description "trifluoromethane"@en ;
+        skos:prefLabel "HFC-23"@en ;
+        skos:altLabel "trifluoromethane"@en ;
+        skos:altLabel "CHF3"@en ;
+        skos:broader <chemical-species/hcfc> ;
+        skos:notation "trifluoromethane" .
+
+<chemical-species/1,1,1,2,3,3,3-heptafluoropropane>
+        a skos:Concept ;
+        rdfs:label "1,1,1,2,3,3,3-Heptafluoropropane"@en ;
+        dct:description "1,1,1,2,3,3,3-Heptafluoropropane"@en ;
+        skos:prefLabel "HFC-227ea"@en ;
+        skos:altLabel "1,1,1,2,3,3,3-Heptafluoropropane"@en ;
+        skos:altLabel "C3HF7"@en ;
+        skos:broader <chemical-species/hcfc> ;
+        skos:notation "1,1,1,2,3,3,3-heptafluoropropane" .
+
+<chemical-species/1,1,1,2,3,3-hexafluoropropane>
+        a skos:Concept ;
+        rdfs:label "1,1,1,2,3,3-hexafluoropropane"@en ;
+        dct:description "1,1,1,2,3,3-hexafluoropropane"@en ;
+        skos:prefLabel "HFC-236fa"@en ;
+        skos:altLabel "1,1,1,2,3,3-hexafluoropropane"@en ;
+        skos:altLabel "C3H2F6"@en ;
+        skos:broader <chemical-species/hcfc> ;
+        skos:notation "1,1,1,2,3,3-hexafluoropropane" .
+
+<chemical-species/1,1,1,3,3-pentafluoropropane>
+        a skos:Concept ;
+        rdfs:label "1,1,1,3,3-Pentafluoropropane"@en ;
+        dct:description "1,1,1,3,3-Pentafluoropropane"@en ;
+        skos:prefLabel "HFC-245fa"@en ;
+        skos:altLabel "1,1,1,3,3-Pentafluoropropane"@en ;
+        skos:altLabel "C3H3F5"@en ;
+        skos:broader <chemical-species/hcfc> ;
+        skos:notation "1,1,1,3,3-pentafluoropropane" .
+
+<chemical-species/difluoromethane>
+        a skos:Concept ;
+        rdfs:label "difluoromethane"@en ;
+        dct:description "difluoromethane"@en ;
+        skos:prefLabel "HFC-32"@en ;
+        skos:altLabel "difluoromethane"@en ;
+        skos:altLabel "CH2F2"@en ;
+        skos:broader <chemical-species/hcfc> ;
+        skos:notation "difluoromethane" .
+
+<chemical-species/fluoromethane>
+        a skos:Concept ;
+        rdfs:label "fluoromethane"@en ;
+        dct:description "fluoromethane"@en ;
+        skos:prefLabel "HFC-41"@en ;
+        skos:altLabel "fluoromethane"@en ;
+        skos:altLabel "CH3F"@en ;
+        skos:broader <chemical-species/hcfc> ;
+        skos:notation "fluoromethane" .
+
+<chemical-species/1,1,1,3,3-pentafluorobutane>
+        a skos:Concept ;
+        rdfs:label "1,1,1,3,3-pentafluorobutane"@en ;
+        dct:description "1,1,1,3,3-pentafluorobutane"@en ;
+        skos:prefLabel "HFC-365mfc"@en ;
+        skos:altLabel "1,1,1,3,3-pentafluorobutane"@en ;
+        skos:altLabel "C4H5F5"@en ;
+        skos:broader <chemical-species/hcfc> ;
+        skos:notation "1,1,1,3,3-pentafluorobutane" .
+
+<chemical-species/tetrafluoromethane>
+        a skos:Concept ;
+        rdfs:label "tetrafluoromethane"@en ;
+        dct:description "tetrafluoromethane"@en ;
+        skos:prefLabel "PFC-14"@en ;
+        skos:altLabel "tetrafluoromethane"@en ;
+        skos:altLabel "CF4"@en ;
+        skos:altLabel "carbon tetrafluoride"@en ;
+        skos:altLabel "perfluoromethane"@en ;
+        skos:broader <chemical-species/perfluorinated-species> ;
+        skos:notation "tetrafluoromethane" .
+
+<chemical-species/hexafluoroethane>
+        a skos:Concept ;
+        rdfs:label "hexafluoroethane"@en ;
+        dct:description "hexafluoroethane"@en ;
+        skos:prefLabel "PFC-116"@en ;
+        skos:altLabel "hexafluoroethane"@en ;
+        skos:altLabel "C2F6"@en ;
+        skos:broader <chemical-species/perfluorinated-species> ;
+        skos:notation "hexafluoroethane" .
+
+<chemical-species/octafluoropropane>
+        a skos:Concept ;
+        rdfs:label "octafluoropropane"@en ;
+        dct:description "octafluoropropane"@en ;
+        skos:prefLabel "PFC-218"@en ;
+        skos:altLabel "octafluoropropane"@en ;
+        skos:altLabel "C3F8"@en ;
+        skos:broader <chemical-species/perfluorinated-species> ;
+        skos:notation "octafluoropropane" .
+
+<chemical-species/dibromomethane>
+        a skos:Concept ;
+        rdfs:label "dibromomethane"@en ;
+        dct:description "dibromomethane"@en ;
+        skos:prefLabel "CH2Br2"@en ;
+        skos:altLabel "dibromomethane"@en ;
+        skos:altLabel "methyl dibromide"@en ;
+        skos:altLabel "methylene bromide"@en ;
+        skos:altLabel "methylene dibromide"@en ;
+        skos:broader <chemical-species/halogenated-hydrocarbon> ;
+        skos:notation "dibromomethane" .
+
+<chemical-species/bromomethane>
+        a skos:Concept ;
+        rdfs:label "bromomethane"@en ;
+        dct:description "bromomethane"@en ;
+        skos:prefLabel "CH3Br"@en ;
+        skos:altLabel "bromomethane"@en ;
+        skos:altLabel "methyl bromide"@en ;
+        skos:broader <chemical-species/halogenated-hydrocarbon> ;
+        skos:notation "bromomethane" .
+
+<chemical-species/chloromethane>
+        a skos:Concept ;
+        rdfs:label "chloromethane"@en ;
+        dct:description "chloromethane"@en ;
+        skos:prefLabel "CH3Cl"@en ;
+        skos:altLabel "chloromethane"@en ;
+        skos:altLabel "methyl chloride"@en ;
+        skos:broader <chemical-species/halogenated-hydrocarbon> ;
+        skos:notation "chloromethane" .
+
+<chemical-species/iodomethane>
+        a skos:Concept ;
+        rdfs:label "iodomethane"@en ;
+        dct:description "iodomethane"@en ;
+        skos:prefLabel "CH3I"@en ;
+        skos:altLabel "iodomethane"@en ;
+        skos:altLabel "methyl iodide"@en ;
+        skos:broader <chemical-species/halogenated-hydrocarbon> ;
+        skos:notation "iodomethane" .
+
+<chemical-species/tribromomethane>
+        a skos:Concept ;
+        rdfs:label "tribromomethane"@en ;
+        dct:description "tribromomethane"@en ;
+        skos:prefLabel "CHBr3"@en ;
+        skos:altLabel "tribromomethane"@en ;
+        skos:altLabel "bromoform"@en ;
+        skos:altLabel "methyl tribromide"@en ;
+        skos:broader <chemical-species/halogenated-hydrocarbon> ;
+        skos:notation "tribromomethane" .
+
+<chemical-species/trichloromethane>
+        a skos:Concept ;
+        rdfs:label "trichloromethane"@en ;
+        dct:description "trichloromethane"@en ;
+        skos:prefLabel "CHCl3"@en ;
+        skos:altLabel "trichloromethane"@en ;
+        skos:altLabel "chloroform"@en ;
+        skos:altLabel "formyl trichloride"@en ;
+        skos:altLabel "methane trichloride"@en ;
+        skos:altLabel "methyl trichloride"@en ;
+        skos:broader <chemical-species/halogenated-hydrocarbon> ;
+        skos:notation "trichloromethane" .
+
+<chemical-species/ethyliodide>
+        a skos:Concept ;
+        rdfs:label "ethyliodide"@en ;
+        dct:description "ethyliodide"@en ;
+        skos:prefLabel "C2H5I"@en ;
+        skos:altLabel "ethyliodide"@en ;
+        skos:broader <chemical-species/halogenated-hydrocarbon> ;
+        skos:notation "ethyliodide" .
+
+<chemical-species/1-bromopropane>
+        a skos:Concept ;
+        rdfs:label "1-bromopropane"@en ;
+        dct:description "1-bromopropane"@en ;
+        skos:prefLabel "C3H7Br"@en ;
+        skos:altLabel "1-bromopropane"@en ;
+        skos:altLabel "propylbromide"@en ;
+        skos:broader <chemical-species/halogenated-hydrocarbon> ;
+        skos:notation "1-bromopropane" .
+
+<chemical-species/aldehyde>
+        a skos:Concept ;
+        rdfs:label "aldehyde"@en ;
+        dct:description "an organic olecule with a functional aldehyde (i.e. CHO) group"@en ;
+        skos:prefLabel "aldehyde"@en ;
+        skos:broader <chemical-species/volatile-organic-species> ;
+        skos:notation "aldehyde" .
+
+<chemical-species/formaldehyde>
+        a skos:Concept ;
+        rdfs:label "formaldehyde"@en ;
+        dct:description "an aldehyde with the chemical formula CH2O"@en ;
+        skos:prefLabel "CH2O"@en ;
+        skos:altLabel "formaldehyde"@en ;
+        skos:altLabel "HCHO"@en ;
+        skos:broader <chemical-species/aldehyde> ;
+        skos:notation "formaldehyde" .
+
+<chemical-species/ethylaldehyde>
+        a skos:Concept ;
+        rdfs:label "ethylaldehyde"@en ;
+        dct:description "an aldehyde with the chemical formula CH3CHO"@en ;
+        skos:prefLabel "CH3CHO"@en ;
+        skos:altLabel "ethylaldehyde"@en ;
+        skos:broader <chemical-species/aldehyde> ;
+        skos:notation "ethylaldehyde" .
+
+<chemical-species/ethanedial>
+        a skos:Concept ;
+        rdfs:label "ethanedial"@en ;
+        dct:description "organic molecule with two aldehyde groups"@en ;
+        skos:prefLabel "glyoxal"@en ;
+        skos:altLabel "OCHCHO"@en ;
+        skos:altLabel "ethanedial"@en ;
+        skos:altLabel "oxalaldehyde"@en ;
+        skos:altLabel "ethane-1,2-dione"@en ;
+        skos:broader <chemical-species/aldehyde> ;
+        skos:notation "ethanedial" .
+
+<chemical-species/prop-2-enal>
+        a skos:Concept ;
+        rdfs:label "prop-2-enal"@en ;
+        dct:description "prop-2-enal, i.e. an unsaturated three carbon atoms aldehyde with the carbon-carbon double bond adjacent to the aldehidic group"@en ;
+        skos:prefLabel "C3H4O"@en ;
+        skos:altLabel "prop-2-enal"@en ;
+        skos:altLabel "acraldehyde"@en ;
+        skos:altLabel "acrylic aldehyde"@en ;
+        skos:altLabel "allyl aldehyde"@en ;
+        skos:altLabel "ethylene aldehyde"@en ;
+        skos:altLabel "acrylaldehyde"@en ;
+        skos:broader <chemical-species/aldehyde> ;
+        skos:notation "prop-2-enal" .
+
+<chemical-species/2-oxopropanal>
+        a skos:Concept ;
+        rdfs:label "2-oxopropanal"@en ;
+        dct:description "2-oxopropanal, i.e. a dicarbonyl compound with adjacent ketonic and aldehidic groups"@en ;
+        skos:prefLabel "methylglyoxal"@en ;
+        skos:altLabel "CH3COCHO"@en ;
+        skos:altLabel "2-oxopropanal"@en ;
+        skos:altLabel "pyruvaldehyde"@en ;
+        skos:broader <chemical-species/aldehyde> ;
+        skos:notation "2-oxopropanal" .
+
+<chemical-species/propanal>
+        a skos:Concept ;
+        rdfs:label "propanal"@en ;
+        dct:description "propanal, i.e. an aldehyde with three carbon atoms"@en ;
+        skos:prefLabel "propanal"@en ;
+        skos:altLabel "C3H6O"@en ;
+        skos:altLabel "propionaldehyde"@en ;
+        skos:altLabel "methylacetaldehyde"@en ;
+        skos:altLabel "propionic aldehyde"@en ;
+        skos:altLabel "propaldehyde"@en ;
+        skos:broader <chemical-species/aldehyde> ;
+        skos:notation "propanal" .
+
+<chemical-species/2-methylprop-2-enal>
+        a skos:Concept ;
+        rdfs:label "2-methylprop-2-enal"@en ;
+        dct:description "2-methylprop-2-enal, i.e. an aldehyde with three carbon atoms and a methyl group on the central carbon"@en ;
+        skos:prefLabel "methacrolein"@en ;
+        skos:altLabel "2-methylprop-2-enal"@en ;
+        skos:altLabel "C4H6O"@en ;
+        skos:altLabel "methacrylaldehyde"@en ;
+        skos:altLabel "isobutenal"@en ;
+        skos:broader <chemical-species/aldehyde> ;
+        skos:notation "2-methylprop-2-enal" .
+
+<chemical-species/butanal>
+        a skos:Concept ;
+        rdfs:label "butanal"@en ;
+        dct:description "butanal, i.e. an aldehyde with three carbon atoms"@en ;
+        skos:prefLabel "butanal"@en ;
+        skos:altLabel "C4H8O"@en ;
+        skos:altLabel "butyraldehyde"@en ;
+        skos:broader <chemical-species/aldehyde> ;
+        skos:notation "butanal" .
+
+<chemical-species/pentanal>
+        a skos:Concept ;
+        rdfs:label "pentanal"@en ;
+        dct:description "pentanal, i.e. an aldehyde with three carbon atoms"@en ;
+        skos:prefLabel "pentanal"@en ;
+        skos:altLabel "pentanaldehyde"@en ;
+        skos:altLabel "valeraldehyde"@en ;
+        skos:altLabel "valeric aldehyde"@en ;
+        skos:broader <chemical-species/aldehyde> ;
+        skos:notation "pentanal" .
+
+<chemical-species/ketone>
+        a skos:Concept ;
+        rdfs:label "ketone"@en ;
+        dct:description "an organic molecule with a ketone (=O) group"@en ;
+        skos:prefLabel "ketone"@en ;
+        skos:broader <chemical-species/volatile-organic-species> ;
+        skos:notation "ketone" .
+
+<chemical-species/acetone>
+        a skos:Concept ;
+        rdfs:label "acetone"@en ;
+        dct:description "acetone, i.e. a ketone with three carbon atoms and an oxygen double bonded to the central carbon atom"@en ;
+        skos:prefLabel "acetone"@en ;
+        skos:altLabel "propanone"@en ;
+        skos:altLabel "CH3COCH3"@en ;
+        skos:altLabel "propan-2-one"@en ;
+        skos:altLabel "dimethyl ketone"@en ;
+        skos:altLabel "dimethyl carbonyl"@en ;
+        skos:altLabel "beta-ketopropane"@en ;
+        skos:broader <chemical-species/ketone> ;
+        skos:notation "acetone" .
+
+<chemical-species/butenone>
+        a skos:Concept ;
+        rdfs:label "butenone"@en ;
+        dct:description "butenone, i.e. a linear four carbon atoms chain ketone with a conjugated carbon double bond"@en ;
+        skos:prefLabel "methyl vinyl ketone"@en ;
+        skos:altLabel "butenone"@en ;
+        skos:altLabel "C4H6O"@en ;
+        skos:altLabel "3-buten-2-one"@en ;
+        skos:broader <chemical-species/ketone> ;
+        skos:notation "butenone" .
+
+<chemical-species/butan-2-one>
+        a skos:Concept ;
+        rdfs:label "butan-2-one"@en ;
+        dct:description "butan-2-one, i.e. a linear ketone with four carbon atoms and the oxygen atom bound to the second carbon"@en ;
+        skos:prefLabel "methyl ethyl ketone"@en ;
+        skos:altLabel "butan-2-one"@en ;
+        skos:altLabel "C4H8O"@en ;
+        skos:altLabel "MEK"@en ;
+        skos:altLabel "2-butanone"@en ;
+        skos:altLabel "methylpropanone"@en ;
+        skos:altLabel "ethylmethylketone"@en ;
+        skos:altLabel "methylacetone"@en ;
+        skos:broader <chemical-species/ketone> ;
+        skos:notation "butan-2-one" .
+
+<chemical-species/2-pentanone>
+        a skos:Concept ;
+        rdfs:label "2-pentanone"@en ;
+        dct:description "2-pentanone, i.e. a linear ketone with five carbon atoms and the oxygen atom bound to the second carbon"@en ;
+        skos:prefLabel "2-pentanone"@en ;
+        skos:altLabel "methyl propyl ketone"@en ;
+        skos:altLabel "2-pentanone"@en ;
+        skos:altLabel "MPK"@en ;
+        skos:notation "2-pentanone" .
+
+<chemical-species/organic-nitrate>
+        a skos:Concept ;
+        rdfs:label "organic nitrate"@en ;
+        dct:description "a hydrocarbon with a functional nitrate (i.e. NO3) group"@en ;
+        skos:prefLabel "organic nitrate"@en ;
+        skos:broader <chemical-species/volatile-organic-species> ;
+        skos:notation "organic-nitrate" .
+
+<chemical-species/peroxyacetylnitrate>
+        a skos:Concept ;
+        rdfs:label "peroxyacetylnitrate"@en ;
+        dct:description "an organic molecule formed in the reaction of the peroxyacetyl radical with nitrogen dioxide"@en ;
+        skos:prefLabel "PAN"@en ;
+        skos:altLabel "peroxyacetylnitrate"@en ;
+        skos:altLabel "nitro ethaneperoxoate"@en ;
+        skos:altLabel "CH3C(O)OONO2"@en ;
+        skos:altLabel "CH3CO3NO2"@en ;
+        skos:broader <chemical-species/organic-nitrate> ;
+        skos:exactMatch  gemet:concept?cp=6128 ;
+        skos:notation "peroxyacetylnitrate" .
+
+<chemical-species/methoxy-peroxyacetyl-nitrate>
+        a skos:Concept ;
+        rdfs:label "methoxy peroxyacetyl nitrate"@en ;
+        dct:description "methoxy peroxyacetyl nitrate"@en ;
+        skos:prefLabel "methoxy peroxyacetyl nitrate"@en ;
+        skos:altLabel "MoPN"@en ;
+        skos:broader <chemical-species/organic-nitrate> ;
+        skos:notation "methoxy-peroxyacetyl-nitrate" .
+
+<chemical-species/methyl-nitrate>
+        a skos:Concept ;
+        rdfs:label "methyl nitrate"@en ;
+        dct:description "methyl nitrate"@en ;
+        skos:prefLabel "methyl nitrate"@en ;
+        skos:broader <chemical-species/organic-nitrate> ;
+        skos:notation "methyl-nitrate" .
+
+<chemical-species/ethyl-nitrate>
+        a skos:Concept ;
+        rdfs:label "ethyl nitrate"@en ;
+        dct:description "ethyl nitrate"@en ;
+        skos:prefLabel "ethyl nitrate"@en ;
+        skos:broader <chemical-species/organic-nitrate> ;
+        skos:notation "ethyl-nitrate" .
+
+<chemical-species/2-butyl-nitrate>
+        a skos:Concept ;
+        rdfs:label "2-butyl-nitrate"@en ;
+        dct:description "2-butyl-nitrate"@en ;
+        skos:prefLabel "2-butyl-nitrate"@en ;
+        skos:broader <chemical-species/organic-nitrate> ;
+        skos:notation "2-butyl-nitrate" .
+
+<chemical-species/2-pentyl-nitrate>
+        a skos:Concept ;
+        rdfs:label "2-pentyl-nitrate"@en ;
+        dct:description "2-pentyl-nitrate"@en ;
+        skos:prefLabel "2-pentyl-nitrate"@en ;
+        skos:broader <chemical-species/organic-nitrate> ;
+        skos:notation "2-pentyl-nitrate" .
+
+<chemical-species/3-methyl-2-butyl-nitrate>
+        a skos:Concept ;
+        rdfs:label "3-methyl-2-butyl-nitrate"@en ;
+        dct:description "3-methyl-2-butyl-nitrate"@en ;
+        skos:prefLabel "3-methyl-2-butyl-nitrate"@en ;
+        skos:broader <chemical-species/organic-nitrate> ;
+        skos:notation "3-methyl-2-butyl-nitrate" .
+
+<chemical-species/3-pentyl-nitrate>
+        a skos:Concept ;
+        rdfs:label "3-pentyl-nitrate"@en ;
+        dct:description "3-pentyl-nitrate"@en ;
+        skos:prefLabel "3-pentyl-nitrate"@en ;
+        skos:broader <chemical-species/organic-nitrate> ;
+        skos:notation "3-pentyl-nitrate" .
+
+<chemical-species/peroxyacryloyl-nitrate>
+        a skos:Concept ;
+        rdfs:label "peroxyacryloyl nitrate"@en ;
+        dct:description "peroxyacryloyl nitrate"@en ;
+        skos:prefLabel "peroxyacryloyl nitrate"@en ;
+        skos:altLabel "APAN"@en ;
+        skos:broader <chemical-species/organic-nitrate> ;
+        skos:notation "peroxyacryloyl-nitrate" .
+
+<chemical-species/peroxymethacryloyl-nitrate>
+        a skos:Concept ;
+        rdfs:label "peroxymethacryloyl nitrate"@en ;
+        dct:description "peroxymethacryloyl nitrate"@en ;
+        skos:prefLabel "peroxymethacryloyl nitrate"@en ;
+        skos:altLabel "MPAN"@en ;
+        skos:broader <chemical-species/organic-nitrate> ;
+        skos:notation "peroxymethacryloyl-nitrate" .
+
+<chemical-species/peroxybutyryl-nitrate>
+        a skos:Concept ;
+        rdfs:label "peroxybutyryl nitrate"@en ;
+        dct:description "peroxybutyryl nitrate"@en ;
+        skos:prefLabel "peroxybutyryl nitrate"@en ;
+        skos:altLabel "PBN"@en ;
+        skos:notation "peroxybutyryl-nitrate" .
+
+<chemical-species/peroxybenzoyl-nitrate>
+        a skos:Concept ;
+        rdfs:label "peroxybenzoyl nitrate"@en ;
+        dct:description "peroxybenzoyl nitrate"@en ;
+        skos:prefLabel "peroxybenzoyl nitrate"@en ;
+        skos:altLabel "PBzN"@en ;
+        skos:notation "peroxybenzoyl-nitrate" .
+
+<chemical-species/peroxyisobutyric-nitrate>
+        a skos:Concept ;
+        rdfs:label "peroxyisobutyric nitrate"@en ;
+        dct:description "peroxyisobutyric nitrate"@en ;
+        skos:prefLabel "peroxyisobutyric nitrate"@en ;
+        skos:altLabel "PiBN"@en ;
+        skos:notation "peroxyisobutyric-nitrate" .
+
+<chemical-species/peroxy-pentyryl-nitrate>
+        a skos:Concept ;
+        rdfs:label "peroxy pentyryl nitrate"@en ;
+        dct:description "peroxy pentyryl nitrate"@en ;
+        skos:prefLabel "peroxy pentyryl nitrate"@en ;
+        skos:altLabel "PPeN"@en ;
+        skos:notation "peroxy-pentyryl-nitrate" .
+
+<chemical-species/peroxyl-propionyl-nitrate>
+        a skos:Concept ;
+        rdfs:label "peroxyl propionyl nitrate"@en ;
+        dct:description "peroxyl propionyl nitrate"@en ;
+        skos:prefLabel "peroxyl propionyl nitrate"@en ;
+        skos:altLabel "PPN"@en ;
+        skos:notation "peroxyl-propionyl-nitrate" .
+
+<chemical-species/propyl-nitrate>
+        a skos:Concept ;
+        rdfs:label "propyl nitrate"@en ;
+        dct:description "propyl nitrate"@en ;
+        skos:prefLabel "propyl nitrate"@en ;
+        skos:notation "propyl-nitrate" .
+
+<chemical-species/alcohol>
+        a skos:Concept ;
+        rdfs:label "alcohol"@en ;
+        dct:description "a volatile organic carbon with a hydroxyl group"@en ;
+        skos:prefLabel "alcohol"@en ;
+        skos:broader <chemical-species/volatile-organic-species> ;
+        skos:exactMatch  gemet:concept?cp=298 ;
+        skos:notation "alcohol" .
+
+<chemical-species/methanol>
+        a skos:Concept ;
+        rdfs:label "methanol"@en ;
+        dct:description "an alcohol consisting of one carbon atom, three hydrogen atoms, and the hydroxyl group"@en ;
+        skos:prefLabel "CH3OH"@en ;
+        skos:altLabel "methanol"@en ;
+        skos:broader <chemical-species/alcohol> ;
+        skos:notation "methanol" .
+
+<chemical-species/ethanol>
+        a skos:Concept ;
+        rdfs:label "ethanol"@en ;
+        dct:description "an alcohol consisting of two carbon atoms, five hydrogen atoms, and the hydroxyl group"@en ;
+        skos:prefLabel "C2H5OH"@en ;
+        skos:altLabel "ethanol"@en ;
+        skos:broader <chemical-species/alcohol> ;
+        skos:exactMatch  gemet:concept?cp=12017 ;
+        skos:notation "ethanol" .
+
+<chemical-species/propanol>
+        a skos:Concept ;
+        rdfs:label "propanol"@en ;
+        dct:description "an alcohol consisting of three carbon atoms, seven hydrogen atoms, and the hydroxyl group"@en ;
+        skos:prefLabel "C3H7OH"@en ;
+        skos:altLabel "propanol"@en ;
+        skos:broader <chemical-species/alcohol> ;
+        skos:notation "propanol" .
+
+<chemical-species/butanol>
+        a skos:Concept ;
+        rdfs:label "butanol"@en ;
+        dct:description "an alcohol consisting of for carbon atoms, nine hydrogen atoms, and the hydroxyl group"@en ;
+        skos:prefLabel "C4H9OH"@en ;
+        skos:altLabel "butanol"@en ;
+        skos:broader <chemical-species/alcohol> ;
+        skos:notation "butanol" .
+
+<chemical-species/organic-peroxide>
+        a skos:Concept ;
+        rdfs:label "organic peroxide"@en ;
+        dct:description "an organic molecule containing an OOH group"@en ;
+        skos:prefLabel "ROOH"@en ;
+        skos:altLabel "organic peroxide"@en ;
+        skos:broader <chemical-species/volatile-organic-species> ;
+        skos:notation "organic-peroxide" .
+
+<chemical-species/methyl-hydroperoxide>
+        a skos:Concept ;
+        rdfs:label "methyl hydroperoxide"@en ;
+        dct:description "the simplest organic peroxide consisting of a methyl group and the OOH group"@en ;
+        skos:prefLabel "CH3OOH"@en ;
+        skos:altLabel "methyl hydroperoxide"@en ;
+        skos:altLabel "hydroperoxymethane"@en ;
+        skos:broader <chemical-species/organic-peroxide> ;
+        skos:notation "methyl-hydroperoxide" .
+
+<chemical-species/ether>
+        a skos:Concept ;
+        rdfs:label "ether"@en ;
+        dct:description "an organic molecule that contains an ether group, i.e. R-O-R'"@en ;
+        skos:prefLabel "ether"@en ;
+        skos:broader <chemical-species/organic-species> ;
+        skos:closeMatch  gemet:concept?cp=2979 ;
+        skos:notation "ether" .
+
+<chemical-species/2-methoxy-2-methylpropane>
+        a skos:Concept ;
+        rdfs:label "2-methoxy-2-methylpropane"@en ;
+        dct:description "2-methoxy-2-methylpropane"@en ;
+        skos:prefLabel "2-methoxy-2-methylpropane"@en ;
+        skos:altLabel "2-methoxy-2-methylpropane"@en ;
+        skos:altLabel "methyl tertiary-butyl ether"@en ;
+        skos:altLabel "methyl tert-butyl ether"@en ;
+        skos:altLabel "methyl t-butyl ether"@en ;
+        skos:altLabel "MTBE"@en ;
+        skos:altLabel "tert-butyl methyl ether"@en ;
+        skos:altLabel "tBME"@en ;
+        skos:altLabel "tert-BuOMe"@en ;
+        skos:broader <chemical-species/ether> ;
+        skos:notation "2-methoxy-2-methylpropane" .
+
+<chemical-species/ester>
+        a skos:Concept ;
+        rdfs:label "ester"@en ;
+        dct:description "ester"@en ;
+        skos:prefLabel "ester"@en ;
+        skos:broader <chemical-species/organic-species> ;
+        skos:notation "ester" .
+
+<chemical-species/methyl-acetate>
+        a skos:Concept ;
+        rdfs:label "methyl acetate"@en ;
+        dct:description "methyl acetate"@en ;
+        skos:prefLabel "methyl acetate"@en ;
+        skos:altLabel "methyl acetate"@en ;
+        skos:altLabel "MeOAc"@en ;
+        skos:altLabel "acetic acid methyl ester"@en ;
+        skos:altLabel "methyl ethanoate"@en ;
+        skos:broader <chemical-species/ester> ;
+        skos:notation "methyl-acetate" .
+
+<chemical-species/ethaneperoxoic-acid>
+        a skos:Concept ;
+        rdfs:label "ethaneperoxoic acid"@en ;
+        dct:description "ethaneperoxoic acid"@en ;
+        skos:prefLabel "ethaneperoxoic acid"@en ;
+        skos:altLabel "ethaneperoxoic acid"@en ;
+        skos:altLabel "peroxyacetic acid"@en ;
+        skos:altLabel "peracetic acid"@en ;
+        skos:altLabel "acetic peroxide"@en ;
+        skos:altLabel "acetyl hydroperoxide"@en ;
+        skos:altLabel "proxitane"@en ;
+        skos:broader <chemical-species/organic-acid> ;
+        skos:notation "ethaneperoxoic-acid" .
+
+<chemical-species/propanoic-acid>
+        a skos:Concept ;
+        rdfs:label "propanoic acid"@en ;
+        dct:description "propanoic acid"@en ;
+        skos:prefLabel "propanoic acid"@en ;
+        skos:altLabel "propionic acid"@en ;
+        skos:altLabel "carboxyethane"@en ;
+        skos:altLabel "ethanecarboxylic acid"@en ;
+        skos:altLabel "ethylformic acid"@en ;
+        skos:altLabel "metacetonic acid"@en ;
+        skos:altLabel "C2H5COOH"@en ;
+        skos:altLabel "methylacetic acid"@en ;
+        skos:broader <chemical-species/organic-acid> ;
+        skos:exactMatch  nist:cgi/inchi/InChI%3D1S/C3H6O2/c1-2-3%284%295/h2H2%2C1H3%2C%28H%2C4%2C5%29 ;
+        skos:notation "propanoic-acid" .
+
+<chemical-species/polycyclic-aromatic-hydrocarbon>
+        a skos:Concept ;
+        rdfs:label "polycyclic aromatic hydrocarbon"@en ;
+        dct:description "organic molecules consisting of several aromatic rings"@en ;
+        skos:prefLabel "PAH"@en ;
+        skos:altLabel "polycyclic aromatic hydrocarbon"@en ;
+        skos:altLabel "polyaromatic hydrocarbon"@en ;
+        skos:broader <chemical-species/organic-species> ;
+        skos:notation "polycyclic-aromatic-hydrocarbon" .
+
+<chemical-species/naphtalene>
+        a skos:Concept ;
+        rdfs:label "naphtalene"@en ;
+        dct:description "a polycyclic aromatic hydrocarbon consisting of 2 benzene rings"@en ;
+        skos:prefLabel "naphtalene"@en ;
+        skos:altLabel "C10H8"@en ;
+        skos:altLabel "bicyclo(4.4.0)deca-1,3,5,7,9-pentene"@en ;
+        skos:altLabel "naphthalin"@en ;
+        skos:altLabel "hexalene"@en ;
+        skos:broader <chemical-species/polycyclic-aromatic-hydrocarbon> ;
+        skos:notation "naphtalene" .
+
+<chemical-species/acenaphthylene>
+        a skos:Concept ;
+        rdfs:label "acenaphthylene"@en ;
+        dct:description "a polycyclic aromatic hydrocarbon consisting of 2 benzene rings"@en ;
+        skos:prefLabel "acenaphthylene"@en ;
+        skos:altLabel "C12H8"@en ;
+        skos:altLabel "tricyclo(6.3.1.04,12)dodeca-1(12),2,4,6,8,10-hexaene"@en ;
+        skos:altLabel "cycopenta(de)naphthalene"@en ;
+        skos:broader <chemical-species/polycyclic-aromatic-hydrocarbon> ;
+        skos:notation "acenaphthylene" .
+
+<chemical-species/acenaphthene>
+        a skos:Concept ;
+        rdfs:label "acenaphthene"@en ;
+        dct:description "a polycyclic aromatic hydrocarbon consisting of 2 benzene rings"@en ;
+        skos:prefLabel "acenaphthene"@en ;
+        skos:altLabel "C12H10"@en ;
+        skos:altLabel "tricyclo(6.3.1.04,12)dodeca-1(12),4,6,8,10-pentaene"@en ;
+        skos:altLabel "1,8-ethylenenaphthalene"@en ;
+        skos:altLabel "peri-ethylenenaphthalene"@en ;
+        skos:altLabel "naphthyleneethylene"@en ;
+        skos:altLabel "Tricyclo(6.3.1.04,12)dodecapentaene"@en ;
+        skos:broader <chemical-species/polycyclic-aromatic-hydrocarbon> ;
+        skos:notation "acenaphthene" .
+
+<chemical-species/fluorene>
+        a skos:Concept ;
+        rdfs:label "fluorene"@en ;
+        dct:description "a polycyclic aromatic hydrocarbon with the formula C13H10"@en ;
+        skos:prefLabel "9H-fluorene"@en ;
+        skos:altLabel "fluorene"@en ;
+        skos:broader <chemical-species/polycyclic-aromatic-hydrocarbon> ;
+        skos:notation "fluorene" .
+
+<chemical-species/anthracene>
+        a skos:Concept ;
+        rdfs:label "anthracene"@en ;
+        dct:description "a polycyclic aromatic hydrocarbon consisting of 3 benzene rings"@en ;
+        skos:prefLabel "anthracene"@en ;
+        skos:altLabel "C14H10"@en ;
+        skos:broader <chemical-species/polycyclic-aromatic-hydrocarbon> ;
+        skos:notation "anthracene" .
+
+<chemical-species/phenantrene>
+        a skos:Concept ;
+        rdfs:label "phenantrene"@en ;
+        dct:description "a polycyclic aromatic hydrocarbon consisting of 3 benzene rings"@en ;
+        skos:prefLabel "phenantrene"@en ;
+        skos:altLabel "C14H10"@en ;
+        skos:broader <chemical-species/polycyclic-aromatic-hydrocarbon> ;
+        skos:notation "phenantrene" .
+
+<chemical-species/fluoranthene>
+        a skos:Concept ;
+        rdfs:label "fluoranthene"@en ;
+        dct:description "a polycyclic aromatic hydrocarbon consisting of 3 benzene rings"@en ;
+        skos:prefLabel "fluoranthene"@en ;
+        skos:altLabel "C16H10"@en ;
+        skos:altLabel "benzo(j, k)fluorene"@en ;
+        skos:broader <chemical-species/polycyclic-aromatic-hydrocarbon> ;
+        skos:notation "fluoranthene" .
+
+<chemical-species/tetracene>
+        a skos:Concept ;
+        rdfs:label "tetracene"@en ;
+        dct:description "a polycyclic aromatic hydrocarbon consisting of 4 benzene rings"@en ;
+        skos:prefLabel "tetracene"@en ;
+        skos:altLabel "C18H12"@en ;
+        skos:altLabel "naphthacene"@en ;
+        skos:altLabel "benz(b)anthracene"@en ;
+        skos:altLabel "2,3-benzanthracene"@en ;
+        skos:broader <chemical-species/polycyclic-aromatic-hydrocarbon> ;
+        skos:notation "tetracene" .
+
+<chemical-species/chrysene>
+        a skos:Concept ;
+        rdfs:label "chrysene"@en ;
+        dct:description "a polycyclic aromatic hydrocarbon consisting of 4 benzene rings"@en ;
+        skos:prefLabel "chrysene"@en ;
+        skos:altLabel "C18H12"@en ;
+        skos:altLabel "benzo(a)phenanthrene"@en ;
+        skos:altLabel "1,2-benzphenanthrene"@en ;
+        skos:broader <chemical-species/polycyclic-aromatic-hydrocarbon> ;
+        skos:notation "chrysene" .
+
+<chemical-species/triphenylene>
+        a skos:Concept ;
+        rdfs:label "triphenylene"@en ;
+        dct:description "a polycyclic aromatic hydrocarbon consisting of 4 benzene rings"@en ;
+        skos:prefLabel "triphenylene"@en ;
+        skos:altLabel "C18H12"@en ;
+        skos:altLabel "benzo(l)phenanthrene"@en ;
+        skos:altLabel "9,10-benzophenanthrene"@en ;
+        skos:altLabel "1,2,3,4-dibenznaphthalene"@en ;
+        skos:altLabel "isochrysene"@en ;
+        skos:broader <chemical-species/polycyclic-aromatic-hydrocarbon> ;
+        skos:notation "triphenylene" .
+
+<chemical-species/benz(a)anthracene>
+        a skos:Concept ;
+        rdfs:label "benz(a)anthracene"@en ;
+        dct:description "a polycyclic aromatic hydrocarbon consisting of 4 benzene rings"@en ;
+        skos:prefLabel "benz(a)anthracene"@en ;
+        skos:altLabel "C18H12"@en ;
+        skos:altLabel "benzanthracene"@en ;
+        skos:altLabel "Benzanthrene"@en ;
+        skos:altLabel "1,2-Benzanthracene"@en ;
+        skos:altLabel "Benzo(b)phenanthrene"@en ;
+        skos:altLabel "Tetraphene"@en ;
+        skos:notation "benz(a)anthracene" .
+
+<chemical-species/pyrene>
+        a skos:Concept ;
+        rdfs:label "pyrene"@en ;
+        dct:description "a polycyclic aromatic hydrocarbon consisting of 4 benzene rings"@en ;
+        skos:prefLabel "pyrene"@en ;
+        skos:altLabel "C16H10"@en ;
+        skos:altLabel "benzo(def)phenanthrene"@en ;
+        skos:broader <chemical-species/polycyclic-aromatic-hydrocarbon> ;
+        skos:notation "pyrene" .
+
+<chemical-species/benzo(a)pyrene>
+        a skos:Concept ;
+        rdfs:label "benzo(a)pyrene"@en ;
+        dct:description "a polycyclic aromatic hydrocarbon consisting of 5 benzene rings"@en ;
+        skos:prefLabel "benzo(a)pyrene"@en ;
+        skos:altLabel "C20H12"@en ;
+        skos:broader <chemical-species/polycyclic-aromatic-hydrocarbon> ;
+        skos:notation "benzo(a)pyrene" .
+
+<chemical-species/benzo(b)fluoranthene>
+        a skos:Concept ;
+        rdfs:label "benzo(b)fluoranthene"@en ;
+        dct:description "a polycyclic aromatic hydrocarbon consisting of 4 benzene rings"@en ;
+        skos:prefLabel "benzo(b)fluoranthene"@en ;
+        skos:altLabel "C20H12"@en ;
+        skos:broader <chemical-species/polycyclic-aromatic-hydrocarbon> ;
+        skos:notation "benzo(b)fluoranthene" .
+
+<chemical-species/benzo(j)fluoranthene>
+        a skos:Concept ;
+        rdfs:label "benzo(j)fluoranthene"@en ;
+        dct:description "a polycyclic aromatic hydrocarbon consisting of 4 benzene rings"@en ;
+        skos:prefLabel "benzo(j)fluoranthene"@en ;
+        skos:altLabel "C20H12"@en ;
+        skos:broader <chemical-species/polycyclic-aromatic-hydrocarbon> ;
+        skos:notation "benzo(j)fluoranthene" .
+
+<chemical-species/benzo(k)fluoranthene>
+        a skos:Concept ;
+        rdfs:label "benzo(k)fluoranthene"@en ;
+        dct:description "a polycyclic aromatic hydrocarbon consisting of 4 benzene rings"@en ;
+        skos:prefLabel "benzo(k)fluoranthene"@en ;
+        skos:altLabel "C20H12"@en ;
+        skos:broader <chemical-species/polycyclic-aromatic-hydrocarbon> ;
+        skos:notation "benzo(k)fluoranthene" .
+
+<chemical-species/dibenz(a,h)anthracene>
+        a skos:Concept ;
+        rdfs:label "dibenz(a,h)anthracene"@en ;
+        dct:description "a polycyclic aromatic hydrocarbon consisting of 5 benzene rings"@en ;
+        skos:prefLabel "dibenz(a,h)anthracene"@en ;
+        skos:altLabel "C22H14"@en ;
+        skos:broader <chemical-species/polycyclic-aromatic-hydrocarbon> ;
+        skos:notation "dibenz(a,h)anthracene" .
+
+<chemical-species/indeno(1,2,3-cd)pyrene>
+        a skos:Concept ;
+        rdfs:label "indeno(1,2,3-cd)pyrene"@en ;
+        dct:description "a polycyclic aromatic hydrocarbon consisting of 5 benzene rings"@en ;
+        skos:prefLabel "indeno(1,2,3-cd)pyrene"@en ;
+        skos:altLabel "C22H12"@en ;
+        skos:altLabel "o-phenylenepyrene"@en ;
+        skos:altLabel "indenopyrene"@en ;
+        skos:altLabel "1,10-(o-phenylene)pyrene"@en ;
+        skos:altLabel "1,10-(1,2-phenylene)pyrene"@en ;
+        skos:altLabel "2,3-(o-phenylene)pyrene"@en ;
+        skos:altLabel "2,3-phenylenepyrene"@en ;
+        skos:altLabel "1,10-(ortho-phenylene)pyrene"@en ;
+        skos:broader <chemical-species/polycyclic-aromatic-hydrocarbon> ;
+        skos:notation "indeno(1,2,3-cd)pyrene" .
+
+<chemical-species/polychlorinated-pesticide>
+        a skos:Concept ;
+        rdfs:label "polychlorinated pesticide"@en ;
+        dct:description "polychlorinated pesticide"@en ;
+        skos:prefLabel "polychlorinated pesticide"@en ;
+        skos:broader <chemical-species/organic-species> ;
+        skos:notation "polychlorinated-pesticide" .
+
+<chemical-species/polychlorinated-biphenyl>
+        a skos:Concept ;
+        rdfs:label "polychlorinated biphenyl"@en ;
+        dct:description "a molecule with several chlorine atoms attached to a biphenyl, i.e. a molecule consisting of two benzene rings"@en ;
+        skos:prefLabel "PCB"@en ;
+        skos:altLabel "polychlorinated biphenyl"@en ;
+        skos:broader <chemical-species/organic-species> ;
+        skos:notation "polychlorinated-biphenyl" .
+
+<chemical-species/aldrin>
+        a skos:Concept ;
+        rdfs:label "aldrin"@en ;
+        dct:description "organochlorine insecticide derived from hexachlorocyclopentadiene"@en ;
+        skos:prefLabel "aldrin"@en ;
+        skos:altLabel "C12H8Cl6"@en ;
+        skos:altLabel "1,2,3,4,10,10-hexachloro-1,4,4a,5,8,8a-hexahydro-1,4:5,8-dimethanonaphthalene"@en ;
+        skos:altLabel "HHDN"@en ;
+        skos:altLabel "octalene"@en ;
+        skos:broader <chemical-species/polychlorinated-pesticide> ;
+        skos:notation "aldrin" .
+
+<chemical-species/alpha-hexachlorocyclohexane>
+        a skos:Concept ;
+        rdfs:label "alpha-hexachlorocyclohexane"@en ;
+        dct:description "organochloride derived from cyclohexane and a byproduct of lindane production"@en ;
+        skos:prefLabel "alpha-hexachlorocyclohexane"@en ;
+        skos:altLabel "C6H6Cl"@en ;
+        skos:altLabel "alpha-1,2,3,4,5,6-hexachlorocyclohexane"@en ;
+        skos:altLabel "alpha-HCH"@en ;
+        skos:altLabel "alpha-Benzenehexachloride"@en ;
+        skos:altLabel "alpha-BHC"@en ;
+        skos:altLabel "alpha-hexaclorane"@en ;
+        skos:altLabel "alpha-Lindane"@en ;
+        skos:broader <chemical-species/polychlorinated-pesticide> ;
+        skos:notation "alpha-hexachlorocyclohexane" .
+
+<chemical-species/beta-hexachlorocyclohexane>
+        a skos:Concept ;
+        rdfs:label "beta-hexachlorocyclohexane"@en ;
+        dct:description "organochloride derived from cyclohexane and a byproduct of lindane production"@en ;
+        skos:prefLabel "alpha-hexachlorocyclohexane"@en ;
+        skos:altLabel "C6H6Cl"@en ;
+        skos:altLabel "beta-1,2,3,4,5,6-hexachlorocyclohexane"@en ;
+        skos:altLabel "beta-HCH"@en ;
+        skos:altLabel "beta-benzenehexachloride"@en ;
+        skos:altLabel "beta-BHC"@en ;
+        skos:broader <chemical-species/polychlorinated-pesticide> ;
+        skos:notation "beta-hexachlorocyclohexane" .
+
+<chemical-species/gamma-hexachlorocyclohexane>
+        a skos:Concept ;
+        rdfs:label "gamma-hexachlorocyclohexane"@en ;
+        dct:description "organochloride commonly known as lindane"@en ;
+        skos:prefLabel "gamma-hexachlorocyclohexane"@en ;
+        skos:altLabel "C6H6Cl"@en ;
+        skos:altLabel "lindane"@en ;
+        skos:altLabel "gamma-hexachlorocyclohexane"@en ;
+        skos:altLabel "gamma-HCH"@en ;
+        skos:altLabel "gammaxene"@en ;
+        skos:altLabel "gammallin"@en ;
+        skos:broader <chemical-species/polychlorinated-pesticide> ;
+        skos:notation "gamma-hexachlorocyclohexane" .
+
+<chemical-species/ion>
+        a skos:Concept ;
+        rdfs:label "ion"@en ;
+        dct:description "an atom or molecule with imbalanced positive and negative charges. Positively charged ions are cations, negatively charged ions are anions."@en ;
+        skos:prefLabel "ion"@en ;
+        skos:broader <chemical-species/gas-phase-species> ;
+        skos:broader <chemical-species/particle-phase-species> ;
+        skos:notation "ion" .
+
+<chemical-species/anion>
+        a skos:Concept ;
+        rdfs:label "anion"@en ;
+        dct:description "an ion with a negative charge"@en ;
+        skos:prefLabel "anion"@en ;
+        skos:broader <chemical-species/ion> ;
+        skos:notation "anion" .
+
+<chemical-species/cation>
+        a skos:Concept ;
+        rdfs:label "cation"@en ;
+        dct:description "an ion with a positive charge"@en ;
+        skos:prefLabel "cation"@en ;
+        skos:broader <chemical-species/ion> ;
+        skos:notation "cation" .
+
+<chemical-species/hydrogen-ion>
+        a skos:Concept ;
+        rdfs:label "hydrogen ion"@en ;
+        dct:description "the positively charged hydrogen atom, i.e. a single proton"@en ;
+        skos:prefLabel "H+"@en ;
+        skos:altLabel "hydrogen ion"@en ;
+        skos:broader <chemical-species/cation> ;
+        skos:notation "hydrogen-ion" .
+
+<chemical-species/bromide-ion>
+        a skos:Concept ;
+        rdfs:label "bromide ion"@en ;
+        dct:description "bromide ion"@en ;
+        skos:prefLabel "Br-"@en ;
+        skos:altLabel "bromide ion"@en ;
+        skos:broader <chemical-species/anion> ;
+        skos:notation "bromide-ion" .
+
+<chemical-species/chloride-ion>
+        a skos:Concept ;
+        rdfs:label "chloride ion"@en ;
+        dct:description "chloride ion"@en ;
+        skos:prefLabel "Cl-"@en ;
+        skos:altLabel "chloride ion"@en ;
+        skos:broader <chemical-species/anion> ;
+        skos:notation "chloride-ion" .
+
+<chemical-species/fluoride-ion>
+        a skos:Concept ;
+        rdfs:label "fluoride ion"@en ;
+        dct:description "fluoride ion"@en ;
+        skos:prefLabel "F-"@en ;
+        skos:altLabel "fluoride ion"@en ;
+        skos:broader <chemical-species/anion> ;
+        skos:notation "fluoride-ion" .
+
+<chemical-species/iodide-ion>
+        a skos:Concept ;
+        rdfs:label "iodide ion"@en ;
+        dct:description "iodide ion"@en ;
+        skos:prefLabel "I-"@en ;
+        skos:altLabel "iodide ion"@en ;
+        skos:broader <chemical-species/anion> ;
+        skos:notation "iodide-ion" .
+
+<chemical-species/phosphate-ion>
+        a skos:Concept ;
+        rdfs:label "phosphate ion"@en ;
+        dct:description "phosphate ion"@en ;
+        skos:prefLabel "PO4(3-)"@en ;
+        skos:altLabel "phosphate ion"@en ;
+        skos:broader <chemical-species/anion> ;
+        skos:notation "phosphate-ion" .
+
+<chemical-species/sulphate-ion>
+        a skos:Concept ;
+        rdfs:label "sulphate ion"@en ;
+        dct:description "sulphate ion"@en ;
+        skos:prefLabel "SO4(2-)"@en ;
+        skos:altLabel "sulphate ion"@en ;
+        skos:broader <chemical-species/anion> ;
+        skos:notation "sulphate-ion" .
+
+<chemical-species/calcium-ion>
+        a skos:Concept ;
+        rdfs:label "calcium ion"@en ;
+        dct:description "calcium ion"@en ;
+        skos:prefLabel "Ca++"@en ;
+        skos:altLabel "calcium ion"@en ;
+        skos:broader <chemical-species/cation> ;
+        skos:notation "calcium-ion" .
+
+<chemical-species/magnesium-ion>
+        a skos:Concept ;
+        rdfs:label "magnesium ion"@en ;
+        dct:description "magnesium ion"@en ;
+        skos:prefLabel "Mg++"@en ;
+        skos:altLabel "magnesium ion"@en ;
+        skos:broader <chemical-species/cation> ;
+        skos:notation "magnesium-ion" .
+
+<chemical-species/potassium-ion>
+        a skos:Concept ;
+        rdfs:label "potassium ion"@en ;
+        dct:description "potassium ion"@en ;
+        skos:prefLabel "K+"@en ;
+        skos:altLabel "potassium ion"@en ;
+        skos:broader <chemical-species/cation> ;
+        skos:notation "potassium-ion" .
+
+<chemical-species/sodium-ion>
+        a skos:Concept ;
+        rdfs:label "sodium ion"@en ;
+        dct:description "sodium ion"@en ;
+        skos:prefLabel "Na+"@en ;
+        skos:altLabel "sodium ion"@en ;
+        skos:broader <chemical-species/cation> ;
+        skos:notation "sodium-ion" .
+
+<chemical-species/ammonium>
+        a skos:Concept ;
+        rdfs:label "ammonium"@en ;
+        dct:description "ammonium"@en ;
+        skos:prefLabel "NH4"@en ;
+        skos:altLabel "ammonium"@en ;
+        skos:altLabel "NH\u2084\u207B"@en ;
+        skos:broader <chemical-species/inorganic-nitrogen-species> ;
+        skos:broader <chemical-species/cation> ;
+        skos:exactMatch  gemet:concept?cp=379 ;
+        skos:notation "ammonium" .
+
+<chemical-species/nitrate-ion>
+        a skos:Concept ;
+        rdfs:label "nitrate ion"@en ;
+        dct:description "nitrate ion, i.e. a molecule consisting of one nitrogen atom, and three oxygen atoms which is charged as -1"@en ;
+        skos:prefLabel "NO3-"@en ;
+        skos:altLabel "nitrate ion"@en ;
+        skos:altLabel "NO\u2083\u207B"@en ;
+        skos:broader <chemical-species/inorganic-nitrogen-species> ;
+        skos:broader <chemical-species/anion> ;
+        skos:notation "nitrate-ion" .
+
+<chemical-species/nitrite-ion>
+        a skos:Concept ;
+        rdfs:label "nitrite ion"@en ;
+        dct:description "nitrite ion"@en ;
+        skos:prefLabel "NO2-"@en ;
+        skos:altLabel "nitrite ion"@en ;
+        skos:broader <chemical-species/anion> ;
+        skos:notation "nitrite-ion" .
+
+<chemical-species/formate-ion>
+        a skos:Concept ;
+        rdfs:label "formate ion"@en ;
+        dct:description "formate ion"@en ;
+        skos:prefLabel "HCOO-"@en ;
+        skos:altLabel "formate ion"@en ;
+        skos:broader <chemical-species/anion> ;
+        skos:notation "formate-ion" .
+
+<chemical-species/acetate-ion>
+        a skos:Concept ;
+        rdfs:label "acetate ion"@en ;
+        dct:description "acetate ion"@en ;
+        skos:prefLabel "CH3COO-"@en ;
+        skos:altLabel "acetate ion"@en ;
+        skos:broader <chemical-species/anion> ;
+        skos:notation "acetate-ion" .
+
+<chemical-species/proprionate-ion>
+        a skos:Concept ;
+        rdfs:label "proprionate ion"@en ;
+        dct:description "proprionate ion"@en ;
+        skos:prefLabel "C2H5COO-"@en ;
+        skos:altLabel "proprionate ion"@en ;
+        skos:broader <chemical-species/anion> ;
+        skos:notation "proprionate-ion" .
+
+<chemical-species/methane-sulfonate-ion>
+        a skos:Concept ;
+        rdfs:label "methane sulfonate ion"@en ;
+        dct:description "methane sulfonate ion"@en ;
+        skos:prefLabel "CH3O3S-"@en ;
+        skos:altLabel "methane sulfonate ion"@en ;
+        skos:broader <chemical-species/anion> ;
+        skos:notation "methane-sulfonate-ion" .
+
+<chemical-species/elemental-carbon>
+        a skos:Concept ;
+        rdfs:label "elemental carbon"@en ;
+        dct:description "elemental carbon"@en ;
+        skos:prefLabel "EC"@en ;
+        skos:altLabel "elemental carbon"@en ;
+        skos:broader <chemical-species/particle-phase-species> ;
+        skos:notation "elemental-carbon" .
+
+<chemical-species/total-carbon>
+        a skos:Concept ;
+        rdfs:label "total carbon"@en ;
+        dct:description "total carbon"@en ;
+        skos:prefLabel "TC"@en ;
+        skos:altLabel "total carbon"@en ;
+        skos:broader <chemical-species/particle-phase-species> ;
+        skos:notation "total-carbon" .
+
+<chemical-species/organic-carbon>
+        a skos:Concept ;
+        rdfs:label "organic carbon"@en ;
+        dct:description "organic carbon"@en ;
+        skos:prefLabel "OC"@en ;
+        skos:altLabel "organic carbon"@en ;
+        skos:broader <chemical-species/particle-phase-species> ;
+        skos:notation "organic-carbon" .
+
+<chemical-species/brown-carbon>
+        a skos:Concept ;
+        rdfs:label "brown carbon"@en ;
+        dct:description "brown carbon"@en ;
+        skos:prefLabel "brC"@en ;
+        skos:altLabel "brown carbon"@en ;
+        skos:broader <chemical-species/particle-phase-species> ;
+        skos:notation "brown-carbon" .
+
+<chemical-species/black-carbon>
+        a skos:Concept ;
+        rdfs:label "black carbon"@en ;
+        dct:description "black carbon"@en ;
+        skos:prefLabel "BC"@en ;
+        skos:altLabel "black carbon"@en ;
+        skos:broader <chemical-species/particle-phase-species> ;
+        skos:notation "black-carbon" .
+
+<chemical-species/water-soluble-carbon>
+        a skos:Concept ;
+        rdfs:label "water soluble carbon"@en ;
+        dct:description "water soluble carbon"@en ;
+        skos:prefLabel "solC"@en ;
+        skos:altLabel "water soluble carbon"@en ;
+        skos:broader <chemical-species/particle-phase-species> ;
+        skos:notation "water-soluble-carbon" .
+
+<chemical-species/ammonium-nitrate>
+        a skos:Concept ;
+        rdfs:label "ammonium nitrate"@en ;
+        dct:description "ammonium nitrate"@en ;
+        skos:prefLabel "NH4NO3"@en ;
+        skos:altLabel "ammonium nitrate"@en ;
+        skos:broader <chemical-species/particle-phase-species> ;
+        skos:notation "ammonium-nitrate" .
+
