@@ -2,9 +2,6 @@
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
-@prefix gemet: <http://www.eionet.europa.eu/gemet/> .
-@prefix nist:  <http://webbook.nist.gov/> .
-@prefix ofmpub:  <http://ofmpub.epa.gov/sor_internet/registry/substreg/searchandretrieve/substancesearch/search.do?details=displayDetails&> .
 
 <chemical-species>
         a skos:Collection ;
@@ -388,7 +385,7 @@
         rdfs:label "gas phase species"@en ;
         dct:description "gaseous species in the atmosphere (trace gases)"@en ;
         skos:prefLabel "gas phase species"@en ;
-        skos:closeMatch  gemet:concept?cp=623 ;
+        skos:closeMatch  <http://www.eionet.europa.eu/gemet/concept?cp=623> ;
         skos:notation "gas-phase-species" .
 
 <chemical-species/particle-phase-species>
@@ -403,7 +400,7 @@
         rdfs:label "inorganic species"@en ;
         dct:description "inorganic species in the atmosphere"@en ;
         skos:prefLabel "inorganic species"@en ;
-        skos:closeMatch  gemet:concept?cp=4350 ;
+        skos:closeMatch  <http://www.eionet.europa.eu/gemet/concept?cp=4350> ;
         skos:notation "inorganic-species" .
 
 <chemical-species/organic-species>
@@ -489,7 +486,7 @@
         skos:altLabel "O\u2082"@en ;
         skos:hiddenLabel "oxigen molecule"@en ;
         skos:broader <chemical-species/inorganic-species> ;
-        skos:exactMatch  gemet:concept?cp=5982 ;
+        skos:exactMatch  <http://www.eionet.europa.eu/gemet/concept?cp=5982> ;
         skos:notation "oxygen-molecule" .
 
 <chemical-species/ozone>
@@ -500,7 +497,7 @@
         skos:altLabel "ozone"@en ;
         skos:altLabel "O\u2083"@en ;
         skos:broader <chemical-species/inorganic-species> ;
-        skos:exactMatch  gemet:concept?cp=5991 ;
+        skos:exactMatch  <http://www.eionet.europa.eu/gemet/concept?cp=5991> ;
         skos:notation "ozone" .
 
 <chemical-species/oxygen-dimer>
@@ -548,7 +545,7 @@
         skos:prefLabel "tritium"@en ;
         skos:broader <chemical-species/inorganic-hydrogen-oxide-species> ;
         skos:broader <chemical-species/radionuclide> ;
-        skos:exactMatch  gemet:concept?cp=8680 ;
+        skos:exactMatch  <http://www.eionet.europa.eu/gemet/concept?cp=8680> ;
         skos:notation "tritium" .
 
 <chemical-species/hydrogen-molecule>
@@ -560,7 +557,7 @@
         skos:altLabel "molecular hydrogen"@en ;
         skos:altLabel "H\u2082"@en ;
         skos:broader <chemical-species/inorganic-hydrogen-oxide-species> ;
-        skos:exactMatch  gemet:concept?cp=4103 ;
+        skos:exactMatch  <http://www.eionet.europa.eu/gemet/concept?cp=4103> ;
         skos:notation "hydrogen-molecule" .
 
 <chemical-species/water-vapor>
@@ -643,7 +640,7 @@
         skos:prefLabel "inorganic nitrogen species"@en ;
         skos:altLabel "inorganic nitrogen"@en ;
         skos:broader <chemical-species/inorganic-species> ;
-        skos:closeMatch  gemet:concept?cp=5605 ;
+        skos:closeMatch  <http://www.eionet.europa.eu/gemet/concept?cp=5605> ;
         skos:notation "inorganic-nitrogen-species" .
 
 <chemical-species/nitrogen-atom>
@@ -686,7 +683,7 @@
         skos:altLabel "nitrogen monoxide"@en ;
         skos:altLabel "nitric oxide"@en ;
         skos:broader <chemical-species/inorganic-nitrogen-species> ;
-        skos:exactMatch  gemet:concept?cp=5612 ;
+        skos:exactMatch  <http://www.eionet.europa.eu/gemet/concept?cp=5612> ;
         skos:notation "nitrogen-monoxide" .
 
 <chemical-species/nitrogen-dioxide>
@@ -697,7 +694,7 @@
         skos:altLabel "nitrogen dioxide"@en ;
         skos:altLabel "NO\u2082"@en ;
         skos:broader <chemical-species/inorganic-nitrogen-species> ;
-        skos:exactMatch  gemet:concept?cp=5608 ;
+        skos:exactMatch  <http://www.eionet.europa.eu/gemet/concept?cp=5608> ;
         skos:notation "nitrogen-dioxide" .
 
 <chemical-species/nitrate>
@@ -708,7 +705,7 @@
         skos:altLabel "nitrate"@en ;
         skos:altLabel "NO\u2083"@en ;
         skos:broader <chemical-species/inorganic-nitrogen-species> ;
-        skos:closeMatch  gemet:concept?cp=5593 ;
+        skos:closeMatch  <http://www.eionet.europa.eu/gemet/concept?cp=5593> ;
         skos:notation "nitrate" .
 
 <chemical-species/dinitrogen-pentoxide>
@@ -766,7 +763,7 @@
         skos:altLabel "azane"@en ;
         skos:altLabel "NH\u2083"@en ;
         skos:broader <chemical-species/inorganic-nitrogen-species> ;
-        skos:exactMatch  gemet:concept?cp=375 ;
+        skos:exactMatch  <http://www.eionet.europa.eu/gemet/concept?cp=375> ;
         skos:notation "ammonia" .
 
 <chemical-species/nox>
@@ -776,7 +773,7 @@
         skos:prefLabel "NOx"@en ;
         skos:altLabel "nox"@en ;
         skos:broader <chemical-species/inorganic-nitrogen-species> ;
-        skos:closeMatch  gemet:concept?cp=13577 ;
+        skos:closeMatch  <http://www.eionet.europa.eu/gemet/concept?cp=13577> ;
         skos:notation "nox" .
 
 <chemical-species/noy>
@@ -786,7 +783,7 @@
         skos:prefLabel "NOy"@en ;
         skos:altLabel "noy"@en ;
         skos:broader <chemical-species/inorganic-nitrogen-species> ;
-        skos:closeMatch  gemet:concept?cp=5613 ;
+        skos:closeMatch  <http://www.eionet.europa.eu/gemet/concept?cp=5613> ;
         skos:notation "noy" .
 
 <chemical-species/inorganic-carbon-species>
@@ -805,7 +802,7 @@
         skos:prefLabel "CO"@en ;
         skos:altLabel "carbon monoxide"@en ;
         skos:broader <chemical-species/inorganic-carbon-species> ;
-        skos:exactMatch  gemet:concept?cp=1173 ;
+        skos:exactMatch  <http://www.eionet.europa.eu/gemet/concept?cp=1173> ;
         skos:notation "carbon-monoxide" .
 
 <chemical-species/carbon-dioxide>
@@ -815,7 +812,7 @@
         skos:prefLabel "CO2"@en ;
         skos:altLabel "carbon dioxide"@en ;
         skos:broader <chemical-species/inorganic-carbon-species> ;
-        skos:exactMatch  gemet:concept?cp=1168 ;
+        skos:exactMatch  <http://www.eionet.europa.eu/gemet/concept?cp=1168> ;
         skos:notation "carbon-dioxide" .
 
 <chemical-species/12c-carbon-dioxide>
@@ -887,7 +884,7 @@
         skos:altLabel "sulfur dioxide"@en ;
         skos:altLabel "sulphur dioxide"@en ;
         skos:broader <chemical-species/inorganic-sulfur-species> ;
-        skos:exactMatch  gemet:concept?cp=8202 ;
+        skos:exactMatch  <http://www.eionet.europa.eu/gemet/concept?cp=8202> ;
         skos:notation "sulfur-dioxide" .
 
 <chemical-species/sulfur-trioxide>
@@ -907,7 +904,7 @@
         skos:prefLabel "H2SO4"@en ;
         skos:altLabel "sulfuric acid"@en ;
         skos:broader <chemical-species/inorganic-sulfur-species> ;
-        skos:exactMatch  gemet:concept?cp=8203 ;
+        skos:exactMatch  <http://www.eionet.europa.eu/gemet/concept?cp=8203> ;
         skos:notation "sulfuric-acid" .
 
 <chemical-species/hydrogen-sulfide>
@@ -920,7 +917,7 @@
         skos:altLabel "hydrogen sulphide"@en ;
         skos:altLabel "sulphane"@en ;
         skos:broader <chemical-species/inorganic-sulfur-species> ;
-        skos:exactMatch  gemet:concept?cp=4107 ;
+        skos:exactMatch  <http://www.eionet.europa.eu/gemet/concept?cp=4107> ;
         skos:notation "hydrogen-sulfide" .
 
 <chemical-species/carbon-disulfide>
@@ -959,7 +956,7 @@
         skos:altLabel "atomic bromine"@en ;
         skos:altLabel "bromine atom"@en ;
         skos:broader <chemical-species/inorganic-halogen-species> ;
-        skos:closeMatch  gemet:concept?cp=1007 ;
+        skos:closeMatch  <http://www.eionet.europa.eu/gemet/concept?cp=1007> ;
         skos:notation "atomic-bromine" .
 
 <chemical-species/dibromine>
@@ -1022,7 +1019,7 @@
         skos:altLabel "atomic chlorine"@en ;
         skos:altLabel "chlorine atom"@en ;
         skos:broader <chemical-species/inorganic-halogen-species> ;
-        skos:closeMatch  gemet:concept?cp=1373 ;
+        skos:closeMatch  <http://www.eionet.europa.eu/gemet/concept?cp=1373> ;
         skos:notation "atomic-chlorine" .
 
 <chemical-species/dichlorine>
@@ -1074,7 +1071,7 @@
         skos:altLabel "chlorane"@en ;
         skos:altLabel "hydrochloric acid"@en ;
         skos:broader <chemical-species/inorganic-halogen-species> ;
-        skos:closeMatch  gemet:concept?cp=4094 ;
+        skos:closeMatch  <http://www.eionet.europa.eu/gemet/concept?cp=4094> ;
         skos:notation "hydrogen-chloride" .
 
 <chemical-species/hypochlorous-acid>
@@ -1116,7 +1113,7 @@
         skos:altLabel "atomic iodine"@en ;
         skos:altLabel "iodine atom"@en ;
         skos:broader <chemical-species/inorganic-halogen-species> ;
-        skos:closeMatch  gemet:concept?cp=4483 ;
+        skos:closeMatch  <http://www.eionet.europa.eu/gemet/concept?cp=4483> ;
         skos:notation "atomic-iodine" .
 
 <chemical-species/iodine-oxide>
@@ -1137,7 +1134,7 @@
         skos:altLabel "atomic fluorine"@en ;
         skos:altLabel "fluorine atom"@en ;
         skos:broader <chemical-species/inorganic-halogen-species> ;
-        skos:closeMatch  gemet:concept?cp=3334 ;
+        skos:closeMatch  <http://www.eionet.europa.eu/gemet/concept?cp=3334> ;
         skos:notation "atomic-fluorine" .
 
 <chemical-species/hydrogen-fluoride>
@@ -1179,7 +1176,7 @@
         rdfs:label "radionuclide"@en ;
         dct:description "an atom that exhibits radioactivity"@en ;
         skos:prefLabel "radionuclide"@en ;
-        skos:closeMatch  gemet:concept?cp=6928 ;
+        skos:closeMatch  <http://www.eionet.europa.eu/gemet/concept?cp=6928> ;
         skos:notation "radionuclide" .
 
 <chemical-species/noble-gas>
@@ -1253,7 +1250,7 @@
         skos:altLabel "radon"@en ;
         skos:broader <chemical-species/noble-gas> ;
         skos:broader <chemical-species/radionuclide> ;
-        skos:exactMatch  gemet:concept?cp=6935 ;
+        skos:exactMatch  <http://www.eionet.europa.eu/gemet/concept?cp=6935> ;
         skos:notation "radon" .
 
 <chemical-species/trace-metal>
@@ -1271,7 +1268,7 @@
         dct:description "a metal whose specific gravity is approximately 5.0 or higher. (Source: MGH)"@en ;
         skos:prefLabel "heavy metal"@en ;
         skos:broader <chemical-species/trace-metal> ;
-        skos:closeMatch  gemet:concept?cp=3915 ;
+        skos:closeMatch  <http://www.eionet.europa.eu/gemet/concept?cp=3915> ;
         skos:notation "heavy-metal" .
 
 <chemical-species/lead>
@@ -1282,7 +1279,7 @@
         skos:altLabel "lead"@en ;
         skos:broader <chemical-species/trace-metal> ;
         skos:broader <chemical-species/heavy-metal> ;
-        skos:exactMatch  gemet:concept?cp=4723 ;
+        skos:exactMatch  <http://www.eionet.europa.eu/gemet/concept?cp=4723> ;
         skos:notation "lead" .
 
 <chemical-species/210-lead>
@@ -1304,7 +1301,7 @@
         skos:altLabel "mercury"@en ;
         skos:broader <chemical-species/trace-metal> ;
         skos:broader <chemical-species/heavy-metal> ;
-        skos:exactMatch  gemet:concept?cp=5154 ;
+        skos:exactMatch  <http://www.eionet.europa.eu/gemet/concept?cp=5154> ;
         skos:notation "mercury" .
 
 <chemical-species/phosphorus>
@@ -1314,7 +1311,7 @@
         skos:prefLabel "P"@en ;
         skos:altLabel "phosphorus"@en ;
         skos:broader <chemical-species/trace-metal> ;
-        skos:exactMatch  gemet:concept?cp=6196 ;
+        skos:exactMatch  <http://www.eionet.europa.eu/gemet/concept?cp=6196> ;
         skos:notation "phosphorus" .
 
 <chemical-species/cadmium>
@@ -1325,7 +1322,7 @@
         skos:altLabel "cadmium"@en ;
         skos:broader <chemical-species/trace-metal> ;
         skos:broader <chemical-species/heavy-metal> ;
-        skos:exactMatch  gemet:concept?cp=1100 ;
+        skos:exactMatch  <http://www.eionet.europa.eu/gemet/concept?cp=1100> ;
         skos:notation "cadmium" .
 
 <chemical-species/chromium>
@@ -1336,7 +1333,7 @@
         skos:altLabel "chromium"@en ;
         skos:broader <chemical-species/trace-metal> ;
         skos:broader <chemical-species/heavy-metal> ;
-        skos:exactMatch  gemet:concept?cp=1401 ;
+        skos:exactMatch  <http://www.eionet.europa.eu/gemet/concept?cp=1401> ;
         skos:notation "chromium" .
 
 <chemical-species/cobalt>
@@ -1347,7 +1344,7 @@
         skos:altLabel "cobalt"@en ;
         skos:broader <chemical-species/trace-metal> ;
         skos:broader <chemical-species/heavy-metal> ;
-        skos:exactMatch  gemet:concept?cp=1532 ;
+        skos:exactMatch  <http://www.eionet.europa.eu/gemet/concept?cp=1532> ;
         skos:notation "cobalt" .
 
 <chemical-species/copper>
@@ -1358,7 +1355,7 @@
         skos:altLabel "copper"@en ;
         skos:broader <chemical-species/trace-metal> ;
         skos:broader <chemical-species/heavy-metal> ;
-        skos:exactMatch  gemet:concept?cp=1792 ;
+        skos:exactMatch  <http://www.eionet.europa.eu/gemet/concept?cp=1792> ;
         skos:notation "copper" .
 
 <chemical-species/iron>
@@ -1369,7 +1366,7 @@
         skos:altLabel "iron"@en ;
         skos:broader <chemical-species/trace-metal> ;
         skos:broader <chemical-species/heavy-metal> ;
-        skos:exactMatch  gemet:concept?cp=4498 ;
+        skos:exactMatch  <http://www.eionet.europa.eu/gemet/concept?cp=4498> ;
         skos:notation "iron" .
 
 <chemical-species/nickel>
@@ -1380,7 +1377,7 @@
         skos:altLabel "nickel"@en ;
         skos:broader <chemical-species/trace-metal> ;
         skos:broader <chemical-species/heavy-metal> ;
-        skos:exactMatch  gemet:concept?cp=5589 ;
+        skos:exactMatch  <http://www.eionet.europa.eu/gemet/concept?cp=5589> ;
         skos:notation "nickel" .
 
 <chemical-species/antimony>
@@ -1401,7 +1398,7 @@
         skos:altLabel "tin"@en ;
         skos:broader <chemical-species/trace-metal> ;
         skos:broader <chemical-species/heavy-metal> ;
-        skos:exactMatch  gemet:concept?cp=8490 ;
+        skos:exactMatch  <http://www.eionet.europa.eu/gemet/concept?cp=8490> ;
         skos:notation "tin" .
 
 <chemical-species/aluminium>
@@ -1457,7 +1454,7 @@
         skos:prefLabel "Cs"@en ;
         skos:altLabel "caesium"@en ;
         skos:broader <chemical-species/trace-metal> ;
-        skos:exactMatch  gemet:concept?cp=1103 ;
+        skos:exactMatch  <http://www.eionet.europa.eu/gemet/concept?cp=1103> ;
         skos:notation "caesium" .
 
 <chemical-species/beryllium>
@@ -1467,7 +1464,7 @@
         skos:prefLabel "Be"@en ;
         skos:altLabel "beryllium"@en ;
         skos:broader <chemical-species/trace-metal> ;
-        skos:exactMatch  gemet:concept?cp=781 ;
+        skos:exactMatch  <http://www.eionet.europa.eu/gemet/concept?cp=781> ;
         skos:notation "beryllium" .
 
 <chemical-species/barium>
@@ -1624,7 +1621,7 @@
         skos:prefLabel "VOC"@en ;
         skos:altLabel "volatile organic species"@en ;
         skos:broader <chemical-species/organic-species> ;
-        skos:closeMatch  gemet:concept?cp=8993 ;
+        skos:closeMatch  <http://www.eionet.europa.eu/gemet/concept?cp=8993> ;
         skos:notation "volatile-organic-species" .
 
 <chemical-species/non-methane-volatile-organic-species>
@@ -1642,7 +1639,7 @@
         dct:description "a molecule containing the CN group and derived from HCN"@en ;
         skos:prefLabel "cyanide"@en ;
         skos:broader <chemical-species/volatile-organic-species> ;
-        skos:exactMatch  gemet:concept?cp=1933 ;
+        skos:exactMatch  <http://www.eionet.europa.eu/gemet/concept?cp=1933> ;
         skos:notation "cyanide" .
 
 <chemical-species/hydrogen-cyanide>
@@ -1709,7 +1706,7 @@
         skos:prefLabel "hydrocarbon"@en ;
         skos:altLabel "HC"@en ;
         skos:broader <chemical-species/volatile-organic-species> ;
-        skos:exactMatch  gemet:concept?cp=4091 ;
+        skos:exactMatch  <http://www.eionet.europa.eu/gemet/concept?cp=4091> ;
         skos:notation "hydrocarbon" .
 
 <chemical-species/non-methane-hydrocarbon>
@@ -1736,7 +1733,7 @@
         skos:prefLabel "CH4"@en ;
         skos:altLabel "methane"@en ;
         skos:broader <chemical-species/alkane> ;
-        skos:exactMatch  gemet:concept?cp=5199 ;
+        skos:exactMatch  <http://www.eionet.europa.eu/gemet/concept?cp=5199> ;
         skos:notation "methane" .
 
 <chemical-species/12c-methane>
@@ -2033,8 +2030,8 @@
         skos:altLabel "ethene"@en ;
         skos:altLabel "ethylene"@en ;
         skos:broader <chemical-species/alkene> ;
-        skos:exactMatch  nist:cgi/inchi/InChI%3D1S/C2H4/c1-2/h1-2H2 ;
-        skos:exactMatch  ofmpub:selectedSubstanceId=48545 ;
+        skos:exactMatch  <http://webbook.nist.gov/cgi/inchi/InChI%3D1S/C2H4/c1-2/h1-2H2> ;
+        skos:exactMatch  <http://ofmpub.epa.gov/sor_internet/registry/substreg/searchandretrieve/substancesearch/search.do?details=displayDetails&selectedSubstanceId=48545> ;
         skos:notation "ethene" .
 
 <chemical-species/propene>
@@ -2044,8 +2041,8 @@
         skos:prefLabel "C3H6"@en ;
         skos:altLabel "propene"@en ;
         skos:broader <chemical-species/alkene> ;
-        skos:exactMatch  nist:cgi/inchi/InChI%3D1S/C3H6/c1-3-2/h3H%2C1H2%2C2H3 ;
-        skos:exactMatch  ofmpub:selectedSubstanceId=47173 ;
+        skos:exactMatch  <http://webbook.nist.gov/cgi/inchi/InChI%3D1S/C3H6/c1-3-2/h3H%2C1H2%2C2H3> ;
+        skos:exactMatch  <http://ofmpub.epa.gov/sor_internet/registry/substreg/searchandretrieve/substancesearch/search.do?details=displayDetails&selectedSubstanceId=47173> ;
         skos:notation "propene" .
 
 <chemical-species/butenes>
@@ -2063,8 +2060,8 @@
         dct:description "an alkene (hydrocarbon) consisting of two  carbon atoms and four hydrogen atoms"@en ;
         skos:prefLabel "1-butene"@en ;
         skos:broader <chemical-species/alkene> ;
-        skos:exactMatch  nist:cgi/inchi/InChI%3D1S/C4H8/c1-3-4-2/h3H%2C1%2C4H2%2C2H3 ;
-        skos:exactMatch  ofmpub:selectedSubstanceId=47491 ;
+        skos:exactMatch  <http://webbook.nist.gov/cgi/inchi/InChI%3D1S/C4H8/c1-3-4-2/h3H%2C1%2C4H2%2C2H3> ;
+        skos:exactMatch  <http://ofmpub.epa.gov/sor_internet/registry/substreg/searchandretrieve/substancesearch/search.do?details=displayDetails&selectedSubstanceId=47491> ;
         skos:notation "1-butene" .
 
 <chemical-species/2-butene>
@@ -2073,8 +2070,8 @@
         dct:description "an alkene (hydrocarbon) consisting of two  carbon atoms and four hydrogen atoms"@en ;
         skos:prefLabel "2-butene"@en ;
         skos:broader <chemical-species/alkene> ;
-        skos:exactMatch  nist:cgi/inchi/InChI%3D1S/C4H8/c1-3-4-2/h3-4H%2C1-2H3 ;
-        skos:exactMatch  ofmpub:selectedSubstanceId=47489 ;
+        skos:exactMatch  <http://webbook.nist.gov/cgi/inchi/InChI%3D1S/C4H8/c1-3-4-2/h3-4H%2C1-2H3> ;
+        skos:exactMatch  <http://ofmpub.epa.gov/sor_internet/registry/substreg/searchandretrieve/substancesearch/search.do?details=displayDetails&selectedSubstanceId=47489> ;
         skos:notation "2-butene" .
 
 <chemical-species/trans-2-butene>
@@ -2086,8 +2083,8 @@
         skos:altLabel "but-2-ene"@en ;
         skos:altLabel "beta butylene"@en ;
         skos:broader <chemical-species/alkene> ;
-        skos:exactMatch  nist:cgi/inchi/InChI%3D1S/C4H8/c1-3-4-2/h3-4H%2C1-2H3/b4-3%2B ;
-        skos:exactMatch  ofmpub:selectedSubstanceId=44707 ;
+        skos:exactMatch  <http://webbook.nist.gov/cgi/inchi/InChI%3D1S/C4H8/c1-3-4-2/h3-4H%2C1-2H3/b4-3%2B> ;
+        skos:exactMatch  <http://ofmpub.epa.gov/sor_internet/registry/substreg/searchandretrieve/substancesearch/search.do?details=displayDetails&selectedSubstanceId=44707> ;
         skos:notation "trans-2-butene" .
 
 <chemical-species/buta-1,3-diene>
@@ -2099,8 +2096,8 @@
         skos:altLabel "buta-1,3-diene"@en ;
         skos:altLabel "1,3-butadiene"@en ;
         skos:broader <chemical-species/alkene> ;
-        skos:exactMatch  nist:cgi/inchi/InChI%3D1S/C4H6/c1-3-4-2/h3-4H%2C1-2H2 ;
-        skos:exactMatch  ofmpub:selectedSubstanceId=47490 ;
+        skos:exactMatch  <http://webbook.nist.gov/cgi/inchi/InChI%3D1S/C4H6/c1-3-4-2/h3-4H%2C1-2H2> ;
+        skos:exactMatch  <http://ofmpub.epa.gov/sor_internet/registry/substreg/searchandretrieve/substancesearch/search.do?details=displayDetails&selectedSubstanceId=47490> ;
         skos:notation "buta-1,3-diene" .
 
 <chemical-species/pentenes>
@@ -2121,8 +2118,8 @@
         skos:altLabel "pent-2-ene"@en ;
         skos:altLabel "methylbut-1-ene"@en ;
         skos:broader <chemical-species/alkene> ;
-        skos:exactMatch  nist:cgi/inchi/InChI%3D1S/C5H10/c1-3-5-4-2/h3%2C5H%2C4H2%2C1-2H3/b5-3%2B ;
-        skos:exactMatch  ofmpub:selectedSubstanceId=44399 ;
+        skos:exactMatch  <http://webbook.nist.gov/cgi/inchi/InChI%3D1S/C5H10/c1-3-5-4-2/h3%2C5H%2C4H2%2C1-2H3/b5-3%2B> ;
+        skos:exactMatch  <http://ofmpub.epa.gov/sor_internet/registry/substreg/searchandretrieve/substancesearch/search.do?details=displayDetails&selectedSubstanceId=44399> ;
         skos:notation "trans-2-pentene" .
 
 <chemical-species/2-methylbut-1-ene>
@@ -2135,7 +2132,7 @@
         skos:altLabel "2-methylbutene"@en ;
         skos:altLabel "1-isoamylene"@en ;
         skos:broader <chemical-species/alkene> ;
-        skos:exactMatch  nist:cgi/inchi/InChI%3D1S/C5H10/c1-4-5(2)3/h2%2C4H2%2C1%2C3H3 ;
+        skos:exactMatch  <http://webbook.nist.gov/cgi/inchi/InChI%3D1S/C5H10/c1-4-5(2)3/h2%2C4H2%2C1%2C3H3> ;
         skos:notation "2-methylbut-1-ene" .
 
 <chemical-species/3-methylbut-1-ene>
@@ -2148,7 +2145,7 @@
         skos:altLabel "isopentene"@en ;
         skos:altLabel "isopropylethylene"@en ;
         skos:broader <chemical-species/alkene> ;
-        skos:exactMatch  nist:cgi/inchi/InChI%3D1S/C5H10/c1-4-5(2)3/h4-5H%2C1H2%2C2-3H3 ;
+        skos:exactMatch  <http://webbook.nist.gov/cgi/inchi/InChI%3D1S/C5H10/c1-4-5(2)3/h4-5H%2C1H2%2C2-3H3> ;
         skos:notation "3-methylbut-1-ene" .
 
 <chemical-species/2-methylbut-2-ene>
@@ -2162,8 +2159,8 @@
         skos:altLabel "2-butene"@en ;
         skos:altLabel "n-amylene"@en ;
         skos:broader <chemical-species/alkene> ;
-        skos:exactMatch  nist:cgi/inchi/InChI%3D1S/C5H10/c1-4-5(2)3/h4H%2C1-3H3 ;
-        skos:exactMatch  ofmpub:selectedSubstanceId=89823 ;
+        skos:exactMatch  <http://webbook.nist.gov/cgi/inchi/InChI%3D1S/C5H10/c1-4-5(2)3/h4H%2C1-3H3> ;
+        skos:exactMatch  <http://ofmpub.epa.gov/sor_internet/registry/substreg/searchandretrieve/substancesearch/search.do?details=displayDetails&selectedSubstanceId=89823> ;
         skos:notation "2-methylbut-2-ene" .
 
 <chemical-species/2-methylbuta-1,3-diene>
@@ -2174,8 +2171,8 @@
         skos:altLabel "2-methylbuta-1,3-diene"@en ;
         skos:altLabel "C5H8"@en ;
         skos:broader <chemical-species/alkene> ;
-        skos:exactMatch  nist:cgi/inchi/InChI%3D1S/C5H8/c1-4-5(2)3/h4H%2C1-2H2%2C3H3 ;
-        skos:exactMatch  ofmpub:selectedSubstanceId=48755 ;
+        skos:exactMatch  <http://webbook.nist.gov/cgi/inchi/InChI%3D1S/C5H8/c1-4-5(2)3/h4H%2C1-2H2%2C3H3> ;
+        skos:exactMatch  <http://ofmpub.epa.gov/sor_internet/registry/substreg/searchandretrieve/substancesearch/search.do?details=displayDetails&selectedSubstanceId=48755> ;
         skos:notation "2-methylbuta-1,3-diene" .
 
 <chemical-species/terpenes>
@@ -2194,8 +2191,8 @@
         skos:prefLabel "a-pinene"@en ;
         skos:altLabel "4,6,6-trimethylbicyclo(3.1.1)hept-3-ene"@en ;
         skos:broader <chemical-species/alkene> ;
-        skos:exactMatch  nist:cgi/inchi/InChI%3D1S/C10H16/c1-7-4-5-8-6-9(7)10(8%2C2)3/h4%2C8-9H%2C5-6H2%2C1-3H3 ;
-        skos:exactMatch  ofmpub:selectedSubstanceId=48668 ;
+        skos:exactMatch  <http://webbook.nist.gov/cgi/inchi/InChI%3D1S/C10H16/c1-7-4-5-8-6-9(7)10(8%2C2)3/h4%2C8-9H%2C5-6H2%2C1-3H3> ;
+        skos:exactMatch  <http://ofmpub.epa.gov/sor_internet/registry/substreg/searchandretrieve/substancesearch/search.do?details=displayDetails&selectedSubstanceId=48668> ;
         skos:notation "alpha-pinene" .
 
 <chemical-species/beta-pinene>
@@ -2205,7 +2202,7 @@
         skos:prefLabel "b-pinene"@en ;
         skos:altLabel "6,6-dimethyl-4-methylidenebicyclo(3.1.1)heptane"@en ;
         skos:broader <chemical-species/alkene> ;
-        skos:exactMatch  ofmpub:selectedSubstanceId=46731 ;
+        skos:exactMatch  <http://ofmpub.epa.gov/sor_internet/registry/substreg/searchandretrieve/substancesearch/search.do?details=displayDetails&selectedSubstanceId=46731> ;
         skos:notation "beta-pinene" .
 
 <chemical-species/limonene>
@@ -2215,7 +2212,7 @@
         skos:prefLabel "limonene"@en ;
         skos:altLabel "1-methyl-4-prop-1-en-2-ylcyclohexene"@en ;
         skos:broader <chemical-species/alkene> ;
-        skos:exactMatch  ofmpub:selectedSubstanceId=46540 ;
+        skos:exactMatch  <http://ofmpub.epa.gov/sor_internet/registry/substreg/searchandretrieve/substancesearch/search.do?details=displayDetails&selectedSubstanceId=46540> ;
         skos:notation "limonene" .
 
 <chemical-species/myrcene>
@@ -2225,8 +2222,8 @@
         skos:prefLabel "myrcene"@en ;
         skos:altLabel "2-methyl-6-methylideneocta-1,7-diene"@en ;
         skos:broader <chemical-species/alkene> ;
-        skos:exactMatch  nist:cgi/inchi/InChI%3D1S/C10H16/c1-5-10(4)8-6-7-9(2)3/h5%2C7H%2C1%2C4%2C6%2C8H2%2C2-3H3 ;
-        skos:exactMatch  ofmpub:selectedSubstanceId=47208 ;
+        skos:exactMatch  <http://webbook.nist.gov/cgi/inchi/InChI%3D1S/C10H16/c1-5-10(4)8-6-7-9(2)3/h5%2C7H%2C1%2C4%2C6%2C8H2%2C2-3H3> ;
+        skos:exactMatch  <http://ofmpub.epa.gov/sor_internet/registry/substreg/searchandretrieve/substancesearch/search.do?details=displayDetails&selectedSubstanceId=47208> ;
         skos:notation "myrcene" .
 
 <chemical-species/beta-caryophyllene>
@@ -2273,7 +2270,7 @@
         dct:description "a hydrocarbon with a ring structure consisting of six or more carbon atoms"@en ;
         skos:prefLabel "aromatic hydrocarbon"@en ;
         skos:broader <chemical-species/hydrocarbon> ;
-        skos:closeMatch  gemet:concept?cp=562 ;
+        skos:closeMatch  <http://www.eionet.europa.eu/gemet/concept?cp=562> ;
         skos:notation "aromatic-hydrocarbon" .
 
 <chemical-species/benzene>
@@ -2284,9 +2281,9 @@
         skos:altLabel "benzene"@en ;
         skos:altLabel "benzol"@en ;
         skos:broader <chemical-species/aromatic-hydrocarbon> ;
-        skos:exactMatch  gemet:concept?cp=776 ;
-        skos:exactMatch  nist:cgi/inchi/InChI%3D1S/C6H6/c1-2-4-6-5-3-1/h1-6H ;
-        skos:exactMatch  ofmpub:selectedSubstanceId=98385 ;
+        skos:exactMatch  <http://www.eionet.europa.eu/gemet/concept?cp=776> ;
+        skos:exactMatch  <http://webbook.nist.gov/cgi/inchi/InChI%3D1S/C6H6/c1-2-4-6-5-3-1/h1-6H> ;
+        skos:exactMatch  <http://ofmpub.epa.gov/sor_internet/registry/substreg/searchandretrieve/substancesearch/search.do?details=displayDetails&selectedSubstanceId=98385> ;
         skos:notation "benzene" .
 
 <chemical-species/toluene>
@@ -2296,7 +2293,7 @@
         skos:prefLabel "toluene"@en ;
         skos:altLabel "methyl benzene"@en ;
         skos:broader <chemical-species/aromatic-hydrocarbon> ;
-        skos:exactMatch  nist:cgi/inchi/InChI%3D1S/C7H8/c1-7-5-3-2-4-6-7/h2-6H,1H3 ;
+        skos:exactMatch  <http://webbook.nist.gov/cgi/inchi/InChI%3D1S/C7H8/c1-7-5-3-2-4-6-7/h2-6H,1H3> ;
         skos:notation "toluene" .
 
 <chemical-species/xylenes>
@@ -2430,7 +2427,7 @@
         dct:description "a five-ring hydrocarbon with the formula C20H12"@en ;
         skos:prefLabel "benzopyrene"@en ;
         skos:broader <chemical-species/aromatic-hydrocarbon> ;
-        skos:exactMatch  gemet:concept?cp=777 ;
+        skos:exactMatch  <http://www.eionet.europa.eu/gemet/concept?cp=777> ;
         skos:notation "benzopyrene" .
 
 <chemical-species/phenol>
@@ -2443,7 +2440,7 @@
         skos:altLabel "C\u2086H\u2085OH"@en ;
         skos:broader <chemical-species/aromatic-hydrocarbon> ;
         skos:broader <chemical-species/alcohol> ;
-        skos:exactMatch  gemet:concept?cp=6183 ;
+        skos:exactMatch  <http://www.eionet.europa.eu/gemet/concept?cp=6183> ;
         skos:notation "phenol" .
 
 <chemical-species/dioxin>
@@ -2453,7 +2450,7 @@
         skos:prefLabel "dioxin"@en ;
         skos:altLabel "C\u2084H\u2084O\u2082"@en ;
         skos:broader <chemical-species/volatile-organic-species> ;
-        skos:exactMatch  gemet:concept?cp=2207 ;
+        skos:exactMatch  <http://www.eionet.europa.eu/gemet/concept?cp=2207> ;
         skos:notation "dioxin" .
 
 <chemical-species/furan>
@@ -2463,7 +2460,7 @@
         skos:prefLabel "furan"@en ;
         skos:altLabel "C\u2084H\u2084O"@en ;
         skos:broader <chemical-species/volatile-organic-species> ;
-        skos:exactMatch  gemet:concept?cp=3536 ;
+        skos:exactMatch  <http://www.eionet.europa.eu/gemet/concept?cp=3536> ;
         skos:notation "furan" .
 
 <chemical-species/halogenated-hydrocarbon>
@@ -2472,7 +2469,7 @@
         dct:description "a hydrocarbon with one or more halogen atoms replacing hydrogen atoms"@en ;
         skos:prefLabel "halogenated hydrocarbon"@en ;
         skos:broader <chemical-species/volatile-organic-species> ;
-        skos:exactMatch  gemet:concept?cp=3820 ;
+        skos:exactMatch  <http://www.eionet.europa.eu/gemet/concept?cp=3820> ;
         skos:notation "halogenated-hydrocarbon" .
 
 <chemical-species/chlorinated-hydrocarbon>
@@ -2501,7 +2498,7 @@
         skos:altLabel "vinylchloride"@en ;
         skos:altLabel "C\u2082H\u2083Cl"@en ;
         skos:broader <chemical-species/chlorinated-hydrocarbon> ;
-        skos:exactMatch  gemet:concept?cp=1378 ;
+        skos:exactMatch  <http://www.eionet.europa.eu/gemet/concept?cp=1378> ;
         skos:notation "chloroethylene" .
 
 <chemical-species/trichloroethene>
@@ -2533,7 +2530,7 @@
         dct:description "an aromatic hydrocarbon with a hydroxy group and substitution of one or more hydrogen atoms by chlorine"@en ;
         skos:prefLabel "chlorophenol"@en ;
         skos:broader <chemical-species/chlorinated-hydrocarbon> ;
-        skos:exactMatch  gemet:concept?cp=1389 ;
+        skos:exactMatch  <http://www.eionet.europa.eu/gemet/concept?cp=1389> ;
         skos:notation "chlorophenol" .
 
 <chemical-species/pentachlorophenol>
@@ -2543,7 +2540,7 @@
         skos:prefLabel "pentachlorophenol"@en ;
         skos:altLabel "C6Cl5OH"@en ;
         skos:altLabel "C\u2086Cl\u2085OH"@en ;
-        skos:exactMatch  gemet:concept?cp=6106 ;
+        skos:exactMatch  <http://www.eionet.europa.eu/gemet/concept?cp=6106> ;
         skos:notation "pentachlorophenol" .
 
 <chemical-species/tetrachloroethene>
@@ -2557,7 +2554,7 @@
         skos:altLabel "C2Cl4"@en ;
         skos:altLabel "C\u2082Cl\u2084"@en ;
         skos:broader <chemical-species/chlorinated-hydrocarbon> ;
-        skos:exactMatch  gemet:concept?cp=6109 ;
+        skos:exactMatch  <http://www.eionet.europa.eu/gemet/concept?cp=6109> ;
         skos:notation "tetrachloroethene" .
 
 <chemical-species/hexachlorobenzene>
@@ -2579,7 +2576,7 @@
         skos:prefLabel "CFC"@en ;
         skos:altLabel "chlorofluorocarbon"@en ;
         skos:broader <chemical-species/volatile-organic-species> ;
-        skos:closeMatch  gemet:concept?cp=1381 ;
+        skos:closeMatch  <http://www.eionet.europa.eu/gemet/concept?cp=1381> ;
         skos:notation "chlorofluorocarbon" .
 
 <chemical-species/hcfc>
@@ -2589,7 +2586,7 @@
         skos:prefLabel "HCFC"@en ;
         skos:altLabel "hcfc"@en ;
         skos:broader <chemical-species/chlorofluorocarbon> ;
-        skos:exactMatch  gemet:concept?cp=1385 ;
+        skos:exactMatch  <http://www.eionet.europa.eu/gemet/concept?cp=1385> ;
         skos:notation "hcfc" .
 
 <chemical-species/carbon-tetrachloride>
@@ -3341,7 +3338,7 @@
         skos:altLabel "CH3C(O)OONO2"@en ;
         skos:altLabel "CH3CO3NO2"@en ;
         skos:broader <chemical-species/organic-nitrate> ;
-        skos:exactMatch  gemet:concept?cp=6128 ;
+        skos:exactMatch  <http://www.eionet.europa.eu/gemet/concept?cp=6128> ;
         skos:notation "peroxyacetylnitrate" .
 
 <chemical-species/methoxy-peroxyacetyl-nitrate>
@@ -3472,7 +3469,7 @@
         dct:description "a volatile organic carbon with a hydroxyl group"@en ;
         skos:prefLabel "alcohol"@en ;
         skos:broader <chemical-species/volatile-organic-species> ;
-        skos:exactMatch  gemet:concept?cp=298 ;
+        skos:exactMatch  <http://www.eionet.europa.eu/gemet/concept?cp=298> ;
         skos:notation "alcohol" .
 
 <chemical-species/methanol>
@@ -3491,7 +3488,7 @@
         skos:prefLabel "C2H5OH"@en ;
         skos:altLabel "ethanol"@en ;
         skos:broader <chemical-species/alcohol> ;
-        skos:exactMatch  gemet:concept?cp=12017 ;
+        skos:exactMatch  <http://www.eionet.europa.eu/gemet/concept?cp=12017> ;
         skos:notation "ethanol" .
 
 <chemical-species/propanol>
@@ -3537,7 +3534,7 @@
         dct:description "an organic molecule that contains an ether group, i.e. R-O-R'"@en ;
         skos:prefLabel "ether"@en ;
         skos:broader <chemical-species/organic-species> ;
-        skos:closeMatch  gemet:concept?cp=2979 ;
+        skos:closeMatch  <http://www.eionet.europa.eu/gemet/concept?cp=2979> ;
         skos:notation "ether" .
 
 <chemical-species/2-methoxy-2-methylpropane>
@@ -3603,7 +3600,7 @@
         skos:altLabel "C2H5COOH"@en ;
         skos:altLabel "methylacetic acid"@en ;
         skos:broader <chemical-species/organic-acid> ;
-        skos:exactMatch  nist:cgi/inchi/InChI%3D1S/C3H6O2/c1-2-3%284%295/h2H2%2C1H3%2C%28H%2C4%2C5%29 ;
+        skos:exactMatch  <http://webbook.nist.gov/cgi/inchi/InChI%3D1S/C3H6O2/c1-2-3%284%295/h2H2%2C1H3%2C%28H%2C4%2C5%29> ;
         skos:notation "propanoic-acid" .
 
 <chemical-species/polycyclic-aromatic-hydrocarbon>
@@ -4014,7 +4011,7 @@
         skos:altLabel "NH\u2084\u207B"@en ;
         skos:broader <chemical-species/inorganic-nitrogen-species> ;
         skos:broader <chemical-species/cation> ;
-        skos:exactMatch  gemet:concept?cp=379 ;
+        skos:exactMatch  <http://www.eionet.europa.eu/gemet/concept?cp=379> ;
         skos:notation "ammonium" .
 
 <chemical-species/nitrate-ion>
