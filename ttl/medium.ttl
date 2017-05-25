@@ -1,0 +1,159 @@
+@prefix dct:   <http://purl.org/dc/terms/> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+
+
+<medium>
+        a skos:Collection ;
+        rdfs:label "medium"@en ;
+        dct:description "The medium in which compounds are measured"@en ;
+        skos:member    <medium/air-and-aerosol>,
+                       <medium/air>,
+                       <medium/dry-air>,
+                       <medium/dry-air-at-stp>,
+                       <medium/aerosol>,
+                       <medium/aerosol-in-size-range>,
+                       <medium/dry-aerosol>,
+                       <medium/dry-aerosol-in-size-range>,
+                       <medium/pm1>,
+                       <medium/pm2.5>,
+                       <medium/pm10>,
+                       <medium/water>,
+                       <medium/sea-water>,
+                       <medium/lake-water>,
+                       <medium/precipitation>,
+                       <medium/wet-precipitation> ;
+        skos:prefLabel "medium"@en.
+
+<medium/air-and-aerosol>
+        a skos:Concept ;
+        rdfs:label "air and aerosol"@en ;
+        dct:description "the medium that constitutes the Earth's atmosphere with all its components, in particular also including aerosol and water vapour."@en ;
+        skos:prefLabel "air and aerosol"@en ;
+        skos:broader <medium/> ;
+        skos:notation "air-and-aerosol" .
+
+<medium/air>
+        a skos:Concept ;
+        rdfs:label "air"@en ;
+        dct:description "the gas that constitutes the Earth's atmosphere with all its gaseous components, in particular also including the water vapour content"@en ;
+        skos:prefLabel "air"@en ;
+        skos:broader <medium/> ;
+        skos:notation "air" .
+
+<medium/dry-air>
+        a skos:Concept ;
+        rdfs:label "dry air"@en ;
+        dct:description "the gas that constitutes the Earth's atmosphere with all its gaseous components except for water vapour"@en ;
+        skos:prefLabel "dry air"@en ;
+        skos:broader <medium/air> ;
+        skos:notation "dry-air" .
+
+<medium/dry-air-at-stp>
+        a skos:Concept ;
+        rdfs:label "dry air at STP"@en ;
+        dct:description "the gas that constitutes the Earth's atmosphere with all its gaseous components except for water vapour. Air mass and density have been adjusted to standard pressure (101325 Pa) and temperature (273.15 K) conditions."@en ;
+        skos:prefLabel "dry air at stp"@en ;
+        skos:broader <medium/dry-air> ;
+        skos:notation "dry-air-at-stp" .
+
+<medium/aerosol>
+        a skos:Concept ;
+        rdfs:label "aerosol"@en ;
+        dct:description "particulate matter suspended in air, often containing liquid or frozen water. The size range (diameter) of aerosol is usually limited to the range 1 nm to 10 µm."@en ;
+        skos:prefLabel "aerosol"@en ;
+        skos:broader <medium/> ;
+        skos:notation "aerosol" .
+
+<medium/aerosol-in-size-range>
+        a skos:Concept ;
+        rdfs:label "aerosol in size range"@en ;
+        dct:description "particulate matter suspended in air, often containing liquid or frozen water. The size range (diameter) of aerosol is limited by the sampling method and must be specified separately."@en ;
+        skos:prefLabel "aerosol in size range"@en ;
+        skos:broader <medium/> ;
+        skos:notation "aerosol-in-size-range" .
+
+<medium/dry-aerosol>
+        a skos:Concept ;
+        rdfs:label "dry aerosol"@en ;
+        dct:description "particulate matter suspended in air with all water removed. The size range (diameter) of aerosol is usually limited to the range 1 nm to 10 µm."@en ;
+        skos:prefLabel "dry aerosol"@en ;
+        skos:broader <medium/aerosol> ;
+        skos:notation "dry-aerosol" .
+
+<medium/dry-aerosol-in-size-range>
+        a skos:Concept ;
+        rdfs:label "dry aerosol in size range"@en ;
+        dct:description "particulate matter suspended in air with all water removed. The size range (diameter) of aerosol is limited by the sampling method and must be specified separately."@en ;
+        skos:prefLabel "dry aerosol in size range"@en ;
+        skos:broader <medium/aerosol> ;
+        skos:notation "dry-aerosol-in-size-range" .
+
+<medium/pm1>
+        a skos:Concept ;
+        rdfs:label "PM1"@en ;
+        dct:description "dry particulate matter suspended in air with a size range from a few nanometers to 1 µm"@en ;
+        skos:prefLabel "pm1"@en ;
+        skos:broader <medium/aerosol> ;
+        skos:notation "pm1" .
+
+<medium/pm2.5>
+        a skos:Concept ;
+        rdfs:label "PM2.5"@en ;
+        dct:description "dry particulate matter suspended in air with a size range from a few nanometers to 2.5 µm"@en ;
+        skos:prefLabel "pm2.5"@en ;
+        skos:broader <medium/aerosol> ;
+        skos:notation "pm2.5" .
+
+<medium/pm10>
+        a skos:Concept ;
+        rdfs:label "PM10"@en ;
+        dct:description "dry particulate matter suspended in air with a size range from a few nanometers to 10 µm"@en ;
+        skos:prefLabel "pm10"@en ;
+        skos:broader <medium/aerosol> ;
+        skos:notation "pm10" .
+
+<medium/water>
+        a skos:Concept ;
+        rdfs:label "water"@en ;
+        dct:description "liquid water"@en ;
+        skos:prefLabel "water"@en ;
+        skos:broader <medium/> ;
+        skos:notation "water" .
+
+<medium/sea-water>
+        a skos:Concept ;
+        rdfs:label "sea water"@en ;
+        dct:description "liquid or frozen water in the Earth's oceans."@en ;
+        skos:prefLabel "sea water"@en ;
+        skos:altLabel "ocean water"@en ;
+        skos:broader <medium/water> ;
+        skos:notation "sea-water" .
+
+<medium/lake-water>
+        a skos:Concept ;
+        rdfs:label "lake water"@en ;
+        dct:description "liquid or frozen water in the Earth's freshwater lakes."@en ;
+        skos:prefLabel "lake water"@en ;
+        skos:broader <medium/water> ;
+        skos:notation "lake-water" .
+
+<medium/precipitation>
+        a skos:Concept ;
+        rdfs:label "precipitation"@en ;
+        dct:description "liquid or frozen water in atmospheric precipitation."@en ;
+        skos:prefLabel "precipitation"@en ;
+        skos:altLabel "hydrometeor"@en ;
+        skos:broader <medium/water> ;
+        skos:notation "precipitation" .
+
+<medium/wet-precipitation>
+        a skos:Concept ;
+        rdfs:label "wet precipitation"@en ;
+        dct:description "liquid water in atmospheric precipitation."@en ;
+        skos:prefLabel "wet precipitation"@en ;
+        skos:altLabel "liquid hydrometeor"@en ;
+        skos:broader <medium/water> ;
+        skos:notation "wet-precipitation" .
+
