@@ -784,7 +784,7 @@
         dct:description ""@en ;
         skos:prefLabel ""@en ;
         skos:broader <wmdsObservedVariable/10000> ;
-        defchem:chemical-species chemical-species:particle-phase-species ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/particle-phase-species> ;
         .
 
 <wmdsObservedVariable/10002>
@@ -816,7 +816,7 @@
         dct:description ""@en ;
         skos:prefLabel ""@en ;
         skos:broader <wmdsObservedVariable/10002> ;
-        defchem:chemical-species chemical-species:anion ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/anion> ;
         defchem:medium medium:aerosol ;
         .
 
@@ -828,7 +828,7 @@
         dct:description ""@en ;
         skos:prefLabel "chloride_in_aerosol_pm1"@en ;
         skos:broader <wmdsObservedVariable/10003> ;
-        defchem:chemical-species chemical-species:chloride-ion ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/chloride-ion> ;
         defchem:medium medium:pm1 ;
         .
 
@@ -840,7 +840,7 @@
         dct:description ""@en ;
         skos:prefLabel "chloride_in_aerosol_pm10"@en ;
         skos:broader <wmdsObservedVariable/10003> ;
-        defchem:chemical-species chemical-species:chloride-ion ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/chloride-ion> ;
         defchem:medium medium:pm10 ;
         .
 
@@ -852,7 +852,7 @@
         dct:description ""@en ;
         skos:prefLabel "chloride_in_aerosol_pm2.5"@en ;
         skos:broader <wmdsObservedVariable/10003> ;
-        defchem:chemical-species chemical-species:chloride-ion ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/chloride-ion> ;
         defchem:medium medium:pm2.5 ;
         .
 
@@ -864,7 +864,7 @@
         dct:description ""@en ;
         skos:prefLabel "chloride_in_aerosol_tsp"@en ;
         skos:broader <wmdsObservedVariable/10003> ;
-        defchem:chemical-species chemical-species:chloride-ion ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/chloride-ion> ;
         defchem:medium medium:aerosol ;
         .
 
@@ -876,7 +876,7 @@
         dct:description ""@en ;
         skos:prefLabel "fluoride_in_aerosol_tsp"@en ;
         skos:broader <wmdsObservedVariable/10003> ;
-        defchem:chemical-species chemical-species:fluoride-ion ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/fluoride-ion> ;
         defchem:medium medium:aerosol ;
         .
 
@@ -888,7 +888,7 @@
         dct:description ""@en ;
         skos:prefLabel "sulfate_corrected_in_aerosol_tsp"@en ;
         skos:broader <wmdsObservedVariable/10003> ;
-        defchem:chemical-species chemical-species:sulphate-ion ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/sulphate-ion> ;
         defchem:medium medium:aerosol ;
         .
 
@@ -900,7 +900,7 @@
         dct:description ""@en ;
         skos:prefLabel "sulfate_total_in_aerosol_tsp"@en ;
         skos:broader <wmdsObservedVariable/10003> ;
-        defchem:chemical-species chemical-species:sulphate-ion ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/sulphate-ion> ;
         defchem:medium medium:aerosol ;
         .
 
@@ -912,7 +912,7 @@
         dct:description ""@en ;
         skos:prefLabel "sulfate_total_in_aerosol_pm10"@en ;
         skos:broader <wmdsObservedVariable/10003> ;
-        defchem:chemical-species chemical-species:sulphate-ion ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/sulphate-ion> ;
         defchem:medium medium:pm10 ;
         .
 
@@ -924,7 +924,7 @@
         dct:description ""@en ;
         skos:prefLabel "sulfate_total_in_aerosol_pm2.5"@en ;
         skos:broader <wmdsObservedVariable/10003> ;
-        defchem:chemical-species chemical-species:sulphate-ion ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/sulphate-ion> ;
         defchem:medium medium:pm2.5 ;
         .
 
@@ -936,7 +936,7 @@
         dct:description ""@en ;
         skos:prefLabel "inorganic_carbonaceous_in_aerosol_tsp"@en ;
         skos:broader <wmdsObservedVariable/10002> ;
-        defchem:chemical-species chemical-species:inorganic-carbon-species ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/inorganic-carbon-species> ;
         defchem:medium medium:aerosol ;
         .
 
@@ -948,7 +948,7 @@
         dct:description ""@en ;
         skos:prefLabel "elemental_carbon_in_aerosol_pm10"@en ;
         skos:broader <wmdsObservedVariable/10004> ;
-        defchem:chemical-species chemical-species:elemental-carbon ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/elemental-carbon> ;
         defchem:medium medium:pm10 ;
         .
 
@@ -960,7 +960,7 @@
         dct:description ""@en ;
         skos:prefLabel "elemental_carbon_in_aerosol_pm1"@en ;
         skos:broader <wmdsObservedVariable/10004> ;
-        defchem:chemical-species chemical-species:elemental-carbon ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/elemental-carbon> ;
         defchem:medium medium:pm1 ;
         .
 
@@ -972,7 +972,7 @@
         dct:description ""@en ;
         skos:prefLabel "elemental_carbon_in_aerosol_pm2.5"@en ;
         skos:broader <wmdsObservedVariable/10004> ;
-        defchem:chemical-species chemical-species:elemental-carbon ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/elemental-carbon> ;
         defchem:medium medium:pm2.5 ;
         .
 
@@ -984,7 +984,7 @@
         dct:description ""@en ;
         skos:prefLabel "total_carbon_in_aerosol_pm10"@en ;
         skos:broader <wmdsObservedVariable/10004> ;
-        defchem:chemical-species chemical-species:total-carbon ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/total-carbon> ;
         defchem:medium medium:pm10 ;
         .
 
@@ -996,7 +996,7 @@
         dct:description ""@en ;
         skos:prefLabel ""@en ;
         skos:broader <wmdsObservedVariable/10002> ;
-        defchem:chemical-species chemical-species:cation ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/cation> ;
         defchem:medium medium:aerosol ;
         .
 
@@ -1008,7 +1008,7 @@
         dct:description ""@en ;
         skos:prefLabel "calcium_ion_in_aerosol_pm10"@en ;
         skos:broader <wmdsObservedVariable/10005> ;
-        defchem:chemical-species chemical-species:calcium-ion ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/calcium-ion> ;
         defchem:medium medium:pm10 ;
         .
 
@@ -1020,7 +1020,7 @@
         dct:description ""@en ;
         skos:prefLabel "calcium_ion_in_aerosol_pm2.5"@en ;
         skos:broader <wmdsObservedVariable/10005> ;
-        defchem:chemical-species chemical-species:calcium-ion ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/calcium-ion> ;
         defchem:medium medium:pm2.5 ;
         .
 
@@ -1032,7 +1032,7 @@
         dct:description ""@en ;
         skos:prefLabel "calcium_ion_in_aerosol_tsp"@en ;
         skos:broader <wmdsObservedVariable/10005> ;
-        defchem:chemical-species chemical-species:calcium-ion ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/calcium-ion> ;
         defchem:medium medium:aerosol ;
         .
 
@@ -1044,7 +1044,7 @@
         dct:description ""@en ;
         skos:prefLabel "magnesium_ion_in_aerosol_pm10"@en ;
         skos:broader <wmdsObservedVariable/10005> ;
-        defchem:chemical-species chemical-species:magnesium-ion ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/magnesium-ion> ;
         defchem:medium medium:pm10 ;
         .
 
@@ -1056,7 +1056,7 @@
         dct:description ""@en ;
         skos:prefLabel "magnesium_ion_in_aerosol_pm2.5"@en ;
         skos:broader <wmdsObservedVariable/10005> ;
-        defchem:chemical-species chemical-species:magnesium-ion ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/magnesium-ion> ;
         defchem:medium medium:pm2.5 ;
         .
 
@@ -1068,7 +1068,7 @@
         dct:description ""@en ;
         skos:prefLabel "magnesium_ion_in_aerosol_tsp"@en ;
         skos:broader <wmdsObservedVariable/10005> ;
-        defchem:chemical-species chemical-species:magnesium-ion ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/magnesium-ion> ;
         defchem:medium medium:aerosol ;
         .
 
@@ -1080,7 +1080,7 @@
         dct:description ""@en ;
         skos:prefLabel "potassium_ion_in_aerosol_pm10"@en ;
         skos:broader <wmdsObservedVariable/10005> ;
-        defchem:chemical-species chemical-species:potassium-ion ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/potassium-ion> ;
         defchem:medium medium:pm10 ;
         .
 
@@ -1092,7 +1092,7 @@
         dct:description ""@en ;
         skos:prefLabel "potassium_ion_in_aerosol_pm2.5"@en ;
         skos:broader <wmdsObservedVariable/10005> ;
-        defchem:chemical-species chemical-species:potassium-ion ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/potassium-ion> ;
         defchem:medium medium:pm2.5 ;
         .
 
@@ -1104,7 +1104,7 @@
         dct:description ""@en ;
         skos:prefLabel "potassium_ion_in_aerosol_tsp"@en ;
         skos:broader <wmdsObservedVariable/10005> ;
-        defchem:chemical-species chemical-species:potassium-ion ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/potassium-ion> ;
         defchem:medium medium:aerosol ;
         .
 
@@ -1116,7 +1116,7 @@
         dct:description ""@en ;
         skos:prefLabel "sodium_ion_in_aerosol_pm10"@en ;
         skos:broader <wmdsObservedVariable/10005> ;
-        defchem:chemical-species chemical-species:sodium-ion ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/sodium-ion> ;
         defchem:medium medium:pm10 ;
         .
 
@@ -1128,7 +1128,7 @@
         dct:description ""@en ;
         skos:prefLabel "sodium_ion_in_aerosol_pm2.5"@en ;
         skos:broader <wmdsObservedVariable/10005> ;
-        defchem:chemical-species chemical-species:sodium-ion ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/sodium-ion> ;
         defchem:medium medium:pm2.5 ;
         .
 
@@ -1140,7 +1140,7 @@
         dct:description ""@en ;
         skos:prefLabel "sodium_ion_in_aerosol_tsp"@en ;
         skos:broader <wmdsObservedVariable/10005> ;
-        defchem:chemical-species chemical-species:sodium-ion ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/sodium-ion> ;
         defchem:medium medium:aerosol ;
         .
 
@@ -1152,7 +1152,7 @@
         dct:description ""@en ;
         skos:prefLabel ""@en ;
         skos:broader <wmdsObservedVariable/10002> ;
-        defchem:chemical-species chemical-species:inorganic-nitrogen-species ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/inorganic-nitrogen-species> ;
         defchem:medium medium:aerosol ;
         .
 
@@ -1164,7 +1164,7 @@
         dct:description ""@en ;
         skos:prefLabel "ammonia_in_aerosol_pm2.5"@en ;
         skos:broader <wmdsObservedVariable/10006> ;
-        defchem:chemical-species chemical-species:ammonia ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/ammonia> ;
         defchem:medium medium:pm2.5 ;
         .
 
@@ -1176,7 +1176,7 @@
         dct:description ""@en ;
         skos:prefLabel "ammonium_in_aerosol_pm10"@en ;
         skos:broader <wmdsObservedVariable/10006> ;
-        defchem:chemical-species chemical-species:ammonium ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/ammonium> ;
         defchem:medium medium:pm10 ;
         .
 
@@ -1188,7 +1188,7 @@
         dct:description ""@en ;
         skos:prefLabel "ammonium_in_aerosol_pm2.5"@en ;
         skos:broader <wmdsObservedVariable/10006> ;
-        defchem:chemical-species chemical-species:ammonium ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/ammonium> ;
         defchem:medium medium:pm2.5 ;
         .
 
@@ -1200,7 +1200,7 @@
         dct:description ""@en ;
         skos:prefLabel "ammonium_in_aerosol_tsp"@en ;
         skos:broader <wmdsObservedVariable/10006> ;
-        defchem:chemical-species chemical-species:ammonium ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/ammonium> ;
         defchem:medium medium:aerosol ;
         .
 
@@ -1212,7 +1212,7 @@
         dct:description ""@en ;
         skos:prefLabel "ammonium_nitrate_in_aerosol_tsp"@en ;
         skos:broader <wmdsObservedVariable/10006> ;
-        defchem:chemical-species chemical-species:ammonium-nitrate ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/ammonium-nitrate> ;
         defchem:medium medium:aerosol ;
         .
 
@@ -1224,7 +1224,7 @@
         dct:description ""@en ;
         skos:prefLabel "ammonium_nitrate_in_aerosol_pm1"@en ;
         skos:broader <wmdsObservedVariable/10006> ;
-        defchem:chemical-species chemical-species:ammonium-nitrate ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/ammonium-nitrate> ;
         defchem:medium medium:pm1 ;
         .
 
@@ -1236,7 +1236,7 @@
         dct:description ""@en ;
         skos:prefLabel "nitrate_in_aerosol_pm10"@en ;
         skos:broader <wmdsObservedVariable/10006> ;
-        defchem:chemical-species chemical-species:nitrate-ion ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/nitrate-ion> ;
         defchem:medium medium:pm10 ;
         .
 
@@ -1248,7 +1248,7 @@
         dct:description ""@en ;
         skos:prefLabel "nitrate_in_aerosol_pm2.5"@en ;
         skos:broader <wmdsObservedVariable/10006> ;
-        defchem:chemical-species chemical-species:nitrate-ion ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/nitrate-ion> ;
         defchem:medium medium:pm2.5 ;
         .
 
@@ -1260,7 +1260,7 @@
         dct:description ""@en ;
         skos:prefLabel "nitrate_in_aerosol_tsp"@en ;
         skos:broader <wmdsObservedVariable/10006> ;
-        defchem:chemical-species chemical-species:nitrate-ion ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/nitrate-ion> ;
         defchem:medium medium:aerosol ;
         .
 
@@ -1272,7 +1272,7 @@
         dct:description ""@en ;
         skos:prefLabel "nitrite_in_aerosol_tsp"@en ;
         skos:broader <wmdsObservedVariable/10006> ;
-        defchem:chemical-species chemical-species:nitrogen-dioxide ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/nitrogen-dioxide> ;
         defchem:medium medium:aerosol ;
         .
 
@@ -1284,7 +1284,7 @@
         dct:description ""@en ;
         skos:prefLabel "sum_of_ammonia_and_ammonium_in_air_and_aerosol"@en ;
         skos:broader <wmdsObservedVariable/10006> ;
-        defchem:chemical-species chemical-species:ammonium ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/ammonium> ;
         defchem:medium medium:air-and-aerosol ;
         .
 
@@ -1296,7 +1296,7 @@
         dct:description ""@en ;
         skos:prefLabel "nitric_acid_and_nitrate_in_air_and_aerosol"@en ;
         skos:broader <wmdsObservedVariable/10006> ;
-        defchem:chemical-species chemical-species:nitrate-ion ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/nitrate-ion> ;
         defchem:medium medium:air-and-aerosol ;
         .
 
@@ -1308,7 +1308,7 @@
         dct:description ""@en ;
         skos:prefLabel ""@en ;
         skos:broader <wmdsObservedVariable/10002> ;
-        defchem:chemical-species chemical-species:inorganic-species ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/inorganic-species> ;
         defchem:medium medium:aerosol ;
         .
 
@@ -1386,7 +1386,7 @@
         dct:description ""@en ;
         skos:prefLabel ""@en ;
         skos:broader <wmdsObservedVariable/10002> ;
-        defchem:chemical-species chemical-species:anion ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/anion> ;
         defchem:medium medium:aerosol ;
         .
 
@@ -1398,7 +1398,7 @@
         dct:description ""@en ;
         skos:prefLabel "acetate_in_aerosol_tsp"@en ;
         skos:broader <wmdsObservedVariable/10008> ;
-        defchem:chemical-species chemical-species:acetate-ion ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/acetate-ion> ;
         defchem:medium medium:aerosol ;
         .
 
@@ -1410,7 +1410,7 @@
         dct:description ""@en ;
         skos:prefLabel "acetate_in_aerosol_pm1"@en ;
         skos:broader <wmdsObservedVariable/10008> ;
-        defchem:chemical-species chemical-species:acetate-ion ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/acetate-ion> ;
         defchem:medium medium:pm1 ;
         .
 
@@ -1422,7 +1422,7 @@
         dct:description ""@en ;
         skos:prefLabel "oxalate_in_aerosol_pm1"@en ;
         skos:broader <wmdsObservedVariable/10008> ;
-        defchem:chemical-species chemical-species:oxalate ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/oxalate> ;
         defchem:medium medium:pm1 ;
         .
 
@@ -1434,7 +1434,7 @@
         dct:description ""@en ;
         skos:prefLabel "oxalate_in_aerosol_pm10"@en ;
         skos:broader <wmdsObservedVariable/10008> ;
-        defchem:chemical-species chemical-species:oxalate ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/oxalate> ;
         defchem:medium medium:pm10 ;
         .
 
@@ -1446,7 +1446,7 @@
         dct:description ""@en ;
         skos:prefLabel "oxalate_in_aerosol_tsp"@en ;
         skos:broader <wmdsObservedVariable/10008> ;
-        defchem:chemical-species chemical-species:oxalate ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/oxalate> ;
         defchem:medium medium:aerosol ;
         .
 
@@ -1458,7 +1458,7 @@
         dct:description ""@en ;
         skos:prefLabel "methanesulfonate_in_aerosol_pm1"@en ;
         skos:broader <wmdsObservedVariable/10008> ;
-        defchem:chemical-species chemical-species:methane-sulfonate-ion ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/methane-sulfonate-ion> ;
         defchem:medium medium:pm1 ;
         .
 
@@ -1470,7 +1470,7 @@
         dct:description ""@en ;
         skos:prefLabel "methanesulfonate_in_aerosol_tsp"@en ;
         skos:broader <wmdsObservedVariable/10008> ;
-        defchem:chemical-species chemical-species:methane-sulfonate-ion ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/methane-sulfonate-ion> ;
         defchem:medium medium:aerosol ;
         .
 
@@ -1482,7 +1482,7 @@
         dct:description ""@en ;
         skos:prefLabel "formate_in_aerosol_tsp"@en ;
         skos:broader <wmdsObservedVariable/10008> ;
-        defchem:chemical-species chemical-species:formate-ion ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/formate-ion> ;
         defchem:medium medium:aerosol ;
         .
 
@@ -1494,7 +1494,7 @@
         dct:description ""@en ;
         skos:prefLabel ""@en ;
         skos:broader <wmdsObservedVariable/10002> ;
-        defchem:chemical-species chemical-species:organic-carbon ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/organic-carbon> ;
         defchem:medium medium:aerosol ;
         .
 
@@ -1506,7 +1506,7 @@
         dct:description ""@en ;
         skos:prefLabel "organic_material_coarse_in_aerosol_pm10"@en ;
         skos:broader <wmdsObservedVariable/10009> ;
-        defchem:chemical-species chemical-species:organic-carbon ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/organic-carbon> ;
         defchem:medium medium:pm10 ;
         .
 
@@ -1518,7 +1518,7 @@
         dct:description ""@en ;
         skos:prefLabel "organic_material_fine_in_aerosol_tsp"@en ;
         skos:broader <wmdsObservedVariable/10009> ;
-        defchem:chemical-species chemical-species:organic-carbon ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/organic-carbon> ;
         defchem:medium medium:aerosol ;
         .
 
@@ -1530,7 +1530,7 @@
         dct:description ""@en ;
         skos:prefLabel ""@en ;
         skos:broader <wmdsObservedVariable/10002> ;
-        defchem:chemical-species chemical-species:trace-metal ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/trace-metal> ;
         defchem:medium medium:aerosol ;
         .
 
@@ -1542,7 +1542,7 @@
         dct:description ""@en ;
         skos:prefLabel "aluminium_in_aerosol_pm2.5"@en ;
         skos:broader <wmdsObservedVariable/10010> ;
-        defchem:chemical-species chemical-species:aluminium ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/aluminium> ;
         defchem:medium medium:pm2.5 ;
         .
 
@@ -1554,7 +1554,7 @@
         dct:description ""@en ;
         skos:prefLabel "aluminium_in_aerosol_tsp"@en ;
         skos:broader <wmdsObservedVariable/10010> ;
-        defchem:chemical-species chemical-species:aluminium ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/aluminium> ;
         defchem:medium medium:aerosol ;
         .
 
@@ -1566,7 +1566,7 @@
         dct:description ""@en ;
         skos:prefLabel "antimony_in_aerosol_pm2.5"@en ;
         skos:broader <wmdsObservedVariable/10010> ;
-        defchem:chemical-species chemical-species:antimony ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/antimony> ;
         defchem:medium medium:pm2.5 ;
         .
 
@@ -1578,7 +1578,7 @@
         dct:description ""@en ;
         skos:prefLabel "antimony_in_aerosol_tsp"@en ;
         skos:broader <wmdsObservedVariable/10010> ;
-        defchem:chemical-species chemical-species:antimony ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/antimony> ;
         defchem:medium medium:aerosol ;
         .
 
@@ -1590,7 +1590,7 @@
         dct:description ""@en ;
         skos:prefLabel "arsenic_in_aerosol_pm10"@en ;
         skos:broader <wmdsObservedVariable/10010> ;
-        defchem:chemical-species chemical-species:arsenic ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/arsenic> ;
         defchem:medium medium:pm10 ;
         .
 
@@ -1602,7 +1602,7 @@
         dct:description ""@en ;
         skos:prefLabel "arsenic_in_aerosol_tsp"@en ;
         skos:broader <wmdsObservedVariable/10010> ;
-        defchem:chemical-species chemical-species:arsenic ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/arsenic> ;
         defchem:medium medium:aerosol ;
         .
 
@@ -1614,7 +1614,7 @@
         dct:description ""@en ;
         skos:prefLabel "barium_in_aerosol_pm2.5"@en ;
         skos:broader <wmdsObservedVariable/10010> ;
-        defchem:chemical-species chemical-species:barium ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/barium> ;
         defchem:medium medium:pm2.5 ;
         .
 
@@ -1626,7 +1626,7 @@
         dct:description ""@en ;
         skos:prefLabel "barium_in_aerosol_tsp"@en ;
         skos:broader <wmdsObservedVariable/10010> ;
-        defchem:chemical-species chemical-species:barium ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/barium> ;
         defchem:medium medium:aerosol ;
         .
 
@@ -1638,7 +1638,7 @@
         dct:description ""@en ;
         skos:prefLabel "bismuth_in_aerosol_pm2.5"@en ;
         skos:broader <wmdsObservedVariable/10010> ;
-        defchem:chemical-species chemical-species:bismuth ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/bismuth> ;
         defchem:medium medium:pm2.5 ;
         .
 
@@ -1650,7 +1650,7 @@
         dct:description ""@en ;
         skos:prefLabel "bismuth_in_aerosol_tsp"@en ;
         skos:broader <wmdsObservedVariable/10010> ;
-        defchem:chemical-species chemical-species:bismuth ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/bismuth> ;
         defchem:medium medium:aerosol ;
         .
 
@@ -1662,7 +1662,7 @@
         dct:description ""@en ;
         skos:prefLabel "cadmium_in_aerosol_pm1"@en ;
         skos:broader <wmdsObservedVariable/10010> ;
-        defchem:chemical-species chemical-species:cadmium ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/cadmium> ;
         defchem:medium medium:pm1 ;
         .
 
@@ -1674,7 +1674,7 @@
         dct:description ""@en ;
         skos:prefLabel "cadmium_in_aerosol_pm10"@en ;
         skos:broader <wmdsObservedVariable/10010> ;
-        defchem:chemical-species chemical-species:cadmium ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/cadmium> ;
         defchem:medium medium:pm10 ;
         .
 
@@ -1686,7 +1686,7 @@
         dct:description ""@en ;
         skos:prefLabel "cadmium_in_aerosol_pm2.5"@en ;
         skos:broader <wmdsObservedVariable/10010> ;
-        defchem:chemical-species chemical-species:cadmium ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/cadmium> ;
         defchem:medium medium:pm2.5 ;
         .
 
@@ -1698,7 +1698,7 @@
         dct:description ""@en ;
         skos:prefLabel "cadmium_in_aerosol_pm2.5_thru_aerosol_pm10"@en ;
         skos:broader <wmdsObservedVariable/10010> ;
-        defchem:chemical-species chemical-species:cadmium ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/cadmium> ;
         defchem:medium medium:aerosol-in-size-range ;
         .
 
@@ -1710,7 +1710,7 @@
         dct:description ""@en ;
         skos:prefLabel "cadmium_in_aerosol_tsp"@en ;
         skos:broader <wmdsObservedVariable/10010> ;
-        defchem:chemical-species chemical-species:cadmium ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/cadmium> ;
         defchem:medium medium:aerosol ;
         .
 
@@ -1722,7 +1722,7 @@
         dct:description ""@en ;
         skos:prefLabel "cerium_in_aerosol_pm2.5"@en ;
         skos:broader <wmdsObservedVariable/10010> ;
-        defchem:chemical-species chemical-species:cerium ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/cerium> ;
         defchem:medium medium:pm2.5 ;
         .
 
@@ -1734,7 +1734,7 @@
         dct:description ""@en ;
         skos:prefLabel "cerium_in_aerosol_tsp"@en ;
         skos:broader <wmdsObservedVariable/10010> ;
-        defchem:chemical-species chemical-species:cerium ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/cerium> ;
         defchem:medium medium:aerosol ;
         .
 
@@ -1746,7 +1746,7 @@
         dct:description ""@en ;
         skos:prefLabel "chromium_in_aerosol_tsp"@en ;
         skos:broader <wmdsObservedVariable/10010> ;
-        defchem:chemical-species chemical-species:chromium ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/chromium> ;
         defchem:medium medium:aerosol ;
         .
 
@@ -1758,7 +1758,7 @@
         dct:description ""@en ;
         skos:prefLabel "cobalt_in_aerosol_tsp"@en ;
         skos:broader <wmdsObservedVariable/10010> ;
-        defchem:chemical-species chemical-species:cobalt ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/cobalt> ;
         defchem:medium medium:aerosol ;
         .
 
@@ -1770,7 +1770,7 @@
         dct:description ""@en ;
         skos:prefLabel "copper_in_aerosol_pm10"@en ;
         skos:broader <wmdsObservedVariable/10010> ;
-        defchem:chemical-species chemical-species:copper ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/copper> ;
         defchem:medium medium:pm10 ;
         .
 
@@ -1782,7 +1782,7 @@
         dct:description ""@en ;
         skos:prefLabel "copper_in_aerosol_tsp"@en ;
         skos:broader <wmdsObservedVariable/10010> ;
-        defchem:chemical-species chemical-species:copper ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/copper> ;
         defchem:medium medium:aerosol ;
         .
 
@@ -1794,7 +1794,7 @@
         dct:description ""@en ;
         skos:prefLabel "iron_in_aerosol_tsp"@en ;
         skos:broader <wmdsObservedVariable/10010> ;
-        defchem:chemical-species chemical-species:iron ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/iron> ;
         defchem:medium medium:aerosol ;
         .
 
@@ -1806,7 +1806,7 @@
         dct:description ""@en ;
         skos:prefLabel "lanthanum_in_aerosol_pm2.5"@en ;
         skos:broader <wmdsObservedVariable/10010> ;
-        defchem:chemical-species chemical-species:lanthanum ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/lanthanum> ;
         defchem:medium medium:pm2.5 ;
         .
 
@@ -1818,7 +1818,7 @@
         dct:description ""@en ;
         skos:prefLabel "lanthanum_in_aerosol_tsp"@en ;
         skos:broader <wmdsObservedVariable/10010> ;
-        defchem:chemical-species chemical-species:lanthanum ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/lanthanum> ;
         defchem:medium medium:aerosol ;
         .
 
@@ -1830,7 +1830,7 @@
         dct:description ""@en ;
         skos:prefLabel "lead_in_aerosol_pm10"@en ;
         skos:broader <wmdsObservedVariable/10010> ;
-        defchem:chemical-species chemical-species:lead ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/lead> ;
         defchem:medium medium:pm10 ;
         .
 
@@ -1842,7 +1842,7 @@
         dct:description ""@en ;
         skos:prefLabel "lead_in_aerosol_tsp"@en ;
         skos:broader <wmdsObservedVariable/10010> ;
-        defchem:chemical-species chemical-species:lead ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/lead> ;
         defchem:medium medium:aerosol ;
         .
 
@@ -1854,7 +1854,7 @@
         dct:description ""@en ;
         skos:prefLabel "lithium_in_aerosol_pm2.5"@en ;
         skos:broader <wmdsObservedVariable/10010> ;
-        defchem:chemical-species chemical-species:lithium ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/lithium> ;
         defchem:medium medium:pm2.5 ;
         .
 
@@ -1866,7 +1866,7 @@
         dct:description ""@en ;
         skos:prefLabel "lithium_in_aerosol_tsp"@en ;
         skos:broader <wmdsObservedVariable/10010> ;
-        defchem:chemical-species chemical-species:lithium ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/lithium> ;
         defchem:medium medium:aerosol ;
         .
 
@@ -1878,7 +1878,7 @@
         dct:description ""@en ;
         skos:prefLabel "manganese_in_aerosol_pm10"@en ;
         skos:broader <wmdsObservedVariable/10010> ;
-        defchem:chemical-species chemical-species:manganese ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/manganese> ;
         defchem:medium medium:pm10 ;
         .
 
@@ -1890,7 +1890,7 @@
         dct:description ""@en ;
         skos:prefLabel "manganese_in_aerosol_tsp"@en ;
         skos:broader <wmdsObservedVariable/10010> ;
-        defchem:chemical-species chemical-species:manganese ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/manganese> ;
         defchem:medium medium:aerosol ;
         .
 
@@ -1902,7 +1902,7 @@
         dct:description ""@en ;
         skos:prefLabel "mercury_in_aerosol_tsp"@en ;
         skos:broader <wmdsObservedVariable/10010> ;
-        defchem:chemical-species chemical-species:mercury ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/mercury> ;
         defchem:medium medium:aerosol ;
         .
 
@@ -1914,7 +1914,7 @@
         dct:description ""@en ;
         skos:prefLabel "nickel_in_aerosol_pm10"@en ;
         skos:broader <wmdsObservedVariable/10010> ;
-        defchem:chemical-species chemical-species:nickel ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/nickel> ;
         defchem:medium medium:pm10 ;
         .
 
@@ -1926,7 +1926,7 @@
         dct:description ""@en ;
         skos:prefLabel "nickel_in_aerosol_tsp"@en ;
         skos:broader <wmdsObservedVariable/10010> ;
-        defchem:chemical-species chemical-species:nickel ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/nickel> ;
         defchem:medium medium:aerosol ;
         .
 
@@ -1938,7 +1938,7 @@
         dct:description ""@en ;
         skos:prefLabel "phosphorous_in_aerosol_pm2.5"@en ;
         skos:broader <wmdsObservedVariable/10010> ;
-        defchem:chemical-species chemical-species:phosphorus ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/phosphorus> ;
         defchem:medium medium:pm2.5 ;
         .
 
@@ -1950,7 +1950,7 @@
         dct:description ""@en ;
         skos:prefLabel "phosphorous_in_aerosol_tsp"@en ;
         skos:broader <wmdsObservedVariable/10010> ;
-        defchem:chemical-species chemical-species:phosphorus ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/phosphorus> ;
         defchem:medium medium:aerosol ;
         .
 
@@ -1962,7 +1962,7 @@
         dct:description ""@en ;
         skos:prefLabel "rubidium_in_aerosol_pm2.5"@en ;
         skos:broader <wmdsObservedVariable/10010> ;
-        defchem:chemical-species chemical-species:rubidium ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/rubidium> ;
         defchem:medium medium:pm2.5 ;
         .
 
@@ -1974,7 +1974,7 @@
         dct:description ""@en ;
         skos:prefLabel "rubidium_in_aerosol_tsp"@en ;
         skos:broader <wmdsObservedVariable/10010> ;
-        defchem:chemical-species chemical-species:rubidium ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/rubidium> ;
         defchem:medium medium:aerosol ;
         .
 
@@ -1986,7 +1986,7 @@
         dct:description ""@en ;
         skos:prefLabel "selenium_in_aerosol_tsp"@en ;
         skos:broader <wmdsObservedVariable/10010> ;
-        defchem:chemical-species chemical-species:selenium ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/selenium> ;
         defchem:medium medium:aerosol ;
         .
 
@@ -1998,7 +1998,7 @@
         dct:description ""@en ;
         skos:prefLabel "strontium_in_aerosol_pm2.5"@en ;
         skos:broader <wmdsObservedVariable/10010> ;
-        defchem:chemical-species chemical-species:strontium ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/strontium> ;
         defchem:medium medium:pm2.5 ;
         .
 
@@ -2010,7 +2010,7 @@
         dct:description ""@en ;
         skos:prefLabel "strontium_in_aerosol_tsp"@en ;
         skos:broader <wmdsObservedVariable/10010> ;
-        defchem:chemical-species chemical-species:strontium ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/strontium> ;
         defchem:medium medium:aerosol ;
         .
 
@@ -2022,7 +2022,7 @@
         dct:description ""@en ;
         skos:prefLabel "thallium_in_aerosol_pm2.5"@en ;
         skos:broader <wmdsObservedVariable/10010> ;
-        defchem:chemical-species chemical-species:thallium ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/thallium> ;
         defchem:medium medium:pm2.5 ;
         .
 
@@ -2034,7 +2034,7 @@
         dct:description ""@en ;
         skos:prefLabel "thallium_in_aerosol_tsp"@en ;
         skos:broader <wmdsObservedVariable/10010> ;
-        defchem:chemical-species chemical-species:thallium ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/thallium> ;
         defchem:medium medium:aerosol ;
         .
 
@@ -2046,7 +2046,7 @@
         dct:description ""@en ;
         skos:prefLabel "thorium_in_aerosol_pm2.5"@en ;
         skos:broader <wmdsObservedVariable/10010> ;
-        defchem:chemical-species chemical-species:thorium ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/thorium> ;
         defchem:medium medium:pm2.5 ;
         .
 
@@ -2058,7 +2058,7 @@
         dct:description ""@en ;
         skos:prefLabel "thorium_in_aerosol_tsp"@en ;
         skos:broader <wmdsObservedVariable/10010> ;
-        defchem:chemical-species chemical-species:thorium ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/thorium> ;
         defchem:medium medium:aerosol ;
         .
 
@@ -2070,7 +2070,7 @@
         dct:description ""@en ;
         skos:prefLabel "tin_in_aerosol_pm2.5"@en ;
         skos:broader <wmdsObservedVariable/10010> ;
-        defchem:chemical-species chemical-species:tin ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/tin> ;
         defchem:medium medium:pm2.5 ;
         .
 
@@ -2082,7 +2082,7 @@
         dct:description ""@en ;
         skos:prefLabel "tin_in_aerosol_tsp"@en ;
         skos:broader <wmdsObservedVariable/10010> ;
-        defchem:chemical-species chemical-species:tin ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/tin> ;
         defchem:medium medium:aerosol ;
         .
 
@@ -2094,7 +2094,7 @@
         dct:description ""@en ;
         skos:prefLabel "titanium_in_aerosol_tsp"@en ;
         skos:broader <wmdsObservedVariable/10010> ;
-        defchem:chemical-species chemical-species:titanium ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/titanium> ;
         defchem:medium medium:aerosol ;
         .
 
@@ -2106,7 +2106,7 @@
         dct:description ""@en ;
         skos:prefLabel "uranium_in_aerosol_pm2.5"@en ;
         skos:broader <wmdsObservedVariable/10010> ;
-        defchem:chemical-species chemical-species:uranium ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/uranium> ;
         defchem:medium medium:pm2.5 ;
         .
 
@@ -2118,7 +2118,7 @@
         dct:description ""@en ;
         skos:prefLabel "uranium_in_aerosol_tsp"@en ;
         skos:broader <wmdsObservedVariable/10010> ;
-        defchem:chemical-species chemical-species:uranium ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/uranium> ;
         defchem:medium medium:aerosol ;
         .
 
@@ -2130,7 +2130,7 @@
         dct:description ""@en ;
         skos:prefLabel "vanadium_in_aerosol_pm2.5"@en ;
         skos:broader <wmdsObservedVariable/10010> ;
-        defchem:chemical-species chemical-species:vanadium ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/vanadium> ;
         defchem:medium medium:pm2.5 ;
         .
 
@@ -2142,7 +2142,7 @@
         dct:description ""@en ;
         skos:prefLabel "vanadium_in_aerosol_tsp"@en ;
         skos:broader <wmdsObservedVariable/10010> ;
-        defchem:chemical-species chemical-species:vanadium ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/vanadium> ;
         defchem:medium medium:aerosol ;
         .
 
@@ -2154,7 +2154,7 @@
         dct:description ""@en ;
         skos:prefLabel "zinc_in_aerosol_pm2.5"@en ;
         skos:broader <wmdsObservedVariable/10010> ;
-        defchem:chemical-species chemical-species:zinc ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/zinc> ;
         defchem:medium medium:pm2.5 ;
         .
 
@@ -2166,7 +2166,7 @@
         dct:description ""@en ;
         skos:prefLabel "zinc_in_aerosol_tsp"@en ;
         skos:broader <wmdsObservedVariable/10010> ;
-        defchem:chemical-species chemical-species:zinc ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/zinc> ;
         defchem:medium medium:aerosol ;
         .
 
@@ -2178,7 +2178,7 @@
         dct:description ""@en ;
         skos:prefLabel ""@en ;
         skos:broader <wmdsObservedVariable/10001> ;
-        defchem:chemical-species chemical-species:particle-phase-species ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/particle-phase-species> ;
         defchem:medium medium:aerosol ;
         .
 
@@ -2190,7 +2190,7 @@
         dct:description ""@en ;
         skos:prefLabel "aerosol_absorption_optical_depth_in_aerosol_tsp"@en ;
         skos:broader <wmdsObservedVariable/10011> ;
-        defchem:chemical-species chemical-species:particle-phase-species ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/particle-phase-species> ;
         defchem:medium medium:aerosol ;
         .
 
@@ -2202,7 +2202,7 @@
         dct:description ""@en ;
         skos:prefLabel "aerosol_extinction_coefficient_in_aerosol_tsp"@en ;
         skos:broader <wmdsObservedVariable/10011> ;
-        defchem:chemical-species chemical-species:particle-phase-species ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/particle-phase-species> ;
         defchem:medium medium:aerosol ;
         .
 
@@ -2214,7 +2214,7 @@
         dct:description ""@en ;
         skos:prefLabel "light_absorption_coefficient_in_aerosol_pm1"@en ;
         skos:broader <wmdsObservedVariable/10011> ;
-        defchem:chemical-species chemical-species:particle-phase-species ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/particle-phase-species> ;
         defchem:medium medium:pm1 ;
         .
 
@@ -2226,7 +2226,7 @@
         dct:description ""@en ;
         skos:prefLabel "light_absorption_coefficient_in_aerosol_pm10"@en ;
         skos:broader <wmdsObservedVariable/10011> ;
-        defchem:chemical-species chemical-species:particle-phase-species ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/particle-phase-species> ;
         defchem:medium medium:pm10 ;
         .
 
@@ -2238,7 +2238,7 @@
         dct:description ""@en ;
         skos:prefLabel "light_absorption_coefficient_in_aerosol_tsp"@en ;
         skos:broader <wmdsObservedVariable/10011> ;
-        defchem:chemical-species chemical-species:particle-phase-species ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/particle-phase-species> ;
         defchem:medium medium:aerosol ;
         .
 
@@ -2250,7 +2250,7 @@
         dct:description ""@en ;
         skos:prefLabel "light_backscattering_coefficient_in_aerosol_pm1"@en ;
         skos:broader <wmdsObservedVariable/10011> ;
-        defchem:chemical-species chemical-species:particle-phase-species ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/particle-phase-species> ;
         defchem:medium medium:pm1 ;
         .
 
@@ -2262,7 +2262,7 @@
         dct:description ""@en ;
         skos:prefLabel "light_backscattering_coefficient_in_aerosol_pm10"@en ;
         skos:broader <wmdsObservedVariable/10011> ;
-        defchem:chemical-species chemical-species:particle-phase-species ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/particle-phase-species> ;
         defchem:medium medium:pm10 ;
         .
 
@@ -2274,7 +2274,7 @@
         dct:description ""@en ;
         skos:prefLabel "light_backscattering_coefficient_in_aerosol_tsp"@en ;
         skos:broader <wmdsObservedVariable/10011> ;
-        defchem:chemical-species chemical-species:particle-phase-species ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/particle-phase-species> ;
         defchem:medium medium:aerosol ;
         .
 
@@ -2286,7 +2286,7 @@
         dct:description ""@en ;
         skos:prefLabel "light_scattering_coefficient_in_aerosol_pm1"@en ;
         skos:broader <wmdsObservedVariable/10011> ;
-        defchem:chemical-species chemical-species:particle-phase-species ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/particle-phase-species> ;
         defchem:medium medium:pm1 ;
         .
 
@@ -2298,7 +2298,7 @@
         dct:description ""@en ;
         skos:prefLabel "light_scattering_coefficient_in_aerosol_pm10"@en ;
         skos:broader <wmdsObservedVariable/10011> ;
-        defchem:chemical-species chemical-species:particle-phase-species ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/particle-phase-species> ;
         defchem:medium medium:pm10 ;
         .
 
@@ -2310,7 +2310,7 @@
         dct:description ""@en ;
         skos:prefLabel "light_scattering_coefficient_in_aerosol_tsp"@en ;
         skos:broader <wmdsObservedVariable/10011> ;
-        defchem:chemical-species chemical-species:particle-phase-species ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/particle-phase-species> ;
         defchem:medium medium:aerosol ;
         .
 
@@ -2322,7 +2322,7 @@
         dct:description ""@en ;
         skos:prefLabel "multiwavelength_optical_depth_in_aerosol_tsp"@en ;
         skos:broader <wmdsObservedVariable/10011> ;
-        defchem:chemical-species chemical-species:particle-phase-species ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/particle-phase-species> ;
         defchem:medium medium:aerosol ;
         .
 
@@ -2334,7 +2334,7 @@
         dct:description ""@en ;
         skos:prefLabel "vertical_distribution_of_properties_in_aerosol_tsp"@en ;
         skos:broader <wmdsObservedVariable/10011> ;
-        defchem:chemical-species chemical-species:particle-phase-species ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/particle-phase-species> ;
         defchem:medium medium:aerosol ;
         .
 
@@ -2346,7 +2346,7 @@
         dct:description ""@en ;
         skos:prefLabel ""@en ;
         skos:broader <wmdsObservedVariable/10001> ;
-        defchem:chemical-species chemical-species:particle-phase-species ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/particle-phase-species> ;
         defchem:medium medium:aerosol ;
         .
 
@@ -2358,7 +2358,7 @@
         dct:description ""@en ;
         skos:prefLabel "aerosol_mass_density_in_aerosol_tsp"@en ;
         skos:broader <wmdsObservedVariable/10012> ;
-        defchem:chemical-species chemical-species:particle-phase-species ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/particle-phase-species> ;
         defchem:medium medium:aerosol ;
         .
 
@@ -2370,7 +2370,7 @@
         dct:description ""@en ;
         skos:prefLabel "aerosol_effective_radius_in_aerosol_tsp"@en ;
         skos:broader <wmdsObservedVariable/10012> ;
-        defchem:chemical-species chemical-species:particle-phase-species ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/particle-phase-species> ;
         defchem:medium medium:aerosol ;
         .
 
@@ -2382,7 +2382,7 @@
         dct:description ""@en ;
         skos:prefLabel ""@en ;
         skos:broader <wmdsObservedVariable/10012> ;
-        defchem:chemical-species chemical-species:dust ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/dust> ;
         defchem:medium medium:aerosol ;
         .
 
@@ -2394,7 +2394,7 @@
         dct:description ""@en ;
         skos:prefLabel "aerosol_dust_concentration_mass_in_aerosol_tsp"@en ;
         skos:broader <wmdsObservedVariable/10013> ;
-        defchem:chemical-species chemical-species:dust ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/dust> ;
         defchem:medium medium:aerosol ;
         .
 
@@ -2406,7 +2406,7 @@
         dct:description ""@en ;
         skos:prefLabel "mass_concentration_coarse_or_pm10_in_aerosol_pm10"@en ;
         skos:broader <wmdsObservedVariable/10012> ;
-        defchem:chemical-species chemical-species:particle-phase-species ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/particle-phase-species> ;
         defchem:medium medium:pm10 ;
         .
 
@@ -2418,7 +2418,7 @@
         dct:description ""@en ;
         skos:prefLabel "mass_concentration_fine_or_pm1_in_aerosol_pm1"@en ;
         skos:broader <wmdsObservedVariable/10012> ;
-        defchem:chemical-species chemical-species:particle-phase-species ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/particle-phase-species> ;
         defchem:medium medium:pm1 ;
         .
 
@@ -2430,7 +2430,7 @@
         dct:description ""@en ;
         skos:prefLabel "mass_concentration_medium_or_pm2.5_in_aerosol_pm2.5"@en ;
         skos:broader <wmdsObservedVariable/10012> ;
-        defchem:chemical-species chemical-species:particle-phase-species ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/particle-phase-species> ;
         defchem:medium medium:pm2.5 ;
         .
 
@@ -2442,7 +2442,7 @@
         dct:description ""@en ;
         skos:prefLabel "mass_concentration_size_fractionated_in_aerosol_tsp"@en ;
         skos:broader <wmdsObservedVariable/10012> ;
-        defchem:chemical-species chemical-species:particle-phase-species ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/particle-phase-species> ;
         defchem:medium medium:aerosol ;
         .
 
@@ -2454,7 +2454,7 @@
         dct:description ""@en ;
         skos:prefLabel "mass_concentration_total_aerosol_or_total_suspended_particles_in_aerosol_tsp"@en ;
         skos:broader <wmdsObservedVariable/10012> ;
-        defchem:chemical-species chemical-species:particle-phase-species ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/particle-phase-species> ;
         defchem:medium medium:aerosol ;
         .
 
@@ -2466,7 +2466,7 @@
         dct:description ""@en ;
         skos:prefLabel "number_concentration_in_aerosol_tsp"@en ;
         skos:broader <wmdsObservedVariable/10012> ;
-        defchem:chemical-species chemical-species:particle-phase-species ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/particle-phase-species> ;
         defchem:medium medium:aerosol ;
         .
 
@@ -2478,7 +2478,7 @@
         dct:description ""@en ;
         skos:prefLabel "number_size_distribution_in_aerosol_pm10"@en ;
         skos:broader <wmdsObservedVariable/10012> ;
-        defchem:chemical-species chemical-species:particle-phase-species ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/particle-phase-species> ;
         defchem:medium medium:pm10 ;
         .
 
@@ -2490,7 +2490,7 @@
         dct:description ""@en ;
         skos:prefLabel "number_size_distribution_in_aerosol_tsp"@en ;
         skos:broader <wmdsObservedVariable/10012> ;
-        defchem:chemical-species chemical-species:particle-phase-species ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/particle-phase-species> ;
         defchem:medium medium:aerosol ;
         .
 
@@ -2502,7 +2502,7 @@
         dct:description ""@en ;
         skos:prefLabel "volcanic_ash_in_aerosol_tsp"@en ;
         skos:broader <wmdsObservedVariable/10012> ;
-        defchem:chemical-species chemical-species:volcanic-ash ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/volcanic-ash> ;
         defchem:medium medium:aerosol ;
         .
 
@@ -2514,7 +2514,7 @@
         dct:description ""@en ;
         skos:prefLabel "volcanic_ash_mass_concentration_in_aerosol_tsp"@en ;
         skos:broader <wmdsObservedVariable/10014> ;
-        defchem:chemical-species chemical-species:volcanic-ash ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/volcanic-ash> ;
         defchem:medium medium:aerosol ;
         .
 
@@ -2526,7 +2526,7 @@
         dct:description ""@en ;
         skos:prefLabel "volcanic_ash_total_column_in_aerosol_tsp"@en ;
         skos:broader <wmdsObservedVariable/10014> ;
-        defchem:chemical-species chemical-species:volcanic-ash ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/volcanic-ash> ;
         defchem:medium medium:aerosol ;
         .
 
@@ -2538,7 +2538,7 @@
         dct:description ""@en ;
         skos:prefLabel ""@en ;
         skos:broader <wmdsObservedVariable/10001> ;
-        defchem:chemical-species chemical-species:particle-phase-species ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/particle-phase-species> ;
         defchem:medium medium:aerosol ;
         .
 
@@ -2550,7 +2550,7 @@
         dct:description ""@en ;
         skos:prefLabel "cloud_condensation_nuclei_concentration_at_single_supersaturation_in_aerosol_tsp"@en ;
         skos:broader <wmdsObservedVariable/10015> ;
-        defchem:chemical-species chemical-species:particle-phase-species ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/particle-phase-species> ;
         defchem:medium medium:aerosol ;
         .
 
@@ -2562,7 +2562,7 @@
         dct:description ""@en ;
         skos:prefLabel "cloud_condensation_nuclei_concentration_spectra_in_aerosol_tsp"@en ;
         skos:broader <wmdsObservedVariable/10015> ;
-        defchem:chemical-species chemical-species:particle-phase-species ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/particle-phase-species> ;
         defchem:medium medium:aerosol ;
         .
 
@@ -2574,7 +2574,7 @@
         dct:description ""@en ;
         skos:prefLabel "hygroscopic_growth_factor_110_micron_equivalent_in_aerosol_tsp"@en ;
         skos:broader <wmdsObservedVariable/10015> ;
-        defchem:chemical-species chemical-species:particle-phase-species ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/particle-phase-species> ;
         defchem:medium medium:aerosol ;
         .
 
@@ -2586,7 +2586,7 @@
         dct:description ""@en ;
         skos:prefLabel "hygroscopic_growth_factor_165_micron_equivalent_in_aerosol_tsp"@en ;
         skos:broader <wmdsObservedVariable/10015> ;
-        defchem:chemical-species chemical-species:particle-phase-species ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/particle-phase-species> ;
         defchem:medium medium:aerosol ;
         .
 
@@ -2598,7 +2598,7 @@
         dct:description ""@en ;
         skos:prefLabel "Hygroscopic_growth_factor_35_micron_equivalent_in_aerosol_tsp"@en ;
         skos:broader <wmdsObservedVariable/10015> ;
-        defchem:chemical-species chemical-species:particle-phase-species ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/particle-phase-species> ;
         defchem:medium medium:aerosol ;
         .
 
@@ -2610,7 +2610,7 @@
         dct:description ""@en ;
         skos:prefLabel "hygroscopic_growth_factor_50_micron_equivalent_in_aerosol_tsp"@en ;
         skos:broader <wmdsObservedVariable/10015> ;
-        defchem:chemical-species chemical-species:particle-phase-species ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/particle-phase-species> ;
         defchem:medium medium:aerosol ;
         .
 
@@ -2622,7 +2622,7 @@
         dct:description ""@en ;
         skos:prefLabel "hygroscopic_growth_factor_75_micron_equivalent_in_aerosol_tsp"@en ;
         skos:broader <wmdsObservedVariable/10015> ;
-        defchem:chemical-species chemical-species:particle-phase-species ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/particle-phase-species> ;
         defchem:medium medium:aerosol ;
         .
 
@@ -2634,7 +2634,7 @@
         dct:description ""@en ;
         skos:prefLabel "hygroscopic_growth_factor_total_aerosol_in_aerosol_tsp"@en ;
         skos:broader <wmdsObservedVariable/10015> ;
-        defchem:chemical-species chemical-species:particle-phase-species ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/particle-phase-species> ;
         defchem:medium medium:aerosol ;
         .
 
@@ -2656,7 +2656,7 @@
         dct:description ""@en ;
         skos:prefLabel ""@en ;
         skos:broader <wmdsObservedVariable/10000> ;
-        defchem:chemical-species chemical-species:liquid-and-ice-water ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/liquid-and-ice-water> ;
         defchem:medium medium:clouds ;
         .
 
@@ -2668,7 +2668,7 @@
         dct:description ""@en ;
         skos:prefLabel "cloud_amount_in_clouds"@en ;
         skos:broader <wmdsObservedVariable/10016> ;
-        defchem:chemical-species chemical-species:liquid-and-ice-water ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/liquid-and-ice-water> ;
         defchem:medium medium:clouds ;
         .
 
@@ -2680,7 +2680,7 @@
         dct:description ""@en ;
         skos:prefLabel "cloud_cover_in_clouds"@en ;
         skos:broader <wmdsObservedVariable/10016> ;
-        defchem:chemical-species chemical-species:liquid-and-ice-water ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/liquid-and-ice-water> ;
         defchem:medium medium:clouds ;
         .
 
@@ -2692,7 +2692,7 @@
         dct:description ""@en ;
         skos:prefLabel "cloud_drop_effective_radius_in_clouds"@en ;
         skos:broader <wmdsObservedVariable/10016> ;
-        defchem:chemical-species chemical-species:liquid-and-ice-water ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/liquid-and-ice-water> ;
         defchem:medium medium:clouds ;
         .
 
@@ -2704,7 +2704,7 @@
         dct:description ""@en ;
         skos:prefLabel "cloud_hydrometeor_concentration_in_clouds"@en ;
         skos:broader <wmdsObservedVariable/10016> ;
-        defchem:chemical-species chemical-species:liquid-and-ice-water ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/liquid-and-ice-water> ;
         defchem:medium medium:clouds ;
         .
 
@@ -2716,7 +2716,7 @@
         dct:description ""@en ;
         skos:prefLabel "effective_radius_of_cloud_hydrometeors_in_clouds"@en ;
         skos:broader <wmdsObservedVariable/10016> ;
-        defchem:chemical-species chemical-species:liquid-and-ice-water ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/liquid-and-ice-water> ;
         defchem:medium medium:clouds ;
         .
 
@@ -2728,7 +2728,7 @@
         dct:description ""@en ;
         skos:prefLabel ""@en ;
         skos:broader <wmdsObservedVariable/10016> ;
-        defchem:chemical-species chemical-species:liquid-and-ice-water ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/liquid-and-ice-water> ;
         defchem:medium medium:clouds ;
         .
 
@@ -2740,7 +2740,7 @@
         dct:description ""@en ;
         skos:prefLabel "cloud_ice_in_clouds"@en ;
         skos:broader <wmdsObservedVariable/10017> ;
-        defchem:chemical-species chemical-species:liquid-and-ice-water ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/liquid-and-ice-water> ;
         defchem:medium medium:clouds ;
         .
 
@@ -2752,7 +2752,7 @@
         dct:description ""@en ;
         skos:prefLabel "cloud_ice_total_column_in_clouds"@en ;
         skos:broader <wmdsObservedVariable/10017> ;
-        defchem:chemical-species chemical-species:liquid-and-ice-water ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/liquid-and-ice-water> ;
         defchem:medium medium:clouds ;
         .
 
@@ -2764,7 +2764,7 @@
         dct:description ""@en ;
         skos:prefLabel "cloud_ice_effective_radius_in_clouds"@en ;
         skos:broader <wmdsObservedVariable/10017> ;
-        defchem:chemical-species chemical-species:liquid-and-ice-water ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/liquid-and-ice-water> ;
         defchem:medium medium:clouds ;
         .
 
@@ -2776,7 +2776,7 @@
         dct:description ""@en ;
         skos:prefLabel "freezing_level_height_in_clouds_in_clouds"@en ;
         skos:broader <wmdsObservedVariable/10017> ;
-        defchem:chemical-species chemical-species:liquid-and-ice-water ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/liquid-and-ice-water> ;
         defchem:medium medium:clouds ;
         .
 
@@ -2788,7 +2788,7 @@
         dct:description ""@en ;
         skos:prefLabel "icing_potential_in_clouds"@en ;
         skos:broader <wmdsObservedVariable/10017> ;
-        defchem:chemical-species chemical-species:liquid-and-ice-water ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/liquid-and-ice-water> ;
         defchem:medium medium:clouds ;
         .
 
@@ -2800,7 +2800,7 @@
         dct:description ""@en ;
         skos:prefLabel ""@en ;
         skos:broader <wmdsObservedVariable/10016> ;
-        defchem:chemical-species chemical-species:liquid-and-ice-water ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/liquid-and-ice-water> ;
         defchem:medium medium:clouds ;
         .
 
@@ -2812,7 +2812,7 @@
         dct:description ""@en ;
         skos:prefLabel "liquid_water_in_clouds"@en ;
         skos:broader <wmdsObservedVariable/10018> ;
-        defchem:chemical-species chemical-species:liquid-and-ice-water ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/liquid-and-ice-water> ;
         defchem:medium medium:clouds ;
         .
 
@@ -2824,7 +2824,7 @@
         dct:description ""@en ;
         skos:prefLabel "cloud_liquid_water_total_column_in_clouds"@en ;
         skos:broader <wmdsObservedVariable/10018> ;
-        defchem:chemical-species chemical-species:liquid-and-ice-water ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/liquid-and-ice-water> ;
         defchem:medium medium:clouds ;
         .
 
@@ -2836,7 +2836,7 @@
         dct:description ""@en ;
         skos:prefLabel "melting_layer_depth_in_clouds_in_clouds"@en ;
         skos:broader <wmdsObservedVariable/10016> ;
-        defchem:chemical-species chemical-species:liquid-and-ice-water ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/liquid-and-ice-water> ;
         defchem:medium medium:clouds ;
         .
 
@@ -2848,7 +2848,7 @@
         dct:description ""@en ;
         skos:prefLabel ""@en ;
         skos:broader <wmdsObservedVariable/10016> ;
-        defchem:chemical-species chemical-species:liquid-and-ice-water ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/liquid-and-ice-water> ;
         defchem:medium medium:clouds ;
         .
 
@@ -2860,7 +2860,7 @@
         dct:description ""@en ;
         skos:prefLabel "cloud_optical_depth_in_clouds"@en ;
         skos:broader <wmdsObservedVariable/10019> ;
-        defchem:chemical-species chemical-species:liquid-and-ice-water ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/liquid-and-ice-water> ;
         defchem:medium medium:clouds ;
         .
 
@@ -2872,7 +2872,7 @@
         dct:description ""@en ;
         skos:prefLabel "optical_depth_of_fog_in_clouds"@en ;
         skos:broader <wmdsObservedVariable/10019> ;
-        defchem:chemical-species chemical-species:liquid-and-ice-water ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/liquid-and-ice-water> ;
         defchem:medium medium:clouds ;
         .
 
@@ -2884,7 +2884,7 @@
         dct:description ""@en ;
         skos:prefLabel "optical_depth_within_each_layer_in_clouds"@en ;
         skos:broader <wmdsObservedVariable/10019> ;
-        defchem:chemical-species chemical-species:liquid-and-ice-water ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/liquid-and-ice-water> ;
         defchem:medium medium:clouds ;
         .
 
@@ -2896,7 +2896,7 @@
         dct:description ""@en ;
         skos:prefLabel "short-wave_cloud_reflectance_in_clouds"@en ;
         skos:broader <wmdsObservedVariable/10019> ;
-        defchem:chemical-species chemical-species:liquid-and-ice-water ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/liquid-and-ice-water> ;
         defchem:medium medium:clouds ;
         .
 
@@ -2908,7 +2908,7 @@
         dct:description ""@en ;
         skos:prefLabel ""@en ;
         skos:broader <wmdsObservedVariable/10016> ;
-        defchem:chemical-species chemical-species:liquid-and-ice-water ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/liquid-and-ice-water> ;
         defchem:medium medium:clouds ;
         .
 
@@ -2920,7 +2920,7 @@
         dct:description ""@en ;
         skos:prefLabel "height_of_cloud_base_in_clouds"@en ;
         skos:broader <wmdsObservedVariable/10020> ;
-        defchem:chemical-species chemical-species:liquid-and-ice-water ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/liquid-and-ice-water> ;
         defchem:medium medium:clouds ;
         .
 
@@ -2932,7 +2932,7 @@
         dct:description ""@en ;
         skos:prefLabel "height_of_cloud_top_in_clouds"@en ;
         skos:broader <wmdsObservedVariable/10020> ;
-        defchem:chemical-species chemical-species:liquid-and-ice-water ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/liquid-and-ice-water> ;
         defchem:medium medium:clouds ;
         .
 
@@ -2944,7 +2944,7 @@
         dct:description ""@en ;
         skos:prefLabel "height_of_inversion_in_clouds"@en ;
         skos:broader <wmdsObservedVariable/10020> ;
-        defchem:chemical-species chemical-species:liquid-and-ice-water ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/liquid-and-ice-water> ;
         defchem:medium medium:clouds ;
         .
 
@@ -2956,7 +2956,7 @@
         dct:description ""@en ;
         skos:prefLabel "polar_stratospheric_cloud_occurrence_in_clouds"@en ;
         skos:broader <wmdsObservedVariable/10016> ;
-        defchem:chemical-species chemical-species:liquid-and-ice-water ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/liquid-and-ice-water> ;
         defchem:medium medium:clouds ;
         .
 
@@ -2968,7 +2968,7 @@
         dct:description ""@en ;
         skos:prefLabel ""@en ;
         skos:broader <wmdsObservedVariable/10016> ;
-        defchem:chemical-species chemical-species:liquid-and-ice-water ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/liquid-and-ice-water> ;
         defchem:medium medium:clouds ;
         .
 
@@ -2980,7 +2980,7 @@
         dct:description ""@en ;
         skos:prefLabel "type_of_cloud_in_clouds"@en ;
         skos:broader <wmdsObservedVariable/10021> ;
-        defchem:chemical-species chemical-species:liquid-and-ice-water ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/liquid-and-ice-water> ;
         defchem:medium medium:clouds ;
         .
 
@@ -2992,7 +2992,7 @@
         dct:description ""@en ;
         skos:prefLabel "type_of_high_clouds_in_clouds"@en ;
         skos:broader <wmdsObservedVariable/10021> ;
-        defchem:chemical-species chemical-species:liquid-and-ice-water ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/liquid-and-ice-water> ;
         defchem:medium medium:clouds ;
         .
 
@@ -3004,7 +3004,7 @@
         dct:description ""@en ;
         skos:prefLabel "type_of_low_clouds_in_clouds"@en ;
         skos:broader <wmdsObservedVariable/10021> ;
-        defchem:chemical-species chemical-species:liquid-and-ice-water ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/liquid-and-ice-water> ;
         defchem:medium medium:clouds ;
         .
 
@@ -3016,7 +3016,7 @@
         dct:description ""@en ;
         skos:prefLabel "type_of_middle_clouds_in_clouds"@en ;
         skos:broader <wmdsObservedVariable/10021> ;
-        defchem:chemical-species chemical-species:liquid-and-ice-water ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/liquid-and-ice-water> ;
         defchem:medium medium:clouds ;
         .
 
@@ -3072,7 +3072,7 @@
         dct:description ""@en ;
         skos:prefLabel ""@en ;
         skos:broader <wmdsObservedVariable/10000> ;
-        defchem:chemical-species chemical-species:gas-phase-species ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/gas-phase-species> ;
         defchem:medium medium:air ;
         .
 
@@ -3084,7 +3084,7 @@
         dct:description ""@en ;
         skos:prefLabel ""@en ;
         skos:broader <wmdsObservedVariable/12003> ;
-        defchem:chemical-species chemical-species:gas-phase-species ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/gas-phase-species> ;
         defchem:medium medium:air ;
         .
 
@@ -3096,7 +3096,7 @@
         dct:description ""@en ;
         skos:prefLabel ""@en ;
         skos:broader <wmdsObservedVariable/10023> ;
-        defchem:chemical-species chemical-species:chlorofluorocarbon ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/chlorofluorocarbon> ;
         defchem:medium medium:air ;
         .
 
@@ -3108,7 +3108,7 @@
         dct:description ""@en ;
         skos:prefLabel "cfc114_in_air"@en ;
         skos:broader <wmdsObservedVariable/10024> ;
-        defchem:chemical-species chemical-species:1,2-dichlorotetrafluoroethane ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/1,2-dichlorotetrafluoroethane> ;
         defchem:medium medium:air ;
         .
 
@@ -3120,7 +3120,7 @@
         dct:description ""@en ;
         skos:prefLabel "cfc113_in_air"@en ;
         skos:broader <wmdsObservedVariable/10024> ;
-        defchem:chemical-species chemical-species:1,1,2-trichloro-1,2,2-trifluoroethane ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/1,1,2-trichloro-1,2,2-trifluoroethane> ;
         defchem:medium medium:air ;
         .
 
@@ -3132,7 +3132,7 @@
         dct:description ""@en ;
         skos:prefLabel "cfc115_in_air"@en ;
         skos:broader <wmdsObservedVariable/10024> ;
-        defchem:chemical-species chemical-species:chloropentafluoroethane ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/chloropentafluoroethane> ;
         defchem:medium medium:air ;
         .
 
@@ -3144,7 +3144,7 @@
         dct:description ""@en ;
         skos:prefLabel "cfc12_in_air"@en ;
         skos:broader <wmdsObservedVariable/10024> ;
-        defchem:chemical-species chemical-species:dichlorodifluoromethane ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/dichlorodifluoromethane> ;
         defchem:medium medium:air ;
         .
 
@@ -3156,7 +3156,7 @@
         dct:description ""@en ;
         skos:prefLabel "cfc11_in_air"@en ;
         skos:broader <wmdsObservedVariable/10024> ;
-        defchem:chemical-species chemical-species:trichlorofluoromethane ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/trichlorofluoromethane> ;
         defchem:medium medium:air ;
         .
 
@@ -3168,7 +3168,7 @@
         dct:description ""@en ;
         skos:prefLabel "methane_in_air"@en ;
         skos:broader <wmdsObservedVariable/10023> ;
-        defchem:chemical-species chemical-species:methane ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/methane> ;
         defchem:medium medium:air ;
         .
 
@@ -3180,7 +3180,7 @@
         dct:description ""@en ;
         skos:prefLabel "13c-methane_in_air"@en ;
         skos:broader <wmdsObservedVariable/10023> ;
-        defchem:chemical-species chemical-species:13c-methane ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/13c-methane> ;
         defchem:medium medium:air ;
         .
 
@@ -3192,7 +3192,7 @@
         dct:description ""@en ;
         skos:prefLabel "carbon_dioxide_in_air"@en ;
         skos:broader <wmdsObservedVariable/10023> ;
-        defchem:chemical-species chemical-species:carbon-dioxide ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/carbon-dioxide> ;
         defchem:medium medium:air ;
         .
 
@@ -3204,7 +3204,7 @@
         dct:description ""@en ;
         skos:prefLabel "13c-carbon_dioxide_in_air"@en ;
         skos:broader <wmdsObservedVariable/10023> ;
-        defchem:chemical-species chemical-species:13c-carbon-dioxide ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/13c-carbon-dioxide> ;
         defchem:medium medium:air ;
         .
 
@@ -3216,7 +3216,7 @@
         dct:description ""@en ;
         skos:prefLabel "18o-carbon_dioxide_in_air"@en ;
         skos:broader <wmdsObservedVariable/10023> ;
-        defchem:chemical-species chemical-species:18o-carbon-dioxide ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/18o-carbon-dioxide> ;
         defchem:medium medium:air ;
         .
 
@@ -3228,7 +3228,7 @@
         dct:description ""@en ;
         skos:prefLabel ""@en ;
         skos:broader <wmdsObservedVariable/10023> ;
-        defchem:chemical-species chemical-species:halogenated-hydrocarbon ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/halogenated-hydrocarbon> ;
         defchem:medium medium:air ;
         .
 
@@ -3240,7 +3240,7 @@
         dct:description ""@en ;
         skos:prefLabel "carbon_tetrachloride_in_air"@en ;
         skos:broader <wmdsObservedVariable/10025> ;
-        defchem:chemical-species chemical-species:carbon-tetrachloride ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/carbon-tetrachloride> ;
         defchem:medium medium:air ;
         .
 
@@ -3252,7 +3252,7 @@
         dct:description ""@en ;
         skos:prefLabel "1,1,1-trichloroethane_in_air"@en ;
         skos:broader <wmdsObservedVariable/10025> ;
-        defchem:chemical-species chemical-species:1,1,1-trichloroethane ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/1,1,1-trichloroethane> ;
         defchem:medium medium:air ;
         .
 
@@ -3275,7 +3275,7 @@
         dct:description ""@en ;
         skos:prefLabel "halon1211_in_air"@en ;
         skos:broader <wmdsObservedVariable/10026> ;
-        defchem:chemical-species chemical-species:bromochlorodifluoromethane ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/bromochlorodifluoromethane> ;
         defchem:medium medium:air ;
         .
 
@@ -3287,7 +3287,7 @@
         dct:description ""@en ;
         skos:prefLabel "halon1301_in_air"@en ;
         skos:broader <wmdsObservedVariable/10026> ;
-        defchem:chemical-species chemical-species:bromotrifluoromethane ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/bromotrifluoromethane> ;
         defchem:medium medium:air ;
         .
 
@@ -3299,7 +3299,7 @@
         dct:description ""@en ;
         skos:prefLabel ""@en ;
         skos:broader <wmdsObservedVariable/10023> ;
-        defchem:chemical-species chemical-species:chlorofluorocarbon ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/chlorofluorocarbon> ;
         defchem:medium medium:air ;
         .
 
@@ -3311,7 +3311,7 @@
         dct:description ""@en ;
         skos:prefLabel "hcfc141b_in_air"@en ;
         skos:broader <wmdsObservedVariable/10027> ;
-        defchem:chemical-species chemical-species:1,1-dichloro-1-fluoroethane ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/1,1-dichloro-1-fluoroethane> ;
         defchem:medium medium:air ;
         .
 
@@ -3323,7 +3323,7 @@
         dct:description ""@en ;
         skos:prefLabel "hcfc142b_in_air"@en ;
         skos:broader <wmdsObservedVariable/10027> ;
-        defchem:chemical-species chemical-species:1-chloro-1,1-difluoroethane ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/1-chloro-1,1-difluoroethane> ;
         defchem:medium medium:air ;
         .
 
@@ -3335,7 +3335,7 @@
         dct:description ""@en ;
         skos:prefLabel "hcfc143a_in_air"@en ;
         skos:broader <wmdsObservedVariable/10027> ;
-        defchem:chemical-species chemical-species:1,1,1-trifluoroethane ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/1,1,1-trifluoroethane> ;
         defchem:medium medium:air ;
         .
 
@@ -3347,7 +3347,7 @@
         dct:description ""@en ;
         skos:prefLabel "hcfc22_in_air"@en ;
         skos:broader <wmdsObservedVariable/10027> ;
-        defchem:chemical-species chemical-species:chlorodifluoromethane ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/chlorodifluoromethane> ;
         defchem:medium medium:air ;
         .
 
@@ -3359,7 +3359,7 @@
         dct:description ""@en ;
         skos:prefLabel ""@en ;
         skos:broader <wmdsObservedVariable/10023> ;
-        defchem:chemical-species chemical-species:hcfc ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/hcfc> ;
         defchem:medium medium:air ;
         .
 
@@ -3371,7 +3371,7 @@
         dct:description ""@en ;
         skos:prefLabel "hfc134a_in_air"@en ;
         skos:broader <wmdsObservedVariable/10028> ;
-        defchem:chemical-species chemical-species:1,1,1,2-tetrafluoroethane ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/1,1,1,2-tetrafluoroethane> ;
         defchem:medium medium:air ;
         .
 
@@ -3383,7 +3383,7 @@
         dct:description ""@en ;
         skos:prefLabel "hfc152a_in_air"@en ;
         skos:broader <wmdsObservedVariable/10028> ;
-        defchem:chemical-species chemical-species:1,1-difluoroethane ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/1,1-difluoroethane> ;
         defchem:medium medium:air ;
         .
 
@@ -3395,7 +3395,7 @@
         dct:description ""@en ;
         skos:prefLabel "hfc125_in_air"@en ;
         skos:broader <wmdsObservedVariable/10028> ;
-        defchem:chemical-species chemical-species:pentafluoroethane ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/pentafluoroethane> ;
         defchem:medium medium:air ;
         .
 
@@ -3407,7 +3407,7 @@
         dct:description ""@en ;
         skos:prefLabel "hfc236fa_in_air"@en ;
         skos:broader <wmdsObservedVariable/10028> ;
-        defchem:chemical-species chemical-species:1,1,1,2,3,3-hexafluoropropane ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/1,1,1,2,3,3-hexafluoropropane> ;
         defchem:medium medium:air ;
         .
 
@@ -3419,7 +3419,7 @@
         dct:description ""@en ;
         skos:prefLabel "hfc245fa_in_air"@en ;
         skos:broader <wmdsObservedVariable/10028> ;
-        defchem:chemical-species chemical-species:1,1,1,3,3-pentafluoropropane ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/1,1,1,3,3-pentafluoropropane> ;
         defchem:medium medium:air ;
         .
 
@@ -3431,7 +3431,7 @@
         dct:description ""@en ;
         skos:prefLabel "hfc227ea_in_air"@en ;
         skos:broader <wmdsObservedVariable/10028> ;
-        defchem:chemical-species chemical-species:1,1,1,2,3,3,3-heptafluoropropane ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/1,1,1,2,3,3,3-heptafluoropropane> ;
         defchem:medium medium:air ;
         .
 
@@ -3443,7 +3443,7 @@
         dct:description ""@en ;
         skos:prefLabel "hfc365mfc_in_air"@en ;
         skos:broader <wmdsObservedVariable/10028> ;
-        defchem:chemical-species chemical-species:1,1,1,3,3-pentafluorobutane ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/1,1,1,3,3-pentafluorobutane> ;
         defchem:medium medium:air ;
         .
 
@@ -3455,7 +3455,7 @@
         dct:description ""@en ;
         skos:prefLabel "hfc32_in_air"@en ;
         skos:broader <wmdsObservedVariable/10028> ;
-        defchem:chemical-species chemical-species:difluoromethane ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/difluoromethane> ;
         defchem:medium medium:air ;
         .
 
@@ -3467,7 +3467,7 @@
         dct:description ""@en ;
         skos:prefLabel "hfc23_in_air"@en ;
         skos:broader <wmdsObservedVariable/10028> ;
-        defchem:chemical-species chemical-species:trifluoromethane ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/trifluoromethane> ;
         defchem:medium medium:air ;
         .
 
@@ -3479,7 +3479,7 @@
         dct:description ""@en ;
         skos:prefLabel "nitrous_oxide_in_air"@en ;
         skos:broader <wmdsObservedVariable/10023> ;
-        defchem:chemical-species chemical-species:dinitrogen-oxide ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/dinitrogen-oxide> ;
         defchem:medium medium:air ;
         .
 
@@ -3491,7 +3491,7 @@
         dct:description ""@en ;
         skos:prefLabel ""@en ;
         skos:broader <wmdsObservedVariable/10023> ;
-        defchem:chemical-species chemical-species:perfluorinated-species ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/perfluorinated-species> ;
         defchem:medium medium:air ;
         .
 
@@ -3503,7 +3503,7 @@
         dct:description ""@en ;
         skos:prefLabel "pfc116_in_air"@en ;
         skos:broader <wmdsObservedVariable/10029> ;
-        defchem:chemical-species chemical-species:hexafluoroethane ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/hexafluoroethane> ;
         defchem:medium medium:air ;
         .
 
@@ -3515,7 +3515,7 @@
         dct:description ""@en ;
         skos:prefLabel "pfc218_in_air"@en ;
         skos:broader <wmdsObservedVariable/10029> ;
-        defchem:chemical-species chemical-species:octafluoropropane ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/octafluoropropane> ;
         defchem:medium medium:air ;
         .
 
@@ -3527,7 +3527,7 @@
         dct:description ""@en ;
         skos:prefLabel "tetrafluoromethane_in_air"@en ;
         skos:broader <wmdsObservedVariable/10029> ;
-        defchem:chemical-species chemical-species:tetrafluoromethane ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/tetrafluoromethane> ;
         defchem:medium medium:air ;
         .
 
@@ -3539,7 +3539,7 @@
         dct:description ""@en ;
         skos:prefLabel "sulfur_hexafluoride_in_air"@en ;
         skos:broader <wmdsObservedVariable/10023> ;
-        defchem:chemical-species chemical-species:sulfur-hexafluoride ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/sulfur-hexafluoride> ;
         defchem:medium medium:air ;
         .
 
@@ -3551,7 +3551,7 @@
         dct:description ""@en ;
         skos:prefLabel "sulfuryl_fluoride_in_air"@en ;
         skos:broader <wmdsObservedVariable/10023> ;
-        defchem:chemical-species chemical-species:sulfuryl-fluoride ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/sulfuryl-fluoride> ;
         defchem:medium medium:air ;
         .
 
@@ -3563,7 +3563,7 @@
         dct:description ""@en ;
         skos:prefLabel ""@en ;
         skos:broader <wmdsObservedVariable/12003> ;
-        defchem:chemical-species chemical-species:gas-phase-species ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/gas-phase-species> ;
         defchem:medium medium:air ;
         .
 
@@ -3575,7 +3575,7 @@
         dct:description ""@en ;
         skos:prefLabel "hydrogen_in_air"@en ;
         skos:broader <wmdsObservedVariable/10033> ;
-        defchem:chemical-species chemical-species:hydrogen-molecule ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/hydrogen-molecule> ;
         defchem:medium medium:air ;
         .
 
@@ -3587,7 +3587,7 @@
         dct:description ""@en ;
         skos:prefLabel "hydrogen_dioxide_in_air"@en ;
         skos:broader <wmdsObservedVariable/10033> ;
-        defchem:chemical-species chemical-species:normal-water-vapor ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/normal-water-vapor> ;
         defchem:medium medium:air ;
         .
 
@@ -3599,7 +3599,7 @@
         dct:description ""@en ;
         skos:prefLabel "hydrogen_deuterium_oxide_in_air"@en ;
         skos:broader <wmdsObservedVariable/10033> ;
-        defchem:chemical-species chemical-species:deuteriated-water-vapor ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/deuteriated-water-vapor> ;
         defchem:medium medium:air ;
         .
 
@@ -3611,7 +3611,7 @@
         dct:description ""@en ;
         skos:prefLabel ""@en ;
         skos:broader <wmdsObservedVariable/12003> ;
-        defchem:chemical-species chemical-species:ozone ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/ozone> ;
         defchem:medium medium:air ;
         .
 
@@ -3623,7 +3623,7 @@
         dct:description ""@en ;
         skos:prefLabel "ozone_near_surface_in_air"@en ;
         skos:broader <wmdsObservedVariable/10034> ;
-        defchem:chemical-species chemical-species:ozone ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/ozone> ;
         defchem:medium medium:air ;
         .
 
@@ -3635,7 +3635,7 @@
         dct:description ""@en ;
         skos:prefLabel "ozone_total_column_in_air"@en ;
         skos:broader <wmdsObservedVariable/10034> ;
-        defchem:chemical-species chemical-species:ozone ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/ozone> ;
         defchem:medium medium:air ;
         .
 
@@ -3647,7 +3647,7 @@
         dct:description ""@en ;
         skos:prefLabel "ozone_vertical_profile_in_air"@en ;
         skos:broader <wmdsObservedVariable/10034> ;
-        defchem:chemical-species chemical-species:ozone ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/ozone> ;
         defchem:medium medium:air ;
         .
 
@@ -3659,7 +3659,7 @@
         dct:description ""@en ;
         skos:prefLabel ""@en ;
         skos:broader <wmdsObservedVariable/12003> ;
-        defchem:chemical-species chemical-species:gas-phase-species ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/gas-phase-species> ;
         defchem:medium medium:air ;
         .
 
@@ -3671,7 +3671,7 @@
         dct:description ""@en ;
         skos:prefLabel "bromine_monoxide_in_air"@en ;
         skos:broader <wmdsObservedVariable/10047> ;
-        defchem:chemical-species chemical-species:bromine-oxide ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/bromine-oxide> ;
         defchem:medium medium:air ;
         .
 
@@ -3683,7 +3683,7 @@
         dct:description ""@en ;
         skos:prefLabel "tetrachloroethene_in_air"@en ;
         skos:broader <wmdsObservedVariable/10047> ;
-        defchem:chemical-species chemical-species:tetrachloroethene ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/tetrachloroethene> ;
         defchem:medium medium:air ;
         .
 
@@ -3695,7 +3695,7 @@
         dct:description ""@en ;
         skos:prefLabel "trichloroethene_in_air"@en ;
         skos:broader <wmdsObservedVariable/10047> ;
-        defchem:chemical-species chemical-species:trichloroethene ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/trichloroethene> ;
         defchem:medium medium:air ;
         .
 
@@ -3707,7 +3707,7 @@
         dct:description ""@en ;
         skos:prefLabel "dibromomethane_in_air"@en ;
         skos:broader <wmdsObservedVariable/10047> ;
-        defchem:chemical-species chemical-species:dibromomethane ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/dibromomethane> ;
         defchem:medium medium:air ;
         .
 
@@ -3730,7 +3730,7 @@
         dct:description ""@en ;
         skos:prefLabel "methylbromide_in_air"@en ;
         skos:broader <wmdsObservedVariable/10047> ;
-        defchem:chemical-species chemical-species:bromomethane ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/bromomethane> ;
         defchem:medium medium:air ;
         .
 
@@ -3742,7 +3742,7 @@
         dct:description ""@en ;
         skos:prefLabel "methylchloride_in_air"@en ;
         skos:broader <wmdsObservedVariable/10047> ;
-        defchem:chemical-species chemical-species:chloromethane ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/chloromethane> ;
         defchem:medium medium:air ;
         .
 
@@ -3754,7 +3754,7 @@
         dct:description ""@en ;
         skos:prefLabel "methyliodide_in_air"@en ;
         skos:broader <wmdsObservedVariable/10047> ;
-        defchem:chemical-species chemical-species:iodomethane ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/iodomethane> ;
         defchem:medium medium:air ;
         .
 
@@ -3766,7 +3766,7 @@
         dct:description ""@en ;
         skos:prefLabel "bromoform_in_air"@en ;
         skos:broader <wmdsObservedVariable/10047> ;
-        defchem:chemical-species chemical-species:tribromomethane ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/tribromomethane> ;
         defchem:medium medium:air ;
         .
 
@@ -3778,7 +3778,7 @@
         dct:description ""@en ;
         skos:prefLabel "chloroform_in_air"@en ;
         skos:broader <wmdsObservedVariable/10047> ;
-        defchem:chemical-species chemical-species:trichloromethane ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/trichloromethane> ;
         defchem:medium medium:air ;
         .
 
@@ -3790,7 +3790,7 @@
         dct:description ""@en ;
         skos:prefLabel "chlorine_monoxide_in_air"@en ;
         skos:broader <wmdsObservedVariable/10047> ;
-        defchem:chemical-species chemical-species:chlorine-oxide ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/chlorine-oxide> ;
         defchem:medium medium:air ;
         .
 
@@ -3802,7 +3802,7 @@
         dct:description ""@en ;
         skos:prefLabel "carbon_monoxide_in_air"@en ;
         skos:broader <wmdsObservedVariable/10047> ;
-        defchem:chemical-species chemical-species:carbon-monoxide ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/carbon-monoxide> ;
         defchem:medium medium:air ;
         .
 
@@ -3814,7 +3814,7 @@
         dct:description ""@en ;
         skos:prefLabel "difluoromethanal_in_air"@en ;
         skos:broader <wmdsObservedVariable/10047> ;
-        defchem:chemical-species chemical-species:carbonyl-difluoride ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/carbonyl-difluoride> ;
         defchem:medium medium:air ;
         .
 
@@ -3826,7 +3826,7 @@
         dct:description ""@en ;
         skos:prefLabel "hydrogen_peroxide_in_air"@en ;
         skos:broader <wmdsObservedVariable/10047> ;
-        defchem:chemical-species chemical-species:hydrogen peroxide ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/hydrogen peroxide> ;
         defchem:medium medium:air ;
         .
 
@@ -3838,7 +3838,7 @@
         dct:description ""@en ;
         skos:prefLabel "hydrochloric_acid_in_air"@en ;
         skos:broader <wmdsObservedVariable/10047> ;
-        defchem:chemical-species chemical-species:hydrogen-chloride ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/hydrogen-chloride> ;
         defchem:medium medium:air ;
         .
 
@@ -3850,7 +3850,7 @@
         dct:description ""@en ;
         skos:prefLabel "hydrofluoric_acid_in_air"@en ;
         skos:broader <wmdsObservedVariable/10047> ;
-        defchem:chemical-species chemical-species:hydrogen-fluoride ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/hydrogen-fluoride> ;
         defchem:medium medium:air ;
         .
 
@@ -3862,7 +3862,7 @@
         dct:description ""@en ;
         skos:prefLabel ""@en ;
         skos:broader <wmdsObservedVariable/10047> ;
-        defchem:chemical-species chemical-species:gas-phase-species ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/gas-phase-species> ;
         defchem:medium medium:air ;
         .
 
@@ -3874,7 +3874,7 @@
         dct:description ""@en ;
         skos:prefLabel "ammonia_in_air"@en ;
         skos:broader <wmdsObservedVariable/10048> ;
-        defchem:chemical-species chemical-species:ammonia ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/ammonia> ;
         defchem:medium medium:air ;
         .
 
@@ -3886,7 +3886,7 @@
         dct:description ""@en ;
         skos:prefLabel "peroxyacetylnitrate_in_air"@en ;
         skos:broader <wmdsObservedVariable/10048> ;
-        defchem:chemical-species chemical-species:peroxyacetylnitrate ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/peroxyacetylnitrate> ;
         defchem:medium medium:air ;
         .
 
@@ -3898,7 +3898,7 @@
         dct:description ""@en ;
         skos:prefLabel "chlorine_nitrate_in_air"@en ;
         skos:broader <wmdsObservedVariable/10048> ;
-        defchem:chemical-species chemical-species:chlorine-nitrate ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/chlorine-nitrate> ;
         defchem:medium medium:air ;
         .
 
@@ -3910,7 +3910,7 @@
         dct:description ""@en ;
         skos:prefLabel "hydrogen_cyanide_in_air"@en ;
         skos:broader <wmdsObservedVariable/10048> ;
-        defchem:chemical-species chemical-species:hydrogen-cyanide ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/hydrogen-cyanide> ;
         defchem:medium medium:air ;
         .
 
@@ -3922,7 +3922,7 @@
         dct:description ""@en ;
         skos:prefLabel "nitric_acid_in_air"@en ;
         skos:broader <wmdsObservedVariable/10048> ;
-        defchem:chemical-species chemical-species:nitric-acid ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/nitric-acid> ;
         defchem:medium medium:air ;
         .
 
@@ -3934,7 +3934,7 @@
         dct:description ""@en ;
         skos:prefLabel "nitrogen_oxide_in_air"@en ;
         skos:broader <wmdsObservedVariable/10048> ;
-        defchem:chemical-species chemical-species:nitrogen monoxide ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/nitrogen monoxide> ;
         defchem:medium medium:air ;
         .
 
@@ -3946,7 +3946,7 @@
         dct:description ""@en ;
         skos:prefLabel "nitrogen_dioxide_in_air"@en ;
         skos:broader <wmdsObservedVariable/10048> ;
-        defchem:chemical-species chemical-species:nitrogen-dioxide ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/nitrogen-dioxide> ;
         defchem:medium medium:air ;
         .
 
@@ -3958,7 +3958,7 @@
         dct:description ""@en ;
         skos:prefLabel "nitrogen_oxide_and_nitrogen_dioxide_in_air"@en ;
         skos:broader <wmdsObservedVariable/10048> ;
-        defchem:chemical-species chemical-species:nox ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/nox> ;
         defchem:medium medium:air ;
         .
 
@@ -3970,7 +3970,7 @@
         dct:description ""@en ;
         skos:prefLabel "nitrogen_oxides_odd_nitrogen_in_air"@en ;
         skos:broader <wmdsObservedVariable/10048> ;
-        defchem:chemical-species chemical-species:noy ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/noy> ;
         defchem:medium medium:air ;
         .
 
@@ -3982,7 +3982,7 @@
         dct:description ""@en ;
         skos:prefLabel "organic_peroxide_in_air"@en ;
         skos:broader <wmdsObservedVariable/10047> ;
-        defchem:chemical-species chemical-species:organic-peroxide ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/organic-peroxide> ;
         defchem:medium medium:air ;
         .
 
@@ -3994,7 +3994,7 @@
         dct:description ""@en ;
         skos:prefLabel ""@en ;
         skos:broader <wmdsObservedVariable/10047> ;
-        defchem:chemical-species chemical-species:sulfur ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/sulfur> ;
         defchem:medium medium:air ;
         .
 
@@ -4006,7 +4006,7 @@
         dct:description ""@en ;
         skos:prefLabel "carbonyl_sulfide_in_air"@en ;
         skos:broader <wmdsObservedVariable/10049> ;
-        defchem:chemical-species chemical-species:carbonyl-sulfide ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/carbonyl-sulfide> ;
         defchem:medium medium:air ;
         .
 
@@ -4018,7 +4018,7 @@
         dct:description ""@en ;
         skos:prefLabel "carbon_disulfide_in_air"@en ;
         skos:broader <wmdsObservedVariable/10049> ;
-        defchem:chemical-species chemical-species:carbon-disulfide ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/carbon-disulfide> ;
         defchem:medium medium:air ;
         .
 
@@ -4030,7 +4030,7 @@
         dct:description ""@en ;
         skos:prefLabel "sulfur_dioxide_in_air"@en ;
         skos:broader <wmdsObservedVariable/10049> ;
-        defchem:chemical-species chemical-species:sulfur-dioxide ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/sulfur-dioxide> ;
         defchem:medium medium:air ;
         .
 
@@ -4042,7 +4042,7 @@
         dct:description ""@en ;
         skos:prefLabel ""@en ;
         skos:broader <wmdsObservedVariable/10047> ;
-        defchem:chemical-species chemical-species:volatile-organic-species ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/volatile-organic-species> ;
         defchem:medium medium:air ;
         .
 
@@ -4054,7 +4054,7 @@
         dct:description ""@en ;
         skos:prefLabel "ethyne_in_air"@en ;
         skos:broader <wmdsObservedVariable/10050> ;
-        defchem:chemical-species chemical-species:ethyne ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/ethyne> ;
         defchem:medium medium:air ;
         .
 
@@ -4077,7 +4077,7 @@
         dct:description ""@en ;
         skos:prefLabel "ethene_in_air"@en ;
         skos:broader <wmdsObservedVariable/10050> ;
-        defchem:chemical-species chemical-species:ethene ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/ethene> ;
         defchem:medium medium:air ;
         .
 
@@ -4089,7 +4089,7 @@
         dct:description ""@en ;
         skos:prefLabel "ethane_in_air"@en ;
         skos:broader <wmdsObservedVariable/10050> ;
-        defchem:chemical-species chemical-species:ethane ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/ethane> ;
         defchem:medium medium:air ;
         .
 
@@ -4101,7 +4101,7 @@
         dct:description ""@en ;
         skos:prefLabel "dimethylsulfide_in_air"@en ;
         skos:broader <wmdsObservedVariable/10050> ;
-        defchem:chemical-species chemical-species:dimethylsulfide ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/dimethylsulfide> ;
         defchem:medium medium:air ;
         .
 
@@ -4113,7 +4113,7 @@
         dct:description ""@en ;
         skos:prefLabel "propyne_in_air"@en ;
         skos:broader <wmdsObservedVariable/10050> ;
-        defchem:chemical-species chemical-species:propyne ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/propyne> ;
         defchem:medium medium:air ;
         .
 
@@ -4125,7 +4125,7 @@
         dct:description ""@en ;
         skos:prefLabel "prop-2-enal_in_air"@en ;
         skos:broader <wmdsObservedVariable/10050> ;
-        defchem:chemical-species chemical-species:prop-2-enal ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/prop-2-enal> ;
         defchem:medium medium:air ;
         .
 
@@ -4137,7 +4137,7 @@
         dct:description ""@en ;
         skos:prefLabel "2-oxopropanal_in_air"@en ;
         skos:broader <wmdsObservedVariable/10050> ;
-        defchem:chemical-species chemical-species:2-oxopropanal ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/2-oxopropanal> ;
         defchem:medium medium:air ;
         .
 
@@ -4149,7 +4149,7 @@
         dct:description ""@en ;
         skos:prefLabel "propene_in_air"@en ;
         skos:broader <wmdsObservedVariable/10050> ;
-        defchem:chemical-species chemical-species:propene ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/propene> ;
         defchem:medium medium:air ;
         .
 
@@ -4161,7 +4161,7 @@
         dct:description ""@en ;
         skos:prefLabel "propanone_in_air"@en ;
         skos:broader <wmdsObservedVariable/10050> ;
-        defchem:chemical-species chemical-species:acetone ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/acetone> ;
         defchem:medium medium:air ;
         .
 
@@ -4173,7 +4173,7 @@
         dct:description ""@en ;
         skos:prefLabel "propanal_in_air"@en ;
         skos:broader <wmdsObservedVariable/10050> ;
-        defchem:chemical-species chemical-species:propanal ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/propanal> ;
         defchem:medium medium:air ;
         .
 
@@ -4185,7 +4185,7 @@
         dct:description ""@en ;
         skos:prefLabel "propane_in_air"@en ;
         skos:broader <wmdsObservedVariable/10050> ;
-        defchem:chemical-species chemical-species:propane ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/propane> ;
         defchem:medium medium:air ;
         .
 
@@ -4197,7 +4197,7 @@
         dct:description ""@en ;
         skos:prefLabel "1,3-butadiene_in_air"@en ;
         skos:broader <wmdsObservedVariable/10050> ;
-        defchem:chemical-species chemical-species:buta-1,3-diene ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/buta-1,3-diene> ;
         defchem:medium medium:air ;
         .
 
@@ -4209,7 +4209,7 @@
         dct:description ""@en ;
         skos:prefLabel "2-methylprop-2-enal_in_air"@en ;
         skos:broader <wmdsObservedVariable/10050> ;
-        defchem:chemical-species chemical-species:2-methylprop-2-enal ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/2-methylprop-2-enal> ;
         defchem:medium medium:air ;
         .
 
@@ -4221,7 +4221,7 @@
         dct:description ""@en ;
         skos:prefLabel "but-3-en-2-one_in_air"@en ;
         skos:broader <wmdsObservedVariable/10050> ;
-        defchem:chemical-species chemical-species:butenone ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/butenone> ;
         defchem:medium medium:air ;
         .
 
@@ -4233,7 +4233,7 @@
         dct:description ""@en ;
         skos:prefLabel "1-butene_in_air"@en ;
         skos:broader <wmdsObservedVariable/10050> ;
-        defchem:chemical-species chemical-species:1-butene ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/1-butene> ;
         defchem:medium medium:air ;
         .
 
@@ -4245,7 +4245,7 @@
         dct:description ""@en ;
         skos:prefLabel "sum_of_butenes_in_air"@en ;
         skos:broader <wmdsObservedVariable/10050> ;
-        defchem:chemical-species chemical-species:butenes ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/butenes> ;
         defchem:medium medium:air ;
         .
 
@@ -4257,7 +4257,7 @@
         dct:description ""@en ;
         skos:prefLabel "butan-2-one_in_air"@en ;
         skos:broader <wmdsObservedVariable/10050> ;
-        defchem:chemical-species chemical-species:butan-2-one ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/butan-2-one> ;
         defchem:medium medium:air ;
         .
 
@@ -4269,7 +4269,7 @@
         dct:description ""@en ;
         skos:prefLabel "butanal_isomers_in_air"@en ;
         skos:broader <wmdsObservedVariable/10050> ;
-        defchem:chemical-species chemical-species:butanal ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/butanal> ;
         defchem:medium medium:air ;
         .
 
@@ -4281,7 +4281,7 @@
         dct:description ""@en ;
         skos:prefLabel "1-pentene_in_air"@en ;
         skos:broader <wmdsObservedVariable/10050> ;
-        defchem:chemical-species chemical-species:pentenes ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/pentenes> ;
         defchem:medium medium:air ;
         .
 
@@ -4293,7 +4293,7 @@
         dct:description ""@en ;
         skos:prefLabel "2-methyl-1-butene_in_air"@en ;
         skos:broader <wmdsObservedVariable/10050> ;
-        defchem:chemical-species chemical-species:2-methylbut-1-ene ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/2-methylbut-1-ene> ;
         defchem:medium medium:air ;
         .
 
@@ -4305,7 +4305,7 @@
         dct:description ""@en ;
         skos:prefLabel "2-methyl-2-butene_in_air"@en ;
         skos:broader <wmdsObservedVariable/10050> ;
-        defchem:chemical-species chemical-species:2-methylbut-2-ene ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/2-methylbut-2-ene> ;
         defchem:medium medium:air ;
         .
 
@@ -4317,7 +4317,7 @@
         dct:description ""@en ;
         skos:prefLabel "3-methyl-1-butene_in_air"@en ;
         skos:broader <wmdsObservedVariable/10050> ;
-        defchem:chemical-species chemical-species:3-methylbut-1-ene ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/3-methylbut-1-ene> ;
         defchem:medium medium:air ;
         .
 
@@ -4329,7 +4329,7 @@
         dct:description ""@en ;
         skos:prefLabel "cyclopentane_in_air"@en ;
         skos:broader <wmdsObservedVariable/10050> ;
-        defchem:chemical-species chemical-species:pentenes ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/pentenes> ;
         defchem:medium medium:air ;
         .
 
@@ -4341,7 +4341,7 @@
         dct:description ""@en ;
         skos:prefLabel "sum_of_1-pentene_and_2-methyl-2-butene_in_air"@en ;
         skos:broader <wmdsObservedVariable/10050> ;
-        defchem:chemical-species chemical-species:pentenes ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/pentenes> ;
         defchem:medium medium:air ;
         .
 
@@ -4353,7 +4353,7 @@
         dct:description ""@en ;
         skos:prefLabel "sum_of_pentenes_in_air"@en ;
         skos:broader <wmdsObservedVariable/10050> ;
-        defchem:chemical-species chemical-species:pentenes ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/pentenes> ;
         defchem:medium medium:air ;
         .
 
@@ -4365,7 +4365,7 @@
         dct:description ""@en ;
         skos:prefLabel "pentanal_in_air"@en ;
         skos:broader <wmdsObservedVariable/10050> ;
-        defchem:chemical-species chemical-species:pentanal ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/pentanal> ;
         defchem:medium medium:air ;
         .
 
@@ -4377,7 +4377,7 @@
         dct:description ""@en ;
         skos:prefLabel "sum_of_2,2-dimethylpropane_and_c-2-butene_in_air"@en ;
         skos:broader <wmdsObservedVariable/10050> ;
-        defchem:chemical-species chemical-species:butenes ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/butenes> ;
         defchem:medium medium:air ;
         .
 
@@ -4389,7 +4389,7 @@
         dct:description ""@en ;
         skos:prefLabel "2,2-dimethylpropane_in_air"@en ;
         skos:broader <wmdsObservedVariable/10050> ;
-        defchem:chemical-species chemical-species:2-dimethylpropane ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/2-dimethylpropane> ;
         defchem:medium medium:air ;
         .
 
@@ -4401,7 +4401,7 @@
         dct:description ""@en ;
         skos:prefLabel "2,3-dimethylbutane_in_air"@en ;
         skos:broader <wmdsObservedVariable/10050> ;
-        defchem:chemical-species chemical-species:2,3-dimethylbutane ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/2,3-dimethylbutane> ;
         defchem:medium medium:air ;
         .
 
@@ -4435,7 +4435,7 @@
         dct:description ""@en ;
         skos:prefLabel ""@en ;
         skos:broader <wmdsObservedVariable/"C5Hn (n={10, 8}> ;
-        defchem:chemical-species chemical-species:chlorine-oxide ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/chlorine-oxide> ;
         defchem:medium medium:sum_of_3-methyl-1-butene_and_cyclopentene ;
         .
 
@@ -4447,7 +4447,7 @@
         dct:description ""@en ;
         skos:prefLabel ""@en ;
         skos:broader <wmdsObservedVariable/"C5Hn (n={12, 10}> ;
-        defchem:chemical-species chemical-species:chlorine-oxide ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/chlorine-oxide> ;
         defchem:medium medium:sum_of_n-pentane_and_cyclopentane ;
         .
 
@@ -4492,7 +4492,7 @@
         dct:description ""@en ;
         skos:prefLabel "2,2-dimethylbutane_in_air"@en ;
         skos:broader <wmdsObservedVariable/10050> ;
-        defchem:chemical-species chemical-species:2,2-dimethylbutane ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/2,2-dimethylbutane> ;
         defchem:medium medium:air ;
         .
 
@@ -4504,7 +4504,7 @@
         dct:description ""@en ;
         skos:prefLabel "2-methylpentane_in_air"@en ;
         skos:broader <wmdsObservedVariable/10050> ;
-        defchem:chemical-species chemical-species:2-methyl pentane ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/2-methyl pentane> ;
         defchem:medium medium:air ;
         .
 
@@ -4516,7 +4516,7 @@
         dct:description ""@en ;
         skos:prefLabel "3-methylpentane_in_air"@en ;
         skos:broader <wmdsObservedVariable/10050> ;
-        defchem:chemical-species chemical-species:3-methyl pentane ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/3-methyl pentane> ;
         defchem:medium medium:air ;
         .
 
@@ -4528,7 +4528,7 @@
         dct:description ""@en ;
         skos:prefLabel "n-hexane_in_air"@en ;
         skos:broader <wmdsObservedVariable/10050> ;
-        defchem:chemical-species chemical-species:hexanes ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/hexanes> ;
         defchem:medium medium:air ;
         .
 
@@ -4540,7 +4540,7 @@
         dct:description ""@en ;
         skos:prefLabel "sum_of_methylpentanes_in_air"@en ;
         skos:broader <wmdsObservedVariable/10050> ;
-        defchem:chemical-species chemical-species:hexanes ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/hexanes> ;
         defchem:medium medium:air ;
         .
 
@@ -4552,7 +4552,7 @@
         dct:description ""@en ;
         skos:prefLabel "benzene_in_air"@en ;
         skos:broader <wmdsObservedVariable/10050> ;
-        defchem:chemical-species chemical-species:benzene ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/benzene> ;
         defchem:medium medium:air ;
         .
 
@@ -4564,7 +4564,7 @@
         dct:description ""@en ;
         skos:prefLabel ""@en ;
         skos:broader <wmdsObservedVariable/"C6Hn (n={14, 12}> ;
-        defchem:chemical-species chemical-species:2,2-dimethylbutane ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/2,2-dimethylbutane> ;
         defchem:medium medium:sum_of_2,2-dimethylbutane_and_methylcyclopentane ;
         .
 
@@ -4576,7 +4576,7 @@
         dct:description ""@en ;
         skos:prefLabel ""@en ;
         skos:broader <wmdsObservedVariable/"C6Hn (n={14, 12}> ;
-        defchem:chemical-species chemical-species:2,3-dimethylbutane ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/2,3-dimethylbutane> ;
         defchem:medium medium:sum_of_2,3-dimethylbutane_and_methylcyclopentane ;
         .
 
@@ -4588,7 +4588,7 @@
         dct:description ""@en ;
         skos:prefLabel ""@en ;
         skos:broader <wmdsObservedVariable/"C6Hn (n={14, 12}> ;
-        defchem:chemical-species chemical-species:chlorine-oxide ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/chlorine-oxide> ;
         defchem:medium medium:sum_of_3-methylpentane_and_cyclohexane ;
         .
 
@@ -4600,7 +4600,7 @@
         dct:description ""@en ;
         skos:prefLabel "sum_of_methylhexanes_in_air"@en ;
         skos:broader <wmdsObservedVariable/10050> ;
-        defchem:chemical-species chemical-species:heptanes ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/heptanes> ;
         defchem:medium medium:air ;
         .
 
@@ -4623,7 +4623,7 @@
         dct:description ""@en ;
         skos:prefLabel "toluene_in_air"@en ;
         skos:broader <wmdsObservedVariable/10050> ;
-        defchem:chemical-species chemical-species:toluene ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/toluene> ;
         defchem:medium medium:air ;
         .
 
@@ -4635,7 +4635,7 @@
         dct:description ""@en ;
         skos:prefLabel "ethylbenzene_in_air"@en ;
         skos:broader <wmdsObservedVariable/10050> ;
-        defchem:chemical-species chemical-species:ethylbenzene ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/ethylbenzene> ;
         defchem:medium medium:air ;
         .
 
@@ -4647,7 +4647,7 @@
         dct:description ""@en ;
         skos:prefLabel "m-xylene_in_air"@en ;
         skos:broader <wmdsObservedVariable/10050> ;
-        defchem:chemical-species chemical-species:m-xylene ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/m-xylene> ;
         defchem:medium medium:air ;
         .
 
@@ -4659,7 +4659,7 @@
         dct:description ""@en ;
         skos:prefLabel "o-xylene_in_air"@en ;
         skos:broader <wmdsObservedVariable/10050> ;
-        defchem:chemical-species chemical-species:o-xylene ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/o-xylene> ;
         defchem:medium medium:air ;
         .
 
@@ -4671,7 +4671,7 @@
         dct:description ""@en ;
         skos:prefLabel "p,m-xylene_in_air"@en ;
         skos:broader <wmdsObservedVariable/10050> ;
-        defchem:chemical-species chemical-species:xylenes ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/xylenes> ;
         defchem:medium medium:air ;
         .
 
@@ -4683,7 +4683,7 @@
         dct:description ""@en ;
         skos:prefLabel "1,2,4-trimethylbenzene_in_air"@en ;
         skos:broader <wmdsObservedVariable/10050> ;
-        defchem:chemical-species chemical-species:1-2-4-trimethylbenzene ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/1-2-4-trimethylbenzene> ;
         defchem:medium medium:air ;
         .
 
@@ -4695,7 +4695,7 @@
         dct:description ""@en ;
         skos:prefLabel "1,3,5-trimethylbenzene_in_air"@en ;
         skos:broader <wmdsObservedVariable/10050> ;
-        defchem:chemical-species chemical-species:1-3-5-trimethylbenzene ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/1-3-5-trimethylbenzene> ;
         defchem:medium medium:air ;
         .
 
@@ -4707,7 +4707,7 @@
         dct:description ""@en ;
         skos:prefLabel "cis-2-butene_in_air"@en ;
         skos:broader <wmdsObservedVariable/10050> ;
-        defchem:chemical-species chemical-species:2-butene ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/2-butene> ;
         defchem:medium medium:air ;
         .
 
@@ -4719,7 +4719,7 @@
         dct:description ""@en ;
         skos:prefLabel "cis-2-pentene_in_air"@en ;
         skos:broader <wmdsObservedVariable/10050> ;
-        defchem:chemical-species chemical-species:pentenes ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/pentenes> ;
         defchem:medium medium:air ;
         .
 
@@ -4731,7 +4731,7 @@
         dct:description ""@en ;
         skos:prefLabel "formaldehyde_in_air"@en ;
         skos:broader <wmdsObservedVariable/10050> ;
-        defchem:chemical-species chemical-species:formaldehyde ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/formaldehyde> ;
         defchem:medium medium:air ;
         .
 
@@ -4743,7 +4743,7 @@
         dct:description ""@en ;
         skos:prefLabel "ethanol_in_air"@en ;
         skos:broader <wmdsObservedVariable/10050> ;
-        defchem:chemical-species chemical-species:ethanol ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/ethanol> ;
         defchem:medium medium:air ;
         .
 
@@ -4755,7 +4755,7 @@
         dct:description ""@en ;
         skos:prefLabel "ethanal_in_air"@en ;
         skos:broader <wmdsObservedVariable/10050> ;
-        defchem:chemical-species chemical-species:ethylaldehyde ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/ethylaldehyde> ;
         defchem:medium medium:air ;
         .
 
@@ -4767,7 +4767,7 @@
         dct:description ""@en ;
         skos:prefLabel "acetonitrile_in_air"@en ;
         skos:broader <wmdsObservedVariable/10050> ;
-        defchem:chemical-species chemical-species:acetonitrile ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/acetonitrile> ;
         defchem:medium medium:air ;
         .
 
@@ -4779,7 +4779,7 @@
         dct:description ""@en ;
         skos:prefLabel "methanol_in_air"@en ;
         skos:broader <wmdsObservedVariable/10050> ;
-        defchem:chemical-species chemical-species:methanol ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/methanol> ;
         defchem:medium medium:air ;
         .
 
@@ -4791,7 +4791,7 @@
         dct:description ""@en ;
         skos:prefLabel "2-methylpropane_in_air"@en ;
         skos:broader <wmdsObservedVariable/10050> ;
-        defchem:chemical-species chemical-species:2-methylpropane ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/2-methylpropane> ;
         defchem:medium medium:air ;
         .
 
@@ -4803,7 +4803,7 @@
         dct:description ""@en ;
         skos:prefLabel "2-methylpropene_in_air"@en ;
         skos:broader <wmdsObservedVariable/10050> ;
-        defchem:chemical-species chemical-species:trans-2-butene ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/trans-2-butene> ;
         defchem:medium medium:air ;
         .
 
@@ -4815,7 +4815,7 @@
         dct:description ""@en ;
         skos:prefLabel "2-methylbutane_in_air"@en ;
         skos:broader <wmdsObservedVariable/10050> ;
-        defchem:chemical-species chemical-species:trans-2-pentene ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/trans-2-pentene> ;
         defchem:medium medium:air ;
         .
 
@@ -4827,7 +4827,7 @@
         dct:description ""@en ;
         skos:prefLabel "2-methylhexane_in_air"@en ;
         skos:broader <wmdsObservedVariable/10050> ;
-        defchem:chemical-species chemical-species:2-methyl-hexane ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/2-methyl-hexane> ;
         defchem:medium medium:air ;
         .
 
@@ -4839,7 +4839,7 @@
         dct:description ""@en ;
         skos:prefLabel "n-butane_in_air"@en ;
         skos:broader <wmdsObservedVariable/10050> ;
-        defchem:chemical-species chemical-species:butane ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/butane> ;
         defchem:medium medium:air ;
         .
 
@@ -4851,7 +4851,7 @@
         dct:description ""@en ;
         skos:prefLabel "n-pentane_in_air"@en ;
         skos:broader <wmdsObservedVariable/10050> ;
-        defchem:chemical-species chemical-species:pentane ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/pentane> ;
         defchem:medium medium:air ;
         .
 
@@ -4863,7 +4863,7 @@
         dct:description ""@en ;
         skos:prefLabel "n-heptane_in_air"@en ;
         skos:broader <wmdsObservedVariable/10050> ;
-        defchem:chemical-species chemical-species:n-heptane ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/n-heptane> ;
         defchem:medium medium:air ;
         .
 
@@ -4875,7 +4875,7 @@
         dct:description ""@en ;
         skos:prefLabel "non-methane_hydrocarbons_in_air"@en ;
         skos:broader <wmdsObservedVariable/10050> ;
-        defchem:chemical-species chemical-species:non-methane-hydrocarbon ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/non-methane-hydrocarbon> ;
         defchem:medium medium:air ;
         .
 
@@ -4887,7 +4887,7 @@
         dct:description ""@en ;
         skos:prefLabel "trans-2-butene_in_air"@en ;
         skos:broader <wmdsObservedVariable/10050> ;
-        defchem:chemical-species chemical-species:trans-2-butene ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/trans-2-butene> ;
         defchem:medium medium:air ;
         .
 
@@ -4899,7 +4899,7 @@
         dct:description ""@en ;
         skos:prefLabel "trans-2-pentene_in_air"@en ;
         skos:broader <wmdsObservedVariable/10050> ;
-        defchem:chemical-species chemical-species:trans-2-pentene ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/trans-2-pentene> ;
         defchem:medium medium:air ;
         .
 
@@ -4911,7 +4911,7 @@
         dct:description ""@en ;
         skos:prefLabel ""@en ;
         skos:broader <wmdsObservedVariable/10000> ;
-        defchem:chemical-species chemical-species:water-vapor ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/water-vapor> ;
         defchem:medium medium:air ;
         .
 
@@ -4923,7 +4923,7 @@
         dct:description ""@en ;
         skos:prefLabel "humidity_at_specified_distance_from_reference_surface_in_air"@en ;
         skos:broader <wmdsObservedVariable/10030> ;
-        defchem:chemical-species chemical-species:water-vapor ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/water-vapor> ;
         defchem:medium medium:air ;
         .
 
@@ -4935,7 +4935,7 @@
         dct:description ""@en ;
         skos:prefLabel "integrated_water_vapor_in_air"@en ;
         skos:broader <wmdsObservedVariable/10030> ;
-        defchem:chemical-species chemical-species:water-vapor ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/water-vapor> ;
         defchem:medium medium:air ;
         .
 
@@ -4947,7 +4947,7 @@
         dct:description ""@en ;
         skos:prefLabel "mass_mixing_ratio_of_water_vapor_in_air"@en ;
         skos:broader <wmdsObservedVariable/10030> ;
-        defchem:chemical-species chemical-species:water-vapor ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/water-vapor> ;
         defchem:medium medium:air ;
         .
 
@@ -4959,7 +4959,7 @@
         dct:description ""@en ;
         skos:prefLabel "object_wetness_duration_in_air"@en ;
         skos:broader <wmdsObservedVariable/10030> ;
-        defchem:chemical-species chemical-species:water-vapor ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/water-vapor> ;
         defchem:medium medium:air ;
         .
 
@@ -4971,7 +4971,7 @@
         dct:description ""@en ;
         skos:prefLabel "water_vapour_pressure_in_air"@en ;
         skos:broader <wmdsObservedVariable/10030> ;
-        defchem:chemical-species chemical-species:water-vapor ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/water-vapor> ;
         defchem:medium medium:air ;
         .
 
@@ -4983,7 +4983,7 @@
         dct:description ""@en ;
         skos:prefLabel "watervapor_profile_in_air"@en ;
         skos:broader <wmdsObservedVariable/10030> ;
-        defchem:chemical-species chemical-species:water-vapor ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/water-vapor> ;
         defchem:medium medium:air ;
         .
 
@@ -5155,7 +5155,7 @@
         dct:description ""@en ;
         skos:prefLabel ""@en ;
         skos:broader <wmdsObservedVariable/10036> ;
-        defchem:chemical-species chemical-species:polycyclic-aromatic-hydrocarbon ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/polycyclic-aromatic-hydrocarbon> ;
         defchem:medium medium:air-and-aerosol ;
         .
 
@@ -5167,7 +5167,7 @@
         dct:description ""@en ;
         skos:prefLabel "9H-fluorene_in_air"@en ;
         skos:broader <wmdsObservedVariable/10037> ;
-        defchem:chemical-species chemical-species:fluorene ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/fluorene> ;
         defchem:medium medium:air ;
         .
 
@@ -5179,7 +5179,7 @@
         dct:description ""@en ;
         skos:prefLabel "anthracene_in_aerosol_tsp"@en ;
         skos:broader <wmdsObservedVariable/10037> ;
-        defchem:chemical-species chemical-species:anthracene ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/anthracene> ;
         defchem:medium medium:aerosol ;
         .
 
@@ -5191,7 +5191,7 @@
         dct:description ""@en ;
         skos:prefLabel "anthracene_in_air_and_aerosol"@en ;
         skos:broader <wmdsObservedVariable/10037> ;
-        defchem:chemical-species chemical-species:anthracene ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/anthracene> ;
         defchem:medium medium:air-and-aerosol ;
         .
 
@@ -5203,7 +5203,7 @@
         dct:description ""@en ;
         skos:prefLabel "anthracene_in_air"@en ;
         skos:broader <wmdsObservedVariable/10037> ;
-        defchem:chemical-species chemical-species:anthracene ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/anthracene> ;
         defchem:medium medium:air ;
         .
 
@@ -5215,7 +5215,7 @@
         dct:description ""@en ;
         skos:prefLabel "anthracene_in_aerosol_pm10"@en ;
         skos:broader <wmdsObservedVariable/10037> ;
-        defchem:chemical-species chemical-species:anthracene ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/anthracene> ;
         defchem:medium medium:pm10 ;
         .
 
@@ -5227,7 +5227,7 @@
         dct:description ""@en ;
         skos:prefLabel "phenanthrene_in_aerosol_tsp"@en ;
         skos:broader <wmdsObservedVariable/10037> ;
-        defchem:chemical-species chemical-species:phenantrene ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/phenantrene> ;
         defchem:medium medium:aerosol ;
         .
 
@@ -5239,7 +5239,7 @@
         dct:description ""@en ;
         skos:prefLabel "phenanthrene_in_air"@en ;
         skos:broader <wmdsObservedVariable/10037> ;
-        defchem:chemical-species chemical-species:phenantrene ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/phenantrene> ;
         defchem:medium medium:air ;
         .
 
@@ -5251,7 +5251,7 @@
         dct:description ""@en ;
         skos:prefLabel "phenanthrene_in_air_and_aerosol"@en ;
         skos:broader <wmdsObservedVariable/10037> ;
-        defchem:chemical-species chemical-species:phenantrene ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/phenantrene> ;
         defchem:medium medium:air-and-aerosol ;
         .
 
@@ -5263,7 +5263,7 @@
         dct:description ""@en ;
         skos:prefLabel "phenanthrene_in_wet_atmospheric_deposition"@en ;
         skos:broader <wmdsObservedVariable/10037> ;
-        defchem:chemical-species chemical-species:phenantrene ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/phenantrene> ;
         defchem:medium medium:wet_atmospheric_deposition ;
         .
 
@@ -5275,7 +5275,7 @@
         dct:description ""@en ;
         skos:prefLabel "phenanthrene_in_total_atmospheric_deposition"@en ;
         skos:broader <wmdsObservedVariable/10037> ;
-        defchem:chemical-species chemical-species:phenantrene ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/phenantrene> ;
         defchem:medium medium:total_atmospheric_deposition ;
         .
 
@@ -5287,7 +5287,7 @@
         dct:description ""@en ;
         skos:prefLabel "phenanthrene_in_aerosol_pm10"@en ;
         skos:broader <wmdsObservedVariable/10037> ;
-        defchem:chemical-species chemical-species:phenantrene ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/phenantrene> ;
         defchem:medium medium:pm10 ;
         .
 
@@ -5299,7 +5299,7 @@
         dct:description ""@en ;
         skos:prefLabel "pyrene_in_air_and_aerosol"@en ;
         skos:broader <wmdsObservedVariable/10037> ;
-        defchem:chemical-species chemical-species:pyrene ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/pyrene> ;
         defchem:medium medium:air-and-aerosol ;
         .
 
@@ -5311,7 +5311,7 @@
         dct:description ""@en ;
         skos:prefLabel "benzanthracene_in_aerosol_tsp"@en ;
         skos:broader <wmdsObservedVariable/10037> ;
-        defchem:chemical-species chemical-species:benzanthracene ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/benzanthracene> ;
         defchem:medium medium:aerosol ;
         .
 
@@ -5323,7 +5323,7 @@
         dct:description ""@en ;
         skos:prefLabel "benzanthracene_in_air"@en ;
         skos:broader <wmdsObservedVariable/10037> ;
-        defchem:chemical-species chemical-species:benzanthracene ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/benzanthracene> ;
         defchem:medium medium:air ;
         .
 
@@ -5335,7 +5335,7 @@
         dct:description ""@en ;
         skos:prefLabel "benzanthracene_in_air_and_aerosol"@en ;
         skos:broader <wmdsObservedVariable/10037> ;
-        defchem:chemical-species chemical-species:benzanthracene ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/benzanthracene> ;
         defchem:medium medium:air-and-aerosol ;
         .
 
@@ -5347,7 +5347,7 @@
         dct:description ""@en ;
         skos:prefLabel "benzanthracene_in_wet_atmospheric_deposition"@en ;
         skos:broader <wmdsObservedVariable/10037> ;
-        defchem:chemical-species chemical-species:benzanthracene ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/benzanthracene> ;
         defchem:medium medium:wet_atmospheric_deposition ;
         .
 
@@ -5359,7 +5359,7 @@
         dct:description ""@en ;
         skos:prefLabel "benzanthracene_in_total_atmospheric_deposition"@en ;
         skos:broader <wmdsObservedVariable/10037> ;
-        defchem:chemical-species chemical-species:benzanthracene ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/benzanthracene> ;
         defchem:medium medium:total_atmospheric_deposition ;
         .
 
@@ -5371,7 +5371,7 @@
         dct:description ""@en ;
         skos:prefLabel "benzanthracene_in_aerosol_pm10"@en ;
         skos:broader <wmdsObservedVariable/10037> ;
-        defchem:chemical-species chemical-species:benzanthracene ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/benzanthracene> ;
         defchem:medium medium:pm10 ;
         .
 
@@ -5394,7 +5394,7 @@
         dct:description ""@en ;
         skos:prefLabel "aldrin_in_aerosol_tsp"@en ;
         skos:broader <wmdsObservedVariable/10038> ;
-        defchem:chemical-species chemical-species:aldrin ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/aldrin> ;
         defchem:medium medium:aerosol ;
         .
 
@@ -5406,7 +5406,7 @@
         dct:description ""@en ;
         skos:prefLabel "aldrin_in_air"@en ;
         skos:broader <wmdsObservedVariable/10038> ;
-        defchem:chemical-species chemical-species:aldrin ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/aldrin> ;
         defchem:medium medium:air ;
         .
 
@@ -5418,7 +5418,7 @@
         dct:description ""@en ;
         skos:prefLabel "aldrin_in_air_and_aerosol"@en ;
         skos:broader <wmdsObservedVariable/10038> ;
-        defchem:chemical-species chemical-species:aldrin ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/aldrin> ;
         defchem:medium medium:air-and-aerosol ;
         .
 
@@ -5430,7 +5430,7 @@
         dct:description ""@en ;
         skos:prefLabel "aldrin_in_total_atmospheric_deposition"@en ;
         skos:broader <wmdsObservedVariable/10038> ;
-        defchem:chemical-species chemical-species:aldrin ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/aldrin> ;
         defchem:medium medium:total_atmospheric_deposition ;
         .
 
@@ -5442,7 +5442,7 @@
         dct:description ""@en ;
         skos:prefLabel "aldrin_in_wet_atmospheric_deposition"@en ;
         skos:broader <wmdsObservedVariable/10038> ;
-        defchem:chemical-species chemical-species:aldrin ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/aldrin> ;
         defchem:medium medium:wet_atmospheric_deposition ;
         .
 
@@ -5454,7 +5454,7 @@
         dct:description ""@en ;
         skos:prefLabel "hexachlorobenzene_in_air"@en ;
         skos:broader <wmdsObservedVariable/10038> ;
-        defchem:chemical-species chemical-species:hexachlorobenzene ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/hexachlorobenzene> ;
         defchem:medium medium:air ;
         .
 
@@ -5466,7 +5466,7 @@
         dct:description ""@en ;
         skos:prefLabel "alpha-lindane_in_aerosol_tsp"@en ;
         skos:broader <wmdsObservedVariable/10038> ;
-        defchem:chemical-species chemical-species:alpha-hexachlorocyclohexane ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/alpha-hexachlorocyclohexane> ;
         defchem:medium medium:aerosol ;
         .
 
@@ -5478,7 +5478,7 @@
         dct:description ""@en ;
         skos:prefLabel "alpha-lindane_in_air"@en ;
         skos:broader <wmdsObservedVariable/10038> ;
-        defchem:chemical-species chemical-species:alpha-hexachlorocyclohexane ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/alpha-hexachlorocyclohexane> ;
         defchem:medium medium:air ;
         .
 
@@ -5490,7 +5490,7 @@
         dct:description ""@en ;
         skos:prefLabel "alpha-lindane_in_wet_atmospheric_deposition"@en ;
         skos:broader <wmdsObservedVariable/10038> ;
-        defchem:chemical-species chemical-species:alpha-hexachlorocyclohexane ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/alpha-hexachlorocyclohexane> ;
         defchem:medium medium:wet_atmospheric_deposition ;
         .
 
@@ -5502,7 +5502,7 @@
         dct:description ""@en ;
         skos:prefLabel "gamma-lindane_in_air"@en ;
         skos:broader <wmdsObservedVariable/10038> ;
-        defchem:chemical-species chemical-species:alpha-hexachlorocyclohexane ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/alpha-hexachlorocyclohexane> ;
         defchem:medium medium:air ;
         .
 
@@ -5514,7 +5514,7 @@
         dct:description ""@en ;
         skos:prefLabel "gamma-lindane_in_wet_atmospheric_deposition"@en ;
         skos:broader <wmdsObservedVariable/10038> ;
-        defchem:chemical-species chemical-species:alpha-hexachlorocyclohexane ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/alpha-hexachlorocyclohexane> ;
         defchem:medium medium:wet_atmospheric_deposition ;
         .
 
@@ -5526,7 +5526,7 @@
         dct:description ""@en ;
         skos:prefLabel ""@en ;
         skos:broader <wmdsObservedVariable/10000> ;
-        defchem:chemical-species chemical-species:liquid-and-ice-water ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/liquid-and-ice-water> ;
         .
 
 <wmdsObservedVariable/210>
@@ -5537,7 +5537,7 @@
         dct:description ""@en ;
         skos:prefLabel "precipitation_amount_in_air"@en ;
         skos:broader <wmdsObservedVariable/10039> ;
-        defchem:chemical-species chemical-species:liquid-and-ice-water ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/liquid-and-ice-water> ;
         .
 
 <wmdsObservedVariable/211>
@@ -5548,7 +5548,7 @@
         dct:description ""@en ;
         skos:prefLabel "duration_of_precipitation_in_air"@en ;
         skos:broader <wmdsObservedVariable/10039> ;
-        defchem:chemical-species chemical-species:liquid-and-ice-water ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/liquid-and-ice-water> ;
         .
 
 <wmdsObservedVariable/212>
@@ -5559,7 +5559,7 @@
         dct:description ""@en ;
         skos:prefLabel "intensity_of_precipitation_in_air"@en ;
         skos:broader <wmdsObservedVariable/10039> ;
-        defchem:chemical-species chemical-species:liquid-and-ice-water ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/liquid-and-ice-water> ;
         .
 
 <wmdsObservedVariable/213>
@@ -5570,7 +5570,7 @@
         dct:description ""@en ;
         skos:prefLabel "occurrence_of_precipitation_during_last_period_in_air"@en ;
         skos:broader <wmdsObservedVariable/10039> ;
-        defchem:chemical-species chemical-species:liquid-and-ice-water ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/liquid-and-ice-water> ;
         .
 
 <wmdsObservedVariable/214>
@@ -5581,7 +5581,7 @@
         dct:description ""@en ;
         skos:prefLabel "rate_of_ice_accretion_in_air"@en ;
         skos:broader <wmdsObservedVariable/10039> ;
-        defchem:chemical-species chemical-species:liquid-and-ice-water ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/liquid-and-ice-water> ;
         .
 
 <wmdsObservedVariable/215>
@@ -5592,7 +5592,7 @@
         dct:description ""@en ;
         skos:prefLabel "type_of_precipitation_in_air"@en ;
         skos:broader <wmdsObservedVariable/10039> ;
-        defchem:chemical-species chemical-species:liquid-and-ice-water ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/liquid-and-ice-water> ;
         .
 
 <wmdsObservedVariable/10040>
@@ -5873,7 +5873,7 @@
         dct:description ""@en ;
         skos:prefLabel ""@en ;
         skos:broader <wmdsObservedVariable/10000> ;
-        defchem:chemical-species chemical-species:radionuclide ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/radionuclide> ;
         defchem:medium medium:air ;
         .
 
@@ -5885,7 +5885,7 @@
         dct:description ""@en ;
         skos:prefLabel "7-beryllium_in_air"@en ;
         skos:broader <wmdsObservedVariable/10046> ;
-        defchem:chemical-species chemical-species:beryllium ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/beryllium> ;
         defchem:medium medium:air ;
         .
 
@@ -5897,7 +5897,7 @@
         dct:description ""@en ;
         skos:prefLabel "14c-carbon_dioxide_in_air"@en ;
         skos:broader <wmdsObservedVariable/10046> ;
-        defchem:chemical-species chemical-species:14c carbon dioxide ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/14c carbon dioxide> ;
         defchem:medium medium:air ;
         .
 
@@ -5909,7 +5909,7 @@
         dct:description ""@en ;
         skos:prefLabel "85-krypton_in_air"@en ;
         skos:broader <wmdsObservedVariable/10046> ;
-        defchem:chemical-species chemical-species:krypton ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/krypton> ;
         defchem:medium medium:air ;
         .
 
@@ -5921,7 +5921,7 @@
         dct:description ""@en ;
         skos:prefLabel "210-lead_in_air"@en ;
         skos:broader <wmdsObservedVariable/10046> ;
-        defchem:chemical-species chemical-species:lead ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/lead> ;
         defchem:medium medium:air ;
         .
 
@@ -5933,7 +5933,7 @@
         dct:description ""@en ;
         skos:prefLabel "222-radon_in_air"@en ;
         skos:broader <wmdsObservedVariable/10046> ;
-        defchem:chemical-species chemical-species:radon ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/radon> ;
         defchem:medium medium:air ;
         .
 
@@ -6055,7 +6055,7 @@
         dct:description ""@en ;
         skos:prefLabel "hydrogen_ion_in_total_atmospheric_deposition"@en ;
         skos:broader <wmdsObservedVariable/10052> ;
-        defchem:chemical-species chemical-species:hydrogen-ion ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/hydrogen-ion> ;
         defchem:medium medium:total_atmospheric_deposition ;
         .
 
@@ -6067,7 +6067,7 @@
         dct:description ""@en ;
         skos:prefLabel ""@en ;
         skos:broader <wmdsObservedVariable/10052> ;
-        defchem:chemical-species chemical-species:inorganic-acid ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/inorganic-acid> ;
         defchem:medium medium:total_atmospheric_deposition ;
         .
 
@@ -6090,7 +6090,7 @@
         dct:description ""@en ;
         skos:prefLabel ""@en ;
         skos:broader <wmdsObservedVariable/10052> ;
-        defchem:chemical-species chemical-species:anion ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/anion> ;
         defchem:medium medium:total_atmospheric_deposition ;
         .
 
@@ -6102,7 +6102,7 @@
         dct:description ""@en ;
         skos:prefLabel "bromide_in_total_atmospheric_deposition"@en ;
         skos:broader <wmdsObservedVariable/10054> ;
-        defchem:chemical-species chemical-species:bromide ion ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/bromide ion> ;
         defchem:medium medium:total_atmospheric_deposition ;
         .
 
@@ -6114,7 +6114,7 @@
         dct:description ""@en ;
         skos:prefLabel "chloride_in_total_atmospheric_deposition"@en ;
         skos:broader <wmdsObservedVariable/10054> ;
-        defchem:chemical-species chemical-species:chloride-ion ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/chloride-ion> ;
         defchem:medium medium:total_atmospheric_deposition ;
         .
 
@@ -6126,7 +6126,7 @@
         dct:description ""@en ;
         skos:prefLabel "fluoride_in_total_atmospheric_deposition"@en ;
         skos:broader <wmdsObservedVariable/10054> ;
-        defchem:chemical-species chemical-species:fluoride-ion ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/fluoride-ion> ;
         defchem:medium medium:total_atmospheric_deposition ;
         .
 
@@ -6138,7 +6138,7 @@
         dct:description ""@en ;
         skos:prefLabel "iodide_in_total_atmospheric_deposition"@en ;
         skos:broader <wmdsObservedVariable/10054> ;
-        defchem:chemical-species chemical-species:iodide-ion ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/iodide-ion> ;
         defchem:medium medium:total_atmospheric_deposition ;
         .
 
@@ -6150,7 +6150,7 @@
         dct:description ""@en ;
         skos:prefLabel "phosphate_in_total_atmospheric_deposition"@en ;
         skos:broader <wmdsObservedVariable/10054> ;
-        defchem:chemical-species chemical-species:phosphate-ion ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/phosphate-ion> ;
         defchem:medium medium:total_atmospheric_deposition ;
         .
 
@@ -6162,7 +6162,7 @@
         dct:description ""@en ;
         skos:prefLabel "sulfate_corrected_in_total_atmospheric_deposition"@en ;
         skos:broader <wmdsObservedVariable/10054> ;
-        defchem:chemical-species chemical-species:sulphate-ion ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/sulphate-ion> ;
         defchem:medium medium:total_atmospheric_deposition ;
         .
 
@@ -6174,7 +6174,7 @@
         dct:description ""@en ;
         skos:prefLabel "sulfate_total_in_total_atmospheric_deposition"@en ;
         skos:broader <wmdsObservedVariable/10054> ;
-        defchem:chemical-species chemical-species:sulphate-ion ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/sulphate-ion> ;
         defchem:medium medium:total_atmospheric_deposition ;
         .
 
@@ -6186,7 +6186,7 @@
         dct:description ""@en ;
         skos:prefLabel ""@en ;
         skos:broader <wmdsObservedVariable/10052> ;
-        defchem:chemical-species chemical-species:cation ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/cation> ;
         defchem:medium medium:total_atmospheric_deposition ;
         .
 
@@ -6198,7 +6198,7 @@
         dct:description ""@en ;
         skos:prefLabel "calcium_ion_in_total_atmospheric_deposition"@en ;
         skos:broader <wmdsObservedVariable/10055> ;
-        defchem:chemical-species chemical-species:calcium-ion ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/calcium-ion> ;
         defchem:medium medium:total_atmospheric_deposition ;
         .
 
@@ -6210,7 +6210,7 @@
         dct:description ""@en ;
         skos:prefLabel "magnesium_ion_in_total_atmospheric_deposition"@en ;
         skos:broader <wmdsObservedVariable/10055> ;
-        defchem:chemical-species chemical-species:magnesium-ion ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/magnesium-ion> ;
         defchem:medium medium:total_atmospheric_deposition ;
         .
 
@@ -6222,7 +6222,7 @@
         dct:description ""@en ;
         skos:prefLabel "potassium_ion_in_total_atmospheric_deposition"@en ;
         skos:broader <wmdsObservedVariable/10055> ;
-        defchem:chemical-species chemical-species:potassium-ion ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/potassium-ion> ;
         defchem:medium medium:total_atmospheric_deposition ;
         .
 
@@ -6234,7 +6234,7 @@
         dct:description ""@en ;
         skos:prefLabel "sodium_ion_in_total_atmospheric_deposition"@en ;
         skos:broader <wmdsObservedVariable/10055> ;
-        defchem:chemical-species chemical-species:sodium-ion ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/sodium-ion> ;
         defchem:medium medium:total_atmospheric_deposition ;
         .
 
@@ -6246,7 +6246,7 @@
         dct:description ""@en ;
         skos:prefLabel ""@en ;
         skos:broader <wmdsObservedVariable/10052> ;
-        defchem:chemical-species chemical-species:inorganic-nitrogen-species ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/inorganic-nitrogen-species> ;
         defchem:medium medium:total_atmospheric_deposition ;
         .
 
@@ -6258,7 +6258,7 @@
         dct:description ""@en ;
         skos:prefLabel "ammonium_in_total_atmospheric_deposition"@en ;
         skos:broader <wmdsObservedVariable/10056> ;
-        defchem:chemical-species chemical-species:ammonium ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/ammonium> ;
         defchem:medium medium:total_atmospheric_deposition ;
         .
 
@@ -6270,7 +6270,7 @@
         dct:description ""@en ;
         skos:prefLabel "nitrate_in_total_atmospheric_deposition"@en ;
         skos:broader <wmdsObservedVariable/10056> ;
-        defchem:chemical-species chemical-species:nitrate-ion ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/nitrate-ion> ;
         defchem:medium medium:total_atmospheric_deposition ;
         .
 
@@ -6282,7 +6282,7 @@
         dct:description ""@en ;
         skos:prefLabel "nitrite_in_total_atmospheric_deposition"@en ;
         skos:broader <wmdsObservedVariable/10056> ;
-        defchem:chemical-species chemical-species:nitrite-ion ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/nitrite-ion> ;
         defchem:medium medium:total_atmospheric_deposition ;
         .
 
@@ -6294,7 +6294,7 @@
         dct:description ""@en ;
         skos:prefLabel ""@en ;
         skos:broader <wmdsObservedVariable/10052> ;
-        defchem:chemical-species chemical-species:organic-acid ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/organic-acid> ;
         defchem:medium medium:total_atmospheric_deposition ;
         .
 
@@ -6306,7 +6306,7 @@
         dct:description ""@en ;
         skos:prefLabel "acetate_in_total_atmospheric_deposition"@en ;
         skos:broader <wmdsObservedVariable/10057> ;
-        defchem:chemical-species chemical-species:acetate-ion ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/acetate-ion> ;
         defchem:medium medium:total_atmospheric_deposition ;
         .
 
@@ -6318,7 +6318,7 @@
         dct:description ""@en ;
         skos:prefLabel "formate_in_total_atmospheric_deposition"@en ;
         skos:broader <wmdsObservedVariable/10057> ;
-        defchem:chemical-species chemical-species:formate-ion ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/formate-ion> ;
         defchem:medium medium:total_atmospheric_deposition ;
         .
 
@@ -6330,7 +6330,7 @@
         dct:description ""@en ;
         skos:prefLabel "propionate_in_total_atmospheric_deposition"@en ;
         skos:broader <wmdsObservedVariable/10057> ;
-        defchem:chemical-species chemical-species:proprionate-ion ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/proprionate-ion> ;
         defchem:medium medium:total_atmospheric_deposition ;
         .
 
@@ -6342,7 +6342,7 @@
         dct:description ""@en ;
         skos:prefLabel "sulfur_in_total_atmospheric_deposition"@en ;
         skos:broader <wmdsObservedVariable/10052> ;
-        defchem:chemical-species chemical-species:sulfur ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/sulfur> ;
         defchem:medium medium:total_atmospheric_deposition ;
         .
 
@@ -6354,7 +6354,7 @@
         dct:description ""@en ;
         skos:prefLabel ""@en ;
         skos:broader <wmdsObservedVariable/10052> ;
-        defchem:chemical-species chemical-species:trace-metal ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/trace-metal> ;
         defchem:medium medium:total_atmospheric_deposition ;
         .
 
@@ -6366,7 +6366,7 @@
         dct:description ""@en ;
         skos:prefLabel "aluminium_in_total_atmospheric_deposition"@en ;
         skos:broader <wmdsObservedVariable/10058> ;
-        defchem:chemical-species chemical-species:aluminium ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/aluminium> ;
         defchem:medium medium:total_atmospheric_deposition ;
         .
 
@@ -6378,7 +6378,7 @@
         dct:description ""@en ;
         skos:prefLabel "arsenic_in_total_atmospheric_deposition"@en ;
         skos:broader <wmdsObservedVariable/10058> ;
-        defchem:chemical-species chemical-species:arsenic ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/arsenic> ;
         defchem:medium medium:total_atmospheric_deposition ;
         .
 
@@ -6390,7 +6390,7 @@
         dct:description ""@en ;
         skos:prefLabel "cadmium_in_total_atmospheric_deposition"@en ;
         skos:broader <wmdsObservedVariable/10058> ;
-        defchem:chemical-species chemical-species:cadmium ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/cadmium> ;
         defchem:medium medium:total_atmospheric_deposition ;
         .
 
@@ -6402,7 +6402,7 @@
         dct:description ""@en ;
         skos:prefLabel "chromium_in_total_atmospheric_deposition"@en ;
         skos:broader <wmdsObservedVariable/10058> ;
-        defchem:chemical-species chemical-species:chromium ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/chromium> ;
         defchem:medium medium:total_atmospheric_deposition ;
         .
 
@@ -6414,7 +6414,7 @@
         dct:description ""@en ;
         skos:prefLabel "cobalt_in_total_atmospheric_deposition"@en ;
         skos:broader <wmdsObservedVariable/10058> ;
-        defchem:chemical-species chemical-species:cobalt ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/cobalt> ;
         defchem:medium medium:total_atmospheric_deposition ;
         .
 
@@ -6426,7 +6426,7 @@
         dct:description ""@en ;
         skos:prefLabel "copper_in_total_atmospheric_deposition"@en ;
         skos:broader <wmdsObservedVariable/10058> ;
-        defchem:chemical-species chemical-species:copper ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/copper> ;
         defchem:medium medium:total_atmospheric_deposition ;
         .
 
@@ -6438,7 +6438,7 @@
         dct:description ""@en ;
         skos:prefLabel "iron_in_total_atmospheric_deposition"@en ;
         skos:broader <wmdsObservedVariable/10058> ;
-        defchem:chemical-species chemical-species:iron ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/iron> ;
         defchem:medium medium:total_atmospheric_deposition ;
         .
 
@@ -6450,7 +6450,7 @@
         dct:description ""@en ;
         skos:prefLabel "lead_in_total_atmospheric_deposition"@en ;
         skos:broader <wmdsObservedVariable/10058> ;
-        defchem:chemical-species chemical-species:lead ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/lead> ;
         defchem:medium medium:total_atmospheric_deposition ;
         .
 
@@ -6462,7 +6462,7 @@
         dct:description ""@en ;
         skos:prefLabel "manganese_in_total_atmospheric_deposition"@en ;
         skos:broader <wmdsObservedVariable/10058> ;
-        defchem:chemical-species chemical-species:manganese ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/manganese> ;
         defchem:medium medium:total_atmospheric_deposition ;
         .
 
@@ -6474,7 +6474,7 @@
         dct:description ""@en ;
         skos:prefLabel "mercury_in_total_atmospheric_deposition"@en ;
         skos:broader <wmdsObservedVariable/10058> ;
-        defchem:chemical-species chemical-species:mercury ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/mercury> ;
         defchem:medium medium:total_atmospheric_deposition ;
         .
 
@@ -6486,7 +6486,7 @@
         dct:description ""@en ;
         skos:prefLabel "nickel_in_total_atmospheric_deposition"@en ;
         skos:broader <wmdsObservedVariable/10058> ;
-        defchem:chemical-species chemical-species:nickel ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/nickel> ;
         defchem:medium medium:total_atmospheric_deposition ;
         .
 
@@ -6498,7 +6498,7 @@
         dct:description ""@en ;
         skos:prefLabel "vanadium_in_total_atmospheric_deposition"@en ;
         skos:broader <wmdsObservedVariable/10058> ;
-        defchem:chemical-species chemical-species:vanadium ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/vanadium> ;
         defchem:medium medium:total_atmospheric_deposition ;
         .
 
@@ -6510,7 +6510,7 @@
         dct:description ""@en ;
         skos:prefLabel "zinc_in_total_atmospheric_deposition"@en ;
         skos:broader <wmdsObservedVariable/10058> ;
-        defchem:chemical-species chemical-species:zinc ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/zinc> ;
         defchem:medium medium:total_atmospheric_deposition ;
         .
 
@@ -6913,7 +6913,7 @@
         dct:description ""@en ;
         skos:prefLabel "nitrite_in_ocean"@en ;
         skos:broader <wmdsObservedVariable/10068> ;
-        defchem:chemical-species chemical-species:nitrite-ion ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/nitrite-ion> ;
         defchem:medium medium:sea-water ;
         .
 
@@ -6925,7 +6925,7 @@
         dct:description ""@en ;
         skos:prefLabel "nitrate_in_ocean"@en ;
         skos:broader <wmdsObservedVariable/10068> ;
-        defchem:chemical-species chemical-species:nitrate-ion ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/nitrate-ion> ;
         defchem:medium medium:sea-water ;
         .
 
@@ -6948,7 +6948,7 @@
         dct:description ""@en ;
         skos:prefLabel "phosphate_in_ocean"@en ;
         skos:broader <wmdsObservedVariable/10069> ;
-        defchem:chemical-species chemical-species:phosphate-ion ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/phosphate-ion> ;
         defchem:medium medium:sea-water ;
         .
 
@@ -6960,7 +6960,7 @@
         dct:description ""@en ;
         skos:prefLabel "total_organic_phosphorus_in_ocean"@en ;
         skos:broader <wmdsObservedVariable/10069> ;
-        defchem:chemical-species chemical-species:phosphorus ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/phosphorus> ;
         defchem:medium medium:sea-water ;
         .
 
@@ -7060,7 +7060,7 @@
         dct:description ""@en ;
         skos:prefLabel "carbon_dioxide_partial_pressure_in_ocean"@en ;
         skos:broader <wmdsObservedVariable/10115> ;
-        defchem:chemical-species chemical-species:carbon-dioxide ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/carbon-dioxide> ;
         defchem:medium medium:sea-water ;
         .
 
@@ -7072,7 +7072,7 @@
         dct:description ""@en ;
         skos:prefLabel "carbon_dioxide_partial_pressure_air-sea_flux_in_ocean"@en ;
         skos:broader <wmdsObservedVariable/10115> ;
-        defchem:chemical-species chemical-species:carbon-dioxide ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/carbon-dioxide> ;
         defchem:medium medium:sea-water ;
         .
 
@@ -7106,7 +7106,7 @@
         dct:description ""@en ;
         skos:prefLabel "dissolved_inorganic_carbon_in_ocean"@en ;
         skos:broader <wmdsObservedVariable/10116> ;
-        defchem:chemical-species chemical-species:inorganic carbon species ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/inorganic carbon species> ;
         defchem:medium medium:sea-water ;
         .
 
@@ -7118,7 +7118,7 @@
         dct:description ""@en ;
         skos:prefLabel "dissolved_organic_carbon_in_ocean"@en ;
         skos:broader <wmdsObservedVariable/10116> ;
-        defchem:chemical-species chemical-species:organic-carbon ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/organic-carbon> ;
         defchem:medium medium:sea-water ;
         .
 
@@ -7174,7 +7174,7 @@
         dct:description ""@en ;
         skos:prefLabel ""@en ;
         skos:broader <wmdsObservedVariable/10066> ;
-        defchem:chemical-species chemical-species:ion ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/ion> ;
         defchem:medium medium:ocean_suspended_sediments_concentration ;
         .
 
@@ -7296,7 +7296,7 @@
         dct:description ""@en ;
         skos:prefLabel "ocean_subsurface_dissolved_oxygen_concentration_in_ocean"@en ;
         skos:broader <wmdsObservedVariable/10070> ;
-        defchem:chemical-species chemical-species:ion ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/ion> ;
         defchem:medium medium:sea-water ;
         .
 
@@ -7374,7 +7374,7 @@
         dct:description ""@en ;
         skos:prefLabel "dimethylsulfide_in_ocean"@en ;
         skos:broader <wmdsObservedVariable/10075> ;
-        defchem:chemical-species chemical-species:dimethylsulfide ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/dimethylsulfide> ;
         defchem:medium medium:sea-water ;
         .
 
@@ -7397,7 +7397,7 @@
         dct:description ""@en ;
         skos:prefLabel "ice_in_ocean"@en ;
         skos:broader <wmdsObservedVariable/10077> ;
-        defchem:chemical-species chemical-species:ice-water ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/ice-water> ;
         defchem:medium medium:sea-water ;
         .
 
@@ -7409,7 +7409,7 @@
         dct:description ""@en ;
         skos:prefLabel "sea-ice_cover_in_ocean"@en ;
         skos:broader <wmdsObservedVariable/10078> ;
-        defchem:chemical-species chemical-species:ice-water ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/ice-water> ;
         defchem:medium medium:sea-water ;
         .
 
@@ -7421,7 +7421,7 @@
         dct:description ""@en ;
         skos:prefLabel "sea-ice_elevation_in_ocean"@en ;
         skos:broader <wmdsObservedVariable/10078> ;
-        defchem:chemical-species chemical-species:ice-water ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/ice-water> ;
         defchem:medium medium:sea-water ;
         .
 
@@ -7433,7 +7433,7 @@
         dct:description ""@en ;
         skos:prefLabel "sea-ice_motion_in_ocean"@en ;
         skos:broader <wmdsObservedVariable/10078> ;
-        defchem:chemical-species chemical-species:ice-water ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/ice-water> ;
         defchem:medium medium:sea-water ;
         .
 
@@ -7445,7 +7445,7 @@
         dct:description ""@en ;
         skos:prefLabel "sea-ice_surface_characteristics_in_ocean"@en ;
         skos:broader <wmdsObservedVariable/10078> ;
-        defchem:chemical-species chemical-species:ice-water ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/ice-water> ;
         defchem:medium medium:sea-water ;
         .
 
@@ -7457,7 +7457,7 @@
         dct:description ""@en ;
         skos:prefLabel "sea-ice_surface_temperature_in_ocean"@en ;
         skos:broader <wmdsObservedVariable/10078> ;
-        defchem:chemical-species chemical-species:ice-water ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/ice-water> ;
         defchem:medium medium:sea-water ;
         .
 
@@ -7469,7 +7469,7 @@
         dct:description ""@en ;
         skos:prefLabel "sea-ice_thickness_in_ocean"@en ;
         skos:broader <wmdsObservedVariable/10078> ;
-        defchem:chemical-species chemical-species:ice-water ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/ice-water> ;
         defchem:medium medium:sea-water ;
         .
 
@@ -7481,7 +7481,7 @@
         dct:description ""@en ;
         skos:prefLabel "sea-ice_type_in_ocean"@en ;
         skos:broader <wmdsObservedVariable/10078> ;
-        defchem:chemical-species chemical-species:ice-water ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/ice-water> ;
         defchem:medium medium:sea-water ;
         .
 
@@ -7702,7 +7702,7 @@
         dct:description ""@en ;
         skos:prefLabel "sea-water"@en ;
         skos:broader <wmdsObservedVariable/10083> ;
-        defchem:chemical-species chemical-species:ion ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/ion> ;
         .
 
 <wmdsObservedVariable/743>
@@ -8601,7 +8601,7 @@
         dct:description ""@en ;
         skos:prefLabel ""@en ;
         skos:broader <wmdsObservedVariable/10091> ;
-        defchem:chemical-species chemical-species:liquid-and-ice-water ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/liquid-and-ice-water> ;
         defchem:medium medium:ground_water ;
         .
 
@@ -8613,7 +8613,7 @@
         dct:description ""@en ;
         skos:prefLabel "amount_per_unit_area_of_ground_water"@en ;
         skos:broader <wmdsObservedVariable/10092> ;
-        defchem:chemical-species chemical-species:liquid-and-ice-water ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/liquid-and-ice-water> ;
         defchem:medium medium:ground_water ;
         .
 
@@ -8625,7 +8625,7 @@
         dct:description ""@en ;
         skos:prefLabel "ground_water_level_in_ground_water"@en ;
         skos:broader <wmdsObservedVariable/10092> ;
-        defchem:chemical-species chemical-species:liquid-and-ice-water ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/liquid-and-ice-water> ;
         defchem:medium medium:ground_water ;
         .
 
@@ -8637,7 +8637,7 @@
         dct:description ""@en ;
         skos:prefLabel ""@en ;
         skos:broader <wmdsObservedVariable/10091> ;
-        defchem:chemical-species chemical-species:liquid-and-ice-water ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/liquid-and-ice-water> ;
         .
 
 <wmdsObservedVariable/167>
@@ -8648,7 +8648,7 @@
         dct:description ""@en ;
         skos:prefLabel "area_of_lake"@en ;
         skos:broader <wmdsObservedVariable/10093> ;
-        defchem:chemical-species chemical-species:liquid-and-ice-water ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/liquid-and-ice-water> ;
         defchem:medium medium:lake ;
         .
 
@@ -8660,7 +8660,7 @@
         dct:description ""@en ;
         skos:prefLabel "level_of_lake"@en ;
         skos:broader <wmdsObservedVariable/10093> ;
-        defchem:chemical-species chemical-species:liquid-and-ice-water ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/liquid-and-ice-water> ;
         defchem:medium medium:lake ;
         .
 
@@ -8672,7 +8672,7 @@
         dct:description ""@en ;
         skos:prefLabel ""@en ;
         skos:broader <wmdsObservedVariable/10093> ;
-        defchem:chemical-species chemical-species:ice-water ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/ice-water> ;
         .
 
 <wmdsObservedVariable/10095>
@@ -8683,7 +8683,7 @@
         dct:description ""@en ;
         skos:prefLabel "ice_in_lake"@en ;
         skos:broader <wmdsObservedVariable/10094> ;
-        defchem:chemical-species chemical-species:ice-water ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/ice-water> ;
         defchem:medium medium:lake ;
         .
 
@@ -8695,7 +8695,7 @@
         dct:description ""@en ;
         skos:prefLabel "ice_thickness_in_lake"@en ;
         skos:broader <wmdsObservedVariable/10095> ;
-        defchem:chemical-species chemical-species:ice-water ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/ice-water> ;
         defchem:medium medium:lake ;
         .
 
@@ -8814,7 +8814,7 @@
         dct:description ""@en ;
         skos:prefLabel "carbon_dioxide_flux_in_land_surface"@en ;
         skos:broader <wmdsObservedVariable/10099> ;
-        defchem:chemical-species chemical-species:carbon-dioxide ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/carbon-dioxide> ;
         defchem:medium medium:land_surface ;
         .
 
@@ -8826,7 +8826,7 @@
         dct:description ""@en ;
         skos:prefLabel "humidity_of_land_surface"@en ;
         skos:broader <wmdsObservedVariable/10097> ;
-        defchem:chemical-species chemical-species:water-vapour ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/water-vapour> ;
         defchem:medium medium:land_surface ;
         .
 
@@ -8914,7 +8914,7 @@
         dct:description ""@en ;
         skos:prefLabel ""@en ;
         skos:broader <wmdsObservedVariable/10097> ;
-        defchem:chemical-species chemical-species:ice-water ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/ice-water> ;
         .
 
 <wmdsObservedVariable/10103>
@@ -8925,7 +8925,7 @@
         dct:description ""@en ;
         skos:prefLabel ""@en ;
         skos:broader <wmdsObservedVariable/10102> ;
-        defchem:chemical-species chemical-species:ice-water ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/ice-water> ;
         .
 
 <wmdsObservedVariable/610>
@@ -8936,7 +8936,7 @@
         dct:description ""@en ;
         skos:prefLabel "glacier_cover_in_land_surface"@en ;
         skos:broader <wmdsObservedVariable/10103> ;
-        defchem:chemical-species chemical-species:ice-water ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/ice-water> ;
         defchem:medium medium:land_surface ;
         .
 
@@ -8948,7 +8948,7 @@
         dct:description ""@en ;
         skos:prefLabel "glacier_motion_in_land_surface"@en ;
         skos:broader <wmdsObservedVariable/10103> ;
-        defchem:chemical-species chemical-species:ice-water ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/ice-water> ;
         defchem:medium medium:land_surface ;
         .
 
@@ -8960,7 +8960,7 @@
         dct:description ""@en ;
         skos:prefLabel "glacier_topography_in_land_surface"@en ;
         skos:broader <wmdsObservedVariable/10103> ;
-        defchem:chemical-species chemical-species:ice-water ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/ice-water> ;
         defchem:medium medium:land_surface ;
         .
 
@@ -8972,7 +8972,7 @@
         dct:description ""@en ;
         skos:prefLabel ""@en ;
         skos:broader <wmdsObservedVariable/10102> ;
-        defchem:chemical-species chemical-species:ice-water ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/ice-water> ;
         .
 
 <wmdsObservedVariable/613>
@@ -8983,7 +8983,7 @@
         dct:description ""@en ;
         skos:prefLabel "ice_sheet_topography_in_land_surface"@en ;
         skos:broader <wmdsObservedVariable/10104> ;
-        defchem:chemical-species chemical-species:ice-water ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/ice-water> ;
         defchem:medium medium:land_surface ;
         .
 
@@ -8995,7 +8995,7 @@
         dct:description ""@en ;
         skos:prefLabel "permafrost_in_land_surface"@en ;
         skos:broader <wmdsObservedVariable/10102> ;
-        defchem:chemical-species chemical-species:ice-water ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/ice-water> ;
         defchem:medium medium:land_surface ;
         .
 
@@ -9007,7 +9007,7 @@
         dct:description ""@en ;
         skos:prefLabel ""@en ;
         skos:broader <wmdsObservedVariable/10102> ;
-        defchem:chemical-species chemical-species:ice-water ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/ice-water> ;
         .
 
 <wmdsObservedVariable/627>
@@ -9018,7 +9018,7 @@
         dct:description ""@en ;
         skos:prefLabel "depth_of_fresh_snowfall_in_land_surface"@en ;
         skos:broader <wmdsObservedVariable/10105> ;
-        defchem:chemical-species chemical-species:ice-water ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/ice-water> ;
         defchem:medium medium:land_surface ;
         .
 
@@ -9030,7 +9030,7 @@
         dct:description ""@en ;
         skos:prefLabel "snow_cover_fraction_of_area_in_land_surface"@en ;
         skos:broader <wmdsObservedVariable/10105> ;
-        defchem:chemical-species chemical-species:ice-water ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/ice-water> ;
         defchem:medium medium:land_surface ;
         .
 
@@ -9042,7 +9042,7 @@
         dct:description ""@en ;
         skos:prefLabel "snow_depth_in_land_surface"@en ;
         skos:broader <wmdsObservedVariable/10105> ;
-        defchem:chemical-species chemical-species:ice-water ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/ice-water> ;
         defchem:medium medium:land_surface ;
         .
 
@@ -9054,7 +9054,7 @@
         dct:description ""@en ;
         skos:prefLabel "wet_or_dry_snow_status_in_land_surface"@en ;
         skos:broader <wmdsObservedVariable/10105> ;
-        defchem:chemical-species chemical-species:ice-water ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/ice-water> ;
         defchem:medium medium:land_surface ;
         .
 
@@ -9066,7 +9066,7 @@
         dct:description ""@en ;
         skos:prefLabel "snow_water_equivalent_in_land_surface"@en ;
         skos:broader <wmdsObservedVariable/10105> ;
-        defchem:chemical-species chemical-species:ice-water ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/ice-water> ;
         defchem:medium medium:land_surface ;
         .
 
@@ -9177,7 +9177,7 @@
         dct:description ""@en ;
         skos:prefLabel ""@en ;
         skos:broader <wmdsObservedVariable/10091> ;
-        defchem:chemical-species chemical-species:liquid-and-ice-water ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/liquid-and-ice-water> ;
         .
 
 <wmdsObservedVariable/171>
@@ -9188,7 +9188,7 @@
         dct:description ""@en ;
         skos:prefLabel "discharge_of_river"@en ;
         skos:broader <wmdsObservedVariable/10108> ;
-        defchem:chemical-species chemical-species:liquid-and-ice-water ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/liquid-and-ice-water> ;
         defchem:medium medium:river ;
         .
 
@@ -9200,7 +9200,7 @@
         dct:description ""@en ;
         skos:prefLabel "stage_of_river"@en ;
         skos:broader <wmdsObservedVariable/10108> ;
-        defchem:chemical-species chemical-species:liquid-and-ice-water ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/liquid-and-ice-water> ;
         defchem:medium medium:river ;
         .
 
@@ -9212,7 +9212,7 @@
         dct:description ""@en ;
         skos:prefLabel ""@en ;
         skos:broader <wmdsObservedVariable/10108> ;
-        defchem:chemical-species chemical-species:ice-water ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/ice-water> ;
         .
 
 <wmdsObservedVariable/10110>
@@ -9223,7 +9223,7 @@
         dct:description ""@en ;
         skos:prefLabel "ice_in_river"@en ;
         skos:broader <wmdsObservedVariable/10109> ;
-        defchem:chemical-species chemical-species:ice-water ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/ice-water> ;
         defchem:medium medium:river ;
         .
 
@@ -9235,7 +9235,7 @@
         dct:description ""@en ;
         skos:prefLabel "ice_thickness_in_river"@en ;
         skos:broader <wmdsObservedVariable/10110> ;
-        defchem:chemical-species chemical-species:ice-water ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/ice-water> ;
         defchem:medium medium:river ;
         .
 
@@ -9257,7 +9257,7 @@
         dct:description ""@en ;
         skos:prefLabel "humidity_of_soil"@en ;
         skos:broader <wmdsObservedVariable/10111> ;
-        defchem:chemical-species chemical-species:liquid-water ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/liquid-water> ;
         defchem:medium medium:soil ;
         .
 
@@ -9269,7 +9269,7 @@
         dct:description ""@en ;
         skos:prefLabel "moisture_near_roots_of_soil"@en ;
         skos:broader <wmdsObservedVariable/10112> ;
-        defchem:chemical-species chemical-species:liquid-water ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/liquid-water> ;
         defchem:medium medium:soil ;
         .
 
@@ -9281,7 +9281,7 @@
         dct:description ""@en ;
         skos:prefLabel "moisture_at_surface_of_soil"@en ;
         skos:broader <wmdsObservedVariable/10112> ;
-        defchem:chemical-species chemical-species:liquid-water ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/liquid-water> ;
         defchem:medium medium:soil ;
         .
 
@@ -9325,7 +9325,7 @@
         dct:description ""@en ;
         skos:prefLabel "soil"@en ;
         skos:broader <wmdsObservedVariable/10113> ;
-        defchem:chemical-species chemical-species:tetrachloroethene ;
+        defchem:chemical-species <http://codes.wmo.int/common/chemical-species/tetrachloroethene> ;
         .
 
 <wmdsObservedVariable/10114>
